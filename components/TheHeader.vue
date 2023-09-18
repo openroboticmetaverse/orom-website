@@ -1,6 +1,6 @@
 <template>
 <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 " >
-  <video alt="" class=" absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" autoplay loop muted>
+  <video alt="" class=" absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" autoplay loop muted playsinline>
     <source src="/pages/home/automation.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
