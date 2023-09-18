@@ -9,7 +9,7 @@
       <template v-slot:content>
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-8xl lg:mx-0">
-          <h2 class="text-4xl font-bold tracking-tight text-right text-white sm:text-6xl">Explore the Community</h2>
+          <h2 class="text-4xl font-bold tracking-tight text-right text-white sm:text-6xl">Explore the community</h2>
           <p class="mt-6 text-lg leading-8 ml-200 text-right text-gray-300">Anim aute id magna aliqua ad ad non deserunt
             sunt. Qui irure
             qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
@@ -34,7 +34,7 @@
       <template v-slot:content>
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-8xl lg:mx-0">
-          <h2 class="text-4xl font-bold tracking-tight text-left text-white sm:text-6xl">Follow Us!</h2>
+          <h2 class="text-4xl font-bold tracking-tight text-left text-white sm:text-6xl">Follow us!</h2>
           <p class="mt-6 text-lg leading-8 ml-200 max-w-2xl text-left text-gray-300">Lorem, ipsum dolor sit amet
             consectetur adipisicing elit. Expedita tempora, doloribus quibusdam quae assumenda voluptatem adipisci officia
             deserunt sunt tenetur cum sint voluptatibus velit omnis architecto porro harum inventore voluptatum!</p>
@@ -60,50 +60,50 @@
       </div>
     </template>
     </PhotoSection>
-    <h2 ref="header">Home</h2>
+    <!-- <h2 ref="header">Home</h2>
     <div ref="textContainer">
       <p v-for="i in 5" :key="i" class="scroll-trigger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
         expedita sequi deserunt facere provident, in deleniti. Magnam earum error esse.</p>
-    </div>
+    </div> -->
   </div>
 </template>
   
 <script setup>
-import { ref, onMounted } from 'vue';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// import { ref, onMounted } from 'vue';
+// import { gsap } from 'gsap';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import PhotoSection from '~/components/landing/PhotoSection.vue';
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-const header = ref(null);
-const textContainer = ref(null);
+// const header = ref(null);
+// const textContainer = ref(null);
 
-onMounted(() => {
-  gsap.from(header.value, {
-    duration: 1,
-    y: 100,
-    opacity: 0,
-    ease: "power3.out"
-  });
+// onMounted(() => {
+//   gsap.from(header.value, {
+//     duration: 1,
+//     y: 100,
+//     opacity: 0,
+//     ease: "power3.out"
+//   });
 
-  const paragraphs = textContainer.value.querySelectorAll('.scroll-trigger');
-  paragraphs.forEach((p, index) => {
-    gsap.from(p, {
-      scrollTrigger: {
-        trigger: p,
-        start: "top bottom",
-        end: "bottom top",
-        markers: false,
-      },
-      duration: 0.5,
-      y: 100,
-      opacity: 0,
-      ease: "power3.out",
-      delay: index * 0.02
-    });
-  });
-});
+//   const paragraphs = textContainer.value.querySelectorAll('.scroll-trigger');
+//   paragraphs.forEach((p, index) => {
+//     gsap.from(p, {
+//       scrollTrigger: {
+//         trigger: p,
+//         start: "top bottom",
+//         end: "bottom top",
+//         markers: false,
+//       },
+//       duration: 0.5,
+//       y: 100,
+//       opacity: 0,
+//       ease: "power3.out",
+//       delay: index * 0.02
+//     });
+//   });
+// });
 </script>
   
 <style scoped>

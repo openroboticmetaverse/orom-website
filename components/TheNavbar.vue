@@ -1,6 +1,6 @@
 <template>
     <div ref="navbarContainer" class="sticky top-0 z-10">
-        <nav ref="navbar" class="">
+        <nav ref="navbar" class="bg-black">
             <div class=" mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
                 <div class="relative flex h-20 items-center justify-between">
                     <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
