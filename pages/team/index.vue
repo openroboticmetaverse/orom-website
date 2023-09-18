@@ -26,7 +26,7 @@
 
         <TeamCard>
             <template v-slot:image>
-                <img class="w-full rounded-lg sm:rounded-none max-w-s overflow-hidden sm:rounded-l-lg" src="https://www.brit.co/media-library/image.jpg?id=21441490&width=1000&height=1000" alt="Bonnie Avatar">
+                <img class="w-full rounded-lg sm:rounded-none max-w-s overflow-hidden sm:rounded-l-lg" src="https://media.kleinezeitung.at/images/thumb/1000x1000/focal0x0-0x0/3/9/5/6194069/Kris-Jenner-arrives-on-the-red-carpet-for-The-Met-Gala-at-The-Metropolitan-Museum-of-Art-celebrating-the-Costume-Instit_1663953438306423.jpg" alt="Bonnie Avatar">
 
             </template>
             <template v-slot:name>
@@ -68,15 +68,15 @@
         </TeamCard>
         <TeamCard>
             <template v-slot:image>
-                <img class="w-full rounded-lg sm:rounded-none max-w-s sm:rounded-l-lg" src="https://media.kleinezeitung.at/images/thumb/1000x1000/focal0x0-0x0/b/b/2/6183858/Khloe-Kardashian_1661947819169932_v0_h.jpg" alt="Sofia Avatar">
+                <img class="w-full rounded-lg sm:rounded-none max-w-s sm:rounded-l-lg" src="https://hips.hearstapps.com/hmg-prod/images/khloe-kardashian-gettyimages-470897864-1526129854.jpg?crop=0.5xw:1xh;center,top&resize=1000:*" alt="Sofia Avatar">
 
             </template>
             <template v-slot:name>
                 <a href="#">Khloe</a>
             </template>
             <template v-slot:description>
-                <span class="text-gray-500 dark:text-gray-400">Communications Expert</span>
-                <p class="mt-3 mb-4 font-light text-gray-500 max-w-xs dark:text-gray-400">Khloe leads the communications and public relations team.</p>
+                <span class="text-gray-500 dark:text-gray-400">Communications</span>
+                <p class="mt-3 mb-4 font-light text-gray-500 max-w-xs dark:text-gray-400">Khloe leads the public relations team.</p>
             </template>
 
         </TeamCard>
