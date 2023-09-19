@@ -1,9 +1,10 @@
 <template>
 <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 " >
-  <video alt="" class=" absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" autoplay loop muted playsinline>
-    <source src="https://static.videezy.com/system/resources/previews/000/006/891/original/Lab52.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+
+  <video v-if="!videoFailed" alt="" class=" absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" id="video" autoplay loop muted playsinline>
+      <source src="/pages/home/automation.mp4" type="video/mp4">
+    </video>
+    <img v-else src="/path/to/fallback-image.jpg" alt="Fallback Image">
   <div class="video-overlay"></div>
   <div class="overlay-bottom"></div>
       <div class="overlay-top"></div>
@@ -44,6 +45,21 @@
 </template>
 
 <script setup>
+import { onMounted, ref } from 'vue';
+
+const videoFailed = ref(false);
+
+onMounted(() => {
+  const videoElement = document.getElementById("video");
+
+  videoElement.addEventListener("error", () => {
+    videoFailed.value = true;
+  });
+
+  videoElement.play().catch(() => {
+    videoFailed.value = true;
+  });
+});
 
 </script>
 
