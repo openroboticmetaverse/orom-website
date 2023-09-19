@@ -20,71 +20,79 @@
         </PhotoSection>
 
         <section class="dark:bg-gray-900">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+            <div class="py-8 px-4 mx-auto max-w-screen-xl text-center  lg:py-16 lg:px-6 ">
 
-      <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+                <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 
-        <TeamCard>
-            <template v-slot:image>
-                <img class="w-full rounded-lg sm:rounded-none max-w-s overflow-hidden sm:rounded-l-lg" src="https://media.kleinezeitung.at/images/thumb/1000x1000/focal0x0-0x0/3/9/5/6194069/Kris-Jenner-arrives-on-the-red-carpet-for-The-Met-Gala-at-The-Metropolitan-Museum-of-Art-celebrating-the-Costume-Instit_1663953438306423.jpg" alt="Bonnie Avatar">
+                    <TeamCard>
+                        <template v-slot:image>
+                            <img class="mx-auto mb-4 w-36 h-36 rounded-full"
+                                src="https://media.kleinezeitung.at/images/thumb/1000x1000/focal0x0-0x0/3/9/5/6194069/Kris-Jenner-arrives-on-the-red-carpet-for-The-Met-Gala-at-The-Metropolitan-Museum-of-Art-celebrating-the-Costume-Instit_1663953438306423.jpg"
+                                alt="Bonnie Avatar">
 
-            </template>
-            <template v-slot:name>
-                <a href="#">Kris</a>
-            </template>
-            <template v-slot:description>
-                <span class="text-gray-500 dark:text-gray-400">CEO</span>
-                <p class="mt-3 mb-4 font-light text-gray-500 max-w-xs dark:text-gray-400">Kris drives the technical strategy of the platform and brand.</p>
-            </template>
+                        </template>
+                        <template v-slot:name>
+                            <a href="#" class="text-gray-50">Kris</a>
+                        </template>
+                        <template v-slot:description>
+                            <p>CEO & Managing Partner</p>
+                        </template>
 
-        </TeamCard>
-        <TeamCard>
-            <template v-slot:image>
-                <img class="w-full rounded-lg sm:rounded-none max-w-s overflow-hidden sm:rounded-l-lg" src="https://hips.hearstapps.com/hmg-prod/images/elle-kim-kardashian-met-gala-gettyimages-955778524-1525745624.jpg?crop=0.5xw:1xh;center,top&resize=1000:*" alt="Jese Avatar">
 
-            </template>
-            <template v-slot:name>
-                <a href="#">Kim</a>
-            </template>
-            <template v-slot:description>
-                <span class="text-gray-500 dark:text-gray-400">Marketing</span>
-                <p class="mt-3 mb-4 font-light text-gray-500 max-w-xs dark:text-gray-400">Kim is our brand ambassador, leading marketing expert.</p>
-            </template>
+                    </TeamCard>
+                    <TeamCard>
+                        <template v-slot:image>
+                            <img class="mx-auto mb-4 w-36 h-36 rounded-full"
+                                src="https://hips.hearstapps.com/hmg-prod/images/elle-kim-kardashian-met-gala-gettyimages-955778524-1525745624.jpg?crop=0.5xw:1xh;center,top&resize=1000:*"
+                                alt="Jese Avatar">
 
-        </TeamCard>
-        <TeamCard>
-            <template v-slot:image>
-                <img class="w-full rounded-lg sm:rounded-none max-w-m  sm:rounded-l-lg" src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/05/23/15/gettyimages-1147428861-0.jpg?width=1200&height=1200&fit=crop" alt="Michael Avatar">
+                        </template>
+                        <template v-slot:name>
+                            <a href="#" class="text-gray-50">Kim</a>
+                        </template>
+                        <template v-slot:description>
+                            <p>CTO</p>
+                        </template>
 
-            </template>
-            <template v-slot:name>
-                <a href="#">Kylie</a>
-            </template>
-            <template v-slot:description>
-                <span class="text-gray-500 dark:text-gray-400">Styling & Make-up</span>
-                <p class="mt-3 mb-4 font-light text-gray-500 max-w-xs dark:text-gray-400">Kylie's fashion expertise is what sets Roboverse apart.</p>
-            </template>
 
-        </TeamCard>
-        <TeamCard>
-            <template v-slot:image>
-                <img class="w-full rounded-lg sm:rounded-none max-w-s sm:rounded-l-lg" src="https://hips.hearstapps.com/hmg-prod/images/khloe-kardashian-gettyimages-470897864-1526129854.jpg?crop=0.5xw:1xh;center,top&resize=1000:*" alt="Sofia Avatar">
+                    </TeamCard>
+                    <TeamCard>
+                        <template v-slot:image>
+                            <img class="mx-auto mb-4 w-36 h-36 rounded-full"
+                                src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/05/23/15/gettyimages-1147428861-0.jpg?width=1200&height=1200&fit=crop"
+                                alt="Michael Avatar">
 
-            </template>
-            <template v-slot:name>
-                <a href="#">Khloe</a>
-            </template>
-            <template v-slot:description>
-                <span class="text-gray-500 dark:text-gray-400">Communications</span>
-                <p class="mt-3 mb-4 font-light text-gray-500 max-w-xs dark:text-gray-400">Khloe leads the public relations team.</p>
-            </template>
+                        </template>
+                        <template v-slot:name>
+                            <a href="#" class="text-gray-50">Kylie</a>
+                        </template>
+                        <template v-slot:description>
+                            <p>Styling</p>
+                        </template>
 
-        </TeamCard>
-         
 
-      </div>  
-  </div>
-</section>
+                    </TeamCard>
+                    <TeamCard>
+                        <template v-slot:image>
+                            <img class="mx-auto mb-4 w-36 h-36 rounded-full"
+                                src="https://hips.hearstapps.com/hmg-prod/images/khloe-kardashian-gettyimages-470897864-1526129854.jpg?crop=0.5xw:1xh;center,top&resize=1000:*"
+                                alt="Sofia Avatar">
+
+                        </template>
+                        <template v-slot:name>
+                            <a href="#" class="text-gray-50">Khloe</a>
+                        </template>
+                        <template v-slot:description>
+                            <p>Communications</p>
+                        </template>
+
+
+                    </TeamCard>
+
+
+                </div>
+            </div>
+        </section>
 
     </div>
 </template>
