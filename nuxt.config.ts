@@ -3,7 +3,11 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: ['@nuxtjs/tailwindcss'],
   target: 'static',
-
+  pwa: {
+    icon: {
+      source:'./public/icon.png'
+    }
+  },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
