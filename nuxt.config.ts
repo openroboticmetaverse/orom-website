@@ -7,6 +7,9 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {title:"Nuxt Template"},
+    htmlAttrs: {
+      lang: 'en'
+    },
     meta: [
       {
         name: 'description', content: 'A Nuxt 3 template with Tailwind CSS'
