@@ -12,4 +12,16 @@
     
     @apply p-3 rounded-md bg-[#161D2E] shadow-md h-full;
   }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-zinc-800;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-600  rounded-full;
+  }
 }
+
