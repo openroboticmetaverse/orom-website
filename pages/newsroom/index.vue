@@ -22,10 +22,12 @@
 
 <script setup>
 import PhotoSection from '~/components/landing/PhotoSection.vue';
-import ProjectCard from '~/components/projects/ProjectCard.vue';
-//  fetch the products
-const { data: projects } = await useFetch('https://fakestoreapi.com/products')
 
-
-
+useHead({
+    title: 'Newsroom | Nuxt Template',
+    meta: [
+      {
+        name: 'description', content: 'Newsroom page for the Nuxt 3 template'
+      }]
+})
 </script>

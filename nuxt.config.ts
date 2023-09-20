@@ -3,9 +3,15 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
   target: 'static',
-  head: {title:"Nuxt Template"},
+
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' }
+    pageTransition: { name: 'page', mode: 'out-in' },
+    head: {title:"Nuxt Template"},
+    meta: [
+      {
+        name: 'description', content: 'A Nuxt 3 template with Tailwind CSS'
+      }
+    ]
   },
 
 })

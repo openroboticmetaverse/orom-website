@@ -99,11 +99,13 @@
 
 <script setup>
 import PhotoSection from '~/components/landing/PhotoSection.vue';
-import ProjectCard from '~/components/projects/ProjectCard.vue';
 import TeamCard from '~/components/team/TeamCard.vue'
-//  fetch the products
-const { data: projects } = await useFetch('https://fakestoreapi.com/products')
 
-
-
+useHead({
+    title: 'Team | Nuxt Template',
+    meta: [
+      {
+        name: 'description', content: 'Team page for the Nuxt 3 template'
+      }]
+})
 </script>
