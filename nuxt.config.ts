@@ -1,11 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss',
+  ],
   target: 'static',
+  buildModules: [
+    '@nuxtjs/pwa',
+  ],
   pwa: {
     icon: {
-      source:'./public/icon.png'
+      source: './public/icon.png'
     }
   },
   app: {
