@@ -17,7 +17,7 @@ export default defineNuxtConfig({
         }
       ],
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg'}
+        { rel: 'icon', sizes: '180x180', href: '/icon.png'}
       ]
     },
 
