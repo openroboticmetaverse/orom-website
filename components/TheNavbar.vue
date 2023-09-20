@@ -33,8 +33,9 @@
                     </div>
                     <div class="flex flex-1  justify-between sm:items-stretch ">
                         <div class="flex flex-shrink-0 ">
-                            <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                                alt="Your Company">
+                            <img class="h-8  w-auto" src="/icon.svg"
+                                alt="Your Company"> 
+                                <p class="ml-5 mt-1">Open Roboverse</p>
                         </div>
                         <div class="hidden sm:ml-6 sm:block ml-auto">
                             <div class="flex space-x-4">
@@ -120,7 +121,7 @@ const toggleMenu = () => {
 const updateGradient = () => {
     const scrolled = window.scrollY;
     if (navbar.value) {
-        navbar.value.style.background = `linear-gradient(to top,#192033 ,black ${scrolled / 2}px)`;
+        navbar.value.style.background = `linear-gradient(to top, #192033 ,black ${scrolled / 2}px)`;
     }
 };
 

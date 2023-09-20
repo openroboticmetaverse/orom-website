@@ -6,8 +6,8 @@
                 <div class="flex justify-between">
                     <div class="mb-6 md:mb-0">
                         <a href="https://flowbite.com/" class="flex items-center">
-                            <img src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" class="h-8 mr-3" alt="FlowBite Logo" />
-                            <span class="self-center lg:text-2xl text-sm font-semibold whitespace-nowrap dark:text-white lg:block hidden">Roboverse</span>
+                            <img src="/icon.svg" class="h-8 mr-3" alt="FlowBite Logo" />
+                            <span class="self-center lg:text-2xl text-sm font-semibold whitespace-nowrap dark:text-white lg:block hidden">Open Roboverse</span>
                         </a>
                     </div>
                     <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 ml-3">

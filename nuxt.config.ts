@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
-      title: "Nuxt Template",
+      title: "Roboverse",
        htmlAttrs: {
         lang: 'en'
       },
@@ -15,6 +15,9 @@ export default defineNuxtConfig({
         {
           name: 'description', content: 'A Nuxt 3 template with Tailwind CSS'
         }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg'}
       ]
     },
 
