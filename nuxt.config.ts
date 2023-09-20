@@ -14,7 +14,7 @@ export default defineNuxtConfig({
       meta: [
         { name: 'description', content: 'A Nuxt 3 template with Tailwind CSS' },
         { name: 'msapplication-TileColor', content: '#da532c' },
-        { name: 'theme-color', content: '#ffffff' }
+        { name: 'theme-color', content: '#000000' }
       ],
       link: [
         // ...other link tags
