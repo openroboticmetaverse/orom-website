@@ -4,14 +4,6 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss',
   ],
   target: 'static',
-  buildModules: [
-    '@nuxtjs/pwa',
-  ],
-  pwa: {
-    icon: {
-      source: './public/android-chrome-512x512.png'
-    }
-  },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
@@ -22,10 +14,10 @@ export default defineNuxtConfig({
       meta: [
         { name: 'apple-mobile-web-app-capable', content: 'yes' },
         { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
-        { name: 'apple-mobile-web-app-title', content: "roboverse" },
-        { name: 'theme-color', content: "#E9B949" },
+        { name: 'apple-mobile-web-app-title', content: "Roboverse" },
+        { name: 'theme-color', content: "#000000" },
         { name: 'description', content: 'A Nuxt 3 template with Tailwind CSS' },
-        { name: 'msapplication-TileColor', content: '#da532c' },
+        { name: 'msapplication-TileColor', content: '#000000' },
         { name: 'theme-color', content: '#000000' },
         {
           name: 'apple-mobile-web-app-capable',
@@ -37,13 +29,13 @@ export default defineNuxtConfig({
         },
       ],
       link: [
-
-        // { rel: 'shortcut-icon', type: 'image/x-icon', href: '/favicon.ico' },
-        // { rel: 'apple-touch-icon', type: 'image/png', sizes: '180x180', href: '/apple-touch-icon.png?v=0jfosdjpf' },
-        // { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
-        // { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+        
+        { rel: 'shortcut-icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'apple-touch-icon', type: 'image/png', sizes: '180x180', href: '/apple-touch-icon.png?v=0jfosdjpf' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
         { rel: 'manifest', href: '/site.webmanifest' },
-        // { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' }
+        { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' }
       ],
     },
 
