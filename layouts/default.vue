@@ -20,6 +20,9 @@
 * {
     color: white
 }
-
+body {
+    padding-top: 60px;
+    margin-top: 6vh;
+}
 
 </style>
