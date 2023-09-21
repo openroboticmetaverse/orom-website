@@ -1,8 +1,8 @@
 <template>
+        <TheNavbar/>
     
     <div>
         
-        <TheNavbar/>
         <slot />
 
         <TheFooter/>
