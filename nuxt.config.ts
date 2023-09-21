@@ -30,13 +30,18 @@ export default defineNuxtConfig({
         },
       ],
       link: [
-        
+
         { rel: 'shortcut-icon', type: 'image/x-icon', href: '/favicon.ico' },
-        { rel: 'apple-touch-icon', type: 'image/png', sizes: '180x180', href: '/apple-touch-icon.png?v=0jfosdjpf' },
-        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
-        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+        { rel: 'apple-touch-icon', type: 'image/png', sizes: '180x180', href: '/apple-touch-icon.png?v=askdnla23' },
+        { rel: 'apple-touch-icon', sizes: '152x152', href: '/apple-touch-icon-152x152.png?v=askdnla23' },
+        { rel: 'apple-touch-icon', sizes: '120x120', href: '/apple-touch-icon-120x120.png?v=askdnla23' },
+        { rel: 'apple-touch-icon', sizes: '76x76', href: '/apple-touch-icon-76x76.png?v=askdnla23' },
+        { rel: 'apple-touch-icon', sizes: '60x60', href: '/apple-touch-icon-60x60.png?v=askdnla23' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png?v=askdnla23' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png?v=askdnla23' },
         { rel: 'manifest', href: '/site.webmanifest' },
         { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' }
+
       ],
     },
 
