@@ -166,4 +166,9 @@ onBeforeUnmount(() => {
 .collapse {
     max-height: 0;
 }
+
+.sticky.top-0.z-10 {
+    padding-top: env(safe-area-inset-top);
+}
+
 </style>
