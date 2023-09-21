@@ -7,6 +7,11 @@ export default defineNuxtConfig({
   buildModules: [
     '@nuxtjs/pwa',
   ],
+  pwa: {
+    icon: {
+      source: './public/android-chrome-512x512.png'
+    }
+  },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
@@ -32,13 +37,13 @@ export default defineNuxtConfig({
         },
       ],
       link: [
-        
-        { rel: 'shortcut-icon', type: 'image/x-icon', href: '/favicon.ico' },
-        { rel: 'apple-touch-icon', type: 'image/png', sizes: '180x180', href: '/apple-touch-icon.png?v=0jfosdjpf' },
-        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
-        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+
+        // { rel: 'shortcut-icon', type: 'image/x-icon', href: '/favicon.ico' },
+        // { rel: 'apple-touch-icon', type: 'image/png', sizes: '180x180', href: '/apple-touch-icon.png?v=0jfosdjpf' },
+        // { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+        // { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
         { rel: 'manifest', href: '/site.webmanifest' },
-        { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' }
+        // { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' }
       ],
     },
 
