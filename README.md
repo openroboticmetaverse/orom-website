@@ -7,6 +7,8 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 Make sure to install the dependencies:
 
 node.js v >  18.16.0
+
+
 npm v > 9.5.1
 
 
