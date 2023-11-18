@@ -8,7 +8,7 @@
             <template v-slot:content>
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
                     <div class="mx-auto max-w-8xl lg:mx-0">
-                        <h2 class="text-4xl font-bold tracking-tight text-left text-white sm:text-6xl">Who are we?</h2>
+                        <h2 class="text-3xl font-bold tracking-tight text-left text-white sm:text-6xl">Who are we?</h2>
                         <p class="mt-6 text-lg leading-8 ml-200 max-w-2xl text-left text-gray-300">Lorem ipsum dolor sit
                             amet, consectetur adipisicing elit. Doloremque sit laudantium animi accusamus dignissimos
                             aspernatur itaque obcaecati aliquid voluptatibus eos. Quisquam illo accusantium, praesentium
