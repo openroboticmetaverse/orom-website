@@ -15,7 +15,7 @@ const adjustScale = () => {
   const ratio = window.devicePixelRatio;
 
   // Calculate the scale factor
-  scaleFactor.value = 2 / ratio;
+  scaleFactor.value = 2.0 / ratio;
 
   // Adjust the root font size
   document.documentElement.style.fontSize = `${scaleFactor.value * 100}%`;

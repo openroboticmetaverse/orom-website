@@ -94,7 +94,7 @@
                             <div
                                 class="bg-gray-900 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8 backdrop-blur-sm bg-[#6AB6A6]/10">
                                 <h3 class="dark:text-white text-3xl md:text-4xl font-extrabold mb-2">Development</h3>
-                                <p class="text-lg font-normal dark:text-gray-400 mb-6">
+                                <p class="text-lg font-normal dark:text-gray-400 mb-6 text-justify">
                                     We are committed to developing valuable building blocks for simulation environments and
                                     robotic applications. Furthermore, we encourage the use of open-source libraries to
                                     prevent redundant work.
@@ -104,9 +104,9 @@
                             <!-- Card 2: Education and Learning -->
                             <div
                                 class="bg-gray-900 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8 backdrop-blur-sm bg-[#32699C]/10">
-                                <h3 class="dark:text-white text-3xl md:text-4xl font-extrabold mb-2">Education and Learning
+                                <h3 class="dark:text-white text-3xl md:text-4xl font-extrabold mb-2">Learning
                                 </h3>
-                                <p class="text-lg font-normal dark:text-gray-400 mb-6">
+                                <p class="text-lg font-normal dark:text-gray-400 mb-6 text-justify">
                                     We are dedicated contributors to our learning platform, emphasizing both content and
                                     practical insights.
                                 </p>
@@ -117,9 +117,8 @@
                             <!-- Card 3: Event Organization and Participation -->
                             <div
                                 class="bg-gray-900 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8 backdrop-blur-sm bg-[#D43773]/10">
-                                <h3 class="dark:text-white text-3xl md:text-4xl font-extrabold mb-2">Event Organization and
-                                    Participation</h3>
-                                <p class="text-lg font-normal dark:text-gray-400 mb-6">
+                                <h3 class="dark:text-white text-3xl md:text-4xl font-extrabold mb-2">Events</h3>
+                                <p class="text-lg font-normal dark:text-gray-400 mb-6 text-justify">
                                     We host relevant events, including presentations from researchers or startups in the
                                     field, as well as hackathons combined with social events to foster community spirit.
                                     Additionally, we aim to actively participate in external events such as ROSCon or
@@ -131,7 +130,7 @@
                             <div
                                 class="bg-gray-900 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8 backdrop-blue-md bg-[#E69735]/10 hover:shadow-inner">
                                 <h3 class="dark:text-white text-3xl md:text-4xl font-extrabold mb-2">Collaboration</h3>
-                                <p class="text-lg font-normal dark:text-gray-400 mb-6">
+                                <p class="text-lg font-normal dark:text-gray-400 mb-6 text-justify">
                                     We maintain active communication with institutes and researchers in the robotics field.
                                     This ensures we remain updated with the latest technologies while also collaborating
                                     with the industry to address relevant use cases.
