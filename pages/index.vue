@@ -2,18 +2,10 @@
   <div>
     <TheHeader />
     <LandingCardSection>
-      <template v-slot:card-full>
-        <UiFullCard>
-          <template v-slot:title>
-            Learn
-          </template>
-          <template v-slot:text>
-            We prioritize a hands-on, community-driven
-              approach to learning. We encourage a culture of support where members, regardless of their experience level,
-              learn from and assist each other
-          </template>
-        </UiFullCard>
-      </template>
+      <template v-slot:description>      <h2 class="text-lg font-bold tracking-tight text-center gradient-text-1 sm:text-2xl pb-10"> We aim to accelerate the
+        development in robotics by focusing on our three pillars:</h2></template>
+
+      We aim to accelerate the development in robotics by focusing on our three pillars:
       <template v-slot:left>
         <UiSimpleCard>
           <template v-slot:title>
@@ -21,20 +13,30 @@
           </template>
           <template v-slot:text>
             We prioritize a hands-on, community-driven
-              approach to learning. We encourage a culture of support where members, regardless of their experience level,
-              learn from and assist each other
+            approach to learning. We encourage a culture of support where members, regardless of their experience level,
+            learn from and assist each other
+          </template>
+        </UiSimpleCard>
+      </template>
+      <template v-slot:center>
+        <UiSimpleCard>
+          <template v-slot:title>
+            Network
+          </template>
+          <template v-slot:text>
+            Our goal is to cultivate a community where robotics enthusiasts can meet, collaborate on projects, and share
+            insights, enhancing partnerships and idea exchange.
           </template>
         </UiSimpleCard>
       </template>
       <template v-slot:right>
         <UiSimpleCard>
           <template v-slot:title>
-            Learn
+            Innovate
           </template>
           <template v-slot:text>
-            We prioritize a hands-on, community-driven
-              approach to learning. We encourage a culture of support where members, regardless of their experience level,
-              learn from and assist each other
+            We aim to contribute to the rapidly evolving field of robotics by leveraging the potential of AI and
+            simulation.
           </template>
         </UiSimpleCard>
       </template>
@@ -48,19 +50,21 @@
       <template v-slot:content>
         <div class="mx-auto max-w-8xl  lg:px-8">
           <div class="mx-auto max-w-8xl px-32 lg:mx-0">
-            <h2 class="text-6xl font-bold tracking-tight text-right gradient-text-right sm:text-8xl">Learn</h2>
-            <p class="mt-6 text-2xl leading-8  text-right text-gray-300">We prioritize a hands-on, community-driven
-              approach to learning. We encourage a culture of support where members, regardless of their experience level,
-              learn from and assist each other.</p>
+            <h2 class="text-2xl font-bold tracking-tight text-center gradient-text-left pb-2 sm:text-6xl">What we're
+              passionately building</h2>
+            <p class="mt-6 text-2xl leading-8  text-center text-gray-300">To support our vision, we are starting with a
+              project that connect our three pillars: We're building an open Metaverse focused on robotics simulation,
+              where you can explore, get inspired by, and contribute to a variety of innovative solutions in a shared
+              virtual space. the open robotic metaverse offer the three following modes</p>
           </div>
 
 
-          <div class="relative mt-10 mr-32">
+          <!-- <div class="relative mt-10 mr-32">
             <button
               class="absolute right-0  bg-gray-900 bg-opacity-75  right-0 hover:bg-gray-900 duration-300 text-white-700 font-semibold hover:text-white py-4 px-10 border border-gray-500 hover:border-transparent rounded">
               Explore!
             </button>
-          </div>
+          </div> -->
         </div>
       </template>
     </LandingPhotoSection>
