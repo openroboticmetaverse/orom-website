@@ -1,6 +1,6 @@
 <template>
     <div style="height:100px;"></div>
-    <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 ">
+    <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-24 ">
         <slot name="image"></slot>
 
         <div class="overlay-bottom"></div>
@@ -26,6 +26,7 @@
         <slot name="content"></slot>
     </div>
 </template>
+
 
 <script setup>
 

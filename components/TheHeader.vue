@@ -38,7 +38,6 @@
         </h2>
         <p class="mt-6 text-2xl leading-8 text-gray-300">Creating a collaborative platform for robotics enthusiasts,
           beginners, and professionals to learn, innovate, and share</p>
-        <p class="mt-6 text-2xl leading-8 text-gray-300">We aim to accelerate the development in robotics</p>
       </div>
       <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
 
