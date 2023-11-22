@@ -6,28 +6,24 @@
     </div>
 </template>
 <script setup>
-import { onMounted, onUnmounted, ref } from 'vue';
+import { onMounted, ref } from 'vue';
 
 const scaleFactor = ref(1);
+let initialViewportWidth = null;
 
 const adjustScale = () => {
-  // Get device pixel ratio
-  const ratio = window.devicePixelRatio;
+  const viewportWidth = window.innerWidth;
 
-  // Calculate the scale factor
-  scaleFactor.value = 2.0 / ratio;
+  if (!initialViewportWidth) {
+    initialViewportWidth = viewportWidth;
+  }
 
-  // Adjust the root font size
-  document.documentElement.style.fontSize = `${scaleFactor.value * 100}%`;
+  scaleFactor.value = viewportWidth / initialViewportWidth;
 };
 
 onMounted(() => {
-  adjustScale();
   window.addEventListener('resize', adjustScale);
-});
-
-onUnmounted(() => {
-  window.removeEventListener('resize', adjustScale);
+  adjustScale();
 });
 </script>
 
