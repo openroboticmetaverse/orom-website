@@ -11,6 +11,9 @@ import { onMounted, ref } from 'vue';
 const scaleFactor = ref(1);
 let initialViewportWidth = null;
 
+// This function checks if the device is probably a mobile
+const isMobileDevice = () => window.innerWidth <= 768;
+
 const adjustScale = () => {
   const viewportWidth = window.innerWidth;
 
@@ -22,13 +25,12 @@ const adjustScale = () => {
 };
 
 onMounted(() => {
-  window.addEventListener('resize', adjustScale);
-  adjustScale();
+  if (!isMobileDevice()) {
+    window.addEventListener('resize', adjustScale);
+    adjustScale();
+  }
 });
 </script>
-
-
-
 <style>
 html {
   background-color: black;
