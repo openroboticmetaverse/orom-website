@@ -48,8 +48,8 @@
           alt="" class=" absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
       </template>
       <template v-slot:content>
-        <div class="mx-auto max-w-8xl  lg:px-8">
-          <div class="mx-auto max-w-8xl px-32 lg:mx-0">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-8xl lg:mx-0">
             <h2 class="text-2xl font-bold tracking-tight text-center gradient-text-left pb-2 sm:text-6xl">What we're
               passionately building</h2>
             <p class="mt-6 text-2xl leading-8  text-center text-gray-300">To support our vision, we are starting with a
