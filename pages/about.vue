@@ -7,7 +7,7 @@
                     <div class="mx-auto max-w-8xl lg:mx-0">
                         <!-- Increased header size and improved contrast -->
                         <h2
-                            class="text-4xl font-bold tracking-tight text-left text-white sm:text-6xl mb-4 gradient-text-right">
+                            class="text-4xl font-bold tracking-tight text-left text-white sm:text-6xl mb-4 gradient-text-left">
                             About</h2>
                         <h3 class="text-2xl font-semibold tracking-tight text-left text-white sm:text-5xl mt-2 ml-3">Who are
                             we?
