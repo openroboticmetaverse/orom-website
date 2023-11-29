@@ -3,8 +3,8 @@
     <canvas id="canvas" ref="canvas"></canvas>
 
     <div class="mx-auto max-w-7xl px-6 lg:px-8" style="z-index: 10;">
-      <div class="mx-auto max-w-2xl lg:mx-0">
-        <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl gradient-text-left">together, we shape the future of robotics
+      <div class="mx-auto max-w-4xl lg:mx-0">
+        <h2 class="text-4xl font-bold tracking-tight text-white sm:text-8xl gradient-text-left">together, we shape the future of robotics
         </h2>
         <p class="mt-6 text-2xl leading-8 text-gray-300">Creating a collaborative platform for robotics enthusiasts,
           beginners, and professionals to learn, innovate, and share</p>
