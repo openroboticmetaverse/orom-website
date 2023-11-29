@@ -26,6 +26,7 @@ export class ThreeHelper implements IThreeHelper {
     this.lights = new ThreeLights()
 
     this.controls.enabled = false
+    this.setupScrollHandling();
 
     this.scene.add(this.grid.getGridMesh())
     this.lights.forEach((light) => this.scene.add(light))
@@ -42,6 +43,26 @@ export class ThreeHelper implements IThreeHelper {
       renderer.setSize(width, height)
     })
   }
+
+  private throttle(func: (ev: Event) => any, limit: number): (this: Window, ev: Event) => void {
+    let inThrottle: boolean;
+    return function(this: Window, ev: Event) {
+      if (!inThrottle) {
+        func.call(this, ev);
+        inThrottle = true;
+        setTimeout(() => inThrottle = false, limit);
+      }
+    }
+  }
+
+  private setupScrollHandling(): void {
+    window.addEventListener('scroll', this.throttle(() => {
+      // Handle your scroll-related updates here
+      // Maybe adjust camera, lights, or other elements
+    }, 100)); // Adjust the 100ms to whatever feels right
+  }
+
+
 
   public animate(): void {
     const animateLoop = () => {
