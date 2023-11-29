@@ -11,7 +11,7 @@
       </div>
       <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
 
-        <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+        <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-16 sm:grid-cols-2 lg:grid-cols-4">
 
           <div class="flex flex-col-reverse">
             <dt class="text-base leading-7 text-gray-300">Get Inspired</dt>
