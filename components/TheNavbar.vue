@@ -116,6 +116,12 @@ const menuButton = ref(null); // New ref to store the menu button element
 
 const toggleMenu = () => {
     isMenuOpen.value = !isMenuOpen.value;
+    const mainContent = document.getElementById('main-content');
+    if (isMenuOpen.value) {
+        mainContent.classList.add('blurred-background');
+    } else {
+        mainContent.classList.remove('blurred-background');
+    }
 };
 
 const updateGradient = () => {
@@ -170,5 +176,10 @@ onBeforeUnmount(() => {
 .sticky.top-0.z-10 {
     padding-top: env(safe-area-inset-top);
 }
+
+.blurred-background {
+    backdrop-filter: blur(10px); /* Feel free to adjust the px to get the desired blur */
+}
+
 
 </style>
