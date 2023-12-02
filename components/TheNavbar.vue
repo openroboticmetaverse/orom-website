@@ -1,9 +1,9 @@
 <template>
     <div ref="navbarContainer" class="fixed sticky top-0 z-10 bg-black">
         <nav ref="navbar" class="bg-black">
-            <div class=" mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
+            <div class="  px-2 sm:px-6 lg:px-8 ">
                 <div class="relative flex h-20 items-center justify-between">
-                    <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+                    <div class="absolute inset-y-0 right-0 flex items-center sm:hidden ">
                         <!-- Mobile menu button-->
                         <button type="button" @click="toggleMenu" ref="menuButton"
                             class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
@@ -116,6 +116,12 @@ const menuButton = ref(null); // New ref to store the menu button element
 
 const toggleMenu = () => {
     isMenuOpen.value = !isMenuOpen.value;
+    const mainContent = document.getElementById('main-content');
+    if (isMenuOpen.value) {
+        mainContent.classList.add('blurred-background');
+    } else {
+        mainContent.classList.remove('blurred-background');
+    }
 };
 
 const updateGradient = () => {
@@ -170,5 +176,10 @@ onBeforeUnmount(() => {
 .sticky.top-0.z-10 {
     padding-top: env(safe-area-inset-top);
 }
+
+.blurred-background {
+    backdrop-filter: blur(10px); /* Feel free to adjust the px to get the desired blur */
+}
+
 
 </style>

@@ -24,70 +24,103 @@
 
                 <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 
-                    <TeamCard>
+                    <TeamCard linkedinLink="https://www.linkedin.com/in/aminekharrat/" githubLink="https://github.com/AmineKharrat">
                         <template v-slot:image>
                             <img class="mx-auto mb-4 w-36 h-36 rounded-full"
-                                src="https://media.kleinezeitung.at/images/thumb/1000x1000/focal0x0-0x0/3/9/5/6194069/Kris-Jenner-arrives-on-the-red-carpet-for-The-Met-Gala-at-The-Metropolitan-Museum-of-Art-celebrating-the-Costume-Instit_1663953438306423.jpg"
-                                alt="Bonnie Avatar">
+                                src="/pages/team/amine.jpg"
+                                alt="Amine Avatar">
 
                         </template>
                         <template v-slot:name>
-                            <a href="#" class="text-gray-50">Kris</a>
+                            <a class="text-gray-50">Amine</a>
                         </template>
                         <template v-slot:description>
-                            <p>CEO & Managing Partner</p>
+                            <p>CEO</p>
                         </template>
 
 
                     </TeamCard>
-                    <TeamCard>
+                    <TeamCard linkedinLink="https://www.linkedin.com/in/karim-siala/" githubLink="https://github.com/karimsiala">
                         <template v-slot:image>
                             <img class="mx-auto mb-4 w-36 h-36 rounded-full"
-                                src="https://hips.hearstapps.com/hmg-prod/images/elle-kim-kardashian-met-gala-gettyimages-955778524-1525745624.jpg?crop=0.5xw:1xh;center,top&resize=1000:*"
-                                alt="Jese Avatar">
+                                src="/pages/team/karim.jpg"
+                                alt="Karim Avatar">
 
                         </template>
                         <template v-slot:name>
-                            <a href="#" class="text-gray-50">Kim</a>
+                            <a class="text-gray-50">Karim</a>
                         </template>
                         <template v-slot:description>
-                            <p>CTO</p>
+                            <p>Nerd</p>
                         </template>
 
 
                     </TeamCard>
-                    <TeamCard>
+                    <TeamCard linkedinLink="https://www.linkedin.com/in/hazar-karadag/" githubLink="https://github.com/parhasard">
                         <template v-slot:image>
                             <img class="mx-auto mb-4 w-36 h-36 rounded-full"
-                                src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/05/23/15/gettyimages-1147428861-0.jpg?width=1200&height=1200&fit=crop"
-                                alt="Michael Avatar">
+                                src="/pages/team/hazar.jpg"
+                                alt="Hazar Avatar">
 
                         </template>
                         <template v-slot:name>
-                            <a href="#" class="text-gray-50">Kylie</a>
+                            <a class="text-gray-50">Hazar</a>
                         </template>
                         <template v-slot:description>
-                            <p>Styling</p>
+                            <p>Queen</p>
                         </template>
 
 
                     </TeamCard>
-                    <TeamCard>
+                    <TeamCard linkedinLink="https://www.linkedin.com/in/luca-sophie-lamerichs-131104206/" githubLink="https://github.com/openroboverse">
                         <template v-slot:image>
                             <img class="mx-auto mb-4 w-36 h-36 rounded-full"
-                                src="https://hips.hearstapps.com/hmg-prod/images/khloe-kardashian-gettyimages-470897864-1526129854.jpg?crop=0.5xw:1xh;center,top&resize=1000:*"
-                                alt="Sofia Avatar">
+                                src="/pages/team/luca.jpg"
+                                alt="Luca Avatar">
 
                         </template>
                         <template v-slot:name>
-                            <a href="#" class="text-gray-50">Khloe</a>
+                            <a class="text-gray-50">Luca</a>
                         </template>
                         <template v-slot:description>
-                            <p>Communications</p>
+                            <p>Luca</p>
                         </template>
 
 
                     </TeamCard>
+                    <TeamCard linkedinLink="https://www.linkedin.com/in/janstrehl/" githubLink="https://github.com/strehljd">
+                        <template v-slot:image>
+                            <img class="mx-auto mb-4 w-36 h-36 rounded-full"
+                                src="/pages/team/jan.jpg"
+                                alt="Jan Avatar">
+
+                        </template>
+                        <template v-slot:name>
+                            <a class="text-gray-50">Jan</a>
+                        </template>
+                        <template v-slot:description>
+                            <p>Dev</p>
+                        </template>
+
+
+                    </TeamCard>
+                    <TeamCard linkedinLink="https://www.linkedin.com/in/estefania-betancourt-9545531a9/" githubLink="https://github.com/openroboverse">
+                        <template v-slot:image>
+                            <img class="mx-auto mb-4 w-36 h-36 rounded-full"
+                                src="/pages/team/estafania.jpg"
+                                alt="Estafania Avatar">
+
+                        </template>
+                        <template v-slot:name>
+                            <a class="text-gray-50">Jan</a>
+                        </template>
+                        <template v-slot:description>
+                            <p>Dev</p>
+                        </template>
+
+
+                    </TeamCard>
+
 
 
                 </div>

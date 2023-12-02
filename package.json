@@ -11,12 +11,15 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/typescript-build": "^3.0.2",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "nuxt": "^3.7.3",
     "tailwindcss-dark-mode": "^1.1.7"
   },
   "dependencies": {
-    "gsap": "^3.12.2"
+    "gsap": "^3.12.2",
+    "three": "^0.158.0",
+    "vanta": "^0.5.24"
   }
 }

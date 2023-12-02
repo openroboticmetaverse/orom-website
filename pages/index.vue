@@ -2,7 +2,7 @@
   <div>
     <TheHeader />
     <LandingCardSection>
-      <template v-slot:description>      <h2 class="text-lg font-bold tracking-tight text-center gradient-text-1 sm:text-2xl pb-10"> We aim to accelerate the
+      <template v-slot:description>      <h2 class="text-2xl font-bold tracking-tight text-center gradient-text-1 sm:text-5xl pb-10"> We aim to accelerate the
         development in robotics by focusing on our three pillars:</h2></template>
 
       We aim to accelerate the development in robotics by focusing on our three pillars:
@@ -79,7 +79,7 @@
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto max-w-8xl lg:mx-0">
 
-            <h2 class="text-4xl font-bold tracking-tight text-left text-white sm:text-6xl">Network</h2>
+            <h2 class="text-4xl font-bold tracking-tight gradient-text-left text-left text-white sm:text-6xl">Network</h2>
             <p class="mt-6 text-lg leading-8 ml-200 max-w-2xl text-left text-gray-300">Our goal is to cultivate a
               community where robotics enthusiasts can meet, collaborate on projects, and share insights, enhancing
               partnerships and idea exchange.</p>

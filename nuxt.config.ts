@@ -11,6 +11,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en'
       },
+ 
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
         { name: 'apple-mobile-web-app-capable', content: 'yes' },
