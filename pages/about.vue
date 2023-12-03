@@ -1,5 +1,7 @@
 <template >
+<div>
     <ThreejsCanva />
+    
 
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold gradient-text-left ">about</h2>
@@ -130,6 +132,7 @@
             </div>
         </div>
     </div>
+</div>
 </template>
   
 <script setup>
