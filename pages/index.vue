@@ -2,8 +2,11 @@
   <div>
     <TheHeader />
     <LandingCardSection>
-      <template v-slot:description>      <h2 class="text-2xl font-bold tracking-tight text-center gradient-text-1 sm:text-5xl pb-10"> We aim to accelerate the
-        development in robotics by focusing on our three pillars:</h2></template>
+      <template v-slot:description>
+        <h2 class="text-2xl font-bold tracking-tight text-center gradient-text-1 sm:text-5xl pb-10"> We aim to accelerate
+          the
+          development in robotics by focusing on our three pillars:</h2>
+      </template>
 
       We aim to accelerate the development in robotics by focusing on our three pillars:
       <template v-slot:left>
@@ -12,7 +15,7 @@
             Learn
           </template>
           <template v-slot:text>
-            We prioritize a hands-on, community-driven
+            We prioritize a hands-on, community driven
             approach to learning. We encourage a culture of support where members, regardless of their experience level,
             learn from and assist each other
           </template>

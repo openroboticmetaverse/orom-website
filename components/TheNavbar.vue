@@ -1,5 +1,5 @@
 <template>
-    <div ref="navbarContainer" class="fixed sticky top-0 z-10 bg-black">
+    <div ref="navbarContainer" class="fixed sticky top-0 z-10">
         <nav ref="navbar" class="bg-black">
             <div class="  px-2 sm:px-6 lg:px-8 ">
                 <div class="relative flex h-20 items-center justify-between">
@@ -33,30 +33,29 @@
                     </div>
                     <div class="flex flex-1  justify-between sm:items-stretch ">
                         <div class="flex flex-shrink-0 ">
-                            <img class="h-8  w-auto" src="/icon.svg"
-                                alt="Your Company"> 
-                                <p class="ml-5 mt-1">Open Roboverse</p>
+                            <img class="h-10 w-auto" src="../assets/icon-with-text.png"
+                                alt="open robotic metaverse logo">
                         </div>
                         <div class="hidden sm:ml-6 sm:block ml-auto">
                             <div class="flex space-x-4">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                                 <NuxtLink to="/"
-                                    class=" text-gray-300 duration-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                                    class="nav-underline">
                                     Home</NuxtLink>
                                 <NuxtLink to="/about"
-                                    class=" text-gray-300 duration-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                                    class="nav-underline">
                                     About</NuxtLink>
                                 <NuxtLink to="/team"
-                                    class=" text-gray-300 duration-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                                    class="nav-underline">
                                     Team</NuxtLink>
                                 <NuxtLink to="/projects"
-                                    class=" text-gray-300 duration-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                                    class="nav-underline">
                                     Projects</NuxtLink>
                                 <NuxtLink to="/newsroom"
-                                    class=" text-gray-300 duration-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                                    class="nav-underline">
                                     Newsroom</NuxtLink>
                                 <NuxtLink to="/contact"
-                                    class=" text-gray-300 duration-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                                    class="nav-underline">
                                     Contact</NuxtLink>
                             </div>
                         </div>
@@ -127,7 +126,18 @@ const toggleMenu = () => {
 const updateGradient = () => {
     const scrolled = window.scrollY;
     if (navbar.value) {
-        navbar.value.style.background = `linear-gradient(to top, #192033 ,black ${scrolled / 2}px)`;
+        navbar.value.style.background = `linear-gradient(180deg, rgba(0,0,0,${Math.min(scrolled * 0.0005, 0.8)}) 0%, rgba(0,0,0,0) 100%)`;
+    }
+};
+
+const updateNavbarStyle = () => {
+    const scrolled = window.scrollY;
+    const blurIntensity = Math.min(scrolled * 0.1, 10); // Max blur at 2px
+    const backgroundColorOpacity = Math.min(scrolled * 0.001, 0.05); // Max opacity at 0.1 (10%)
+
+    if (navbar.value) {
+        navbar.value.style.backdropFilter = `blur(${blurIntensity}px)`;
+        navbar.value.style.backgroundColor = `rgba(255, 255, 255, ${backgroundColorOpacity})`;
     }
 };
 
@@ -141,7 +151,7 @@ const handleClickOutside = (event) => {
 };
 
 onMounted(() => {
-    window.addEventListener('scroll', updateGradient);
+    window.addEventListener('scroll', updateNavbarStyle);
     window.addEventListener('click', handleClickOutside);
     nextTick(() => {
         if (navbarContainer.value) {
@@ -153,7 +163,7 @@ onMounted(() => {
 const navbarContainer = ref(null);
 
 onBeforeUnmount(() => {
-    window.removeEventListener('scroll', updateGradient);
+    window.removeEventListener('scroll', updateNavbarStyle);
     window.removeEventListener('click', handleClickOutside);
 });
 
@@ -181,5 +191,32 @@ onBeforeUnmount(() => {
     backdrop-filter: blur(10px); /* Feel free to adjust the px to get the desired blur */
 }
 
+nav {
+    backdrop-filter: blur(0px); /* Adjust initial blur if needed */
+}
+
+/* Tailwind CSS class using @apply for base styles */
+.nav-underline {
+  @apply inline-block relative text-gray-300 duration-300 hover:text-white px-3 py-2 text-sm font-medium;
+}
+
+/* Custom CSS for the animated underline using pseudo-element */
+.nav-underline::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background: currentColor; /* Uses the text color */
+  transition: width 0.2s ease-in-out; /* Animation for the underline */
+  position: absolute;
+  bottom: 0; /* Position at the bottom of the element */
+  left: 0;
+}
+
+/* Change the width of the pseudo-element on hover to create the underline effect */
+.nav-underline:hover::after,
+.nav-underline:focus::after {
+  width: 80%;
+}
 
 </style>
