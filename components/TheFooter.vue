@@ -3,7 +3,9 @@
 
         <footer class="bg-gray dark:bg-gray-900">
             <div class="mx-auto w-full max-w-screen-7xl p-9 py-6 lg:py-8">
-                <div class="flex justify-between">
+                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                <div class="sm:flex sm:items-center sm:justify-between">
+                    <div class="flex justify-between">
                     <div class="mb-6 md:mb-0">
                         <a href="https://openroboticmetaverse.org/" class="flex items-center">
                             <img src="../assets/icon-with-text.png" class="h-10 mr-3" alt="orom Logo" />
@@ -25,10 +27,8 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> 
                 </div>
-                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-                <div class="sm:flex sm:items-center sm:justify-between">
                     <span class="text-sm text-gray-300 sm:text-center dark:text-gray-400">© 2023 <a class="hover:underline">orom e.V.</a> | All Rights Reserved.
                     </span>
                     <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
