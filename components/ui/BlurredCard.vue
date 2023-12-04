@@ -5,7 +5,7 @@
             <Icon :name="iconName" :color="iconColor" :size="iconSize" />
 
         </div>
-        <h3 class="mb-2 text-[25px] font-bold ">{{ title }}</h3>
+        <h3 class="mb-2 text-2xl font-light text-sky-600">{{ title }}</h3>
         <p class="text-gray-300">{{ description }}</p>
     </div>
 </template>

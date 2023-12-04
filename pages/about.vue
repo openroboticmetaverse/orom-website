@@ -1,10 +1,10 @@
 <template >
-    <div>
+    <div class="font-poppins">
         <ThreejsCanva />
 
 
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold gradient-text-left ">about</h2>
+            <h2 class="mb-4 text-6xl tracking-tight font-extralight gradient-text-left ">about</h2>
             <p class="sm:text-xl">We are a student initiative currently in the founding process. Our founders are students
                 from
                 RWTH Aachen University and FH Aachen and highly motivated to strengthen the robotic community in and outside
@@ -13,7 +13,7 @@
         </div>
 
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold gradient-text-left ">vision</h2>
+            <h2 class="mb-4 text-6xl tracking-tight font-extralight gradient-text-left ">vision</h2>
             <p class="sm:text-xl">We aim to accelerate the development of robotic applications by making use of the
                 advancements
                 in Simulation technology and Artificial Intelligence. We support individuals in acquiring skills and
@@ -24,7 +24,7 @@
 
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
             <div class="max-w-screen mb-8 lg:mb-16">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold gradient-text-left ">mission</h2>
+                <h2 class="mb-4 text-6xl tracking-tight font-extralight gradient-text-left ">mission</h2>
                 <p class="sm:text-xl">Creating a collaborative platform for robotics enthusiasts, beginners, and
                     professionals
                     to learn, innovate, and share in a fun, engaging environment. </p>
@@ -39,7 +39,7 @@
 
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
             <div class="max-w-screen mb-8 lg:mb-16">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold gradient-text-left ">the vision we want to achieve
+                <h2 class="mb-4 text-6xl tracking-tight font-extralight gradient-text-left ">the vision we want to achieve
                 </h2>
                 <p class="sm:text-xl">orom is forging a new realm at the intersection of robotics and virtual environments.
                     Our
