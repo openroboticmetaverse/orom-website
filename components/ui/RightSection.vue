@@ -13,13 +13,13 @@
                 
               </div>
               <div class="relative  gap-12 m-auto lg:inline-flex md:order-first">
-                <div class="max-w-xl  lg:text-left">
-                  <div>
+                <div class="mx-auto max-w-4xl px-0 lg:px-0">
+                  <div class="mx-auto max-w-4xl lg:mx-0">
 
                     <p class="font-bold tracking-tight gradient-text-left text-4xl sm:text-8xl">
                         <slot name="title"></slot>
                     </p>
-                    <p class="max-w-xl mt-4 text-2xl sm:text-2xl lg:text-4xl  tracking-tight text-gray-300">
+                    <p class="max-w-xl mt-4 text-4xl tracking-tight text-gray-300">
                         <slot name="description"></slot>
                         <slot name="email"></slot>
                         <slot name="icons"></slot>
