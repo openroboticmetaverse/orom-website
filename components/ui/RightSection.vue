@@ -12,8 +12,8 @@
                 <slot name="image"></slot>
                 
               </div>
-              <div class="relative items-center gap-12 m-auto lg:inline-flex md:order-first">
-                <div class="max-w-xl text-center lg:text-left">
+              <div class="relative  gap-12 m-auto lg:inline-flex md:order-first">
+                <div class="max-w-xl  lg:text-left">
                   <div>
 
                     <p class="font-bold tracking-tight gradient-text-left text-4xl sm:text-8xl">
