@@ -1,10 +1,9 @@
 <template>
     <section>
       <section class="sticky">
-        <div class="max-w-lg px-4 pb-24 mx-auto text-left md:max-w-none md:text-center">
-          <div class='text-center py-4 space-x-4 space-y-4 md:space-y-0'>
-  
-            <button class="backdrop-blur-sm transition duration-500 ease-in-out bg-[#192033] border border-[#E2E8F0] translate-y-1 text-white hover:bg-neutral-500 text-lg font-semibold py-3 px-6 rounded-3xl inline-flex items-center">
+        <div class="max-w-lg px-4 pb-24 mx-auto text-center">
+          <div class="flex flex-col items-center justify-center h-full">
+            <button class="backdrop-blur-sm transition duration-500 ease-in-out bg-[#192033] border border-[#E2E8F0] translate-y-1 text-white hover:bg-neutral-500 text-lg font-semibold py-3 px-6 rounded-3xl inline-flex items-center mb-4">
               <span> Explore opportunities</span>
             </button>
   
