@@ -16,6 +16,25 @@
                 </div>
             </template>
         </PhotoSection>
+        <PhotoSection>
+
+            <template v-slot:content>
+                <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                    <div class="mx-auto max-w-8xl lg:mx-0">
+                        <!-- <h2 class="text-4xl font-bold tracking-tight text-center text-white sm:text-6xl"></h2> -->
+                        <!-- <p class=" justify-center inset-0 mt-6 text-lg leading-8  text-gray-300">Lorem ipsum dolor sit
+                            amet, consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minus aut autem qui sint, necessitatibus omnis reiciendis quo nobis. Doloribus quos cumque molestias dicta magni voluptatem, natus nisi ex perspiciatis, aut, voluptatibus tenetur omnis temporibus optio ea cupiditate facere quam. </p> -->
+                            <blockquote class="twitter-tweet" data-lang="en" data-theme="light"><p lang="en" dir="ltr">Sunsets don&#39;t get much better than this one over <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>. <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw">#nature</a> <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw">#sunset</a> <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the Interior (@Interior) <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw">May 5, 2014</a></blockquote> 
+                    
+                        </div>
+
+
+                </div>
+            </template>
+        </PhotoSection>
+        <UiEmptySection>
+            
+        </UiEmptySection>
 
     </div>
 </template>
