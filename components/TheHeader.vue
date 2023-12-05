@@ -6,7 +6,7 @@
       <div class="mx-auto max-w-4xl lg:mx-0">
         <h2 class="text-4xl font-bold tracking-tight text-white sm:text-8xl gradient-text-left">together, we shape the future of robotics
         </h2>
-        <p class="mt-6 text-4xl sm:text-2xl lg:text-4xl leading-8 text-gray-300">Creating a collaborative platform for robotics enthusiasts,
+        <p class="mt-6 text-2xl sm:text-2xl lg:text-4xl leading-8 text-gray-300">Creating a collaborative platform for robotics enthusiasts,
           beginners, and professionals to learn, innovate, and share</p>
       </div>
       <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">

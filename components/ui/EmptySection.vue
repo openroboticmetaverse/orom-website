@@ -9,7 +9,7 @@
       >
 
         <h1
-          class="font-extrabold leading-10 tracking-tight pb-10 text-left gradient-text-left text-center sm:leading-none text-5xl sm:text-8xl"
+          class="font-extrabold leading-10 tracking-tight pb-10 text-left gradient-text-left text-center sm:leading-none text-4xl sm:text-8xl "
         >
           <span class="inline md:block">
             <slot name="mainTitle1"></slot>
@@ -19,7 +19,7 @@
           ><slot name="mainTitle2"></slot></span>
         </h1>
         <h2
-          class=" leading-10 tracking-tight text-left px-10 text-center sm:leading-none text-3xl sm:text-4xl"
+          class=" leading-10 tracking-tight text-left px-10 text-center sm:leading-none text-2xl sm:text-2xl lg:text-4xl"
         >
           <span
             class="relative mt-2 bg-clip-text text-gray-300 text-center max-w-8xl md:inline-block"

@@ -2,7 +2,7 @@
 
 <div class="text-left">
 
-    <div class='sm:px-28'>
+    <div class='sm:px-12'>
       <section class="relative flex items-center w-full">
         <div class="relative items-center w-full px-5 mx-auto md:px-9 lg:px-12 max-w-9xl">
           <div class="relative flex-col items-start m-auto align-middle">
@@ -11,10 +11,10 @@
                 <div class="max-w-xl text-center lg:text-left">
                   <div>
 
-                    <p class="text-6xl font-bold tracking-tight gradient-text-left sm:text-8xl">
+                    <p class="font-bold tracking-tight gradient-text-left text-4xl sm:text-8xl">
                         <slot name="title"></slot>
                     </p>
-                    <p class="max-w-xl mt-4 text-3xl sm:text-4xl tracking-tight text-gray-300">
+                    <p class="max-w-xl mt-4 text-2xl sm:text-2xl lg:text-4xl px-10 sm:px-0 tracking-tight text-gray-300">
                         <slot name="description"></slot>
                     </p>
                   </div>
