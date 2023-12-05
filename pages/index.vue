@@ -56,6 +56,8 @@
       </template>
     </UiEmptySection>
 
+    <UiButtonSection></UiButtonSection>
+
     <UiLeftSection>
       <template v-slot:title>
         Network
