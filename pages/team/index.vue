@@ -24,7 +24,7 @@
 
                 <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 
-                    <TeamCard linkedinLink="https://www.linkedin.com/in/aminekharrat/" githubLink="https://github.com/AmineKharrat">
+                    <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/aminekharrat/" githubLink="https://github.com/AmineKharrat">
                         <template v-slot:image>
                             <img class="mx-auto mb-4 w-36 h-36 rounded-full"
                                 src="/pages/team/amine.jpg"
@@ -39,8 +39,8 @@
                         </template>
 
 
-                    </TeamCard>
-                    <TeamCard linkedinLink="https://www.linkedin.com/in/karim-siala/" githubLink="https://github.com/karimsiala">
+                    </TeamMemberProfile>
+                    <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/karim-siala/" githubLink="https://github.com/karimsiala">
                         <template v-slot:image>
                             <img class="mx-auto mb-4 w-36 h-36 rounded-full"
                                 src="/pages/team/karim.jpg"
@@ -55,8 +55,8 @@
                         </template>
 
 
-                    </TeamCard>
-                    <TeamCard linkedinLink="https://www.linkedin.com/in/hazar-karadag/" githubLink="https://github.com/parhasard">
+                    </TeamMemberProfile>
+                    <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/hazar-karadag/" githubLink="https://github.com/parhasard">
                         <template v-slot:image>
                             <img class="mx-auto mb-4 w-36 h-36 rounded-full"
                                 src="/pages/team/hazar.jpg"
@@ -71,8 +71,8 @@
                         </template>
 
 
-                    </TeamCard>
-                    <TeamCard linkedinLink="https://www.linkedin.com/in/luca-sophie-lamerichs-131104206/" githubLink="https://github.com/openroboverse">
+                    </TeamMemberProfile>
+                    <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/luca-sophie-lamerichs-131104206/" githubLink="https://github.com/openroboverse">
                         <template v-slot:image>
                             <img class="mx-auto mb-4 w-36 h-36 rounded-full"
                                 src="/pages/team/luca.jpg"
@@ -87,8 +87,8 @@
                         </template>
 
 
-                    </TeamCard>
-                    <TeamCard linkedinLink="https://www.linkedin.com/in/janstrehl/" githubLink="https://github.com/strehljd">
+                    </TeamMemberProfile>
+                    <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/janstrehl/" githubLink="https://github.com/strehljd">
                         <template v-slot:image>
                             <img class="mx-auto mb-4 w-36 h-36 rounded-full"
                                 src="/pages/team/jan.jpg"
@@ -103,8 +103,8 @@
                         </template>
 
 
-                    </TeamCard>
-                    <TeamCard linkedinLink="https://www.linkedin.com/in/estefania-betancourt-9545531a9/" githubLink="https://github.com/openroboverse">
+                    </TeamMemberProfile>
+                    <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/estefania-betancourt-9545531a9/" githubLink="https://github.com/openroboverse">
                         <template v-slot:image>
                             <img class="mx-auto mb-4 w-36 h-36 rounded-full"
                                 src="/pages/team/estafania.jpg"
@@ -112,14 +112,14 @@
 
                         </template>
                         <template v-slot:name>
-                            <a class="text-gray-50">Jan</a>
+                            <a class="text-gray-50">Estafania</a>
                         </template>
                         <template v-slot:description>
                             <p>Dev</p>
                         </template>
 
 
-                    </TeamCard>
+                    </TeamMemberProfile>
 
 
 
@@ -132,7 +132,6 @@
 
 <script setup>
 import PhotoSection from '~/components/landing/PhotoSection.vue';
-import TeamCard from '~/components/team/TeamCard.vue'
 
 useHead({
     title: 'Team | Nuxt Template',
