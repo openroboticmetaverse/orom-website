@@ -12,7 +12,7 @@
                  
             </template>
       <template v-slot:email>
-        <a  href="mailto:openroboticmetaverse@gmail.com" class="gradient-text-right hover:text-teal-200 duration-500 ease-in-out">openroboticmetaverse@gmail.com</a>
+        <a  href="mailto:openroboticmetaverse@gmail.com" class="gradient-text-right hover:text-teal-200 duration-500 ease-in-out email-wrap">openroboticmetaverse@gmail.com</a>
             </template>
 
             
@@ -57,3 +57,10 @@ useHead({
 
 
 </script>
+
+<style scoped>
+
+.email-wrap {
+  word-break: break-all; 
+}
+</style>
