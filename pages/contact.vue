@@ -2,6 +2,7 @@
     <div>
 
         <UiRightSection>
+          
       <template v-slot:title>
         Reach us!
       </template>
@@ -35,6 +36,7 @@
       </template>
       
       <template v-slot:image>
+        <div class="py-10"></div>
         <img class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto " alt="hero" src="/pages/contact/contact.png" />
       </template>
  
