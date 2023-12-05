@@ -22,7 +22,7 @@
 
                     <div class="mx-auto max-w-8xl lg:mx-0">
                         
-                        <p class="max-w-md mt-4 text-2xl sm:text-4xl inset-0 leading-8 tracking-tight text-gray-300">
+                        <p class="max-w-md mt-4 text-xl flex-wrap sm:text-4xl inset-0 leading-8 tracking-tight text-gray-300">
                         <slot name="description"></slot>
                         <slot name="email"></slot>
                         <slot name="icons"></slot>
