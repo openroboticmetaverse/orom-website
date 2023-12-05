@@ -19,7 +19,7 @@
                     <p class="font-bold tracking-tight gradient-text-left text-4xl sm:text-8xl">
                         <slot name="title"></slot>
                     </p>
-                    <p class="max-w-xl mt-4 text-4xl tracking-tight text-gray-300">
+                    <p class="max-w-xl mt-4 text-2xl sm:text-4xl inset-0 leading-8 tracking-tight text-gray-300">
                         <slot name="description"></slot>
                         <slot name="email"></slot>
                         <slot name="icons"></slot>
