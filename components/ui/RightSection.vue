@@ -7,6 +7,11 @@
         <div class="relative items-center w-full px-5 mx-auto md:px-9 lg:px-12 max-w-9xl">
           <div class="relative flex-col items-start m-auto align-middle">
             <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
+
+              <div class="order-first block w-full mt-12 aspect-square lg:mt-20">
+                <slot name="image"></slot>
+                
+              </div>
               <div class="relative items-center gap-12 m-auto lg:inline-flex md:order-first">
                 <div class="max-w-xl text-center lg:text-left">
                   <div>
@@ -24,10 +29,7 @@
               </div>
 
               
-              <div class="order-first block w-full mt-12 aspect-square lg:mt-20">
-                <slot name="image"></slot>
-                
-              </div>
+
             </div>
           </div>
         </div>
