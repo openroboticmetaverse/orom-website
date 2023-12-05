@@ -8,7 +8,7 @@
             <template v-slot:content>
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
                     <div class="mx-auto max-w-8xl lg:mx-0">
-                        <h2 class="text-4xl font-bold tracking-tight text-left text-white sm:text-6xl">Meet the Team</h2>
+                        <h2 class="font-extrabold leading-10 tracking-tight pb-10 text-left gradient-text-left text-left sm:leading-none text-4xl sm:text-8xl ">Meet the team!</h2>
                         <p class="mt-6 text-lg leading-8 ml-200 max-w-2xl text-left text-gray-300">Lorem ipsum dolor sit
                             amet, consectetur adipisicing elit. Doloremque sit laudantium animi accusamus dignissimos
                             aspernatur itaque obcaecati aliquid voluptatibus eos. Quisquam illo accusantium, praesentium
