@@ -19,8 +19,9 @@
                     <p class="font-bold tracking-tight gradient-text-left text-4xl sm:text-8xl">
                         <slot name="title"></slot>
                     </p>
-                    <p class="max-w-xl mt-4 text-2xl sm:text-2xl lg:text-4xl px-10 sm:px-0 tracking-tight text-gray-300">
+                    <p class="max-w-xl mt-4 text-2xl sm:text-2xl lg:text-4xl px-2 sm:px-0 tracking-tight text-gray-300">
                         <slot name="description"></slot>
+                        <slot name="email"></slot>
                         <slot name="icons"></slot>
                     </p>
                   </div>
