@@ -3,10 +3,10 @@
 <div class="text-left">
 
     <div class='sm:px-12'>
-      <section class="relative flex items-center w-full">
-        <div class="relative items-center w-full px-5 mx-auto md:px-9 lg:px-12 max-w-9xl">
+      <section class="relative overflow-hidden isolate ">
+        <div class="relative  px-5 mx-auto md:px-9 lg:px-12 max-w-9xl">
           <div class="relative flex-col items-start m-auto align-middle">
-            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
+            <div class="grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-24">
 
               <div class="order-first block w-full mt-12 aspect-square lg:mt-20">
                 <slot name="image"></slot>
@@ -19,11 +19,15 @@
                     <p class="font-bold tracking-tight gradient-text-left text-4xl sm:text-8xl">
                         <slot name="title"></slot>
                     </p>
-                    <p class="max-w-xl mt-4 text-2xl sm:text-4xl inset-0 leading-8 tracking-tight text-gray-300">
+
+                    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                        
+                        <p class="max-w-md mt-4 text-xl sm:text-4xl inset-0 leading-8 tracking-tight text-gray-300">
                         <slot name="description"></slot>
                         <slot name="email"></slot>
                         <slot name="icons"></slot>
-                    </p>
+                    </p></div>
+                    
                   </div>
 
                 </div>
