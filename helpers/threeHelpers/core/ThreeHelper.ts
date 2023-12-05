@@ -73,9 +73,9 @@ export class ThreeHelper implements IThreeHelper {
         this.scale += 0.005
         this.grid.getGridMesh().scale.set(this.scale, this.scale, this.scale)
       }
-      // this.camera.position.x += 0.1;
-      this.grid.getGridMesh().position.x += 0.1;
-      this.grid.getGridMesh().rotation.y += 0.0008;
+      this.camera.position.x += 0.1;
+      // this.grid.getGridMesh().position.x += 0.1;
+      // this.grid.getGridMesh().rotation.y += 0.0008;
 
       this.controls.update()
       this.renderer.render(this.scene, this.camera)
