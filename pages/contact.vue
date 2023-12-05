@@ -12,7 +12,7 @@
                  
             </template>
       <template v-slot:email>
-        <a  href="mailto:openroboticmetaverse@gmail.com" class="max-w-xl text-left mt-4 text-xl sm:text-2xl lg:text-4xl px-10 sm:px-0 tracking-tight gradient-text-right hover:text-teal-200 duration-500 ease-in-out">openroboticmetaverse@gmail.com</a>
+        <a  href="mailto:openroboticmetaverse@gmail.com" class="gradient-text-right hover:text-teal-200 duration-500 ease-in-out">openroboticmetaverse@gmail.com</a>
             </template>
 
             
