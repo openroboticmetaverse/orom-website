@@ -14,11 +14,11 @@
         <section class="dark:bg-gray-900">
             <div class="py-8 px-4 mx-auto max-w-screen-xl text-center  lg:py-16 lg:px-6 ">
 
-                <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <div class="grid gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
 
                     <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/aminekharrat/" githubLink="https://github.com/AmineKharrat">
                         <template v-slot:image>
-                            <img class="mx-auto mb-4 w-36 h-36 rounded-full"
+                            <img class="mx-auto mb-4 w-36 h-auto rounded-full"
                                 src="/pages/team/amine.jpg"
                                 alt="Amine Avatar">
 
@@ -34,7 +34,7 @@
                     </TeamMemberProfile>
                     <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/karim-siala/" githubLink="https://github.com/karimsiala">
                         <template v-slot:image>
-                            <img class="mx-auto mb-4 w-36 h-36 rounded-full"
+                            <img class="mx-auto mb-4 w-36 h-auto rounded-full"
                                 src="/pages/team/karim.jpg"
                                 alt="Karim Avatar">
 
@@ -50,7 +50,7 @@
                     </TeamMemberProfile>
                     <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/hazar-karadag/" githubLink="https://github.com/parhasard">
                         <template v-slot:image>
-                            <img class="mx-auto mb-4 w-36 h-36 rounded-full"
+                            <img class="mx-auto mb-4 w-36 h-auto rounded-full"
                                 src="/pages/team/hazar.jpg"
                                 alt="Hazar Avatar">
 
@@ -66,7 +66,7 @@
                     </TeamMemberProfile>
                     <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/luca-sophie-lamerichs-131104206/" githubLink="https://github.com/openroboverse">
                         <template v-slot:image>
-                            <img class="mx-auto mb-4 w-36 h-36 rounded-full"
+                            <img class="mx-auto mb-4 w-36 h-auto rounded-full"
                                 src="/pages/team/luca.jpg"
                                 alt="Luca Avatar">
 
@@ -82,7 +82,7 @@
                     </TeamMemberProfile>
                     <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/janstrehl/" githubLink="https://github.com/strehljd">
                         <template v-slot:image>
-                            <img class="mx-auto mb-4 w-36 h-36 rounded-full"
+                            <img class="mx-auto mb-4 w-36 h-auto rounded-full"
                                 src="/pages/team/jan.jpg"
                                 alt="Jan Avatar">
 
@@ -98,7 +98,7 @@
                     </TeamMemberProfile>
                     <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/estefania-betancourt-9545531a9/" githubLink="https://github.com/openroboverse">
                         <template v-slot:image>
-                            <img class="mx-auto mb-4 w-36 h-36 rounded-full"
+                            <img class="mx-auto mb-4 w-36 h-auto rounded-full"
                                 src="/pages/team/estafania.jpg"
                                 alt="Estafania Avatar">
 
@@ -128,7 +128,6 @@
 </template>
 
 <script setup>
-import PhotoSection from '~/components/landing/PhotoSection.vue';
 
 useHead({
     title: 'Team | Nuxt Template',
