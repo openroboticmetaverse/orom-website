@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
         <div>
             <UiEmptySection>
       <template v-slot:mainTitle2>
@@ -52,11 +52,4 @@ useHead({
       }]
 })
 
-</script> -->
-
-<template>
-
-</template>
-
-<script>
 </script>
