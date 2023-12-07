@@ -61,10 +61,10 @@
             <!-- Mobile menu, show/hide based on menu state. -->
             <div :class="isMenuOpen ? 'expand' : 'collapse'"
                 class="sm:hidden transition-all ease-in-out duration-500 overflow-hidden" id="mobile-menu" role="menu">
-                <div class="space-y-1 px-2 pb-3 pt-2">
+                <div class="space-y-1 px-2 pb-3 pt-8">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                     <NuxtLink to="/" @click="toggleMenu"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 pt-12 pb-4 text-center text-xl font-medium">
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-4 text-center text-xl font-medium">
                         Home</NuxtLink>
                     <NuxtLink to="/about" @click="toggleMenu"
                         class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-4 text-center text-xl font-medium">
