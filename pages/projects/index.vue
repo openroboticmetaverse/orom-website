@@ -19,6 +19,7 @@
   
 <script setup>
 import ProjectCard from '~/components/projects/ProjectCard.vue';
+import { ref } from 'vue';
 //  fetch the products
 const projects = ref([
     {
