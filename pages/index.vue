@@ -118,7 +118,13 @@
 </template>
   
 <script setup>
-
+useHead({
+    title: 'Home | open robotic metaverse',
+    meta: [
+      {
+        name: 'description', content: '...an open Metaverse focused on robotics simulation where you can explore, get inspired by, and contribute...'
+      }]
+})
 </script>
   
 <style scoped></style>
