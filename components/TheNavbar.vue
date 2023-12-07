@@ -16,7 +16,7 @@
                         <div class="flex flex-shrink-0 ">
                             <img class="h-8  w-auto" src="/icon.svg"
                                 alt="Your Company"> 
-                                <p class="ml-5 mt-1">Open Roboverse</p>
+                                <p class="ml-5 mt-1">Open Robotic Metaverse</p>
                         </div>
                         
                         <div class="hidden sm:ml-6 sm:block ml-auto">
