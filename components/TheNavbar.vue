@@ -3,33 +3,14 @@
         <nav ref="navbar" class="bg-black">
             <div class="  px-2 sm:px-6 lg:px-8 ">
                 <div class="relative flex h-20 items-center justify-between">
-                    <div class="absolute inset-y-0 right-0 flex items-center sm:hidden ">
+                    <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
                         <!-- Mobile menu button-->
-                        <button type="button" @click="toggleMenu" ref="menuButton"
-                            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:underline hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                            aria-controls="mobile-menu" aria-expanded="false">
-                            <span class="absolute -inset-0.5"></span>
-                            <span class="sr-only">Open main menu</span>
-                            <!--
-            Icon when menu is closed.
+                        <div @click="toggleMenu" class="menu-button" :class="{ 'change': isMenuOpen,  }">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+</div>
 
-            Menu open: "hidden", Menu closed: "block"
-          -->
-                            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                            </svg>
-                            <!--
-            Icon when menu is open.
-
-            Menu open: "block", Menu closed: "hidden"
-          -->
-                            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
                     </div>
                     <div class="flex flex-1  justify-between sm:items-stretch ">
                         <div class="flex flex-shrink-0 ">
@@ -37,6 +18,7 @@
                                 alt="Your Company"> 
                                 <p class="ml-5 mt-1">Open Roboverse</p>
                         </div>
+                        
                         <div class="hidden sm:ml-6 sm:block ml-auto">
                             <div class="flex space-x-4">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
@@ -82,22 +64,22 @@
                 <div class="space-y-1 px-2 pb-3 pt-2">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                     <NuxtLink to="/" @click="toggleMenu"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-8 text-center text-xl font-medium">
                         Home</NuxtLink>
                     <NuxtLink to="/about" @click="toggleMenu"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-8 text-center text-xl font-medium">
                         About</NuxtLink>
                     <NuxtLink to="/team" @click="toggleMenu"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-8 text-center text-xl font-medium">
                         Team</NuxtLink>
                     <NuxtLink to="/projects" @click="toggleMenu"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-8 text-center text-xl font-medium">
                         Projects</NuxtLink>
                     <NuxtLink to="/newsroom" @click="toggleMenu"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-8 text-center text-xl font-medium">
                         Newsroom</NuxtLink>
                     <NuxtLink to="/contact" @click="toggleMenu"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-8 text-center text-xl font-medium">
                         Contact</NuxtLink>
 
                 </div>
@@ -116,12 +98,7 @@ const menuButton = ref(null); // New ref to store the menu button element
 
 const toggleMenu = () => {
     isMenuOpen.value = !isMenuOpen.value;
-    const mainContent = document.getElementById('main-content');
-    if (isMenuOpen.value) {
-        mainContent.classList.add('blurred-background');
-    } else {
-        mainContent.classList.remove('blurred-background');
-    }
+
 };
 
 const updateGradient = () => {
@@ -139,6 +116,8 @@ const handleClickOutside = (event) => {
         isMenuOpen.value = false;
     }
 };
+
+
 
 onMounted(() => {
     window.addEventListener('scroll', updateGradient);
@@ -164,13 +143,20 @@ onBeforeUnmount(() => {
 }
 
 /* Set a max-height that is higher than what you expect the menu to ever be */
+/* For the expanded menu */
 .expand {
-    max-height: 500px;
+    max-height: 1000px; /* Large enough to accommodate the content */
+    height: 100vh;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
 }
 
-/* Set max-height to 0 and hide the overflow */
+/* For the collapsed menu */
 .collapse {
-    max-height: 0;
+    height: 0;
+    max-height: 1px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
 }
 
 .sticky.top-0.z-10 {
@@ -181,5 +167,51 @@ onBeforeUnmount(() => {
     backdrop-filter: blur(10px); /* Feel free to adjust the px to get the desired blur */
 }
 
+/* hamburger menu */
+.menu-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bar1, .bar2, .bar3 {
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.bar1 {
+    top: 0;
+}
+
+.bar2 {
+    top: 11px;
+}
+
+.bar3 {
+    top: 22px;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+/* fullscreen overlay on mobile device */
 
 </style>
