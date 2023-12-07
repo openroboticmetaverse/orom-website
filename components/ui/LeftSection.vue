@@ -35,7 +35,6 @@
 
     </div>
 
-    <div class="mt-32" />
 
     <section>
 
