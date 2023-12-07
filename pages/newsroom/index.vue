@@ -15,7 +15,7 @@
 
 <script setup>
 useHead({
-    title: 'Newsroom | Nuxt Template',
+    title: 'Newsroom | open robotic metaverse',
     meta: [
       {
         name: 'description', content: 'Content page for the Nuxt 3 template'

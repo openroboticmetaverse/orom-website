@@ -45,7 +45,7 @@ const projects = ref([
     // Add more projects here
 ]);
 useHead({
-    title: 'Projects | Nuxt Template',
+    title: 'Projects | open robotic metaverse',
     meta: [
       {
         name: 'description', content: 'Projects page for the Nuxt 3 template'

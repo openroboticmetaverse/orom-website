@@ -26,13 +26,6 @@ const { project } = defineProps(['project'])
 </script>
 
 <style scoped>
-.thumb{
-  min-height: 120px;
-  max-height:120px;
-  max-width:70%;
-  margin: 0 auto;
-  w-full:true;
-}
 
 .image-container {
   background-color: white; /* White background for the image */

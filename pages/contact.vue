@@ -47,7 +47,7 @@
 
 <script setup>
 useHead({
-    title: 'Contact | Nuxt Template',
+    title: 'Contact | open robotic metaverse',
     meta: [
       {
         name: 'description', content: 'Content page for the Nuxt 3 template'
