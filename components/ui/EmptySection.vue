@@ -9,7 +9,7 @@
       >
 
         <h1
-          class="font-extrabold leading-10 tracking-tight pb-10 text-left gradient-text-left text-center sm:leading-none text-4xl sm:text-8xl "
+          class="font-extrabold leading-10 tracking-tight pb-10 py-20 sm:py-12 text-left gradient-text-left text-center sm:leading-none text-4xl sm:text-8xl "
         >
           <span class="inline md:block">
             <slot name="mainTitle1"></slot>
