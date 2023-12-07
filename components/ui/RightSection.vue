@@ -15,7 +15,7 @@
                   <div class="max-w-xl text-center lg:text-left">
                     <div>
   
-                      <p class="font-bold tracking-tight gradient-text-left pb-6 text-4xl sm:text-8xl">
+                      <p class="font-bold tracking-tight gradient-text-left pt-6 pb-6 text-4xl sm:text-8xl">
                           <slot name="title"></slot>
                       </p>
                       <p class="max-w-xl mt-4 text-2xl sm:text-2xl lg:text-4xl px-10 sm:px-0 tracking-tight text-gray-300 ">

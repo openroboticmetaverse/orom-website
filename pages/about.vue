@@ -17,7 +17,7 @@
     </UiLeftSection>
 
     <UiRightSection>
-          
+          <div class="pt-12"></div>
           <template v-slot:title>
             Vision
           </template>
