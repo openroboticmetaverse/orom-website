@@ -23,22 +23,22 @@
                             <div class="flex space-x-4">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                                 <NuxtLink to="/"
-                                    class=" text-gray-300 duration-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                                    class=" text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-sm font-medium">
                                     Home</NuxtLink>
                                 <NuxtLink to="/about"
-                                    class=" text-gray-300 duration-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                                    class=" text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-sm font-medium">
                                     About</NuxtLink>
                                 <NuxtLink to="/team"
-                                    class=" text-gray-300 duration-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                                    class=" text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-sm font-medium">
                                     Team</NuxtLink>
                                 <NuxtLink to="/projects"
-                                    class=" text-gray-300 duration-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                                    class=" text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-sm font-medium">
                                     Projects</NuxtLink>
                                 <NuxtLink to="/newsroom"
-                                    class=" text-gray-300 duration-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                                    class=" text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-sm font-medium">
                                     Newsroom</NuxtLink>
                                 <NuxtLink to="/contact"
-                                    class=" text-gray-300 duration-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                                    class=" text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-sm font-medium">
                                     Contact</NuxtLink>
                             </div>
                         </div>
@@ -212,6 +212,23 @@ onBeforeUnmount(() => {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
-/* fullscreen overlay on mobile device */
+/* link underline */
 
+.link-underline {
+		border-bottom-width: 0;
+		background-image: linear-gradient(transparent, transparent), linear-gradient(#ffffff, #ffffff);
+		background-size: 0 3px;
+		background-position: 0 100%;
+		background-repeat: no-repeat;
+		transition: background-size .5s ease-in-out;
+	}
+
+	.link-underline-black {
+		background-image: linear-gradient(transparent, transparent), linear-gradient(to right,  rgb(34, 248, 255), rgb(34, 86, 255))
+	}
+
+	.link-underline:hover {
+		background-size: 100% 3px;
+		background-position: 0 100%
+	}
 </style>

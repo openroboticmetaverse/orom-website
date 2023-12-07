@@ -11,13 +11,6 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en'
       },
-      script: [
-        { 
-          src: 'https://platform.twitter.com/widgets.js', 
-          async: true, 
-          charset: 'utf-8' 
-        }
-      ],
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
         { name: 'apple-mobile-web-app-capable', content: 'yes' },
