@@ -33,7 +33,7 @@
 
 <script setup  lang="ts">
 
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, watch  } from 'vue'
 import type { IThreeHelper } from '@/helpers/threeHelpers/interfaces/IThreeHelper'
 import { ThreeHelper } from '@/helpers/threeHelpers/core/ThreeHelper'
 import { EnhancedThreeHelper } from '@/helpers/threeHelpers/core/EnhancedThreeHelper'
@@ -41,14 +41,23 @@ import { EnhancedThreeHelper } from '@/helpers/threeHelpers/core/EnhancedThreeHe
 
 
 const canvas = ref<HTMLCanvasElement | null>(null)
+  onMounted(() => {
+  const isMobile = ref(window.innerWidth <= 768)
 
-onMounted(() => {
-  if (canvas.value) {
+  if (!isMobile.value && canvas.value) {
     const baseThreeHelper = new ThreeHelper(canvas.value)
     const decoratedThreeHelper: IThreeHelper = new EnhancedThreeHelper(baseThreeHelper)
     decoratedThreeHelper.animate()
   }
+
+  window.addEventListener('resize', () => {
+    if (isMobile.value  && canvas.value) {
+      // Add logic to handle canvas for mobile here
+    }
+  });
 })
+
+
 
 </script>
 
@@ -63,5 +72,11 @@ onMounted(() => {
   height: 100%;
   pointer-events: none;
   }
+
+  @media (max-width: 768px) {
+  #canvas {
+    display: none;
+  }
+}
 
 </style>
