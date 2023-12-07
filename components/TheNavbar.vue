@@ -64,22 +64,22 @@
                 <div class="space-y-1 px-2 pb-3 pt-2">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                     <NuxtLink to="/" @click="toggleMenu"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-8 text-center text-xl font-medium">
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 pt-12 pb-4 text-center text-xl font-medium">
                         Home</NuxtLink>
                     <NuxtLink to="/about" @click="toggleMenu"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-8 text-center text-xl font-medium">
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-4 text-center text-xl font-medium">
                         About</NuxtLink>
                     <NuxtLink to="/team" @click="toggleMenu"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-8 text-center text-xl font-medium">
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-4 text-center text-xl font-medium">
                         Team</NuxtLink>
                     <NuxtLink to="/projects" @click="toggleMenu"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-8 text-center text-xl font-medium">
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-4 text-center text-xl font-medium">
                         Projects</NuxtLink>
                     <NuxtLink to="/newsroom" @click="toggleMenu"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-8 text-center text-xl font-medium">
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-4 text-center text-xl font-medium">
                         Newsroom</NuxtLink>
                     <NuxtLink to="/contact" @click="toggleMenu"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-8 text-center text-xl font-medium">
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-4 text-center text-xl font-medium">
                         Contact</NuxtLink>
 
                 </div>
