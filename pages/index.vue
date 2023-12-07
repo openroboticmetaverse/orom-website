@@ -56,7 +56,14 @@
       </template>
     </UiEmptySection>
 
-    <UiButtonSection></UiButtonSection>
+    <UiButtonSection :button1Link="`/about`" :button2Link="`/projects`">
+      <template v-slot:button1 >
+        Who are we?
+      </template>
+      <template v-slot:button2 >
+        Example projects
+      </template>
+    </UiButtonSection>
 
     <UiLeftSection>
       <template v-slot:title>
@@ -66,8 +73,15 @@
         Our goal is to cultivate a
               community where robotics enthusiasts can meet, collaborate on projects, and share insights, enhancing
               partnerships and idea exchange.
+              <div class="py-6"></div>
+              <UiSimpleButton :buttonLink="`/contact`">
+                <template v-slot:button1 >
+        Reach out to us!
+      </template>
+              </UiSimpleButton>
 
       </template>
+      
       <template v-slot:icons>
         <div class="relative mt-10 flex justify-center items-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-6" fill="currentColor" viewBox="0 0 24 24">

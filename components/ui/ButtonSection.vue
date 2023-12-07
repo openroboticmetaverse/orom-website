@@ -5,19 +5,38 @@
           <div class="flex flex-col items-center justify-center h-full">
   
             <!-- Centered on mobile -->
-            <button class="backdrop-blur-sm transition duration-500 ease-in-out bg-[#192033] border border-[#E2E8F0] translate-y-1 text-white hover:bg-neutral-500 text-lg font-semibold py-3 px-6 rounded-3xl inline-flex items-center mb-4">
-              <span> Explore opportunities</span>
-            </button>
+            <UiSimpleButton :buttonLink="button1Link"><template v-slot:button1 >
+              <slot name="button1">
+              
+            </slot>
+      </template></UiSimpleButton>
+            <UiSimpleButton :buttonLink="button2Link"><template v-slot:button1 >
+              <slot name="button2">
+              
+            </slot>
+      </template></UiSimpleButton>
   
-            <!-- Centered on mobile -->
-            <button class="backdrop-blur-sm transition duration-500 ease-in-out bg-white border border-[#E2E8F0] translate-y-1 text-[#16161d] hover:bg-neutral-200 text-lg font-semibold py-3 px-6 rounded-3xl inline-flex items-center mb-4">
-              <span> Example Projects </span>
-            </button>
+
           </div>
         </div>
       </section>
     </section>
   </template>
+  <script>
+
+  export default {
+    props: {
+        button1Link: {
+            type: String,
+            required: true
+        },
+        button2Link: {
+            type: String,
+            required: true
+        }
+    },
+}
+  </script>
   
   <style scoped>
   @media (min-width: 768px) {
