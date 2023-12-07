@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
-      title: "Roboverse",
+      title: "open robotic metaverse",
       htmlAttrs: {
         lang: 'en'
       },
