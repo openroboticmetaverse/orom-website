@@ -15,7 +15,7 @@
 
 <script setup>
 useHead({
-    title: 'Contact | Nuxt Template',
+    title: 'Newsroom | Nuxt Template',
     meta: [
       {
         name: 'description', content: 'Content page for the Nuxt 3 template'
