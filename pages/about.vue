@@ -99,7 +99,7 @@
       </template>
     </LandingCardSection>
 
-    <UiLeftSection>
+    <UiLeftSection :orderFirst="true">
       <template v-slot:title>
         The goal?
       </template>

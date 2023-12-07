@@ -14,7 +14,7 @@
                     <p class="font-bold tracking-tight gradient-text-left pb-4 text-4xl sm:text-8xl">
                         <slot name="title"></slot>
                     </p>
-                    <p class="max-w-xl mt-4 text-2xl sm:text-2xl lg:text-4xl px-10 sm:px-0 tracking-tight text-gray-300">
+                    <p class="max-w-xl mt-4 mb-12 text-2xl sm:text-2xl lg:text-4xl px-10 sm:px-0 tracking-tight text-gray-300">
                         <slot name="description"></slot>
                         <slot name="icons"></slot>
                     </p>
@@ -24,7 +24,13 @@
               </div>
 
               
-              <div class="order-first block w-full mt-12 aspect-square lg:mt-20">
+              <div v-if="!orderFirst"
+              class=" order-first block w-full mt-12 aspect-square lg:mt-20">
+                <slot name="image"></slot>
+                
+              </div>
+              <div v-else
+              class="block w-full mt-12 aspect-square lg:mt-20">
                 <slot name="image"></slot>
                 
               </div>
@@ -42,3 +48,14 @@
 
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    orderFirst: {
+      type: Boolean,
+      default: false, // By default, the "order-first" class is not applied
+    },
+  },
+};
+</script>

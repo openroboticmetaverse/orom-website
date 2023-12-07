@@ -1,28 +1,20 @@
 <template>
     <div>
-        <PhotoSection>
-            <template v-slot:image>
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
-                    alt="" class=" absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
-            </template>
-            <template v-slot:content>
-                <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div class="mx-auto max-w-8xl lg:mx-0">
-                        <h2 class="font-extrabold leading-10 tracking-tight pb-10 text-left gradient-text-left text-left sm:leading-none text-4xl sm:text-8xl ">Meet the team!</h2>
-                        <p class="mt-6 text-lg leading-8 ml-200 max-w-2xl text-left text-gray-300">Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Doloremque sit laudantium animi accusamus dignissimos
-                            aspernatur itaque obcaecati aliquid voluptatibus eos. Quisquam illo accusantium, praesentium
-                            iure reiciendis molestias consectetur odit velit?</p>
-                    </div>
-
-                </div>
-            </template>
-        </PhotoSection>
-
+        <UiLeftSection :orderFirst="true">
+      <template class="order-first" v-slot:title>
+        Meet the team!
+      </template>
+      <template v-slot:description>
+        <p class="mt-6 text-xl sm:text-3xl leading-8 ml-200 max-w-2xl text-left text-gray-300">
+            If you have a passion for robotics and a drive to innovate, you're exactly where you need to be. Here, we value diverse talents and perspectives, because great ideas don't fit in a box. Join us in shaping the future of technology. All enthusiasts welcome!
+        </p>
+      </template>
+      
+      <template v-slot:image>
         <section class="dark:bg-gray-900">
             <div class="py-8 px-4 mx-auto max-w-screen-xl text-center  lg:py-16 lg:px-6 ">
 
-                <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 
                     <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/aminekharrat/" githubLink="https://github.com/AmineKharrat">
                         <template v-slot:image>
@@ -127,6 +119,11 @@
             </div>
         </section>
 
+      </template>
+ 
+    </UiLeftSection>
+
+       
     </div>
 </template>
 

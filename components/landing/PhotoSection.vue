@@ -43,6 +43,13 @@
     z-index: 1;
 }
 
+@media (max-width: 640px) {
+  .overlay-bottom,
+  .overlay-top {
+    height: 5%; /* Adjust the height for mobile devices */
+  }
+}
+
 .overlay-bottom {
     bottom: 0;
     background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
