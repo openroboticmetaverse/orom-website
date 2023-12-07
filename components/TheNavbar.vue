@@ -156,7 +156,7 @@ onBeforeUnmount(() => {
     height: 0;
     max-height: 1px;
     overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
+    transition: height max-height 0.5s ease-in-out;
 }
 
 .sticky.top-0.z-10 {
