@@ -2,7 +2,7 @@
 
 <div class="text-left">
 
-    <div class='sm:px-12 py-20 sm:py-20'>
+    <div class='sm:px-12 pt-20 sm:pt-20'>
       <section class="relative flex items-center w-full">
         <div class="relative items-center w-full px-5 mx-auto md:px-9 lg:px-12 max-w-9xl">
           <div class="relative flex-col items-start m-auto align-middle">
