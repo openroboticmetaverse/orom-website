@@ -1,33 +1,29 @@
 <template>
-    <div>
-
-        <CommonEmptySection>
+  <div>
+    <CommonEmptySection>
       <template v-slot:mainTitle2>
-        Hear from us! 
+        Hear from us!
       </template>
       <template v-slot:description>
         Nothing to show. (yet)
       </template>
-        </CommonEmptySection>
+    </CommonEmptySection>
 
-    </div>
+  </div>
 </template>
 
 <script setup>
 useHead({
-    title: 'Newsroom | open robotic metaverse',
-    meta: [
-      {
-        name: 'description', content: 'Content page for the Nuxt 3 template'
-      }]
+  title: 'Newsroom | open robotic metaverse',
+  meta: [
+    {
+      name: 'description', content: 'Content page for the Nuxt 3 template'
+    }]
 })
-
-
 </script>
 
 <style scoped>
-
 .email-wrap {
-  word-break: break-all; 
+  word-break: break-all;
 }
 </style>

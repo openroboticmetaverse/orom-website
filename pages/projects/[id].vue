@@ -1,12 +1,6 @@
 <template>
     <div>
-
-        <Head>
-            <Title>Nuxt Dojo | {{ project.title }}</Title>
-            <Meta name="description" :content="project.description" />
-        </Head>
-
-        <CommonProjectDetails :project="project" ></CommonProjectDetails>
+        <CommonProjectDetails :project="project"></CommonProjectDetails>
     </div>
 </template>
   

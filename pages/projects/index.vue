@@ -1,54 +1,54 @@
 <template>
-        <div>
-            <CommonEmptySection>
+  <div>
+    <CommonEmptySection>
       <template v-slot:mainTitle2>
-        Get Inspired! 
+        Get Inspired!
       </template>
       <template v-slot:description>
         Check out some of our projects, contribute your ideas!
       </template>
     </CommonEmptySection>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-5 ">
-            <div v-for="p in projects">
-                <UiProjectCard :project="p" />
-            </div>
-        </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-5 ">
+      <div :key="p.id" v-for="p in projects">
+        <UiProjectCard :project="p" />
+      </div>
     </div>
+  </div>
 </template>
   
 <script setup>
 import { ref } from 'vue';
 //  fetch the products
 const projects = ref([
-    {
-        "id": "1",
-        "title": "Segmentation of Fruits",
-        "image": "/pages/projects/segmentation.png"
-    },
-    {
-        "id": "2",
-        "title": "GAN for Garden Simulation",
-        "image": "/pages/projects/gan.png"
-    },
-    {
-        "id": "3",
-        "title": "AI based robotic vision",
-        "image": "/pages/projects/bridging.png"
-    },
-    {
-        "id": "4",
-        "title": "Robots on the Browser",
-        "image": "/pages/projects/browser.png"
-    },
-    // Add more projects here
+  {
+    "id": "1",
+    "title": "Segmentation of Fruits",
+    "image": "/pages/projects/segmentation.png"
+  },
+  {
+    "id": "2",
+    "title": "GAN for Garden Simulation",
+    "image": "/pages/projects/gan.png"
+  },
+  {
+    "id": "3",
+    "title": "AI based robotic vision",
+    "image": "/pages/projects/bridging.png"
+  },
+  {
+    "id": "4",
+    "title": "Robots on the Browser",
+    "image": "/pages/projects/browser.png"
+  },
+  // Add more projects here
 ]);
 useHead({
-    title: 'Projects | open robotic metaverse',
-    meta: [
-      {
-        name: 'description', content: 'Projects page for the Nuxt 3 template'
-      }]
+  title: 'Projects | open robotic metaverse',
+  meta: [
+    {
+      name: 'description', content: 'Projects page for the Nuxt 3 template'
+    }]
 })
 
 useJsonld(() => ({
