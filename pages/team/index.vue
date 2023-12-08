@@ -5,9 +5,9 @@
         Meet the team!
       </template>
       <template v-slot:description>
-        <p class="mt-6 text-xl sm:text-3xl leading-8 ml-200 max-w-2xl text-left text-gray-300">
+        
             If you have a passion for robotics and a drive to innovate, you're exactly where you need to be. Here, we value diverse talents and perspectives, because great ideas don't fit in a box. Join us in shaping the future of technology. All enthusiasts welcome!
-        </p>
+        
       </template>
       
       <template v-slot:image>

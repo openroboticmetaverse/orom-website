@@ -7,7 +7,7 @@
         Reach us!
       </template>
       <template v-slot:description>
-                <p class="mt-6 text-xl sm:text-4xl leading-8 ml-200 max-w-2xl text-left text-gray-300">Ready to Make a Difference? Reach out to us and start your journey today!</p>
+                Ready to Make a Difference? Reach out to us and start your journey today!
                 <div class="py-10"></div>
                  
             </template>

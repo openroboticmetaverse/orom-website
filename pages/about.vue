@@ -6,8 +6,7 @@
         About Open Robotic Metaverse
       </template>
       <template v-slot:description>
-        <p class="mt-6 text-xl sm:text-3xl leading-8 ml-200 max-w-2xl text-left text-gray-300">We are a student initiative currently in the founding process. Our founders are students from RWTH Aachen University and FH Aachen and highly motivated to strengthen the robotic community in and outside of Aachen, Germany. 
-        </p>
+        We are a student initiative currently in the founding process. Our founders are students from RWTH Aachen University and FH Aachen and highly motivated to strengthen the robotic community in and outside of Aachen, Germany. 
       </template>
       
       <template v-slot:image>
@@ -22,7 +21,7 @@
             Vision
           </template>
           <template v-slot:description>
-                    <p class="text-xl sm:text-3xl leading-8 max-w-2xl text-left text-gray-300">We aim to accelerate the development of robotic applications by making use of the advancements in Simulation technology and Artificial Intelligence. We support individuals in acquiring skills and knowledge in this field and connect them with companies in search of solution implementers, while building a connected passionate community.</p>
+                    We aim to accelerate the development of robotic applications by making use of the advancements in Simulation technology and Artificial Intelligence. We support individuals in acquiring skills and knowledge in this field and connect them with companies in search of solution implementers, while building a connected passionate community.
                 </template>
 
           
@@ -104,8 +103,8 @@
         The goal?
       </template>
       <template v-slot:description>
-        <p class="mt-6 text-xl sm:text-3xl leading-8 ml-200 max-w-2xl text-left text-gray-300">Open Robotic Metaverse is forging a new realm at the intersection of robotics and virtual environments. Our collective vision is to build a metaverse where innovative minds can develop, share, and explore the future of robotics in a collaborative ecosystem.
-        </p>
+        Open Robotic Metaverse is forging a new realm at the intersection of robotics and virtual environments. Our collective vision is to build a metaverse where innovative minds can develop, share, and explore the future of robotics in a collaborative ecosystem.
+       
       </template>
       
       <template v-slot:image>
