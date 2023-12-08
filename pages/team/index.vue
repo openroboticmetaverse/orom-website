@@ -112,6 +112,38 @@
 
 
                     </TeamMemberProfile>
+                    <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/thu-ha-dam-b0a7061b5/" githubLink="https://github.com/openroboverse">
+                        <template v-slot:image>
+                            <img class="mx-auto mb-4 w-36 h-auto rounded-full"
+                                src="/pages/team/thuha.jpg"
+                                alt="Thu Ha Avatar">
+
+                        </template>
+                        <template v-slot:name>
+                            <a class="text-gray-50">Thu Ha</a>
+                        </template>
+                        <template v-slot:description>
+                            <p>Dev</p>
+                        </template>
+
+
+                    </TeamMemberProfile>
+                    <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/marc-andr%C3%A9-weism%C3%BCller/" githubLink="https://github.com/openroboverse">
+                        <template v-slot:image>
+                            <img class="mx-auto mb-4 w-36 h-auto rounded-full"
+                                src="/pages/team/marc.jpg"
+                                alt="Marc Avatar">
+
+                        </template>
+                        <template v-slot:name>
+                            <a class="text-gray-50">Marc</a>
+                        </template>
+                        <template v-slot:description>
+                            <p>Dev</p>
+                        </template>
+
+
+                    </TeamMemberProfile>
 
 
 
