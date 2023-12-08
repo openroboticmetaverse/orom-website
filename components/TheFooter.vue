@@ -49,7 +49,7 @@
                 <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
                 <div class="sm:flex sm:items-center sm:justify-between">
                     <span class="text-sm text-gray-300 sm:text-center dark:text-gray-400">© 2023 <a
-                            href="https://flowbite.com/" class="hover:underline">Open Robotic Metaverse™</a>. All Rights Reserved.
+                            href="https://flowbite.com/" class="hover:underline">Open Robotic Metavers e.V.</a>. All Rights Reserved.
                     </span>
                     <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
                        
