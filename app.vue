@@ -36,24 +36,6 @@ html {
   background-color: black;
 }
 
-.gradient-text-left {
-  background: linear-gradient(45deg, #4bb8a6,#085ba0 );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-.gradient-text-right {
-  background: linear-gradient(45deg,#085ba0, #4bb8a6 );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-.gradient-text-1 {
-  background: linear-gradient(45deg,#fafafa, #4bb8a6 );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
 
 .page-enter-active,
 .page-leave-active {

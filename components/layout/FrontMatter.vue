@@ -40,22 +40,17 @@ import { EnhancedThreeHelper } from '@/helpers/threeHelpers/core/EnhancedThreeHe
 const canvas = ref<HTMLCanvasElement | null>(null)
 onMounted(() => {
   const isMobile = ref(window.innerWidth <= 768)
-
   if (!isMobile.value && canvas.value) {
     const baseThreeHelper = new ThreeHelper(canvas.value)
     const decoratedThreeHelper: IThreeHelper = new EnhancedThreeHelper(baseThreeHelper)
     decoratedThreeHelper.animate()
   }
-
   window.addEventListener('resize', () => {
     if (isMobile.value && canvas.value) {
       // Add logic to handle canvas for mobile here
     }
   });
 })
-
-
-
 </script>
 
 <style scoped>
@@ -67,6 +62,13 @@ onMounted(() => {
   width: 100%;
   height: 100%;
   pointer-events: none;
+}
+
+.gradient-text-left {
+  background: linear-gradient(45deg, #4bb8a6,#085ba0 );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 @media (max-width: 768px) {

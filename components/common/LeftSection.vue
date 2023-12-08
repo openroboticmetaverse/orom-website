@@ -13,7 +13,7 @@
                       <slot name="title"></slot>
                     </p>
                     <p
-                      class="max-w-xl mt-4 mb-12 text-2xl sm:text-2xl lg:text-4xl px-10 sm:px-0 tracking-tight text-gray-300">
+                      class="section-description">
                       <slot name="description"></slot>
                       <slot name="icons"></slot>
                     </p>

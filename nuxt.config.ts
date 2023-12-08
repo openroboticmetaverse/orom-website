@@ -1,8 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-jsonld'
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-jsonld', 
+  ['@pinia/nuxt',
+  {
+    autoImports: ['defineStore', 'acceptHMRUpdate']
+  }]
   ],
+  imports: {
+    dirs: ['stores'],
+  },
   target: 'static',
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },

@@ -2,7 +2,7 @@
   <section>
     <section class="sticky">
       <div class="max-w-lg px-4 pb-24 mx-auto text-center">
-        <div class="flex flex-col items-center justify-center h-full">
+        <div class="flex flex-col items-center gap-5 justify-center h-full">
           <!-- Centered on mobile -->
           <UiRoundedButton :buttonLink="button1Link">
             <template v-slot:button>

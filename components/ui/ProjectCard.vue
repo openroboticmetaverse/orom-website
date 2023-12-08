@@ -1,6 +1,6 @@
 <template>
   <div class="p-10 h-full max-w-sm ">
-    <div class="flex rounded-lg h-full bg-gray-800 p-2 border border-gray-800 hover:border-gray-400 duration-300   flex-col">
+    <div class="project-card">
       <div class="image-container mb-4"> <!-- New div for the image -->
         <img class=" " :src="`${project.image}`" alt="" />
       </div>

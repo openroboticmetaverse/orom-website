@@ -16,108 +16,18 @@
                 <section class="dark:bg-gray-900">
                     <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-0 lg:px-6 ">
                         <div class="grid gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
-                            <UiMemberProfile linkedinLink="https://www.linkedin.com/in/aminekharrat/"
-                                githubLink="https://github.com/AmineKharrat">
+                            <UiMemberProfile v-for="member in members" :key="member.id" :linkedinLink="member.linkedin"
+                                :githubLink="member.github">
+
                                 <template v-slot:image>
-                                    <img class="mx-auto mb-4 w-36 h-auto rounded-full" src="/pages/team/amine.jpg"
-                                        alt="Amine Avatar">
+                                    <img class="member-pic" :src="member.image"
+                                        :alt="`${member.name} Avatar`">
                                 </template>
                                 <template v-slot:name>
-                                    <a class="text-gray-50">Amine</a>
+                                    <a class="text-gray-50">{{ member.name }}</a>
                                 </template>
                                 <template v-slot:description>
-                                    <p>CEO</p>
-                                </template>
-                            </UiMemberProfile>
-                            <UiMemberProfile linkedinLink="https://www.linkedin.com/in/karim-siala/"
-                                githubLink="https://github.com/karimsiala">
-                                <template v-slot:image>
-                                    <img class="mx-auto mb-4 w-36 h-auto rounded-full" src="/pages/team/karim.jpg"
-                                        alt="Karim Avatar">
-                                </template>
-                                <template v-slot:name>
-                                    <a class="text-gray-50">Karim</a>
-                                </template>
-                                <template v-slot:description>
-                                    <p>Nerd</p>
-                                </template>
-                            </UiMemberProfile>
-                            <UiMemberProfile linkedinLink="https://www.linkedin.com/in/hazar-karadag/"
-                                githubLink="https://github.com/parhasard">
-                                <template v-slot:image>
-                                    <img class="mx-auto mb-4 w-36 h-auto rounded-full" src="/pages/team/hazar.jpg"
-                                        alt="Hazar Avatar">
-                                </template>
-                                <template v-slot:name>
-                                    <a class="text-gray-50">Hazar</a>
-                                </template>
-                                <template v-slot:description>
-                                    <p>Queen</p>
-                                </template>
-                            </UiMemberProfile>
-                            <UiMemberProfile linkedinLink="https://www.linkedin.com/in/luca-sophie-lamerichs-131104206/"
-                                githubLink="https://github.com/openroboverse">
-                                <template v-slot:image>
-                                    <img class="mx-auto mb-4 w-36 h-auto rounded-full" src="/pages/team/luca.jpg"
-                                        alt="Luca Avatar">
-                                </template>
-                                <template v-slot:name>
-                                    <a class="text-gray-50">Luca</a>
-                                </template>
-                                <template v-slot:description>
-                                    <p>Luca</p>
-                                </template>
-                            </UiMemberProfile>
-                            <UiMemberProfile linkedinLink="https://www.linkedin.com/in/janstrehl/"
-                                githubLink="https://github.com/strehljd">
-                                <template v-slot:image>
-                                    <img class="mx-auto mb-4 w-36 h-auto rounded-full" src="/pages/team/jan.jpg"
-                                        alt="Jan Avatar">
-                                </template>
-                                <template v-slot:name>
-                                    <a class="text-gray-50">Jan</a>
-                                </template>
-                                <template v-slot:description>
-                                    <p>Dev</p>
-                                </template>
-                            </UiMemberProfile>
-                            <UiMemberProfile linkedinLink="https://www.linkedin.com/in/estefania-betancourt-9545531a9/"
-                                githubLink="https://github.com/openroboverse">
-                                <template v-slot:image>
-                                    <img class="mx-auto mb-4 w-36 h-auto rounded-full" src="/pages/team/estafania.jpg"
-                                        alt="Estafania Avatar">
-                                </template>
-                                <template v-slot:name>
-                                    <a class="text-gray-50">Estafania</a>
-                                </template>
-                                <template v-slot:description>
-                                    <p>Dev</p>
-                                </template>
-                            </UiMemberProfile>
-                            <UiMemberProfile linkedinLink="https://www.linkedin.com/in/thu-ha-dam-b0a7061b5/"
-                                githubLink="https://github.com/openroboverse">
-                                <template v-slot:image>
-                                    <img class="mx-auto mb-4 w-36 h-auto rounded-full" src="/pages/team/thuha.jpg"
-                                        alt="Thu Ha Avatar">
-                                </template>
-                                <template v-slot:name>
-                                    <a class="text-gray-50">Thu Ha</a>
-                                </template>
-                                <template v-slot:description>
-                                    <p>Dev</p>
-                                </template>
-                            </UiMemberProfile>
-                            <UiMemberProfile linkedinLink="https://www.linkedin.com/in/marc-andr%C3%A9-weism%C3%BCller/"
-                                githubLink="https://github.com/openroboverse">
-                                <template v-slot:image>
-                                    <img class="mx-auto mb-4 w-36 h-auto rounded-full" src="/pages/team/marc.jpg"
-                                        alt="Marc Avatar">
-                                </template>
-                                <template v-slot:name>
-                                    <a class="text-gray-50">Marc</a>
-                                </template>
-                                <template v-slot:description>
-                                    <p>Dev</p>
+                                    <p>{{ member.title }}</p>
                                 </template>
                             </UiMemberProfile>
                         </div>
@@ -129,6 +39,10 @@
 </template>
 
 <script setup>
+import { storeToRefs } from 'pinia';
+
+const teamStore = useTeamStore();
+const { members } = storeToRefs(teamStore)
 
 useHead({
     title: 'Team | open robotic metaverse',

@@ -1,7 +1,7 @@
 <template>
-    <div class=" bg-gray-900 bg-opacity-75 right-0 hover:bg-gray-800 border border-gray-500 hover:border-transparent duration-300  rounded-lg p-8 md:p-12">
+    <div class="simple-card">
 
-        <h2 class="gradient-text-left text-center dark:text-white text-2xl sm:text-2xl lg:text-4xl font-extrabold mb-2">
+        <h2 class="small-title">
             <slot name="title"></slot>
         </h2>
         <p class="text-xl sm:text-xl lg:text-2xl font-normal text-gray-300 dark:text-gray-400 mb-4">
