@@ -1,5 +1,6 @@
 <template>
     <div>
+        <div class="pt-12 md:pt-0 lg:pt-0"></div>
         <UiLeftSection :orderFirst="true">
       <template class="order-first" v-slot:title>
         Meet the team!
@@ -12,7 +13,7 @@
       
       <template v-slot:image>
         <section class="dark:bg-gray-900">
-            <div class="py-8 px-4 mx-auto max-w-screen-xl text-center  lg:py-16 lg:px-6 ">
+            <div class="py-8 px-4 mx-auto max-w-screen-xl text-center  lg:py-0 lg:px-6 ">
 
                 <div class="grid gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
 

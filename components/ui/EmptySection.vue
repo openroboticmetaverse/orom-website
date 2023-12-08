@@ -5,7 +5,7 @@
     <section class="sticky">
 
       <div
-        class="max-w-lg px-4 sm:pt-24 pt-12 pb-20 sm:pb-32 mx-auto text-left md:max-w-none md:text-center"
+        class="max-w-lg px-4 sm:pt-12 pt-2 pb-10 sm:pb-10 mx-auto text-left md:max-w-none md:text-center"
       >
 
         <h1
