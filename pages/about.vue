@@ -10,6 +10,8 @@
         University and FH Aachen and highly motivated to strengthen the robotic community in and outside of Aachen,
         Germany.
       </template>
+      <template v-slot:icons>
+      </template>
       <template v-slot:image>
         <img class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto " alt="hero"
           src="/pages/about/group_foto.jpg" />
@@ -111,6 +113,8 @@
         Open Robotic Metaverse is forging a new realm at the intersection of robotics and virtual environments. Our
         collective vision is to build a metaverse where innovative minds can develop, share, and explore the future of
         robotics in a collaborative ecosystem.
+      </template>
+      <template v-slot:icons>
       </template>
       <template v-slot:image>
         <img class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto " alt="hero"

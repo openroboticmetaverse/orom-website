@@ -65,7 +65,7 @@
       </template>
     </CommonButtonSection>
 
-    <CommonLeftSection>
+    <CommonLeftSection :orderFirst="true">
       <template v-slot:title>
         Network
       </template>
@@ -75,22 +75,18 @@
         partnerships and idea exchange.
         <div class="py-6"></div>
         <UiRoundedButton :buttonLink="`/contact`">
-          <template v-slot:button1>
+          <template v-slot:button>
             Reach out to us!
-          </template>
+          </template> 
         </UiRoundedButton>
-
       </template>
-
       <template v-slot:icons>
         <CommonIconList></CommonIconList>
       </template>
-
       <template v-slot:image>
         <img class=" object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto " alt="hero"
           src="/pages/home/landing1.png" />
       </template>
-
     </CommonLeftSection>
 
   </div>

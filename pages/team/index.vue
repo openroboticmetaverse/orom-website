@@ -1,7 +1,6 @@
 <template>
     <div>
         <div class="pt-12 md:pt-0 lg:pt-0"></div>
-
         <CommonLeftSection :orderFirst="true">
             <template v-slot:title>
                 Meet the team!
@@ -11,10 +10,11 @@
                 value diverse talents and perspectives, because great ideas don't fit in a box. Join us in shaping the
                 future of technology. All enthusiasts welcome!
             </template>
+            <template v-slot:icons>
+            </template>
             <template v-slot:image>
                 <section class="dark:bg-gray-900">
-                    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center  lg:py-0 lg:px-6 ">
-
+                    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-0 lg:px-6 ">
                         <div class="grid gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
                             <UiMemberProfile linkedinLink="https://www.linkedin.com/in/aminekharrat/"
                                 githubLink="https://github.com/AmineKharrat">
