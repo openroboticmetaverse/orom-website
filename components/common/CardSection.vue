@@ -17,6 +17,5 @@
                 </div>
             </section>
         </template>
-
     </CommonPhotoSection>
 </template>
