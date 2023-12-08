@@ -125,6 +125,32 @@ useHead({
         name: 'description', content: '...an open Metaverse focused on robotics simulation where you can explore, get inspired by, and contribute...'
       }]
 })
+
+useJsonld(() => ({
+  "@context": "http://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Open Robotic Metaverse",
+  "url": "https://www.openroboticmetaverse.org",
+  "description": "A pioneering community in the robotics field, focusing on hands-on learning, networking opportunities, and innovative projects in AI and simulation.",
+  "areaServed": "Germany",
+  "sameAs": [
+  "https://instagram.com/openroboticmetaverse",
+  "https://github.com/openroboverse",
+],
+"contactPoint": {
+  "@type": "ContactPoint",
+  "contactType": "organisation email",
+  "email": "openroboticmetaverse@gmail.com",
+  // Add more contact details if needed
+},
+"logo": "https://www.openroboticmetaverse.org/icon.svg",
+"image": [
+  "https://www.openroboticmetaverse.org/pages/about/group_foto.jpg",
+],
+
+
+  // Add more relevant details here
+}));
 </script>
   
 <style scoped></style>

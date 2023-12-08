@@ -55,6 +55,28 @@ useHead({
 })
 
 
+useJsonld(() => ({
+  "@context": "http://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Open Robotic Metaverse",
+  "url": "https://www.openroboticmetaverse.org/contact",
+  "description": "Charge in robotics innovation and community engagement.",
+  "sameAs": [
+  "https://instagram.com/openroboticmetaverse",
+  "https://github.com/openroboverse",
+],
+"contactPoint": {
+  "@type": "ContactPoint",
+  "contactType": "organisation email",
+  "email": "openroboticmetaverse@gmail.com",
+  // Add more contact details if needed
+},
+"logo": "https://www.openroboticmetaverse.org/icon.svg",
+
+
+
+  // Add more relevant details here
+}));
 </script>
 
 <style scoped>
