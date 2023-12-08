@@ -1,17 +1,17 @@
 <template>
         <div>
-            <UiEmptySection>
+            <CommonEmptySection>
       <template v-slot:mainTitle2>
         Get Inspired! 
       </template>
       <template v-slot:description>
         Check out some of our projects, contribute your ideas!
       </template>
-    </UiEmptySection>
+    </CommonEmptySection>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-5 ">
             <div v-for="p in projects">
-                <ProjectsProjectCard :project="p" />
+                <UiProjectCard :project="p" />
             </div>
         </div>
     </div>

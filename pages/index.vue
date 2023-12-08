@@ -1,7 +1,7 @@
 <template>
   <div>
-    <TheHeader />
-    <LandingCardSection>
+    <LayoutFrontMatter/>
+    <CommonCardSection>
       <template v-slot:title> We aim to accelerate the
         development in robotics by focusing on our three pillars:</template>
 
@@ -40,8 +40,8 @@
           </template>
         </UiSimpleCard>
       </template>
-    </LandingCardSection>
-    <UiEmptySection>
+    </CommonCardSection>
+    <CommonEmptySection>
       <template v-slot:mainTitle1>
         What we're 
       </template>
@@ -54,18 +54,18 @@
               where you can explore, get inspired by, and contribute to a variety of innovative solutions in a shared
               virtual space. the open robotic metaverse offer the three following modes
       </template>
-    </UiEmptySection>
+    </CommonEmptySection>
 
-    <UiButtonSection :button1Link="`/about`" :button2Link="`/projects`">
+    <CommonButtonSection :button1Link="`/about`" :button2Link="`/projects`">
       <template v-slot:button1 >
         Who are we?
       </template>
       <template v-slot:button2 >
         Example projects
       </template>
-    </UiButtonSection>
+    </CommonButtonSection>
 
-    <UiLeftSection>
+    <CommonLeftSection>
       <template v-slot:title>
         Network
       </template>
@@ -74,11 +74,11 @@
               community where robotics enthusiasts can meet, collaborate on projects, and share insights, enhancing
               partnerships and idea exchange.
               <div class="py-6"></div>
-              <UiSimpleButton :buttonLink="`/contact`">
+              <UiRoundedButton :buttonLink="`/contact`">
                 <template v-slot:button1 >
         Reach out to us!
       </template>
-              </UiSimpleButton>
+              </UiRoundedButton>
 
       </template>
       
@@ -105,15 +105,8 @@
         <img class=" object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto " alt="hero" src="/pages/home/landing1.png" />
       </template>
  
-    </UiLeftSection>
+    </CommonLeftSection>
 
-   
-
-    <!-- <h2 ref="header">Home</h2>
-    <div ref="textContainer">
-      <p v-for="i in 5" :key="i" class="scroll-trigger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-        expedita sequi deserunt facere provident, in deleniti. Magnam earum error esse.</p>
-    </div> -->
   </div>
 </template>
   

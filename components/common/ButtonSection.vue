@@ -5,16 +5,16 @@
           <div class="flex flex-col items-center justify-center h-full">
   
             <!-- Centered on mobile -->
-            <UiSimpleButton :buttonLink="button1Link"><template v-slot:button1 >
+            <UiRoundedButton :buttonLink="button1Link"><template v-slot:button1 >
               <slot name="button1">
               
             </slot>
-      </template></UiSimpleButton>
-            <UiSimpleButton :buttonLink="button2Link"><template v-slot:button1 >
+      </template></UiRoundedButton>
+            <UiRoundedButton :buttonLink="button2Link"><template v-slot:button1 >
               <slot name="button2">
               
             </slot>
-      </template></UiSimpleButton>
+      </template></UiRoundedButton>
   
 
           </div>

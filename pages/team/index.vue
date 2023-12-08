@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="pt-12 md:pt-0 lg:pt-0"></div>
-        <UiLeftSection :orderFirst="true">
+        <CommonLeftSection :orderFirst="true">
       <template class="order-first" v-slot:title>
         Meet the team!
       </template>
@@ -17,7 +17,7 @@
 
                 <div class="grid gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
 
-                    <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/aminekharrat/" githubLink="https://github.com/AmineKharrat">
+                    <UiMemberProfile linkedinLink="https://www.linkedin.com/in/aminekharrat/" githubLink="https://github.com/AmineKharrat">
                         <template v-slot:image>
                             <img class="mx-auto mb-4 w-36 h-auto rounded-full"
                                 src="/pages/team/amine.jpg"
@@ -32,8 +32,8 @@
                         </template>
 
 
-                    </TeamMemberProfile>
-                    <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/karim-siala/" githubLink="https://github.com/karimsiala">
+                    </UiMemberProfile>
+                    <UiMemberProfile linkedinLink="https://www.linkedin.com/in/karim-siala/" githubLink="https://github.com/karimsiala">
                         <template v-slot:image>
                             <img class="mx-auto mb-4 w-36 h-auto rounded-full"
                                 src="/pages/team/karim.jpg"
@@ -48,8 +48,8 @@
                         </template>
 
 
-                    </TeamMemberProfile>
-                    <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/hazar-karadag/" githubLink="https://github.com/parhasard">
+                    </UiMemberProfile>
+                    <UiMemberProfile linkedinLink="https://www.linkedin.com/in/hazar-karadag/" githubLink="https://github.com/parhasard">
                         <template v-slot:image>
                             <img class="mx-auto mb-4 w-36 h-auto rounded-full"
                                 src="/pages/team/hazar.jpg"
@@ -64,8 +64,8 @@
                         </template>
 
 
-                    </TeamMemberProfile>
-                    <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/luca-sophie-lamerichs-131104206/" githubLink="https://github.com/openroboverse">
+                    </UiMemberProfile>
+                    <UiMemberProfile linkedinLink="https://www.linkedin.com/in/luca-sophie-lamerichs-131104206/" githubLink="https://github.com/openroboverse">
                         <template v-slot:image>
                             <img class="mx-auto mb-4 w-36 h-auto rounded-full"
                                 src="/pages/team/luca.jpg"
@@ -80,8 +80,8 @@
                         </template>
 
 
-                    </TeamMemberProfile>
-                    <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/janstrehl/" githubLink="https://github.com/strehljd">
+                    </UiMemberProfile>
+                    <UiMemberProfile linkedinLink="https://www.linkedin.com/in/janstrehl/" githubLink="https://github.com/strehljd">
                         <template v-slot:image>
                             <img class="mx-auto mb-4 w-36 h-auto rounded-full"
                                 src="/pages/team/jan.jpg"
@@ -96,8 +96,8 @@
                         </template>
 
 
-                    </TeamMemberProfile>
-                    <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/estefania-betancourt-9545531a9/" githubLink="https://github.com/openroboverse">
+                    </UiMemberProfile>
+                    <UiMemberProfile linkedinLink="https://www.linkedin.com/in/estefania-betancourt-9545531a9/" githubLink="https://github.com/openroboverse">
                         <template v-slot:image>
                             <img class="mx-auto mb-4 w-36 h-auto rounded-full"
                                 src="/pages/team/estafania.jpg"
@@ -112,8 +112,8 @@
                         </template>
 
 
-                    </TeamMemberProfile>
-                    <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/thu-ha-dam-b0a7061b5/" githubLink="https://github.com/openroboverse">
+                    </UiMemberProfile>
+                    <UiMemberProfile linkedinLink="https://www.linkedin.com/in/thu-ha-dam-b0a7061b5/" githubLink="https://github.com/openroboverse">
                         <template v-slot:image>
                             <img class="mx-auto mb-4 w-36 h-auto rounded-full"
                                 src="/pages/team/thuha.jpg"
@@ -128,8 +128,8 @@
                         </template>
 
 
-                    </TeamMemberProfile>
-                    <TeamMemberProfile linkedinLink="https://www.linkedin.com/in/marc-andr%C3%A9-weism%C3%BCller/" githubLink="https://github.com/openroboverse">
+                    </UiMemberProfile>
+                    <UiMemberProfile linkedinLink="https://www.linkedin.com/in/marc-andr%C3%A9-weism%C3%BCller/" githubLink="https://github.com/openroboverse">
                         <template v-slot:image>
                             <img class="mx-auto mb-4 w-36 h-auto rounded-full"
                                 src="/pages/team/marc.jpg"
@@ -144,7 +144,7 @@
                         </template>
 
 
-                    </TeamMemberProfile>
+                    </UiMemberProfile>
 
 
 
@@ -154,7 +154,7 @@
 
       </template>
  
-    </UiLeftSection>
+    </CommonLeftSection>
 
        
     </div>

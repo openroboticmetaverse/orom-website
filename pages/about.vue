@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <UiLeftSection>
+        <CommonLeftSection>
       <template v-slot:title>
         About Open Robotic Metaverse
       </template>
@@ -13,9 +13,9 @@
         <img class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto " alt="hero" src="/pages/about/group_foto.jpg" />
       </template>
  
-    </UiLeftSection>
+        </CommonLeftSection>
 
-    <UiRightSection>
+    <CommonRightSection>
           
           <template v-slot:title>
             Vision
@@ -30,9 +30,9 @@
             <img class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto " alt="hero" src="/pages/about/group_foto_2.jpg" />
           </template>
      
-            </UiRightSection>
+            </CommonRightSection>
 
-            <LandingCardSection>
+            <CommonCardSection>
       <template v-slot:title> Mission</template>
       
       <template v-slot:description> Creating a collaborative platform for robotics enthusiasts, beginners, and professionals to learn, innovate, and share in a fun, engaging environment. </template>
@@ -96,9 +96,9 @@
           </template>
         </UiSimpleCard>
       </template>
-    </LandingCardSection>
+    </CommonCardSection>
 
-    <UiLeftSection :orderFirst="true">
+    <CommonLeftSection :orderFirst="true">
       <template v-slot:title>
         The goal?
       </template>
@@ -111,7 +111,7 @@
         <img class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto " alt="hero" src="/pages/about/roboverse.png" />
       </template>
  
-    </UiLeftSection>
+    </CommonLeftSection>
     </div>
 </template>
 

@@ -1,14 +1,14 @@
 <template>
     <div>
 
-        <UiEmptySection>
+        <CommonEmptySection>
       <template v-slot:mainTitle2>
         Hear from us! 
       </template>
       <template v-slot:description>
         Nothing to show. (yet)
       </template>
-    </UiEmptySection>
+        </CommonEmptySection>
 
     </div>
 </template>

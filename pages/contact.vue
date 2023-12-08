@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <UiRightSection>
+        <CommonRightSection>
           
       <template v-slot:title>
         Reach us!
@@ -40,7 +40,7 @@
         <img class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto " alt="hero" src="/pages/contact/contact.png" />
       </template>
  
-        </UiRightSection>
+        </CommonRightSection>
 
     </div>
 </template>

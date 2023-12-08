@@ -1,11 +1,11 @@
 <template>
-        <TheNavbar/>
+        <LayoutTheNavbar/>
     
     <div>
         
         <slot />
 
-        <TheFooter/>
+        <LayoutTheFooter/>
     </div>
 </template>
 

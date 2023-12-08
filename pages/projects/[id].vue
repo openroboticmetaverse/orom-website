@@ -6,12 +6,11 @@
             <Meta name="description" :content="project.description" />
         </Head>
 
-        <ProjectDetails :project="project" ></ProjectDetails>
+        <CommonProjectDetails :project="project" ></CommonProjectDetails>
     </div>
 </template>
   
 <script setup>
-import ProjectDetails from '~/components/projects/ProjectDetails.vue';
 
 const { id } = useRoute().params
 const uri = 'https://fakestoreapi.com/products/' + id

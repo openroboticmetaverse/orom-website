@@ -1,5 +1,5 @@
 <template>
-    <LandingPhotoSection>
+    <CommonPhotoSection>
         <template v-slot:content>
             <section class=" dark:bg-black">
                 <div class="py-4 mx-auto px-4 max-w-screen-2xl ">
@@ -18,5 +18,5 @@
             </section>
         </template>
 
-    </LandingPhotoSection>
+    </CommonPhotoSection>
 </template>
