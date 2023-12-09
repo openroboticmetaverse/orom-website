@@ -24,7 +24,7 @@ export default defineNuxtConfig({
         { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
         { name: 'apple-mobile-web-app-title', content: "Roboverse" },
         { name: 'theme-color', content: "#000000" },
-        { name: 'description', content: 'A Nuxt 3 template with Tailwind CSS' },
+        { name: 'description', content: 'Robots are coming' },
         { name: 'msapplication-TileColor', content: '#000000' },
         { name: 'theme-color', content: '#000000' },
         {
