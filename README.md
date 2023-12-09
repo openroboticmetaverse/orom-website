@@ -4,9 +4,8 @@
   </a>
 </p>
 <h1 align="center">
-  Current Website Repo for Open Robotic Metaverse
+  Current Website Repo for [Open Robotic Metaverse] (https://www.openroboticmetaverse.org)
 
-  Visit our [official website](https://www.openroboticmetaverse.org)
 
 </h1>
 
