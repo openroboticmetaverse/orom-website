@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="www.openroboticmetaverse.org">
+  <a href="https://www.openroboticmetaverse.org">
     <img alt="orom" src="./assets/icon-with-text.png" width="200" />
   </a>
 </p>
