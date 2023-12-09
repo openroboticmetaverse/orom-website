@@ -80,6 +80,7 @@ export const useProjectsStore = defineStore({
                     id: "1",
                     title: "Segmentation of Fruits",
                     image: "/pages/projects/segmentation.png",
+                    fullImage: "/pages/projects/segmentation_full.png",
                     idea: {
                       1:"For automated harvesting of fruits several tasks need to be performed. One is the classification of fruits and the semantic segmentation of the point cloud data for each object instance. For this task different AI models showed good performance. However the vision data is streamed in realtime and the AI image segmentation must also be performed in realtime to enable the automated lag free harvesting of the fruits.",
                       2:"Vision transformers have recently become established for this type of task. This type of segmentation algorithm will therefore be considered in particular.",
@@ -128,6 +129,7 @@ export const useProjectsStore = defineStore({
                     id: "2",
                     title: "Perception of home robot",
                     image: "/pages/projects/bridging.png",
+                    fullImage: "/pages/projects/bridging_full.png",
                     idea: {
                       1:"In today's dynamic industrial landscape, where products are increasingly diverse and complex, the need for adaptive robotic sensing is constantly rising.  Leveraging deep learning for image or point cloud segmentation enables complex and adaptive assembly and production. ",
                       2:"However, the challenge lies in acquiring vast amounts of annotated data to train these AI algorithms [2,3]. Traditionally, this has been a resource-intensive endeavour. But here's where the magic begins: the concept of 'sim2real'—bridging the gap between simulation and reality [3]. By generating synthetic data, we can fast-track the training process without relying solely on real-world data.",
@@ -162,6 +164,7 @@ export const useProjectsStore = defineStore({
                     id: "3",
                     title: "Interactive 3D Web Designer",
                     image: "/pages/projects/browser.png",
+                    fullImage: "/pages/projects/browser_full.png",
                     idea: {
                       1: "In today's world, 3D modeling and interaction are becoming super important in a bunch of cool areas. Think about setting up a new factory, developing a robotics solution, designing buildings (Architecture), or even creating video games – they all use 3D models. Our project is about building a web app that lets users play around with 3D models right in their browser. It's like giving them a digital sandbox where they can create, view, and mess with different 3D objects. This isn't just fun; it's a skill that's super useful in many industries. ",
                       2: "You and your group can chose a use-case that you want to focus on. Proposed would be to work on a tool that makes it possible to design and interact with a robot cell in a 3D world right from your browser! ",
