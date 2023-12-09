@@ -63,11 +63,11 @@ useHead({
     },
     {
       property: "og:image:width",
-      content: "300",
+      content: "256",
     },
     {
       property: "og:image:height",
-      content: "300", 
+      content: "256", 
     }
   ],
 });
