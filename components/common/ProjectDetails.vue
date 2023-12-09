@@ -32,7 +32,7 @@
           Project Description:
         </h3>
         <div v-for="(idea, index) in project.idea" :key="'idea-' + index">
-          <p class="mb-7 text-xl">{{ idea }}</p>
+          <p class="mb-7 sm:text-xl">{{ idea }}</p>
         </div>
         <h3 class="font-bold gradient-text-left border-b-2 py-4 mb-4 pb-2">
           Algorithms:
@@ -40,7 +40,7 @@
         <ul>
           <li
             v-for="(algorithm, index) in project.algorithms"
-            class="text-xl"
+            class="sm:text-xl"
             :key="'algorithm-' + index"
           >
            - {{ algorithm }}
@@ -52,7 +52,7 @@
         <ul>
           <li
             v-for="(milestone, index) in project.milestones"
-            class="text-xl"
+            class="sm:text-xl"
             :key="'milestone-' + index"
           >
            - {{ milestone }}
@@ -64,7 +64,7 @@
         <ul>
           <li
             v-for="(challenge, index) in project.challenges"
-            class="text-xl"
+            class="sm:text-xl"
             :key="'challenge-' + index"
           >
           -  {{ challenge }}
