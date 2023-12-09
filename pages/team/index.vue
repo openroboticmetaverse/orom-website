@@ -20,8 +20,8 @@
                                 :githubLink="member.github">
 
                                 <template v-slot:image>
-                                    <img class="member-pic" :src="member.image"
-                                        :alt="`${member.name} Avatar`">
+                                    <nuxt-img class="member-pic" :src="member.image"
+                                        :alt="`${member.name} Avatar`"/>
                                 </template>
                                 <template v-slot:name>
                                     <a class="text-gray-50">{{ member.name }}</a>

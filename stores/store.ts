@@ -126,7 +126,7 @@ export const useProjectsStore = defineStore({
                   },
                    {
                     id: "2",
-                    title: "AI based robotic vision",
+                    title: "Perception of home robot",
                     image: "/pages/projects/bridging.png",
                     idea: {
                       1:"In today's dynamic industrial landscape, where products are increasingly diverse and complex, the need for adaptive robotic sensing is constantly rising.  Leveraging deep learning for image or point cloud segmentation enables complex and adaptive assembly and production. ",

@@ -84,7 +84,7 @@
         <CommonIconList></CommonIconList>
       </template>
       <template v-slot:image>
-        <img class=" object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto " alt="hero"
+        <nuxt-img class=" object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto " alt="hero"
           src="/pages/home/landing1.png" />
       </template>
     </CommonLeftSection>
