@@ -8,8 +8,7 @@
         <h2 class="text-lg font-medium">{{ project.title }}</h2>
       </div>
       <div class="flex flex-col justify-between flex-grow">
-        <!-- <NuxtLink :to="`/projects/${project.id}`" class="mt-3 min-h-12xl hover:text-blue-600 duration-200 inline-flex items-center"> -->
-        <NuxtLink :to="`#`" class="mt-3 min-h-12xl hover:text-blue-600 duration-200 inline-flex items-center">
+        <NuxtLink :to="`/projects/${project.id}`" class="mt-3 min-h-12xl hover:text-teal-300 duration-200 inline-flex items-center">
           Learn More
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
             stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">

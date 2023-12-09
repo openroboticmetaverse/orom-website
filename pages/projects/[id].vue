@@ -1,19 +1,23 @@
 <template>
-    <div>
-        <CommonProjectDetails :project="project"></CommonProjectDetails>
-    </div>
+  <div>
+    <CommonProjectDetails :project="project"></CommonProjectDetails>
+  </div>
 </template>
   
 <script setup>
+import { computed } from "vue";
+const route = useRoute();
+const projectsStore = useProjectsStore();
+const { projects } = storeToRefs(projectsStore);
 
-const { id } = useRoute().params
-const uri = 'https://fakestoreapi.com/products/' + id
+const projectId = route.params.id;
 
+const project = computed(() => {
+  return projectsStore.projects.find((p) => p.id === projectId);
+});
 //  fetch the products
-const { data: project } = await useFetch(uri, { key: id })
 
 if (!project.value) {
-    throw createError({ statusCode: 404, statusMessage: 'Product not found' })
+  throw createError({ statusCode: 404, statusMessage: "Product not found" });
 }
-
 </script>
