@@ -17,8 +17,8 @@
           </div>
           <div class="flex flex-1 justify-between sm:items-stretch">
             <div class="flex flex-shrink-0">
-              <img class="h-8 w-auto" src="/icon.svg" alt="Your Company" />
-              <p class="ml-5 mt-1">open robotic metaverse</p>
+              <img class="h-10 w-auto" src="../assets/icon-with-text.png"
+                                alt="open robotic metaverse logo">
             </div>
 
             <div class="hidden sm:ml-6 sm:block ml-auto">
