@@ -17,9 +17,11 @@ const project = computed(() => {
   return projectsStore.projects.find((p) => p.id === projectId);
 });
 
-const baseUrl = 'https://www.openroboticmetaverse.org';
-const fullImageUrl = project.value ? `${baseUrl}${project.value.image}` : '';
-
+const baseUrl = 'http://www.openroboticmetaverse.org';
+const secureUrl = 'https://www.openroboticmetaverse.org';
+const fullBaseImageUrl = project.value ? `${baseUrl}${project.value.image}` : '';
+const fullSecureImageUrl = project.value ? `${baseUrl}${project.value.image}` : '';
+console.log(fullBaseImageUrl)
 useHead({
   title: `${project.value.title} | open robotic metaverse `,
   meta: [
@@ -37,11 +39,11 @@ useHead({
     },
     {
       property: "og:image",
-      content: fullImageUrl, 
+      content: fullBaseImageUrl, 
     },
     {
       property: "og:image:secure_url",
-      content: fullImageUrl, 
+      content: fullSecureImageUrl, 
     },
     {
       property: "og:image:type",
