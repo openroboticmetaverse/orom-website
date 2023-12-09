@@ -17,7 +17,7 @@
           </div>
           <div class="flex flex-1 justify-between sm:items-stretch">
             <div class="flex flex-shrink-0">
-              <img class="h-10 w-auto" src="../assets/icon-with-text.png"
+              <img class="h-10 w-auto" src="../../assets/icon-with-text.png"
                                 alt="open robotic metaverse logo">
             </div>
 
@@ -26,37 +26,37 @@
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                 <NuxtLink
                   to="/"
-                  class="text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-sm font-medium"
+                  class="text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-md font-medium"
                 >
                   Home</NuxtLink
                 >
                 <NuxtLink
                   to="/about"
-                  class="text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-sm font-medium"
+                  class="text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-md font-medium"
                 >
                   About</NuxtLink
                 >
                 <NuxtLink
                   to="/team"
-                  class="text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-sm font-medium"
+                  class="text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-md font-medium"
                 >
                   Team</NuxtLink
                 >
                 <NuxtLink
                   to="/projects"
-                  class="text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-sm font-medium"
+                  class="text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-md font-medium"
                 >
                   Projects</NuxtLink
                 >
                 <NuxtLink
                   to="/newsroom"
-                  class="text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-sm font-medium"
+                  class="text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-md font-medium"
                 >
                   Newsroom</NuxtLink
                 >
                 <NuxtLink
                   to="/contact"
-                  class="text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-sm font-medium"
+                  class="text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-md font-medium"
                 >
                   Contact</NuxtLink
                 >
