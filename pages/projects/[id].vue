@@ -37,6 +37,18 @@ useHead({
       content: `${project.value?.idea[1]}`, 
     },
     {
+      property: "og:type",
+      content: "website", 
+    },
+    {
+      property: "og:site_name",
+      content: "open robotic metaverse", 
+    },
+    {
+      property: "og:updated_time",
+      content: "updatedtime", 
+    },
+    {
       property: "og:image",
       itemprop: "image",
       content: baseImageUrl, 
