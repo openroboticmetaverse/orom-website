@@ -1,10 +1,13 @@
 <p align="center">
   <a href="https://www.openroboticmetaverse.org">
-    <img alt="orom" src="./assets/icon-with-text.png" width="200" />
+    <img alt="orom" src="./assets/icon-with-text.png" width="300" />
   </a>
 </p>
 <h1 align="center">
   Current Website Repo for Open Robotic Metaverse
+
+  Visit our [official website](https://www.openroboticmetaverse.org)
+
 </h1>
 
 # Setup
