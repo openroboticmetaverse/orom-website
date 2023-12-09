@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="pt-12 md:pt-0 lg:pt-0"></div>
+        <div class="pt-24 sm:pt-0 md:pt-0 lg:pt-0"></div>
         <CommonLeftSection :orderFirst="true">
             <template v-slot:title>
                 Meet the team!
