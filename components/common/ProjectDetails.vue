@@ -22,17 +22,17 @@
       </NuxtLink>
     </span>
 
-    <div class="grid md:grid-cols-2 grid-cols-1 gap-10">
+    <div class="grid md:grid-cols-2 grid-cols-1 gap-2 sm:px-10">
       <div class="p-7">
         <img :src="project.image" class="mx-auto my-7 w-full md:max-w-md" />
       </div>
-      <div class="p-7">
+      <div class="p-7 sm:p-2">
         <h2 class="text-4xl my-0 sm:my-7">{{ project.title }}</h2>
         <h3 class="font-bold gradient-text-left border-b-2 py-2 mb-4 pb-2">
           Project Description:
         </h3>
         <div v-for="(idea, index) in project.idea" :key="'idea-' + index">
-          <p class="mb-7">{{ idea }}</p>
+          <p class="mb-7 text-xl">{{ idea }}</p>
         </div>
         <h3 class="font-bold gradient-text-left border-b-2 py-4 mb-4 pb-2">
           Algorithms:
@@ -40,9 +40,10 @@
         <ul>
           <li
             v-for="(algorithm, index) in project.algorithms"
+            class="text-xl"
             :key="'algorithm-' + index"
           >
-            {{ algorithm }}
+           - {{ algorithm }}
           </li>
         </ul>
         <h3 class="font-bold gradient-text-left border-b-2 py-4 mb-4 pb-2">
@@ -51,9 +52,10 @@
         <ul>
           <li
             v-for="(milestone, index) in project.milestones"
+            class="text-xl"
             :key="'milestone-' + index"
           >
-            {{ milestone }}
+           - {{ milestone }}
           </li>
         </ul>
         <h3 class="font-bold gradient-text-left border-b-2 py-4 mb-4 pb-2">
@@ -62,9 +64,10 @@
         <ul>
           <li
             v-for="(challenge, index) in project.challenges"
+            class="text-xl"
             :key="'challenge-' + index"
           >
-            {{ challenge }}
+          -  {{ challenge }}
           </li>
         </ul>
         <h3 class="font-bold gradient-text-left border-b-2 py-4 mb-4 pb-2">
