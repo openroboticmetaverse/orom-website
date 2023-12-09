@@ -40,12 +40,20 @@ useHead({
       content: fullImageUrl, 
     },
     {
+      property: "og:image:secure_url",
+      content: fullImageUrl, 
+    },
+    {
+      property: "og:image:type",
+      content: "image/png", 
+    },
+    {
       property: "og:image:width",
-      content: "1200",
+      content: "400",
     },
     {
       property: "og:image:height",
-      content: "630", 
+      content: "300", 
     }
   ],
 });
