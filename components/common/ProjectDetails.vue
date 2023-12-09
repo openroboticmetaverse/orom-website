@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <span
-      class="inline-flex items-center mt-3 min-h-12xl hover:text-teal-300 duration-200"
+      class="inline-flex pt-12 sm:pt-2 md:pt-2 lg:pt-2 items-center mt-3 min-h-12xl hover:text-teal-300 duration-200"
     >
       <svg
         fill="none"
