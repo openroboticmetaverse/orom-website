@@ -70,19 +70,24 @@
         <h3 class="font-bold gradient-text-left border-b-2 py-4 mb-4 pb-2">
           Materials:
         </h3>
-        <div v-if="Object.keys(project.materials.datasets).length">
-          <h4>Datasets:</h4>
+        <div class="pt-6" v-if="Object.keys(project.materials.datasets).length">
+          <h4 class="font-bold pb-3">Datasets:</h4>
           <ol>
             <li
               v-for="(dataset, index) in project.materials.datasets"
               :key="'dataset-' + index"
             >
-              <a :href="dataset.url" target="_blank">{{ dataset.title }}</a>
+              <a
+                :href="dataset.url"
+                class="px-6 hover:text-teal-200 duration-500 ease-in-out"
+                target="_blank"
+                >{{ dataset.title }}</a
+              >
             </li>
           </ol>
         </div>
-        <div v-if="Object.keys(project.materials.sources).length">
-          <h4 class="font-bold">Sources:</h4>
+        <div class="pt-6" v-if="Object.keys(project.materials.sources).length">
+          <h4 class="font-bold pb-3">Sources:</h4>
           <ol>
             <li
               v-for="(source, index) in project.materials.sources"
