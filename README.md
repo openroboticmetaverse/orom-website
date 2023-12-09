@@ -1,15 +1,31 @@
+<style>
+  h1 {
+    color: #4A90E2; /* A nice blue color */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+
+  a {
+    color: #FF4081; /* A vibrant pink for links */
+    text-decoration: none; /* No underlines for a cleaner look */
+  }
+
+  a:hover {
+    text-decoration: underline; /* Underline on hover for interactivity */
+  }
+</style>
+
 <p align="center">
   <a href="https://www.openroboticmetaverse.org">
     <img alt="orom" src="./assets/icon-with-text.png" width="300" />
   </a>
 </p>
 <h1 align="center">
-  Current Website Repo for [Open Robotic Metaverse] (https://www.openroboticmetaverse.org)
-
-
+  Current Website Repo for <a href="https://www.openroboticmetaverse.org">Open Robotic Metaverse</a>
 </h1>
 
-# Setup
+
+## Setup
 
 The site is developed using Nuxt 3
 
