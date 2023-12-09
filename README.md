@@ -17,7 +17,6 @@ Check out their [official website](https://nuxt.com/)
 1. Clone the Repo 
 
 ```bash
-# npm
 git clone https://github.com/openroboverse/open-rv-website.git
 
 ```
