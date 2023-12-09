@@ -29,7 +29,7 @@ useHead({
   meta: [
     {
       name: "description",
-      content: "Projects page for the Nuxt 3 template",
+      content: "Open Robotic Metaverse Projects",
     },
   ],
 });
