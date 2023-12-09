@@ -55,7 +55,7 @@ useHead({
     },
     {
       property: "og:image:height",
-      content: "300", 
+      content: "400", 
     }
   ],
 });
