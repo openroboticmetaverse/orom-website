@@ -20,7 +20,7 @@
                                 :githubLink="member.github">
 
                                 <template v-slot:image>
-                                    <nuxt-img class="member-pic" :src="member.image"
+                                    <img class="member-pic" :src="member.image"
                                         :alt="`${member.name} Avatar`"/>
                                 </template>
                                 <template v-slot:name>

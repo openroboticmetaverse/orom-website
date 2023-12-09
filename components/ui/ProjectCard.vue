@@ -2,7 +2,7 @@
   <div class="p-10 h-full max-w-sm ">
     <div class="project-card">
       <div class="image-container mb-4"> <!-- New div for the image -->
-        <nuxt-img class=" " :src="`${project.image}`" alt="" />
+        <img class=" " :src="`${project.image}`" alt="" />
       </div>
       <div class="flex items-center mb-3 ">
         <h2 class="text-lg font-medium">{{ project.title }}</h2>

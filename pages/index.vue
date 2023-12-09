@@ -84,7 +84,7 @@
         <CommonIconList></CommonIconList>
       </template>
       <template v-slot:image>
-        <nuxt-img class=" object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto " alt="hero"
+        <img class=" object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto " alt="hero"
           src="/pages/home/landing1.png" />
       </template>
     </CommonLeftSection>
@@ -119,9 +119,7 @@ useJsonld(() => ({
     // Add more contact details if needed
   },
   "logo": "https://www.openroboticmetaverse.org/icon.svg",
-  "image": [
-    "https://www.openroboticmetaverse.org/pages/about/group_foto.jpg",
-  ],
+
 
 
   // Add more relevant details here

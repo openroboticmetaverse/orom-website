@@ -24,7 +24,7 @@
 
     <div class="grid md:grid-cols-2 grid-cols-1 gap-2 sm:px-10">
       <div class="p-7">
-        <nuxt-img :src="project.image" class="mx-auto my-7 w-full md:max-w-md" />
+        <img :src="project.image" class="mx-auto my-7 w-full md:max-w-md" />
       </div>
       <div class="p-7 sm:p-2">
         <h2 class="text-4xl my-0 sm:my-7">{{ project.title }}</h2>
