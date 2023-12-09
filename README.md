@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="./assets/icon-with-text.png" width="60" />
+  <a href="www.openroboticmetaverse.org">
+    <img alt="orom" src="./assets/icon-with-text.png" width="60" />
   </a>
 </p>
 <h1 align="center">
