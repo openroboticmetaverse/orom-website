@@ -1,6 +1,6 @@
 <template>
   <div>
-
+    <div class="py-6 sm:py-0"></div>
     <CommonLeftSection>
       <template v-slot:title>
         About Open Robotic Metaverse
