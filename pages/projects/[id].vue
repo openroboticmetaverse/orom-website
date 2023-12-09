@@ -20,7 +20,7 @@ const project = computed(() => {
 const baseUrl = 'http://www.openroboticmetaverse.org';
 const secureUrl = 'https://www.openroboticmetaverse.org';
 const baseImageUrl = project.value ? `${baseUrl}${project.value.image}` : '';
-const secureImageUrl = project.value ? `${baseUrl}${project.value.image}` : '';
+const secureImageUrl = project.value ? `${secureUrl}${project.value.image}` : '';
 useHead({
   title: `${project.value.title} | open robotic metaverse `,
   meta: [
