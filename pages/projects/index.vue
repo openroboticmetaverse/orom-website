@@ -29,7 +29,7 @@ useHead({
   meta: [
     {
       name: "description",
-      content: "Open Robotic Metaverse Projects",
+      content: "Projects | Open Robotic Metaverse",
     },
   ],
 });

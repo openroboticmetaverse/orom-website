@@ -17,7 +17,7 @@ useHead({
   title: 'Newsroom | open robotic metaverse',
   meta: [
     {
-      name: 'description', content: 'Open Robotic Metaverse Newsroom'
+      name: 'description', content: 'Newsroom | Open Robotic Metaverse'
     }]
 })
 </script>
