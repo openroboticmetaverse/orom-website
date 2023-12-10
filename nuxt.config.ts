@@ -17,6 +17,11 @@ export default defineNuxtConfig({
   imports: {
     dirs: ["stores"],
   },
+  gsap: {
+    extraPlugins: {
+      scrollTrigger: true
+    },
+  },
   image: {
     dir: "assets/images",
   },
