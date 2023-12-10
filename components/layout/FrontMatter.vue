@@ -89,7 +89,7 @@ $gsap.set(".sliding-title, .sliding-description, .sliding-text", { opacity: 0, x
     $gsap.to(".sliding-title", {
       opacity: 1,
       x: "0%",
-      duration: 1.5,
+      duration: 1.0,
       ease: "power2.out",
     });
 
@@ -97,13 +97,13 @@ $gsap.set(".sliding-title, .sliding-description, .sliding-text", { opacity: 0, x
     $gsap.to(".sliding-description", {
       opacity: 1,
       x: "0%",
-      duration: 1.5,
+      duration: 0.5,
       ease: "power2.out",
     });
     $gsap.to(".sliding-text", {
       opacity: 1,
       x: "0%",
-      duration: 1.5,
+      duration: 0.5,
       ease: "power2.out",
     });
 
