@@ -43,7 +43,7 @@
             class="sm:text-xl"
             :key="'algorithm-' + index"
           >
-           - {{ algorithm }}
+            - {{ algorithm }}
           </li>
         </ul>
         <h3 class="font-bold gradient-text-left border-b-2 py-4 mb-4 pb-2">
@@ -55,7 +55,7 @@
             class="sm:text-xl"
             :key="'milestone-' + index"
           >
-           - {{ milestone }}
+            - {{ milestone }}
           </li>
         </ul>
         <h3 class="font-bold gradient-text-left border-b-2 py-4 mb-4 pb-2">
@@ -67,7 +67,7 @@
             class="sm:text-xl"
             :key="'challenge-' + index"
           >
-          -  {{ challenge }}
+            - {{ challenge }}
           </li>
         </ul>
         <h3 class="font-bold gradient-text-left border-b-2 py-4 mb-4 pb-2">

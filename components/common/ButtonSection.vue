@@ -6,14 +6,12 @@
           <!-- Centered on mobile -->
           <UiRoundedButton :buttonLink="button1Link">
             <template v-slot:button>
-              <slot name="button1">
-              </slot>
+              <slot name="button1"> </slot>
             </template>
           </UiRoundedButton>
           <UiRoundedButton :buttonLink="button2Link">
             <template v-slot:button>
-              <slot name="button2">
-              </slot>
+              <slot name="button2"> </slot>
             </template>
           </UiRoundedButton>
         </div>
@@ -22,24 +20,22 @@
   </section>
 </template>
 <script>
-
 export default {
   props: {
     button1Link: {
       type: String,
-      required: true
+      required: true,
     },
     button2Link: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
-}
+};
 </script>
   
 <style scoped>
 @media (min-width: 768px) {
-
   /* Adjust behavior for screens wider than 768px */
   .flex-col {
     flex-direction: row;

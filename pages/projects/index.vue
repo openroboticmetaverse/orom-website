@@ -20,9 +20,8 @@
 <script setup>
 import { ref } from "vue";
 
-
 const projectsStore = useProjectsStore();
-const { projects } = storeToRefs(projectsStore)
+const { projects } = storeToRefs(projectsStore);
 
 useHead({
   title: "Projects | open robotic metaverse",

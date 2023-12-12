@@ -19,7 +19,7 @@ export default defineNuxtConfig({
   },
   gsap: {
     extraPlugins: {
-      scrollTrigger: true
+      scrollTrigger: true,
     },
   },
   image: {

@@ -4,9 +4,8 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8" style="z-index: 10">
       <div class="mx-auto max-w-4xl lg:mx-0">
         <h2
-          class="text-4xl font-bold tracking-tight text-white sm:text-8xl gradient-text-left sliding-title"
-        >
-          
+          class="text-4xl font-bold tracking-tight sm:text-8xl gradient-text-left sliding-title"
+        >   
           <p>together, we shape the future of robotics</p>
         </h2>
         <p
@@ -123,12 +122,6 @@ $gsap.set(".sliding-title, .sliding-description, .sliding-text", { opacity: 0, x
   pointer-events: none;
 }
 
-.gradient-text-left {
-  background: linear-gradient(45deg, #4bb8a6, #085ba0);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
 
 @media (max-width: 768px) {
   #canvas {
