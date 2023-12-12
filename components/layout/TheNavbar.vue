@@ -16,11 +16,15 @@
             </div>
           </div>
           <div class="flex flex-1 justify-between sm:items-stretch">
-            <div class="flex flex-shrink-0">
-              <img class="h-10 w-auto" src="../../assets/icon-with-text.png"
-                                alt="open robotic metaverse logo">
-            </div>
-
+            <NuxtLink to="/">
+              <div class="flex flex-shrink-0">
+                <img
+                  class="h-10 w-auto"
+                  src="../../assets/icon-with-text.png"
+                  alt="open robotic metaverse logo"
+                />
+              </div>
+            </NuxtLink>
             <div class="hidden sm:ml-6 sm:block ml-auto">
               <div class="flex space-x-4">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
