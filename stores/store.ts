@@ -8,7 +8,7 @@ export const useTeamStore = defineStore({
           name: "Amine",
           linkedin: "https://www.linkedin.com/in/aminekharrat/",
           github: "https://github.com/AmineKharrat",
-          image: "/pages/team/amine.jpg",
+          image: "/openroboverse/team/amine_ea0ijk.jpg",
           title: "CEO",
         },
         {
@@ -16,7 +16,7 @@ export const useTeamStore = defineStore({
           name: "Karim",
           linkedin: "https://www.linkedin.com/in/karim-siala/",
           github: "https://github.com/karimsiala",
-          image: "/pages/team/karim.jpg",
+          image: "/openroboverse/team/karim_kddxb5.jpg",
           title: "Nerd",
         },
         {
@@ -24,7 +24,7 @@ export const useTeamStore = defineStore({
           name: "Hazar",
           linkedin: "https://www.linkedin.com/in/hazar-karadag/",
           github: "https://github.com/parhasard",
-          image: "/pages/team/hazar.jpg",
+          image: "/openroboverse/team/hazar_lhll8y.jpg",
           title: "Queen",
         },
         {
@@ -33,7 +33,7 @@ export const useTeamStore = defineStore({
           linkedin:
             "https://www.linkedin.com/in/luca-sophie-lamerichs-131104206/",
           github: "https://github.com/openroboverse",
-          image: "/pages/team/luca.jpg",
+          image: "/openroboverse/team/luca_spikki.jpg",
           title: "Luca",
         },
         {
@@ -41,7 +41,7 @@ export const useTeamStore = defineStore({
           name: "Jan",
           linkedin: "https://www.linkedin.com/in/janstrehl/",
           github: "https://github.com/strehljd",
-          image: "/pages/team/jan.jpg",
+          image: "/openroboverse/team/jan_v4l9n0.jpg",
           title: "Dev",
         },
         {
@@ -50,7 +50,7 @@ export const useTeamStore = defineStore({
           linkedin:
             "https://www.linkedin.com/in/estefania-betancourt-9545531a9/",
           github: "https://github.com/openroboverse",
-          image: "/pages/team/estafania.jpg",
+          image: "/openroboverse/team/estafania_rkthuw.jpg",
           title: "Dev",
         },
         {
@@ -58,7 +58,7 @@ export const useTeamStore = defineStore({
           name: "Thu Ha",
           linkedin: "https://www.linkedin.com/in/thu-ha-dam-b0a7061b5/",
           github: "https://github.com/openroboverse",
-          image: "/pages/team/thuha.jpg",
+          image: "/openroboverse/team/thuha_berfop.jpg",
           title: "Dev",
         },
         {
@@ -67,7 +67,7 @@ export const useTeamStore = defineStore({
           linkedin:
             "https://www.linkedin.com/in/marc-andr%C3%A9-weism%C3%BCller/",
           github: "https://github.com/openroboverse",
-          image: "/pages/team/marc.jpg",
+          image: "/openroboverse/team/marc_aj6znt.jpg",
           title: "Dev",
         },
       ],
@@ -82,8 +82,8 @@ export const useProjectsStore = defineStore({
         {
           id: "1",
           title: "Segmentation of Fruits",
-          image: "/pages/projects/segmentation.png",
-          fullImage: "/pages/projects/segmentation_full.png",
+          image: "/openroboverse/segmentation_full_uw4for.png",
+          fullImage: "/openroboverse/segmentation_full_uw4for.png",
           idea: {
             1: "For automated harvesting of fruits several tasks need to be performed. One is the classification of fruits and the semantic segmentation of the point cloud data for each object instance. For this task different AI models showed good performance. However the vision data is streamed in realtime and the AI image segmentation must also be performed in realtime to enable the automated lag free harvesting of the fruits.",
             2: "Vision transformers have recently become established for this type of task. This type of segmentation algorithm will therefore be considered in particular.",
@@ -136,8 +136,8 @@ export const useProjectsStore = defineStore({
         {
           id: "2",
           title: "Perception of home robot",
-          image: "/pages/projects/bridging.png",
-          fullImage: "/pages/projects/bridging_full.png",
+          image: "/openroboverse/bridging_full_middlf.png",
+          fullImage: "/openroboverse/bridging_full_middlf.png",
           idea: {
             1: "In today's dynamic industrial landscape, where products are increasingly diverse and complex, the need for adaptive robotic sensing is constantly rising.  Leveraging deep learning for image or point cloud segmentation enables complex and adaptive assembly and production. ",
             2: "However, the challenge lies in acquiring vast amounts of annotated data to train these AI algorithms [2,3]. Traditionally, this has been a resource-intensive endeavour. But here's where the magic begins: the concept of 'sim2real'—bridging the gap between simulation and reality [3]. By generating synthetic data, we can fast-track the training process without relying solely on real-world data.",
@@ -172,8 +172,8 @@ export const useProjectsStore = defineStore({
         {
           id: "3",
           title: "Interactive 3D Web Designer",
-          image: "/pages/projects/browser.png",
-          fullImage: "/pages/projects/browser_full.png",
+          image: "/openroboverse/browser_full_dlo5kv.png",
+          fullImage: "/openroboverse/browser_full_dlo5kv.png",
           idea: {
             1: "In today's world, 3D modeling and interaction are becoming super important in a bunch of cool areas. Think about setting up a new factory, developing a robotics solution, designing buildings (Architecture), or even creating video games – they all use 3D models. Our project is about building a web app that lets users play around with 3D models right in their browser. It's like giving them a digital sandbox where they can create, view, and mess with different 3D objects. This isn't just fun; it's a skill that's super useful in many industries. ",
             2: "You and your group can chose a use-case that you want to focus on. Proposed would be to work on a tool that makes it possible to design and interact with a robot cell in a 3D world right from your browser! ",

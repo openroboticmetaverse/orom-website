@@ -19,10 +19,11 @@
       </template>
       <template v-slot:image>
         <div class="py-10"></div>
-        <img
+        <nuxt-img
           class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto"
+          provider="cloudinary"
           alt="hero"
-          src="/pages/contact/contact.png"
+          src="/openroboverse/contact_r3zvl5.png"
         />
       </template>
     </CommonRightSection>

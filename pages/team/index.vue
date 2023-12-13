@@ -25,8 +25,9 @@
                 :githubLink="member.github"
               >
                 <template v-slot:image>
-                  <img
+                  <nuxt-img
                     class="member-pic"
+                    provider="cloudinary"
                     :src="member.image"
                     :alt="`${member.name} Avatar`"
                   />
@@ -77,16 +78,14 @@ useJsonld(() => ({
   },
   logo: "https://www.openroboticmetaverse.org/icon.svg",
   image: [
-    "https://www.openroboticmetaverse.org/pages/about/group_foto.jpg",
-    "https://www.openroboticmetaverse.org/pages/about/group_foto_2.jpg",
-    "https://www.openroboticmetaverse.org/pages/about/roboverse.png",
+    "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467037/openroboverse/group_foto_ne6ngk.jpg",
   ],
   member: [
     {
       "@type": "Person",
       name: "Amine",
       jobTitle: "Founder",
-      image: "https://www.openroboticmetaverse.org/pages/team/amine.jpg",
+      image: "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467097/openroboverse/team/amine_ea0ijk.jpg",
       url: "https://www.linkedin.com/in/aminekharrat/",
       sameAs: "https://github.com/AmineKharrat",
     },
@@ -94,7 +93,7 @@ useJsonld(() => ({
       "@type": "Person",
       name: "Karim",
       jobTitle: "Founder",
-      image: "https://www.openroboticmetaverse.org/pages/team/karim.jpg",
+      image: "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467105/openroboverse/team/karim_kddxb5.jpg",
       url: "https://www.linkedin.com/in/karim-siala/",
       sameAs: "https://github.com/karimsiala",
     },
@@ -102,7 +101,7 @@ useJsonld(() => ({
       "@type": "Person",
       name: "Hazar",
       jobTitle: "Founder",
-      image: "https://www.openroboticmetaverse.org/pages/team/hazar.jpg",
+      image: "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467101/openroboverse/team/hazar_lhll8y.jpg",
       url: "https://www.linkedin.com/in/hazar-karadag/",
       sameAs: "https://github.com/parhasard",
     },
@@ -110,7 +109,7 @@ useJsonld(() => ({
       "@type": "Person",
       name: "Luca",
       jobTitle: "Founder",
-      image: "https://www.openroboticmetaverse.org/pages/team/luca.jpg",
+      image: "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467107/openroboverse/team/luca_spikki.jpg",
       url: "https://www.linkedin.com/in/luca-sophie-lamerichs-131104206/",
       sameAs: "https://github.com/openroboverse",
     },
@@ -118,7 +117,7 @@ useJsonld(() => ({
       "@type": "Person",
       name: "Jan",
       jobTitle: "Founder",
-      image: "https://www.openroboticmetaverse.org/pages/team/jan.jpg",
+      image: "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467103/openroboverse/team/jan_v4l9n0.jpg",
       url: "https://www.linkedin.com/in/janstrehl/",
       sameAs: "https://github.com/strehljd",
     },
@@ -126,7 +125,7 @@ useJsonld(() => ({
       "@type": "Person",
       name: "Estafania",
       jobTitle: "Founder",
-      image: "https://www.openroboticmetaverse.org/pages/team/estafania.jpg",
+      image: "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467099/openroboverse/team/estafania_rkthuw.jpg",
       url: "https://www.linkedin.com/in/estefania-betancourt-9545531a9/",
       sameAs: "https://github.com/openroboverse",
     },
@@ -134,7 +133,7 @@ useJsonld(() => ({
       "@type": "Person",
       name: "Thu Ha",
       jobTitle: "Founder",
-      image: "https://www.openroboticmetaverse.org/pages/team/thuha.jpg",
+      image: "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467111/openroboverse/team/thuha_berfop.jpg",
       url: "https://www.linkedin.com/in/thu-ha-dam-b0a7061b5/",
       sameAs: "https://github.com/openroboverse",
     },
@@ -142,7 +141,7 @@ useJsonld(() => ({
       "@type": "Person",
       name: "Marc",
       jobTitle: "Founder",
-      image: "https://www.openroboticmetaverse.org/pages/team/marc.jpg",
+      image: "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467109/openroboverse/team/marc_aj6znt.jpg",
       url: "https://www.linkedin.com/in/marc-andr%C3%A9-weism%C3%BCller/",
       sameAs: "https://github.com/openroboverse",
     },

@@ -50,7 +50,7 @@ useJsonld(() => ({
           "@type": "CreativeWork",
           name: "Segmentation of Fruits",
           image:
-            "https://www.openroboticmetaverse.org/pages/projects/segmentation.png",
+            "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467075/openroboverse/segmentation_full_uw4for.png",
           description:
             "A project focused on the segmentation of fruits using advanced machine learning techniques.",
           // Add more details if available
@@ -61,10 +61,11 @@ useJsonld(() => ({
         position: 2,
         item: {
           "@type": "CreativeWork",
-          name: "GAN for Garden Simulation",
-          image: "https://www.openroboticmetaverse.org/pages/projects/gan.png",
+          name: "AI based robotic vision",
+          image:
+            "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467072/openroboverse/bridging_full_middlf.png",
           description:
-            "Utilizing Generative Adversarial Networks to simulate garden environments in high detail.",
+            "Developing AI-driven solutions for enhancing robotic vision capabilities.",
           // Add more details if available
         },
       },
@@ -73,22 +74,9 @@ useJsonld(() => ({
         position: 3,
         item: {
           "@type": "CreativeWork",
-          name: "AI based robotic vision",
-          image:
-            "https://www.openroboticmetaverse.org/pages/projects/bridging.png",
-          description:
-            "Developing AI-driven solutions for enhancing robotic vision capabilities.",
-          // Add more details if available
-        },
-      },
-      {
-        "@type": "ListItem",
-        position: 4,
-        item: {
-          "@type": "CreativeWork",
           name: "Robots on the Browser",
           image:
-            "https://www.openroboticmetaverse.org/pages/projects/browser.png",
+            "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467075/openroboverse/browser_full_dlo5kv.png",
           description:
             "An innovative project bringing robotics simulations to web browsers for greater accessibility.",
           // Add more details if available

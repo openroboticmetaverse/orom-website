@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/tailwindcss",
     "nuxt-jsonld",
-    "@nuxt/image",
+    "@nuxt/image-edge",
     "@nuxt/content",
     "@hypernym/nuxt-gsap",
     [
@@ -23,7 +23,9 @@ export default defineNuxtConfig({
     },
   },
   image: {
-    dir: "assets/images",
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/dilan3qfq/image/upload/',
+    },
   },
   target: "static",
   app: {

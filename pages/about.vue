@@ -11,10 +11,11 @@
       </template>
       <template v-slot:icons> </template>
       <template v-slot:image>
-        <img
+        <nuxt-img
           class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto"
           alt="hero"
-          src="/pages/about/group_foto.jpg"
+          provider="cloudinary"
+          src="/openroboverse/group_foto_ne6ngk.jpg"
         />
       </template>
     </CommonLeftSection>
@@ -30,10 +31,11 @@
       </template>
       <template v-slot:image>
         <div class="py-10"></div>
-        <img
+        <nuxt-img
           class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto"
           alt="hero"
-          src="/pages/about/group_foto_2.jpg"
+          provider="cloudinary"
+          src="/openroboverse/group_foto_2_bqdglp.jpg"
         />
       </template>
     </CommonRightSection>
@@ -113,10 +115,11 @@
       </template>
       <template v-slot:icons> </template>
       <template v-slot:image>
-        <img
+        <nuxt-img
           class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto reveal"
           alt="hero"
-          src="/pages/about/roboverse.png"
+          provider="cloudinary"
+          src="/openroboverse/roboverse_h1tlhw.png"
         />
       </template>
     </CommonLeftSection>
