@@ -209,6 +209,46 @@ export const useProjectsStore = defineStore({
             },
           },
         },
+        {
+          id: "3",
+          title: "Interactive 3D Web Designer",
+          image: "/openroboverse/browser_full_dlo5kv.png",
+          fullImage: "/openroboverse/browser_full_dlo5kv.png",
+          idea: {
+            1: "In today's world, 3D modeling and interaction are becoming super important in a bunch of cool areas. Think about setting up a new factory, developing a robotics solution, designing buildings (Architecture), or even creating video games – they all use 3D models. Our project is about building a web app that lets users play around with 3D models right in their browser. It's like giving them a digital sandbox where they can create, view, and mess with different 3D objects. This isn't just fun; it's a skill that's super useful in many industries. ",
+            2: "You and your group can chose a use-case that you want to focus on. Proposed would be to work on a tool that makes it possible to design and interact with a robot cell in a 3D world right from your browser! ",
+            3: "Using Three.js, a powerful library for 3D graphics, we'll create an app where you can pick from a database of standard elements (like parts of a robot or factory equipment) and arrange them in a 3D space. You can tweak how they look by changing their texture and lighting, and even pose them differently. Once our workspace is ready we will give it love by creating a dynamic control where the user can move the robot using a GUI Block in the App.",
+          },
+          milestones: [
+            "Get to Know Three.js",
+            "Web App Framework",
+            "3D Element Database",
+            "Interactive 3D World",
+            "Customization Features (options to change textures, lighting, and object poses)",
+            "Develop a GUI (optional)",
+            "User Testing and Feedback",
+            "Refinement and Launch",
+          ],
+          algorithms: ["JavaScript, NodeJS", "three.js", "HTML and CSS basics"],
+          challenges: ["Real robotic system needed", "Real parts needed"],
+          materials: {
+            datasets: {},
+            sources: {
+              1: {
+                title: "Three.js examples",
+                url: "https://threejs.org/examples/#webgl_animation_skinning_blending",
+              },
+              2: {
+                title: "MuJoCo",
+                url: "https://zalo.github.io/mujoco_wasm/",
+              },
+              3: {
+                title: "Free 3D Materials",
+                url: "https://www.blenderkit.com/asset-gallery?query=order%3A-created+category_subtree%3Amaterial+is_free%3Atrue&page=2",
+              },
+            },
+          },
+        },
       ],
     };
   },
