@@ -39,7 +39,7 @@
     </CommonRightSection>
 
     <CommonCardSection>
-      <template v-slot:title> <p class="reveal"> Mission</p></template>
+      <template v-slot:title> Mission </template>
       <template v-slot:description>
         <p class="reveal">Creating a collaborative platform for robotics enthusiasts, beginners,
         and professionals to learn, innovate, and share in a fun, engaging

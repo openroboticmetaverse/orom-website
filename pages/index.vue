@@ -3,8 +3,8 @@
     <LayoutFrontMatter />
     <CommonCardSection>
       <template v-slot:title>
-        <p class="reveal">We aim to accelerate the development in robotics by focusing on our
-        three pillars:</p></template
+        We aim to accelerate the development in robotics by focusing on our
+        three pillars:</template
       >
       We aim to accelerate the development in robotics by focusing on our three
       pillars:
