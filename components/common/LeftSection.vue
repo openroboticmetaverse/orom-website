@@ -43,13 +43,14 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    orderFirst: {
-      type: Boolean,
-      default: false, // By default, the "order-first" class is not applied
-    },
+<script setup>
+const props = defineProps({
+  orderFirst: {
+    type: Boolean,
+    default: false,
   },
-};
+});
 </script>
+
+<style scoped>
+</style>

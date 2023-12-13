@@ -19,7 +19,7 @@
       </template>
     </CommonLeftSection>
 
-    <CommonRightSection>
+    <CommonRightSection class="reveal">
       <template v-slot:title> Vision </template>
       <template v-slot:description>
         We aim to accelerate the development of robotic applications by making
@@ -39,14 +39,14 @@
     </CommonRightSection>
 
     <CommonCardSection>
-      <template v-slot:title>Mission</template>
+      <template v-slot:title> <p class="reveal"> Mission</p></template>
       <template v-slot:description>
-        Creating a collaborative platform for robotics enthusiasts, beginners,
+        <p class="reveal">Creating a collaborative platform for robotics enthusiasts, beginners,
         and professionals to learn, innovate, and share in a fun, engaging
-        environment.
+        environment.</p> 
       </template>
       <template v-slot:left>
-        <UiSimpleCard>
+        <UiSimpleCard class="reveal">
           <template v-slot:title> Community </template>
           <template v-slot:text>
             We are an active community open to professionals, beginners, and
@@ -56,7 +56,7 @@
         </UiSimpleCard>
       </template>
       <template v-slot:center>
-        <UiSimpleCard>
+        <UiSimpleCard class="reveal">
           <template v-slot:title> Project Platform </template>
           <template v-slot:text>
             In our vision, we aim to create an open Metaverse where solutions
@@ -66,7 +66,7 @@
         </UiSimpleCard>
       </template>
       <template v-slot:right>
-        <UiSimpleCard>
+        <UiSimpleCard class="reveal">
           <template v-slot:title> Facilitation Tools </template>
           <template v-slot:text>
             We provide ready-to-use building blocks that make starting with
@@ -75,7 +75,7 @@
         </UiSimpleCard>
       </template>
       <template v-slot:bottom-left>
-        <UiSimpleCard>
+        <UiSimpleCard class="reveal">
           <template v-slot:title> Educational and Mentorship </template>
           <template v-slot:text>
             We offer an easy-to-follow guide for learning robotics. We encourage
@@ -84,7 +84,7 @@
         </UiSimpleCard>
       </template>
       <template v-slot:bottom-center>
-        <UiSimpleCard>
+        <UiSimpleCard class="reveal">
           <template v-slot:title> Bridging Theory and Practice </template>
           <template v-slot:text>
             We strive to bridge the gap between the theoretical knowledge found
@@ -93,7 +93,7 @@
         </UiSimpleCard>
       </template>
       <template v-slot:bottom-right>
-        <UiSimpleCard>
+        <UiSimpleCard class="reveal">
           <template v-slot:title> Open-Source Involvement </template>
           <template v-slot:text>
             We contribute to the open-source community and welcome everyone to
@@ -103,7 +103,7 @@
       </template>
     </CommonCardSection>
 
-    <CommonLeftSection :orderFirst="true">
+    <CommonLeftSection :orderFirst="true" class="reveal">
       <template v-slot:title> The goal? </template>
       <template v-slot:description>
         Open Robotic Metaverse is forging a new realm at the intersection of
@@ -114,7 +114,7 @@
       <template v-slot:icons> </template>
       <template v-slot:image>
         <img
-          class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto"
+          class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto reveal"
           alt="hero"
           src="/pages/about/roboverse.png"
         />
@@ -124,6 +124,32 @@
 </template>
 
 <script setup>
+import { onMounted, onBeforeUnmount } from 'vue';
+
+const reveal = () => {
+  const reveals = document.querySelectorAll(".reveal");
+
+  for (let i = 0; i < reveals.length; i++) {
+    const windowHeight = window.innerHeight;
+    const elementTop = reveals[i].getBoundingClientRect().top;
+    const elementVisible = 50;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", reveal);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("scroll", reveal);
+});
+
 useHead({
   title: "About | open robotic metaverse",
   meta: [
@@ -159,7 +185,15 @@ useJsonld(() => ({
 </script>
 
 <style scoped>
-.email-wrap {
-  word-break: break-all;
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
 </style>
