@@ -6,7 +6,7 @@
 
         </div>
         <h3 class="mb-2 text-2xl font-light text-sky-600">{{ title }}</h3>
-        <p class="text-gray-300">{{ description }}</p>
+        <p class="text-gray-300 text-base">{{ description }}</p>
     </div>
 </template>
 
@@ -46,6 +46,6 @@ export default {
   
 <style scoped>
 .blurred-grid {
-    @apply border-gray-200 p-8 md:p-12 backdrop-blur-[3px] rounded-lg shadow-lg hover:ring-[1px] hover:ring-[#4898A4] hover:shadow-[#4898A4]/40 bg-gradient-to-b from-white/5 to-gray-500/5 drop-shadow-md;
+    @apply border-gray-200 p-8 md:p-12 backdrop-blur-[3px] rounded-lg shadow-lg hover:ring-[1px] hover:ring-[#4898A4] hover:shadow-[#4898A4]/40 bg-gradient-to-b from-white/5 to-gray-500/5 drop-shadow-md ;
 }
 </style>

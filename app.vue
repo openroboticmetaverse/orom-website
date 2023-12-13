@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div class="bg-[#000000]">
+      <img class="fixed top-0 left-0 w-full h-full object-cover opacity-10" src="assets/grid.png" alt="Team Background">
       <NuxtLayout>
         <NuxtPage/>
       </NuxtLayout>

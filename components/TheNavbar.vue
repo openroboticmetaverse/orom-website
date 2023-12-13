@@ -81,7 +81,7 @@
                 <div class="space-y-1 px-2 pb-3 pt-2">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                     <NuxtLink to="/" @click="toggleMenu"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+                        class="text-gray-300 hover:bg-gray-700 block rounded-md relative duration-300 hover:text-white px-3 py-2 text-sm font-medium">
                         Home</NuxtLink>
                     <NuxtLink to="/about" @click="toggleMenu"
                         class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
@@ -123,12 +123,12 @@ const toggleMenu = () => {
     }
 };
 
-const updateGradient = () => {
+/* const updateGradient = () => {
     const scrolled = window.scrollY;
     if (navbar.value) {
         navbar.value.style.background = `linear-gradient(180deg, rgba(0,0,0,${Math.min(scrolled * 0.0005, 0.8)}) 0%, rgba(0,0,0,0) 100%)`;
     }
-};
+}; */
 
 const updateNavbarStyle = () => {
     const scrolled = window.scrollY;
@@ -136,9 +136,17 @@ const updateNavbarStyle = () => {
     const backgroundColorOpacity = Math.min(scrolled * 0.001, 0.05); // Max opacity at 0.1 (10%)
 
     if (navbar.value) {
-        navbar.value.style.backdropFilter = `blur(${blurIntensity}px)`;
-        navbar.value.style.backgroundColor = `rgba(255, 255, 255, ${backgroundColorOpacity})`;
+    // Only apply the changes if the viewport width is greater than 640px
+    if (window.innerWidth > 640) {
+      navbar.value.style.backdropFilter = `blur(${blurIntensity}px)`;
+      navbar.value.style.backgroundColor = `rgba(255, 255, 255, ${backgroundColorOpacity})`;
+    } 
+    else {
+      // Reset the styles for smaller screens
+      navbar.value.style.backdropFilter = 'blur(5px)';
+      navbar.value.style.backgroundColor = 'rgba(255, 255, 255, 0.05)';
     }
+}
 };
 
 const handleClickOutside = (event) => {

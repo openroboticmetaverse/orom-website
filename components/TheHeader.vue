@@ -1,7 +1,7 @@
 <template>
   <div class="relative isolate h-screen overflow-hidden bg-black py-24 sm:py-32 ">
-    <canvas id="canvas" ref="canvas" class="fixed top-0 left-0 w-full h-full"></canvas>
-
+    <!-- <canvas id="canvas" ref="canvas" class="fixed top-0 left-0 w-full h-full"></canvas> -->
+    <ThreejsCanva />
     <div class="mx-auto max-w-7xl px-6 lg:px-8" style="z-index: 10;">
       <div class="mx-auto max-w-4xl lg:mx-0">
         <h2 class="text-4xl font-bold tracking-tight text-white sm:text-8xl gradient-text-left">together, we shape the future of robotics
@@ -37,6 +37,7 @@ import { ref, onMounted } from 'vue'
 import type { IThreeHelper } from '@/helpers/threeHelpers/interfaces/IThreeHelper'
 import { ThreeHelper } from '@/helpers/threeHelpers/core/ThreeHelper'
 import { EnhancedThreeHelper } from '@/helpers/threeHelpers/core/EnhancedThreeHelper'
+import ThreejsCanva from '@/components/ThreejsCanva.vue';
 
 
 

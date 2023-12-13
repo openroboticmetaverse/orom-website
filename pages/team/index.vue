@@ -51,7 +51,7 @@
                             <a class="text-gray-50">Karim</a>
                         </template>
                         <template v-slot:description>
-                            <p>Nerd</p>
+                            <p>K</p>
                         </template>
 
 
