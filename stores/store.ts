@@ -9,7 +9,7 @@ export const useTeamStore = defineStore({
           linkedin: "https://www.linkedin.com/in/aminekharrat/",
           github: "https://github.com/AmineKharrat",
           image: "/openroboverse/team/amine_ea0ijk.jpg",
-          title: "CEO",
+          title: "Lead",
         },
         {
           id: 2,
@@ -17,7 +17,7 @@ export const useTeamStore = defineStore({
           linkedin: "https://www.linkedin.com/in/karim-siala/",
           github: "https://github.com/karimsiala",
           image: "/openroboverse/team/karim_kddxb5.jpg",
-          title: "Nerd",
+          title: "Ops",
         },
         {
           id: 3,
@@ -25,7 +25,7 @@ export const useTeamStore = defineStore({
           linkedin: "https://www.linkedin.com/in/hazar-karadag/",
           github: "https://github.com/parhasard",
           image: "/openroboverse/team/hazar_lhll8y.jpg",
-          title: "Queen",
+          title: "Webdev",
         },
         {
           id: 4,
@@ -34,7 +34,7 @@ export const useTeamStore = defineStore({
             "https://www.linkedin.com/in/luca-sophie-lamerichs-131104206/",
           github: "https://github.com/openroboverse",
           image: "/openroboverse/team/luca_spikki.jpg",
-          title: "Luca",
+          title: "Ops",
         },
         {
           id: 5,
@@ -51,15 +51,7 @@ export const useTeamStore = defineStore({
             "https://www.linkedin.com/in/estefania-betancourt-9545531a9/",
           github: "https://github.com/openroboverse",
           image: "/openroboverse/team/estafania_rkthuw.jpg",
-          title: "Dev",
-        },
-        {
-          id: 7,
-          name: "Thu Ha",
-          linkedin: "https://www.linkedin.com/in/thu-ha-dam-b0a7061b5/",
-          github: "https://github.com/openroboverse",
-          image: "/openroboverse/team/thuha_berfop.jpg",
-          title: "Dev",
+          title: "PR",
         },
         {
           id: 8,
@@ -69,6 +61,14 @@ export const useTeamStore = defineStore({
           github: "https://github.com/openroboverse",
           image: "/openroboverse/team/marc_aj6znt.jpg",
           title: "Dev",
+        },
+        {
+          id: 7,
+          name: "Thu Ha",
+          linkedin: "https://www.linkedin.com/in/thu-ha-dam-b0a7061b5/",
+          github: "https://github.com/openroboverse",
+          image: "/openroboverse/team/thuha_berfop.jpg",
+          title: "Newbie",
         },
       ],
     };
@@ -81,7 +81,7 @@ export const useProjectsStore = defineStore({
       projects: [
         {
           id: "1",
-          title: "Segmentation of Fruits",
+          title: "Automated harvesting of fruits",
           image: "/openroboverse/segmentation_full_uw4for.png",
           fullImage: "/openroboverse/segmentation_full_uw4for.png",
           idea: {
@@ -135,7 +135,7 @@ export const useProjectsStore = defineStore({
         },
         {
           id: "2",
-          title: "Perception of home robot",
+          title: "Home robot",
           image: "/openroboverse/bridging_full_middlf.png",
           fullImage: "/openroboverse/bridging_full_middlf.png",
           idea: {
