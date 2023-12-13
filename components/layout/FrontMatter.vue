@@ -4,12 +4,12 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8" style="z-index: 10">
       <div class="mx-auto max-w-4xl lg:mx-0">
         <h2
-          class="text-4xl font-bold tracking-tight sm:text-8xl gradient-text-left sliding-title"
-        >   
+          class="text-4xl font-bold tracking-tight sm:text-8xl gradient-text-left"
+        >
           <p>together, we shape the future of robotics</p>
         </h2>
         <p
-          class="mt-6 text-2xl sm:text-2xl lg:text-4xl leading-8 text-gray-300 sliding-description"
+          class="mt-6 text-2xl sm:text-2xl lg:text-4xl leading-8 text-gray-300"
         >
           Creating a collaborative platform for robotics enthusiasts, beginners,
           and professionals to learn, innovate, and share
@@ -20,32 +20,20 @@
           class="mt-8 grid grid-cols-2 gap-8 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4"
         >
           <div class="flex flex-col-reverse">
-            <dt class="text-base leading-7 text-gray-300 sliding-text">
-              Get Inspired
-            </dt>
-            <dd
-              class="text-2xl font-bold leading-9 tracking-tight text-white sliding-text"
-            >
+            <dt class="text-base leading-7 text-gray-300">Get Inspired</dt>
+            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">
               Imagine
             </dd>
           </div>
           <div class="flex flex-col-reverse">
-            <dt class="text-base leading-7 text-gray-300 sliding-text">
-              Hone your skils
-            </dt>
-            <dd
-              class="text-2xl font-bold leading-9 tracking-tight text-white sliding-text"
-            >
+            <dt class="text-base leading-7 text-gray-300">Hone your skils</dt>
+            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">
               Develop
             </dd>
           </div>
           <div class="flex flex-col-reverse">
-            <dt class="text-base leading-7 text-gray-300 sliding-text">
-              Inspire Others
-            </dt>
-            <dd
-              class="text-2xl font-bold leading-9 tracking-tight text-white sliding-text"
-            >
+            <dt class="text-base leading-7 text-gray-300">Inspire Others</dt>
+            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">
               Simulate
             </dd>
           </div>
@@ -77,38 +65,6 @@ onMounted(() => {
     }
   });
 });
-
-const { $gsap } = useNuxtApp();
-
-
-onMounted(() => {
-$gsap.set(".sliding-title, .sliding-description, .sliding-text", { opacity: 0, x: '-50%' });
-  setTimeout(() => {
-    // Animate the title
-    $gsap.to(".sliding-title", {
-      opacity: 1,
-      x: "0%",
-      duration: 1,
-      ease: "power3.out",
-    });
-
-    // Animate the description
-    $gsap.to(".sliding-description", {
-      opacity: 1,
-      x: "0%",
-      duration: 0.5,
-      ease: "power3.out",
-    });
-    $gsap.to(".sliding-text", {
-      opacity: 1,
-      x: "0%",
-      duration: 0.5,
-      ease: "power3.out",
-    });
-
-    // Repeat for other elements like '.sliding-text'
-  }, 20);
-});
 </script>
 
 <style scoped>
@@ -122,14 +78,10 @@ $gsap.set(".sliding-title, .sliding-description, .sliding-text", { opacity: 0, x
   pointer-events: none;
 }
 
-
 @media (max-width: 768px) {
   #canvas {
     display: none;
   }
 }
 
-.sliding-title, .sliding-description, .sliding-text {
-  opacity: 0;
-}
 </style>

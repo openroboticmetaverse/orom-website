@@ -3,13 +3,13 @@
     <LayoutFrontMatter />
     <CommonCardSection>
       <template v-slot:title>
-        We aim to accelerate the development in robotics by focusing on our
-        three pillars:</template
+        <p class="reveal">We aim to accelerate the development in robotics by focusing on our
+        three pillars:</p></template
       >
       We aim to accelerate the development in robotics by focusing on our three
       pillars:
       <template v-slot:left>
-        <UiSimpleCard>
+        <UiSimpleCard class="reveal">
           <template v-slot:title> Learn </template>
           <template v-slot:text>
             We prioritize a hands-on, community-driven approach to learning. We
@@ -19,7 +19,7 @@
         </UiSimpleCard>
       </template>
       <template v-slot:center>
-        <UiSimpleCard>
+        <UiSimpleCard class="reveal">
           <template v-slot:title> Network </template>
           <template v-slot:text>
             Our goal is to cultivate a community where robotics enthusiasts can
@@ -29,7 +29,7 @@
         </UiSimpleCard>
       </template>
       <template v-slot:right>
-        <UiSimpleCard>
+        <UiSimpleCard class="reveal">
           <template v-slot:title> Innovate </template>
           <template v-slot:text>
             We aim to contribute to the rapidly evolving field of robotics by
@@ -39,7 +39,7 @@
       </template>
     </CommonCardSection>
 
-    <CommonEmptySection>
+    <CommonEmptySection class="reveal">
       <template v-slot:mainTitle1> What we're </template>
       <template v-slot:mainTitle2> passionately building </template>
       <template v-slot:description>
@@ -51,12 +51,12 @@
       </template>
     </CommonEmptySection>
 
-    <CommonButtonSection :button1Link="`/about`" :button2Link="`/projects`">
+    <CommonButtonSection :button1Link="`/about`" :button2Link="`/projects`" class="reveal">
       <template v-slot:button1> Who are we? </template>
       <template v-slot:button2> Example projects </template>
     </CommonButtonSection>
 
-    <CommonLeftSection :orderFirst="true">
+    <CommonLeftSection :orderFirst="true" class="reveal">
       <template v-slot:title> Network </template>
       <template v-slot:description>
         Our goal is to cultivate a community where robotics enthusiasts can
@@ -82,6 +82,33 @@
 </template>
   
 <script setup>
+import { onMounted, onBeforeUnmount } from 'vue';
+
+const reveal = () => {
+  const reveals = document.querySelectorAll(".reveal");
+
+  for (let i = 0; i < reveals.length; i++) {
+    const windowHeight = window.innerHeight;
+    const elementTop = reveals[i].getBoundingClientRect().top;
+    const elementVisible = 50;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", reveal);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("scroll", reveal);
+});
+
+
 useHead({
   title: "Home | open robotic metaverse",
   meta: [
@@ -117,5 +144,17 @@ useJsonld(() => ({
 }));
 </script>
   
-<style scoped></style>
+<style scoped>
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+</style>
   
