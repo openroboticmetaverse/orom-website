@@ -3,6 +3,10 @@
     <span
       class="inline-flex pt-12 sm:pt-2 md:pt-2 lg:pt-2 items-center mt-3 min-h-12xl hover:text-teal-300 duration-200"
     >
+          <NuxtLink
+        to="/projects"
+        class="transition-colors duration-200 ease-in-out"
+      >
       <svg
         fill="none"
         stroke="currentColor"
@@ -14,10 +18,7 @@
       >
         <path d="M5 12h14M12 5l7 7-7 7"></path>
       </svg>
-      <NuxtLink
-        to="/projects"
-        class="transition-colors duration-200 ease-in-out"
-      >
+
         Back
       </NuxtLink>
     </span>
