@@ -16,8 +16,8 @@ const project = computed(() => {
   return projectsStore.projects.find((p) => p.id === projectId);
 });
 
-const baseUrl = "http://res.cloudinary.com/dilan3qfq/image/upload/v1702467075";
-const secureUrl = "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467075";
+const baseUrl = "http://res.cloudinary.com/dilan3qfq/image/upload/";
+const secureUrl = "https://res.cloudinary.com/dilan3qfq/image/upload/";
 const baseImageUrl = project.value ? `${baseUrl}${project.value.image}` : "";
 const secureImageUrl = project.value
   ? `${secureUrl}${project.value.image}`
