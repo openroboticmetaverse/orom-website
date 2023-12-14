@@ -57,7 +57,7 @@
             <a href="https://www.netlify.com/" class="hover:underline">Powered by Netlify</a>
           </span>
           <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-            <a href="https://twitter.com/orom_org" class="text-gray-400 hover:text-white dark:hover:text-white">
+            <a href="https://x.com/orom_org" class="text-gray-400 hover:text-white dark:hover:text-white">
               <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                 viewBox="0 0 50 50">
                 <path
