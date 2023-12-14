@@ -1,7 +1,7 @@
 <template>
   <div class="relative isolate overflow-hidden bg-black pt-28 sm:py-32">
     <canvas id="canvas" ref="canvas"></canvas>
-    <div class="mx-auto max-w-7xl px-6 lg:px-8" style="z-index: 10">
+    <div class="mx-auto max-w-7xl px-2 lg:px-8" style="z-index: 10">
       <div class="mx-auto max-w-4xl lg:mx-0">
         <h2
           class="text-4xl font-bold tracking-tight px-10 sm:text-8xl gradient-text-left"

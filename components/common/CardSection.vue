@@ -3,7 +3,7 @@
     <template v-slot:content>
       <section class="dark:bg-black py-12">
         <div class="py-4 mx-auto px-10 max-w-screen-2xl">
-          <h2 class="font-bold tracking-tight text-center text-gray-200 text-4xl sm:text-4xl md:text-5xl lg:text-6xl pb-10 z-20"><slot name="title"></slot></h2>
+          <h2 class="font-bold tracking-tight text-center text-gray-200 text-3xl sm:text-4xl md:text-5xl lg:text-6xl pb-10 z-20"><slot name="title"></slot></h2>
           <h2
             class=" tracking-tight text-center text-gray-300 text-xl sm:text-3xl md:text-3xl lg:text-4xl pb-10"
           >

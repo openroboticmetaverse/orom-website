@@ -103,7 +103,7 @@ const reveal = () => {
   for (let i = 0; i < reveals.length; i++) {
     const windowHeight = window.innerHeight;
     const elementTop = reveals[i].getBoundingClientRect().top;
-    const elementVisible = 30;
+    const elementVisible = 50;
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
