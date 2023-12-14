@@ -2,7 +2,12 @@
   <div>
     <div class="py-6 sm:py-0"></div>
     <CommonLeftSection>
-      <template v-slot:title> About <span class="gradient-text-left">Open Robotic Metaverse </span></template>
+      <template v-slot:title>
+        About
+        <span class="gradient-text-left"
+          >Open Robotic Metaverse
+        </span></template
+      >
       <template v-slot:description>
         We are a student initiative currently in the founding process. Our
         founders are students from RWTH Aachen University and FH Aachen and
@@ -24,39 +29,46 @@
         />
       </template>
     </CommonLeftSection>
-
-    <CommonRightSection class="reveal">
-      <template v-slot:title> <span class="gradient-text-right">Vision</span> </template>
-      <template v-slot:description>
-        We aim to accelerate the development of robotic applications by making
-        use of the advancements in Simulation technology and Artificial
-        Intelligence. We support individuals in acquiring skills and knowledge
-        in this field and connect them with companies in search of solution
-        implementers, while building a connected passionate community.
-        <div class="py-6"></div>
-                <UiRoundedButton :buttonLink="`/contact`">
-          <template v-slot:button> Reach out to us! </template>
-        </UiRoundedButton>
-      </template>
-      <template v-slot:image>
-        <div class="py-10"></div>
-        <nuxt-img
-          class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto"
-          alt="hero"
-          provider="cloudinary"
-          src="/openroboverse/group_foto_2_bqdglp.jpg"
-        />
-      </template>
-    </CommonRightSection>
-
+    <section class="bordered-section">
+      <CommonRightSection class="reveal">
+        <template v-slot:title>
+          <span class="gradient-text-right">Vision</span>
+        </template>
+        <template v-slot:description>
+          We aim to accelerate the development of robotic applications by making
+          use of the advancements in Simulation technology and Artificial
+          Intelligence. We support individuals in acquiring skills and knowledge
+          in this field and connect them with companies in search of solution
+          implementers, while building a connected passionate community.
+          <div class="py-6"></div>
+          <UiRoundedButton :buttonLink="`/contact`">
+            <template v-slot:button> Reach out to us! </template>
+          </UiRoundedButton>
+        </template>
+        <template v-slot:image>
+          <div class="py-10"></div>
+          <nuxt-img
+            class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto"
+            alt="hero"
+            provider="cloudinary"
+            src="/openroboverse/group_foto_2_bqdglp.jpg"
+          />
+        </template>
+      </CommonRightSection>
+    </section>
     <CommonCardSection>
-      
-      <template v-slot:title><div class="py-12"></div> <span class="gradient-text-left">Mission</span> </template>
+      <template v-slot:title
+        >
+        <span class="gradient-text-left">Mission</span>
+      </template>
       <template v-slot:description>
         <p class="reveal">
           Creating a collaborative platform for robotics enthusiasts, beginners,
-          and professionals to <span class="gradient-text-left-bright">learn</span>, <span class="gradient-text-left-bright">innovate</span>, and <span class="gradient-text-left-bright">share</span> in a fun, engaging
-          environment.
+          and professionals to
+          <span class="gradient-text-left-bright">learn</span>,
+          <span class="gradient-text-left-bright">innovate</span>, and
+          <span class="gradient-text-left-bright">share</span> in a fun,
+          engaging environment.
         </p>
       </template>
       <template v-slot:left>
@@ -116,25 +128,37 @@
         </UiSimpleCard>
       </template>
     </CommonCardSection>
-
-    <CommonLeftSection :orderFirst="true" class="reveal">
-      <template v-slot:title> <span class="gradient-text-left-bright">The goal?</span>  </template>
-      <template v-slot:description>
-        Open Robotic Metaverse is forging a new realm at the intersection of
-        robotics and virtual environments. Our collective vision is to build a
-        metaverse where innovative minds can develop, share, and explore the
-        future of robotics in a collaborative ecosystem.
-      </template>
-      <template v-slot:icons> </template>
+    <CommonPhotoSection>
       <template v-slot:image>
-        <nuxt-img
-          class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto reveal"
-          alt="hero"
-          provider="cloudinary"
-          src="/openroboverse/roboverse_h1tlhw.png"
+        <img
+          src="https://images.unsplash.com/photo-1561634507-b0cd27bf0aa7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+          alt=""
+          class="absolute inset-0 -z-10 h-full object-cover object-right md:object-center"
         />
       </template>
-    </CommonLeftSection>
+      <template v-slot:content>
+        <CommonLeftSection :orderFirst="true" class="reveal">
+          <template v-slot:title>
+            <span class="gradient-text-left-bright">The goal?</span>
+          </template>
+          <template v-slot:description>
+            Open Robotic Metaverse is forging a new realm at the intersection of
+            robotics and virtual environments. Our collective vision is to build
+            a metaverse where innovative minds can develop, share, and explore
+            the future of robotics in a collaborative ecosystem.
+          </template>
+          <template v-slot:icons> </template>
+          <template v-slot:image>
+            <nuxt-img
+              class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto reveal"
+              alt="hero"
+              provider="cloudinary"
+              src="/openroboverse/roboverse_h1tlhw.png"
+            />
+          </template>
+        </CommonLeftSection>
+      </template>
+    </CommonPhotoSection>
   </div>
 </template>
 
@@ -147,7 +171,7 @@ const reveal = () => {
   for (let i = 0; i < reveals.length; i++) {
     const windowHeight = window.innerHeight;
     const elementTop = reveals[i].getBoundingClientRect().top;
-    const elementVisible = 50;
+    const elementVisible = 30;
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
@@ -210,5 +234,36 @@ useJsonld(() => ({
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+.description-background {
+  background-image: url("/bg.png");
+  background-size: cover; /* This ensures your image covers the entire area */
+  background-position: center; /* This will help center your image */
+  color: #fff; /* Assuming you want white text over your image */
+  padding: 20px; /* Add some space inside your description box */
+}
+
+.bordered-section::before {
+  content: "";
+  display: block;
+  height: 2px; /* Adjust thickness of your border lines */
+  background: linear-gradient(
+    to right,
+    #aeedcc,
+    #aa37e8
+  ); /* Replace with your gradient colors */
+  margin-bottom: 10px; /* Space between the two lines */
+}
+.bordered-section::after {
+  content: "";
+  display: block;
+  height: 2px; /* Adjust thickness of your border lines */
+  background: linear-gradient(
+    to left,
+    #aeedcc,
+    #aa37e8
+  ); /* Replace with your gradient colors */
+  margin-bottom: 0px; /* Space between the two lines */
 }
 </style>

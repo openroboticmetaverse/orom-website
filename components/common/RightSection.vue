@@ -8,7 +8,7 @@
           <div class="relative flex-col items-start m-auto align-middle">
             <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
               <div
-                class="order-first block w-full  aspect-square"
+                class="order-first block w-full px-4 aspect-square"
               >
                 <slot name="image"></slot>
               </div>
@@ -18,7 +18,7 @@
                 <div class="max-w-xl text-center lg:text-left">
                   <div>
                     <p
-                      class="font-bold tracking-tight text-left px-5 sm:px-0 text-gray-200 pt-6 pb-6 text-4xl sm:text-6xl"
+                      class="font-bold tracking-tight text-left px-5 sm:px-0 text-gray-200 pt-6 pb-6 text-4xl sm:text-4xl md:text-5xl lg:text-5xl"
                     >
                       <slot name="title"></slot>
                     </p>

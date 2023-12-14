@@ -4,12 +4,12 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8" style="z-index: 10">
       <div class="mx-auto max-w-4xl lg:mx-0">
         <h2
-          class="text-4xl font-bold tracking-tight sm:text-8xl gradient-text-left"
+          class="text-4xl font-bold tracking-tight px-10 sm:text-8xl gradient-text-left"
         >
           <p>together, we shape the future of robotics</p>
         </h2>
         <p
-          class="mt-6 text-2xl sm:text-2xl lg:text-4xl leading-8 text-gray-300"
+          class="mt-6 text-2xl sm:text-2xl lg:text-4xl px-10 leading-8 text-gray-300"
         >
           Creating a collaborative platform for robotics enthusiasts, beginners,
           and professionals to learn, innovate, and share
@@ -17,7 +17,7 @@
       </div>
       <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
         <dl
-          class="mt-8 grid grid-cols-2 gap-8 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4"
+          class="mt-8 grid grid-cols-2 gap-8 px-10 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4"
         >
           <div class="flex flex-col-reverse">
             <dt class="text-base leading-7 text-gray-300">Get Inspired</dt>

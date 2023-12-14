@@ -1,5 +1,5 @@
 <template>
-  <div class="relative isolate overflow-hidden bg-gray-900 py-12 sm:py-12">
+  <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-24">
     <slot name="image"></slot>
 
     <div class="overlay-bottom"></div>
@@ -9,7 +9,7 @@
       aria-hidden="true"
     >
       <div
-        class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#000] to-[#000] opacity-20"
+        class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#000] to-[#085ba0] opacity-20"
         style="
           clip-path: polygon(
             74.1% 44.1%,
@@ -37,7 +37,7 @@
       aria-hidden="true"
     >
       <div
-        class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#000] to-[#000] opacity-20"
+        class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#000] to-[#085ba0] opacity-20"
         style="
           clip-path: polygon(
             74.1% 44.1%,
@@ -65,7 +65,7 @@
       aria-hidden="true"
     >
       <div
-        class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#000] to-[#000] opacity-20"
+        class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#4bb8a6] to-[#085ba0] opacity-20"
         style="
           clip-path: polygon(
             74.1% 44.1%,
@@ -102,7 +102,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  height: 35%;
+  height: 15%;
   /* Adjust the height as needed */
   z-index: 1;
 }
