@@ -103,7 +103,7 @@ const reveal = () => {
   for (let i = 0; i < reveals.length; i++) {
     const windowHeight = window.innerHeight;
     const elementTop = reveals[i].getBoundingClientRect().top;
-    const elementVisible = 50;
+    const elementVisible = 30;
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
@@ -207,12 +207,20 @@ useJsonld(() => ({
   /* Add other styles for size, etc. as needed */
   background: linear-gradient(
       90deg,
-      rgba(255, 255, 255, 0.2) 1px,
+      rgba(255, 255, 255, 0.1) 1px,
       transparent 1px
     ),
-    linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
   background-size: 50px 50px; /* Adjust the size of the grid squares */
-  animation: moveGrid 30s linear infinite;
+  animation: moveGrid 50s linear infinite;
 }
+
+
+@media (max-width: 640px) {
+.bordered-section {
+  animation: moveGrid 20s linear infinite;
+}
+}
+
 </style>
   
