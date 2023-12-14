@@ -6,14 +6,14 @@
           class="relative items-center w-full px-5 mx-auto md:px-9 lg:px-12 max-w-9xl"
         >
           <div class="relative flex-col items-start m-auto align-middle">
-            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-22">
               <div
-                class="relative items-center gap-12 m-auto lg:inline-flex md:order-first"
+                class="relative items-center gap-9 m-auto lg:inline-flex md:order-first"
               >
                 <div class="max-w-xl text-center lg:text-left">
                   <div>
                     <p
-                      class="font-bold tracking-tight text-left px-5 sm:px-0  text-gray-200 pb-4 text-4xl sm:text-6xl"
+                      class="font-bold tracking-tight text-left px-5 sm:px-0  text-gray-200 pb-4 text-4xl sm:text-4xl md:text-5xl lg:text-5xl"
                     >
                       <slot name="title"></slot>
                     </p>
@@ -26,11 +26,11 @@
               </div>
               <div
                 v-if="!orderFirst"
-                class="order-first block w-full mt-12 aspect-square lg:mt-20"
+                class="order-first block w-full mt-12 px-5 aspect-square lg:mt-20"
               >
                 <slot name="image"></slot>
               </div>
-              <div v-else class="block w-full sm:mt-12 aspect-square lg:mt-20">
+              <div v-else class="block w-full sm:mt-12 px-5 aspect-square lg:mt-20">
                 <slot name="image"></slot>
               </div>
             </div>
