@@ -8,7 +8,12 @@
         founders are students from RWTH Aachen University and FH Aachen and
         highly motivated to strengthen the robotic community in and outside of
         Aachen, Germany.
+        <div class="py-6"></div>
+        <UiRoundedButton :buttonLink="`/contact`">
+          <template v-slot:button> Reach out to us! </template>
+        </UiRoundedButton>
       </template>
+
       <template v-slot:icons> </template>
       <template v-slot:image>
         <nuxt-img
@@ -43,9 +48,11 @@
     <CommonCardSection>
       <template v-slot:title> Mission </template>
       <template v-slot:description>
-        <p class="reveal">Creating a collaborative platform for robotics enthusiasts, beginners,
-        and professionals to learn, innovate, and share in a fun, engaging
-        environment.</p> 
+        <p class="reveal">
+          Creating a collaborative platform for robotics enthusiasts, beginners,
+          and professionals to learn, innovate, and share in a fun, engaging
+          environment.
+        </p>
       </template>
       <template v-slot:left>
         <UiSimpleCard class="reveal">
@@ -127,7 +134,7 @@
 </template>
 
 <script setup>
-import { onMounted, onBeforeUnmount } from 'vue';
+import { onMounted, onBeforeUnmount } from "vue";
 
 const reveal = () => {
   const reveals = document.querySelectorAll(".reveal");
@@ -188,14 +195,14 @@ useJsonld(() => ({
 </script>
 
 <style scoped>
-.reveal{
+.reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: 1s all ease;
 }
 
-.reveal.active{
+.reveal.active {
   transform: translateY(0);
   opacity: 1;
 }

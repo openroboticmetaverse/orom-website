@@ -42,7 +42,7 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-teal-400;
   }
   .section-description{
-    @apply max-w-xl mt-4 mb-12 text-lg sm:text-xl lg:text-2xl px-10 sm:px-0 tracking-tight text-gray-300;
+    @apply max-w-xl mt-4 mb-12 text-lg sm:text-xl lg:text-2xl px-5 sm:px-0 text-left tracking-tight text-gray-300;
   }
   /* Custom Scrollbar */
   ::-webkit-scrollbar {

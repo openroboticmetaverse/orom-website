@@ -8,6 +8,10 @@
         exactly where you need to be. Here, we value diverse talents and
         perspectives, because great ideas don't fit in a box. Join us in shaping
         the future of technology. All enthusiasts welcome!
+                <div class="py-6"></div>
+        <UiRoundedButton :buttonLink="`/contact`">
+          <template v-slot:button> Want to see yourself there? </template>
+        </UiRoundedButton>
       </template>
       <template v-slot:icons> </template>
       <template v-slot:image>
