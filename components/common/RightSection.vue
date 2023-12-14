@@ -8,7 +8,7 @@
           <div class="relative flex-col items-start m-auto align-middle">
             <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
               <div
-                class="order-first block w-full mt-12 aspect-square lg:mt-20"
+                class="order-first block w-full  aspect-square"
               >
                 <slot name="image"></slot>
               </div>

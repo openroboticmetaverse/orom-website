@@ -52,9 +52,7 @@ module.exports = {
         red: MyTheme.colors.red,
         slate: colors.slate,
       },
-      fontFamily: {
-        sans: ['Nunito', ...defaultTheme.fontFamily.sans],
-      },
+
     },
   },
   plugins: [

@@ -1,7 +1,7 @@
 <template>
   <CommonPhotoSection>
     <template v-slot:content>
-      <section class="dark:bg-black">
+      <section class="dark:bg-black py-12">
         <div class="py-4 mx-auto px-4 max-w-screen-2xl">
           <h2 class="text-4xl font-bold tracking-tight text-center text-gray-200 sm:text-6xl pb-10 z-20"><slot name="title"></slot></h2>
           <h2

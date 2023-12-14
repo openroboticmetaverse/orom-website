@@ -110,7 +110,7 @@
 @media (max-width: 640px) {
   .overlay-bottom,
   .overlay-top {
-    height: 15%; /* Adjust the height for mobile devices */
+    height: 10%; /* Adjust the height for mobile devices */
   }
 }
 

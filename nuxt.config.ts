@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     "nuxt-jsonld",
     "@nuxt/image-edge",
     "@nuxt/content",
+    "@nuxtjs/google-fonts",
     [
       "@pinia/nuxt",
       {
@@ -13,17 +14,22 @@ export default defineNuxtConfig({
       },
     ],
   ],
-  content:{
-    highlight: {
-      theme: 'solarized-light'
+  googleFonts: {
+    families: {
+      'Nunito+Sans': [400, 700], // Feel free to change the weights to match your fabulousness
     }
+  },
+  content: {
+    highlight: {
+      theme: "solarized-light",
+    },
   },
   imports: {
     dirs: ["stores"],
   },
   image: {
     cloudinary: {
-      baseURL: 'https://res.cloudinary.com/dilan3qfq/image/upload/',
+      baseURL: "https://res.cloudinary.com/dilan3qfq/image/upload/",
     },
   },
   target: "static",
