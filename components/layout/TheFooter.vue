@@ -11,18 +11,18 @@
                 robotic metaverse</span>
             </NuxtLink>
           </div>
-          <div class="">
-            <div class="mb-6 text-sm font-semibold text-gray-100 uppercase dark:text-white">
-              <ul class="text-gray-300 dark:text-gray-400 font-medium">
-                <li class="mb-4">
-                  <NuxtLink to="/privacy" class="hover:text-white">Privacy Policy</NuxtLink>
-                </li>
-                <li>
-                  <NuxtLink to="/imprint" class="hover:text-white">Imprint</NuxtLink>
-                </li>
-              </ul>
-            </div>
+
+          <div class="mb-6 text-sm font-semibold text-gray-100 uppercase dark:text-white">
+            <ul class="flex flex-col sm:flex-row text-gray-300 dark:text-gray-400 font-medium">
+              <li class="mb-4 sm:mb-0 sm:mr-4">
+                <NuxtLink to="/privacy" class="hover:text-white">Privacy Policy</NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/imprint" class="hover:text-white">Imprint</NuxtLink>
+              </li>
+            </ul>
           </div>
+
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
