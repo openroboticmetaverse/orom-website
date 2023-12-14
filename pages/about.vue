@@ -33,6 +33,10 @@
         Intelligence. We support individuals in acquiring skills and knowledge
         in this field and connect them with companies in search of solution
         implementers, while building a connected passionate community.
+        <div class="py-6"></div>
+                <UiRoundedButton :buttonLink="`/contact`">
+          <template v-slot:button> Reach out to us! </template>
+        </UiRoundedButton>
       </template>
       <template v-slot:image>
         <div class="py-10"></div>
@@ -46,7 +50,8 @@
     </CommonRightSection>
 
     <CommonCardSection>
-      <template v-slot:title> <span class="gradient-text-left">Mission</span> </template>
+      
+      <template v-slot:title><div class="py-12"></div> <span class="gradient-text-left">Mission</span> </template>
       <template v-slot:description>
         <p class="reveal">
           Creating a collaborative platform for robotics enthusiasts, beginners,
