@@ -2,7 +2,7 @@
   <div>
     <div class="py-6 sm:py-0"></div>
     <CommonLeftSection>
-      <template v-slot:title> About Open Robotic Metaverse </template>
+      <template v-slot:title> About <span class="gradient-text-left">Open Robotic Metaverse </span></template>
       <template v-slot:description>
         We are a student initiative currently in the founding process. Our
         founders are students from RWTH Aachen University and FH Aachen and
@@ -26,7 +26,7 @@
     </CommonLeftSection>
 
     <CommonRightSection class="reveal">
-      <template v-slot:title> Vision </template>
+      <template v-slot:title> <span class="gradient-text-right">Vision</span> </template>
       <template v-slot:description>
         We aim to accelerate the development of robotic applications by making
         use of the advancements in Simulation technology and Artificial
@@ -46,11 +46,11 @@
     </CommonRightSection>
 
     <CommonCardSection>
-      <template v-slot:title> Mission </template>
+      <template v-slot:title> <span class="gradient-text-left">Mission</span> </template>
       <template v-slot:description>
         <p class="reveal">
           Creating a collaborative platform for robotics enthusiasts, beginners,
-          and professionals to learn, innovate, and share in a fun, engaging
+          and professionals to <span class="gradient-text-left-bright">learn</span>, <span class="gradient-text-left-bright">innovate</span>, and <span class="gradient-text-left-bright">share</span> in a fun, engaging
           environment.
         </p>
       </template>
@@ -113,7 +113,7 @@
     </CommonCardSection>
 
     <CommonLeftSection :orderFirst="true" class="reveal">
-      <template v-slot:title> The goal? </template>
+      <template v-slot:title> <span class="gradient-text-left-bright">The goal?</span>  </template>
       <template v-slot:description>
         Open Robotic Metaverse is forging a new realm at the intersection of
         robotics and virtual environments. Our collective vision is to build a

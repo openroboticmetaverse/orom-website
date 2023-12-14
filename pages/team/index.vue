@@ -2,7 +2,7 @@
   <div>
     <div class="pt-24 sm:pt-0 md:pt-0 lg:pt-0"></div>
     <CommonLeftSection :orderFirst="true">
-      <template v-slot:title> Meet the team! </template>
+      <template v-slot:title> Meet the <span class="gradient-text-left"> team!</span>  </template>
       <template v-slot:description>
         If you have a passion for robotics and a drive to innovate, you're
         exactly where you need to be. Here, we value diverse talents and

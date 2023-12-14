@@ -21,22 +21,28 @@
     @apply relative bg-gray-900 bg-opacity-75 right-0 hover:bg-gray-800 hover:border-transparent duration-300 rounded-lg p-8 md:p-12;
   }
   .small-title{
-    @apply gradient-text-right text-center dark:text-white text-2xl sm:text-2xl lg:text-4xl font-extrabold mb-2;
+    @apply gradient-text-title text-center dark:text-white text-2xl sm:text-2xl lg:text-4xl font-semibold mb-2;
   }
   .small-description{
     @apply gradient-text-left text-center dark:text-white text-2xl sm:text-2xl lg:text-4xl font-extrabold mb-2;
   }
   .card-section-title {
-    @apply text-2xl font-bold tracking-tight text-center gradient-text-light sm:text-6xl pb-10;
+    @apply ;
+  }
+  .gradient-text-title{
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-100 to-blue-400;
   }
   .gradient-text-left{
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-700;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-purple-700;
+  }
+  .gradient-text-left-bright{
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-400;
   }
   .gradient-text-right{
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-teal-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-teal-400;
   }
   .gradient-text-light{
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-teal-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-700 to-teal-400;
   }
   .section-description{
     @apply max-w-xl mt-4 mb-12 text-lg sm:text-xl lg:text-2xl px-5 sm:px-0 text-left tracking-tight text-gray-300;

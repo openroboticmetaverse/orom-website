@@ -3,11 +3,11 @@
     <LayoutFrontMatter />
     <CommonCardSection>
       <template v-slot:title>
-        We aim to accelerate the development in robotics by focusing on our
-        three pillars:</template
-      >
-      We aim to accelerate the development in robotics by focusing on our three
-      pillars:
+        We aim to accelerate the  <span class="gradient-text-right">development in robotics</span> by focusing on our
+        <span class="gradient-text-left">three pillars</span>:</template
+      ><p>
+      We aim to accelerate the development in  by focusing on our three
+      pillars:</p>
       <template v-slot:left>
         <UiSimpleCard class="reveal">
           <template v-slot:title> Learn </template>
@@ -41,7 +41,7 @@
 
     <CommonEmptySection class="reveal">
       <template v-slot:mainTitle1> What we're </template>
-      <template v-slot:mainTitle2> passionately building </template>
+      <template v-slot:mainTitle2> <span class="gradient-text-left">passionately</span> building </template>
       <template v-slot:description>
         To support our vision, we are starting with a project that connect our
         three pillars: We're building an open Metaverse focused on robotics
@@ -57,7 +57,7 @@
     </CommonButtonSection>
 
     <CommonLeftSection :orderFirst="true" class="reveal">
-      <template v-slot:title> Network </template>
+      <template v-slot:title> <span class="gradient-text-right">Network</span>  </template>
       <template v-slot:description>
         Our goal is to cultivate a community where robotics enthusiasts can
         meet, collaborate on projects, and share insights, enhancing

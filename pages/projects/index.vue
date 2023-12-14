@@ -1,7 +1,7 @@
 <template>
   <div>
     <CommonEmptySection>
-      <template v-slot:mainTitle2> Get Inspired! </template>
+      <template v-slot:mainTitle2> Get <span class="gradient-text-right">Inspired!</span>  </template>
       <template v-slot:description>
         Check out some of our projects, contribute your ideas!
       </template>

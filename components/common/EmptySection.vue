@@ -7,19 +7,19 @@
           class="max-w-lg px-4 sm:pt-12 pt-2 pb-10 sm:pb-10 mx-auto text-left md:max-w-none md:text-center"
         >
           <h1
-            class="font-extrabold leading-10 tracking-tight pb-10 py-20 sm:py-12 text-left gradient-text-left text-center sm:leading-none text-3xl sm:text-6xl"
+            class="font-extrabold leading-10 tracking-tight pb-10 py-20 sm:py-12 text-left text-gray-200 text-center sm:leading-none text-3xl sm:text-6xl"
           >
             <span class="inline md:block">
               <slot name="mainTitle1"></slot>
             </span>
             <span
-              class="relative mt-2 bg-clip-text gradient-text-left md:inline-block"
+              class="relative mt-2 bg-clip-text  md:inline-block"
             >
               <slot name="mainTitle2"></slot>
             </span>
           </h1>
           <h2
-            class="leading-8 tracking-tight text-left px-10 text-center sm:leading-none text-xl sm:text-xl lg:text-2xl"
+            class="leading-8 tracking-tight text-left px-5 sm:px-10 sm:text-center sm:leading-none text-lg sm:text-xl lg:text-2xl"
           >
             <span
               class="relative mt-2 bg-clip-text text-gray-300 text-center max-w-8xl md:inline-block"
