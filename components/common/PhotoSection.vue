@@ -1,5 +1,4 @@
 <template>
-  <div style="height: 100px"></div>
   <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-24">
     <slot name="image"></slot>
 
@@ -111,7 +110,7 @@
 @media (max-width: 640px) {
   .overlay-bottom,
   .overlay-top {
-    height: 5%; /* Adjust the height for mobile devices */
+    height: 15%; /* Adjust the height for mobile devices */
   }
 }
 

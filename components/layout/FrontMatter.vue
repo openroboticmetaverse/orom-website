@@ -1,5 +1,5 @@
 <template>
-  <div class="relative isolate overflow-hidden bg-black py-24 sm:py-32">
+  <div class="relative isolate overflow-hidden bg-black pt-24 sm:py-32">
     <canvas id="canvas" ref="canvas"></canvas>
     <div class="mx-auto max-w-7xl px-6 lg:px-8" style="z-index: 10">
       <div class="mx-auto max-w-4xl lg:mx-0">
