@@ -12,7 +12,7 @@
     </svg>
     <a
       href="https://instagram.com/openroboticmetaverse"
-      class="text-gray-300 hover:text-gray-100 duration-500 ease-in-out"
+      class="text-gray-300 hover:text-teal-300 duration-500 ease-in-out"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@
     ></a>
     <a
       href="https://github.com/openroboverse"
-      class="text-gray-300 hover:text-gray-100 duration-500 ease-in-out"
+      class="text-gray-300 hover:text-teal-300 duration-500 ease-in-out"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
