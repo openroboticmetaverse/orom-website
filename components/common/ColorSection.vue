@@ -9,7 +9,7 @@
       aria-hidden="true"
     >
       <div
-        class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#000] to-[#085ba0] opacity-20"
+        class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#9800ff] to-[#085ba0] opacity-20"
         style="
           clip-path: polygon(
             74.1% 44.1%,
@@ -37,7 +37,7 @@
       aria-hidden="true"
     >
       <div
-        class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#000] to-[#085ba0] opacity-20"
+        class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#000] to-[#9800ff] opacity-20"
         style="
           clip-path: polygon(
             74.1% 44.1%,
@@ -65,7 +65,7 @@
       aria-hidden="true"
     >
       <div
-        class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#4bb8a6] to-[#085ba0] opacity-20"
+        class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#9800ff] to-[#085ba0] opacity-20"
         style="
           clip-path: polygon(
             74.1% 44.1%,
