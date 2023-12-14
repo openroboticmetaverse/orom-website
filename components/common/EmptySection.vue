@@ -7,7 +7,7 @@
           class="max-w-lg px-4 sm:pt-12 pt-2 pb-10 sm:pb-10 mx-auto text-left md:max-w-none md:text-center"
         >
           <h1
-            class="font-extrabold leading-10 tracking-tight pb-10 py-20 sm:py-12 text-left text-gray-200 text-center sm:leading-none text-3xl sm:text-6xl"
+            class="font-extrabold leading-10 tracking-tight pb-10 py-20 sm:py-12 text-left text-gray-200 text-center sm:leading-none text-4xl sm:text-6xl"
           >
             <span class="inline md:block">
               <slot name="mainTitle1"></slot>

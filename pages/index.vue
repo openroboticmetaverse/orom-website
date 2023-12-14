@@ -38,7 +38,7 @@
         </UiSimpleCard>
       </template>
     </CommonCardSection>
-
+<section class="bordered-section ">
     <CommonEmptySection class="reveal">
       <template v-slot:mainTitle1> What we're </template>
       <template v-slot:mainTitle2> <span class="gradient-text-left">passionately</span> building </template>
@@ -55,8 +55,8 @@
       <template v-slot:button1> Who are we? </template>
       <template v-slot:button2> Example projects </template>
     </CommonButtonSection>
-
-    <CommonLeftSection :orderFirst="true" class="reveal">
+</section>
+    <CommonLeftSection :orderFirst="false" class="reveal">
       <template v-slot:title> <span class="gradient-text-right">Network</span>  </template>
       <template v-slot:description>
         Our goal is to cultivate a community where robotics enthusiasts can
@@ -157,5 +157,40 @@ useJsonld(() => ({
   transform: translateY(0);
   opacity: 1;
 }
+
+.bordered-section::before {
+    content: '';
+  display: block;
+  height: 2px; /* Adjust thickness of your border lines */
+  background: linear-gradient(to right, #aeedcc, #aa37e8); /* Replace with your gradient colors */
+  margin-bottom: 10px; /* Space between the two lines */
+}
+.bordered-section::after {
+    content: '';
+  display: block;
+  height: 2px; /* Adjust thickness of your border lines */
+  background: linear-gradient(to left, #aeedcc, #aa37e8); /* Replace with your gradient colors */
+  margin-bottom: 0px; /* Space between the two lines */
+}
+
+@keyframes moveGrid {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+
+.bordered-section {
+  position: relative;
+  overflow: hidden; /* Keeps our moving grid inside the section */
+  /* Add other styles for size, etc. as needed */
+  background: linear-gradient(90deg, rgba(255,255,255,0.2) 1px, transparent 1px),
+              linear-gradient(rgba(255,255,255,0.2) 1px, transparent 1px);
+  background-size: 50px 50px; /* Adjust the size of the grid squares */
+  animation: moveGrid 30s linear infinite;
+}
+
 </style>
   

@@ -13,7 +13,7 @@
                 <div class="max-w-xl text-center lg:text-left">
                   <div>
                     <p
-                      class="font-bold tracking-tight text-gray-200 pb-4 text-3xl sm:text-6xl"
+                      class="font-bold tracking-tight text-left px-5 sm:px-0  text-gray-200 pb-4 text-4xl sm:text-6xl"
                     >
                       <slot name="title"></slot>
                     </p>
