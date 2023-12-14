@@ -3,29 +3,32 @@
     <span
       class="inline-flex pt-12 sm:pt-2 md:pt-2 lg:pt-2 items-center mt-3 min-h-12xl hover:text-teal-300 duration-200"
     >
-          <NuxtLink
+      <NuxtLink
         to="/projects"
         class="transition-colors duration-200 ease-in-out"
       >
-      <svg
-        fill="none"
-        stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        class="w-4 h-4 mr-2 transform rotate-180"
-        viewBox="0 0 24 24"
-      >
-        <path d="M5 12h14M12 5l7 7-7 7"></path>
-      </svg>
-
+        <svg
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          class="w-4 h-4 mr-2 transform rotate-180"
+          viewBox="0 0 24 24"
+        >
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
         Back
       </NuxtLink>
     </span>
 
     <div class="grid md:grid-cols-2 grid-cols-1 gap-2 sm:px-10">
       <div class="p-7">
-        <nuxt-img provider="cloudinary" :src="project.fullImage" class="mx-auto my-7 w-full md:max-w-md" />
+        <nuxt-img
+          provider="cloudinary"
+          :src="project.fullImage"
+          class="mx-auto my-7 w-full md:max-w-md"
+        />
       </div>
       <div class="p-7 sm:p-2">
         <h2 class="text-4xl my-0 sm:my-7">{{ project.title }}</h2>

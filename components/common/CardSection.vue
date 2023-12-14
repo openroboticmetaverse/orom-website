@@ -5,7 +5,7 @@
         <div class="py-4 mx-auto px-4 max-w-screen-2xl">
           <h2 class="card-section-title z-20"><slot name="title"></slot></h2>
           <h2
-            class="text-2xl tracking-tight text-center text-gray-300 sm:text-4xl pb-10"
+            class="text-xl tracking-tight text-center text-gray-300 sm:text-4xl pb-10"
           >
             <slot name="description"></slot>
           </h2>

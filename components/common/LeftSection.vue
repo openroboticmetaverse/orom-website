@@ -13,7 +13,7 @@
                 <div class="max-w-xl text-center lg:text-left">
                   <div>
                     <p
-                      class="font-bold tracking-tight gradient-text-left pb-4 text-4xl sm:text-8xl"
+                      class="font-bold tracking-tight gradient-text-left pb-4 text-3xl sm:text-6xl"
                     >
                       <slot name="title"></slot>
                     </p>
@@ -30,7 +30,7 @@
               >
                 <slot name="image"></slot>
               </div>
-              <div v-else class="block w-full mt-12 aspect-square lg:mt-20">
+              <div v-else class="block w-full sm:mt-12 aspect-square lg:mt-20">
                 <slot name="image"></slot>
               </div>
             </div>

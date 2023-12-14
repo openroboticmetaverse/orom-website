@@ -6,7 +6,6 @@ export default defineNuxtConfig({
     "nuxt-jsonld",
     "@nuxt/image-edge",
     "@nuxt/content",
-    "@hypernym/nuxt-gsap",
     [
       "@pinia/nuxt",
       {
@@ -14,13 +13,13 @@ export default defineNuxtConfig({
       },
     ],
   ],
+  content:{
+    highlight: {
+      theme: 'solarized-light'
+    }
+  },
   imports: {
     dirs: ["stores"],
-  },
-  gsap: {
-    extraPlugins: {
-      scrollTrigger: true,
-    },
   },
   image: {
     cloudinary: {

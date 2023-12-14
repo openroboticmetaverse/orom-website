@@ -6,7 +6,7 @@
 
 @layer components {
   .btn {
-    @apply backdrop-blur-sm transition duration-500 ease-in-out bg-[#192033] border border-[#E2E8F0] translate-y-1 text-white hover:bg-neutral-500 text-lg font-semibold py-3 px-6 rounded-3xl inline-flex items-center mb-4;
+    @apply relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900;
   }
   .card {
     @apply p-3 rounded-md shadow-md h-full;
@@ -21,7 +21,7 @@
     @apply bg-gray-900 bg-opacity-75 right-0 hover:bg-gray-800 border border-gray-500 hover:border-transparent duration-300 rounded-lg p-8 md:p-12 mb-8;
   }
   .simple-card{
-    @apply bg-gray-900 bg-opacity-75 right-0 hover:bg-gray-800 border border-gray-500 hover:border-transparent duration-300  rounded-lg p-8 md:p-12;
+    @apply relative bg-gray-900 bg-opacity-75 right-0 hover:bg-gray-800 hover:border-transparent duration-300 rounded-lg p-8 md:p-12;
   }
   .small-title{
     @apply gradient-text-right text-center dark:text-white text-2xl sm:text-2xl lg:text-4xl font-extrabold mb-2;
@@ -30,7 +30,7 @@
     @apply gradient-text-left text-center dark:text-white text-2xl sm:text-2xl lg:text-4xl font-extrabold mb-2;
   }
   .card-section-title {
-    @apply text-3xl font-bold tracking-tight text-center gradient-text-light sm:text-6xl pb-10;
+    @apply text-2xl font-bold tracking-tight text-center gradient-text-light sm:text-6xl pb-10;
   }
   .gradient-text-left{
     @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-700;
@@ -42,7 +42,7 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-teal-400;
   }
   .section-description{
-    @apply max-w-xl mt-4 mb-12 text-2xl sm:text-2xl lg:text-4xl px-10 sm:px-0 tracking-tight text-gray-300;
+    @apply max-w-xl mt-4 mb-12 text-lg sm:text-xl lg:text-2xl px-10 sm:px-0 tracking-tight text-gray-300;
   }
   /* Custom Scrollbar */
   ::-webkit-scrollbar {
