@@ -4,48 +4,21 @@
       <div class="mx-auto w-full max-w-screen-7xl p-9 py-6 lg:py-8">
         <div class="flex justify-between">
           <div class="mb-6 md:mb-0">
-            <a href="https://flowbite.com/" class="flex items-center">
-              <img src="/icon.svg" class="h-8 mr-3" alt="FlowBite Logo" />
+            <NuxtLink to="#" class="flex items-center">
+              <img src="/icon.svg" class="h-8 mr-3" alt="open robotic metaverse Logo" />
               <span
                 class="self-center lg:text-2xl text-sm font-semibold whitespace-nowrap dark:text-white lg:block hidden">open
                 robotic metaverse</span>
-            </a>
+            </NuxtLink>
           </div>
-          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 ml-3">
-            <!-- <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-100 uppercase dark:text-white">
-                Resources
-              </h2>
+          <div class="">
+            <div class="mb-6 text-sm font-semibold text-gray-100 uppercase dark:text-white">
               <ul class="text-gray-300 dark:text-gray-400 font-medium">
                 <li class="mb-4">
-                  <a href="#" class="hover:underline">Wiki</a>
-                </li>
-                 
-              </ul>
-            </div>
-            <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-100 uppercase dark:text-white">
-                Follow us
-              </h2>
-              <ul class="text-gray-300 dark:text-gray-400 font-medium">
-                <li class="mb-4">
-                  <a href="https://github.com/openroboticmetaverse" class="hover:underline">Github</a>
+                  <NuxtLink to="/privacy" class="hover:text-white">Privacy Policy</NuxtLink>
                 </li>
                 <li>
-                  <a href="https://instagram.com/openroboticmetaverse" class="hover:underline">Instagram</a>
-                </li>
-              </ul>
-            </div> -->
-            <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-100 uppercase dark:text-white">
-                Legal
-              </h2>
-              <ul class="text-gray-300 dark:text-gray-400 font-medium">
-                <li class="mb-4">
-                  <NuxtLink to="/privacy" class="hover:underline">Privacy Policy</NuxtLink>
-                </li>
-                <li>
-                  <NuxtLink to="/imprint" class="hover:underline">Imprint</NuxtLink>
+                  <NuxtLink to="/imprint" class="hover:text-white">Imprint</NuxtLink>
                 </li>
               </ul>
             </div>
@@ -54,7 +27,7 @@
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
           <span class="text-sm text-gray-300 sm:text-center dark:text-gray-400">© 2023 open robotic metaverse e.V. .
-            <a href="https://www.netlify.com/" class="hover:underline">Powered by Netlify</a>
+            <a href="https://www.netlify.com/" class="hover:text-white">Powered by Netlify</a>
           </span>
           <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
             <a href="https://x.com/orom_org" class="text-gray-400 hover:text-white dark:hover:text-white">
