@@ -4,12 +4,12 @@
     <div class="mx-auto max-w-7xl px-2 lg:px-8" style="z-index: 10">
       <div class="mx-auto max-w-4xl lg:mx-0">
         <h2
-          class="text-4xl font-bold tracking-tight px-10 sm:text-8xl gradient-text-left"
+          class="text-4xl font-bold tracking-tight px-10 sm:text-8xl gradient-text-left sliding-text-1"
         >
           <p>together, we shape the future of robotics</p>
         </h2>
         <p
-          class="mt-6 text-2xl sm:text-2xl lg:text-4xl px-10 leading-8 text-gray-300"
+          class="mt-6 text-2xl sm:text-2xl lg:text-4xl px-10 leading-8 text-gray-300 sliding-text-2"
         >
           Creating a collaborative platform for robotics enthusiasts, beginners,
           and professionals to learn, innovate, and share
@@ -19,19 +19,19 @@
         <dl
           class="mt-8 grid grid-cols-2 gap-8 px-10 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4"
         >
-          <div class="flex flex-col-reverse">
+          <div class="flex flex-col-reverse sliding-text-3">
             <dt class="text-base leading-7 text-gray-300">Get Inspired</dt>
             <dd class="text-2xl font-bold leading-9 tracking-tight text-white">
               Imagine
             </dd>
           </div>
-          <div class="flex flex-col-reverse">
+          <div class="flex flex-col-reverse sliding-text-4">
             <dt class="text-base leading-7 text-gray-300">Hone your skils</dt>
             <dd class="text-2xl font-bold leading-9 tracking-tight text-white">
               Develop
             </dd>
           </div>
-          <div class="flex flex-col-reverse">
+          <div class="flex flex-col-reverse sliding-text-5">
             <dt class="text-base leading-7 text-gray-300">Inspire Others</dt>
             <dd class="text-2xl font-bold leading-9 tracking-tight text-white">
               Simulate
@@ -84,4 +84,50 @@ onMounted(() => {
   }
 }
 
+@keyframes slideText {
+  from {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideTextReverse {
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.sliding-text-1 {
+  display: inline-block;
+  opacity: 0; /* Start with the text invisible */
+  animation: slideText 0.3s ease-in-out forwards;
+}
+.sliding-text-2 {
+  display: inline-block;
+  opacity: 0; /* Start with the text invisible */
+  animation: slideTextReverse 0.7s ease-in-out forwards;
+}
+.sliding-text-3 {
+  display: inline-block;
+  opacity: 0; /* Start with the text invisible */
+  animation: slideText 0.3s ease-in-out forwards;
+}
+.sliding-text-4 {
+  display: inline-block;
+  opacity: 0; /* Start with the text invisible */
+  animation: slideText 0.7s ease-in-out forwards;
+}
+.sliding-text-5 {
+  display: inline-block;
+  opacity: 0; /* Start with the text invisible */
+  animation: slideText 1.0s ease-in-out forwards;
+}
 </style>
