@@ -108,26 +108,26 @@ onMounted(() => {
 .sliding-text-1 {
   display: inline-block;
   opacity: 0; /* Start with the text invisible */
-  animation: slideText 0.3s ease-in-out forwards;
+  animation: slideText 0.7s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 .sliding-text-2 {
   display: inline-block;
   opacity: 0; /* Start with the text invisible */
-  animation: slideTextReverse 0.7s ease-in-out forwards;
+  animation: slideTextReverse 0.7s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 .sliding-text-3 {
   display: inline-block;
   opacity: 0; /* Start with the text invisible */
-  animation: slideText 0.3s ease-in-out forwards;
+  animation: slideText 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 .sliding-text-4 {
   display: inline-block;
   opacity: 0; /* Start with the text invisible */
-  animation: slideText 0.7s ease-in-out forwards;
+  animation: slideText 0.7s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 .sliding-text-5 {
   display: inline-block;
   opacity: 0; /* Start with the text invisible */
-  animation: slideText 1.0s ease-in-out forwards;
+  animation: slideText 1.0s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 </style>
