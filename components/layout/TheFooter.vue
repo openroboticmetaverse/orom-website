@@ -42,7 +42,7 @@
               <span class="sr-only">X</span>
             </a>
 
-            <a href="#" class="text-gray-400 hover:text-white dark:hover:text-white">
+            <a href="https://www.linkedin.com/company/openroboticmetaverse/" class="text-gray-400 hover:text-white dark:hover:text-white">
               <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                 viewBox="0 0 50 50">
                 <path
