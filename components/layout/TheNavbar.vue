@@ -151,8 +151,6 @@ const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
 
-
-
 const handleClickOutside = (event) => {
   if (menuButton.value && menuButton.value.contains(event.target)) {
     return;
@@ -174,7 +172,6 @@ onMounted(() => {
 const navbarContainer = ref(null);
 
 onBeforeUnmount(() => {
-  // window.removeEventListener("scroll", updateGradient);
   window.removeEventListener("click", handleClickOutside);
 });
 </script>

@@ -15,29 +15,37 @@
           and professionals to learn, innovate, and share
         </p>
       </div>
+
       <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
         <dl
           class="mt-8 grid grid-cols-2 gap-8 px-10 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4"
         >
           <div class="flex flex-col-reverse">
-            <dt class="text-base leading-7 text-gray-300">Get Inspired</dt>
+            <dt class="text-base leading-7 text-gray-300">Open Source</dt>
             <dd class="text-2xl font-bold leading-9 tracking-tight text-white">
-              Imagine
+              Commitment 
             </dd>
           </div>
           <div class="flex flex-col-reverse">
-            <dt class="text-base leading-7 text-gray-300">Hone your skils</dt>
+            <dt class="text-base leading-7 text-gray-300">Robotics</dt>
             <dd class="text-2xl font-bold leading-9 tracking-tight text-white">
-              Develop
+              Focus
             </dd>
           </div>
           <div class="flex flex-col-reverse">
-            <dt class="text-base leading-7 text-gray-300">Inspire Others</dt>
+            <dt class="text-base leading-7 text-gray-300">Our metaverse</dt>
             <dd class="text-2xl font-bold leading-9 tracking-tight text-white">
-              Simulate
+              Building
             </dd>
           </div>
         </dl>
+        <div class="py-10 px-10 lg:px-8">
+          <UiRoundedButton :buttonLink="`/team`"
+            ><template v-slot:button>
+              Meet us!
+            </template></UiRoundedButton
+          >
+        </div>
       </div>
     </div>
   </div>
@@ -83,5 +91,4 @@ onMounted(() => {
     display: none;
   }
 }
-
 </style>
