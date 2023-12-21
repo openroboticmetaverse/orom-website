@@ -150,7 +150,7 @@
           <template v-slot:icons> </template>
           <template v-slot:image>
             <nuxt-img
-              class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto reveal"
+              class="object-cover rounded-3xl object-center w-full mx-auto h-4/6 bg-gray-300 lg:ml-auto reveal"
               alt="hero"
               provider="cloudinary"
               src="/openroboverse/roboverse_h1tlhw.png"
