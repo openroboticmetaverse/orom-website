@@ -136,7 +136,7 @@
           class="object-cover rounded-3xl object-center w-full mx-auto h-4/6 bg-gray-300 lg:ml-auto"
           alt="hero"
           provider="cloudinary"
-          src="/openroboverse/landing1_uwkslj.png"
+          src="/openroboverse/meeting-robots_sxxmwg.png"
         />
       </template>
     </CommonLeftSection>
@@ -269,5 +269,6 @@ useJsonld(() => ({
     animation: moveGrid 20s linear infinite;
   }
 }
+
 </style>
   
