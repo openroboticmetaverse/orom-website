@@ -14,9 +14,9 @@
         highly motivated to strengthen the robotic community in and outside of
         Aachen, Germany.
         <div class="py-6"></div>
-        <UiRoundedButton :buttonLink="`/contact`">
+        <UiBaseButton :buttonLink="`/contact`">
           <template v-slot:button> Reach out to us! </template>
-        </UiRoundedButton>
+        </UiBaseButton>
       </template>
 
       <template v-slot:icons> </template>
@@ -41,9 +41,9 @@
           in this field and connect them with companies in search of solution
           implementers, while building a connected passionate community.
           <div class="py-6"></div>
-          <UiRoundedButton :buttonLink="`/contact`">
+          <UiBaseButton :buttonLink="`/contact`">
             <template v-slot:button> Reach out to us! </template>
-          </UiRoundedButton>
+          </UiBaseButton>
         </template>
         <template v-slot:image>
           <div class="py-10"></div>
@@ -72,60 +72,60 @@
         </p>
       </template>
       <template v-slot:left>
-        <UiSimpleCard class="reveal">
+        <UiBaseCard class="reveal">
           <template v-slot:title> Community </template>
           <template v-slot:text>
             We are an active community open to professionals, beginners, and
             enthusiasts alike. We strongly encourage the exchange of knowledge
             and ideas.
           </template>
-        </UiSimpleCard>
+        </UiBaseCard>
       </template>
       <template v-slot:center>
-        <UiSimpleCard class="reveal">
+        <UiBaseCard class="reveal">
           <template v-slot:title> Project Platform </template>
           <template v-slot:text>
             In our vision, we aim to create an open Metaverse where solutions
             are engineered and showcased. This allows everyone to explore
             various running solutions, draw inspiration or offer support.
           </template>
-        </UiSimpleCard>
+        </UiBaseCard>
       </template>
       <template v-slot:right>
-        <UiSimpleCard class="reveal">
+        <UiBaseCard class="reveal">
           <template v-slot:title> Facilitation Tools </template>
           <template v-slot:text>
             We provide ready-to-use building blocks that make starting with
             robotics and simulation quicker and more intuitive.
           </template>
-        </UiSimpleCard>
+        </UiBaseCard>
       </template>
       <template v-slot:bottom-left>
-        <UiSimpleCard class="reveal">
+        <UiBaseCard class="reveal">
           <template v-slot:title> Educational and Mentorship </template>
           <template v-slot:text>
             We offer an easy-to-follow guide for learning robotics. We encourage
             a culture of support where members assist each other.
           </template>
-        </UiSimpleCard>
+        </UiBaseCard>
       </template>
       <template v-slot:bottom-center>
-        <UiSimpleCard class="reveal">
+        <UiBaseCard class="reveal">
           <template v-slot:title> Bridging Theory and Practice </template>
           <template v-slot:text>
             We strive to bridge the gap between the theoretical knowledge found
             in academic institutions and the practical needs of the industry.
           </template>
-        </UiSimpleCard>
+        </UiBaseCard>
       </template>
       <template v-slot:bottom-right>
-        <UiSimpleCard class="reveal">
+        <UiBaseCard class="reveal">
           <template v-slot:title> Open-Source Involvement </template>
           <template v-slot:text>
             We contribute to the open-source community and welcome everyone to
             join our vision.
           </template>
-        </UiSimpleCard>
+        </UiBaseCard>
       </template>
     </CommonCardSection>
     <CommonPhotoSection>
@@ -150,7 +150,7 @@
           <template v-slot:icons> </template>
           <template v-slot:image>
             <nuxt-img
-              class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto reveal"
+              class="object-cover rounded-3xl object-center w-full mx-auto h-4/6 bg-gray-300 lg:ml-auto reveal"
               alt="hero"
               provider="cloudinary"
               src="/openroboverse/roboverse_h1tlhw.png"

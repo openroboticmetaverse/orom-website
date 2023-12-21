@@ -15,7 +15,7 @@
         >
       </template>
       <template v-slot:icons>
-        <CommonIconList></CommonIconList>
+        <UiSocialMediaIcons></UiSocialMediaIcons>
       </template>
       <template v-slot:image>
         <div class="py-10"></div>

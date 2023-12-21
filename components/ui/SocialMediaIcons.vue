@@ -1,5 +1,5 @@
 <template>
-  <div class="relative mt-10 pb-10 flex justify-center items-center">   
+  <div class="relative mt-10 pb-10 flex justify-center items-center">
     <a
       href="https://www.linkedin.com/company/openroboticmetaverse/"
       class="text-gray-300 hover:text-teal-300 duration-500 ease-in-out"

@@ -151,15 +151,6 @@ const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
 
-const updateGradient = () => {
-  const scrolled = window.scrollY;
-  if (navbar.value) {
-    navbar.value.style.background = `linear-gradient(to top, #192033 ,black ${
-      scrolled / 2
-    }px)`;
-  }
-};
-
 const handleClickOutside = (event) => {
   if (menuButton.value && menuButton.value.contains(event.target)) {
     return;
@@ -170,7 +161,6 @@ const handleClickOutside = (event) => {
 };
 
 onMounted(() => {
-  window.addEventListener("scroll", updateGradient);
   window.addEventListener("click", handleClickOutside);
   nextTick(() => {
     if (navbarContainer.value) {
@@ -182,7 +172,6 @@ onMounted(() => {
 const navbarContainer = ref(null);
 
 onBeforeUnmount(() => {
-  window.removeEventListener("scroll", updateGradient);
   window.removeEventListener("click", handleClickOutside);
 });
 </script>

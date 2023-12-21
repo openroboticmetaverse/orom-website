@@ -9,39 +9,62 @@
         <span class="gradient-text-left">three pillars</span>:</template
       >
       <p>
-        We aim to accelerate the development in by focusing on our three
-        pillars:
+        We aim to accelerate the development in robotics by focusing on our
+        three pillars:
       </p>
       <template v-slot:left>
-        <UiSimpleCard class="reveal">
+        <UiBaseCard class="reveal">
           <template v-slot:title> Learn </template>
           <template v-slot:text>
             We prioritize a hands-on, community-driven approach to learning. We
             encourage a culture of support where members, regardless of their
             experience level, learn from and assist each other
           </template>
-        </UiSimpleCard>
+        </UiBaseCard>
       </template>
       <template v-slot:center>
-        <UiSimpleCard class="reveal">
-          <template v-slot:title> Network </template>
+        <UiBaseCard class="reveal">
+          <template v-slot:title> Connect </template>
           <template v-slot:text>
             Our goal is to cultivate a community where robotics enthusiasts can
             meet, collaborate on projects, and share insights, enhancing
             partnerships and idea exchange
           </template>
-        </UiSimpleCard>
+        </UiBaseCard>
       </template>
       <template v-slot:right>
-        <UiSimpleCard class="reveal">
+        <UiBaseCard class="reveal">
           <template v-slot:title> Innovate </template>
           <template v-slot:text>
             We aim to contribute to the rapidly evolving field of robotics by
-            leveraging the potential of AI and simulation
+            leveraging the potential of AI and simulation.
           </template>
-        </UiSimpleCard>
+        </UiBaseCard>
       </template>
     </CommonCardSection>
+
+    <CommonEmptySection>
+      <template v-slot:mainTitle1>
+        <div class="reveal">One step towards</div></template
+      >
+      <template v-slot:mainTitle2>
+        <span class="gradient-text-left reveal">intelligent robots</span>
+      </template>
+      <template v-slot:description>
+        <div class="reveal">
+          Our objective is to advance the field of embodied AI (AKA intelligent
+          robotics) by utilizing recent advancements in
+          <span class="gradient-text-right">deep learning</span> and available
+          large datasets. We are focused on developing robotic agents capable of
+          <span class="gradient-text-left">sensing</span>,
+          <span class="gradient-text-right">reasoning</span> and
+          <span class="gradient-text-left">acting</span> within their physical
+          environments, supporting projects that includes at least one of these
+          capabilities.
+        </div>
+      </template>
+    </CommonEmptySection>
+    <div class="py-16"></div>
     <section class="bordered-section">
       <CommonEmptySection class="reveal">
         <template v-slot:mainTitle1> What we're </template>
@@ -49,42 +72,68 @@
           <span class="gradient-text-left">passionately</span> building
         </template>
         <template v-slot:description>
-          To support our vision, we are starting with a project that connect our
-          three pillars: We're building an open Metaverse focused on robotics
-          simulation, where you can explore, get inspired by, and contribute to
-          a variety of innovative solutions in a shared virtual space. the open
-          robotic metaverse offer the three following modes
+          To support our vision, we are starting with a project that connects
+          our three pillars: We're building an open metaverse centered around
+          robotics simulation, where we can
+          <span class="gradient-text-right">explore</span>, get
+          <span class="gradient-text-right">inspired</span> by, and
+          <span class="gradient-text-right">contribute</span> to a variety of
+          innovative solutions in a shared virtual space. The open robotic
+          metaverse offers the following three modes: Explore, create a
+          challenge or deploy a solution.
         </template>
       </CommonEmptySection>
-
-      <CommonButtonSection
-        :button1Link="`/about`"
-        :button2Link="`/projects`"
-        class="reveal"
+      <div
+        class="flex flex-col items-center gap-5 justify-center h-full mx-auto pb-24"
       >
-        <template v-slot:button1> Who are we? </template>
-        <template v-slot:button2> Example projects </template>
-      </CommonButtonSection>
+        <UiBaseButton :buttonLink="`/projects`">
+          <template v-slot:button> Our projects </template>
+        </UiBaseButton>
+      </div>
     </section>
-    <CommonLeftSection :orderFirst="false" class="reveal">
+    <CommonRightSection class="reveal">
       <template v-slot:title>
-        <span class="gradient-text-right">Network</span>
+        Integrating robotics into
+        <span class="gradient-text-left">everyday tasks</span>
       </template>
       <template v-slot:description>
-        Our goal is to cultivate a community where robotics enthusiasts can
-        meet, collaborate on projects, and share insights, enhancing
-        partnerships and idea exchange.
+        We strive to contribute to this evolving domain by exploring
+        applications in computer vision, natural language processing, and
+        reinforcement learning. Our primary focus centers on use-cases many can
+        relate to: household and gardening tasks. Additionally, we encourage the
+        exploration and integration of open-source libraries.
         <div class="py-6"></div>
-        <UiRoundedButton :buttonLink="`/contact`">
+      </template>
+      <template v-slot:image>
+        <div class="py-10"></div>
+        <nuxt-img
+          class="object-cover rounded-3xl object-center w-full h-4/6 mx-auto bg-gray-300 lg:ml-auto"
+          alt="hero"
+          provider="cloudinary"
+          src="/openroboverse/cleaning_u73f7p.png"
+        />
+      </template>
+    </CommonRightSection>
+    <CommonLeftSection :orderFirst="false" class="reveal">
+      <template v-slot:title>
+        <span class="gradient-text-right">Curious?</span>
+      </template>
+      <template v-slot:description>
+        Join us in shaping the future of robotics. Don't hesitate to contact us
+        today and be part of this exciting journey. We welcome motivated
+        enthusiasts who want to learn, and experts who wish to share and grow
+        with the community. Your contribution matters!
+        <div class="py-6"></div>
+        <UiBaseButton :buttonLink="`/contact`">
           <template v-slot:button> Reach out to us! </template>
-        </UiRoundedButton>
+        </UiBaseButton>
       </template>
       <template v-slot:icons>
-        <CommonIconList></CommonIconList>
+        <UiSocialMediaIcons></UiSocialMediaIcons>
       </template>
       <template v-slot:image>
         <nuxt-img
-          class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto"
+          class="object-cover rounded-3xl object-center w-full mx-auto h-4/6 bg-gray-300 lg:ml-auto"
           alt="hero"
           provider="cloudinary"
           src="/openroboverse/landing1_uwkslj.png"
@@ -215,12 +264,10 @@ useJsonld(() => ({
   animation: moveGrid 50s linear infinite;
 }
 
-
 @media (max-width: 640px) {
-.bordered-section {
-  animation: moveGrid 20s linear infinite;
+  .bordered-section {
+    animation: moveGrid 20s linear infinite;
+  }
 }
-}
-
 </style>
   
