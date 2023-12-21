@@ -13,35 +13,66 @@
         pillars:
       </p>
       <template v-slot:left>
-        <UiSimpleCard class="reveal">
+        <UiBaseCard class="reveal">
           <template v-slot:title> Learn </template>
           <template v-slot:text>
             We prioritize a hands-on, community-driven approach to learning. We
             encourage a culture of support where members, regardless of their
             experience level, learn from and assist each other
           </template>
-        </UiSimpleCard>
+        </UiBaseCard>
       </template>
       <template v-slot:center>
-        <UiSimpleCard class="reveal">
+        <UiBaseCard class="reveal">
           <template v-slot:title> Network </template>
           <template v-slot:text>
             Our goal is to cultivate a community where robotics enthusiasts can
             meet, collaborate on projects, and share insights, enhancing
             partnerships and idea exchange
           </template>
-        </UiSimpleCard>
+        </UiBaseCard>
       </template>
       <template v-slot:right>
-        <UiSimpleCard class="reveal">
+        <UiBaseCard class="reveal">
           <template v-slot:title> Innovate </template>
           <template v-slot:text>
             We aim to contribute to the rapidly evolving field of robotics by
             leveraging the potential of AI and simulation
           </template>
-        </UiSimpleCard>
+        </UiBaseCard>
       </template>
     </CommonCardSection>
+    <CommonPhotoSection>
+      <template v-slot:image>
+        <img
+          src="https://images.unsplash.com/photo-1561634507-b0cd27bf0aa7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+          alt=""
+          class="absolute inset-0 -z-10 h-full object-cover object-right md:object-center"
+        />
+      </template>
+      <template v-slot:content>
+        <CommonLeftSection :orderFirst="true" class="reveal">
+          <template v-slot:title>
+            <span class="gradient-text-left-bright">The goal?</span>
+          </template>
+          <template v-slot:description>
+            Open Robotic Metaverse is forging a new realm at the intersection of
+            robotics and virtual environments. Our collective vision is to build
+            a metaverse where innovative minds can develop, share, and explore
+            the future of robotics in a collaborative ecosystem.
+          </template>
+          <template v-slot:icons> </template>
+          <template v-slot:image>
+            <nuxt-img
+              class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto reveal"
+              alt="hero"
+              provider="cloudinary"
+              src="/openroboverse/roboverse_h1tlhw.png"
+            />
+          </template>
+        </CommonLeftSection>
+      </template>
+    </CommonPhotoSection>
     <section class="bordered-section">
       <CommonEmptySection class="reveal">
         <template v-slot:mainTitle1> What we're </template>
@@ -49,11 +80,12 @@
           <span class="gradient-text-left">passionately</span> building
         </template>
         <template v-slot:description>
-          To support our vision, we are starting with a project that connect our
-          three pillars: We're building an open Metaverse focused on robotics
-          simulation, where you can explore, get inspired by, and contribute to
-          a variety of innovative solutions in a shared virtual space. the open
-          robotic metaverse offer the three following modes
+          To support our vision, we are starting with a project that connects
+          our three pillars: We're building an open metaverse centered around
+          robotics simulation, where we can <span class="gradient-text-right">explore</span>, get <span class="gradient-text-right">inspired</span> by, and
+          <span class="gradient-text-right">contribute</span> to a variety of innovative solutions in a shared virtual
+          space. The open robotic metaverse offers the following three modes:
+           Explore, create a challenge or deploy a solution.
         </template>
       </CommonEmptySection>
 
@@ -68,16 +100,16 @@
     </section>
     <CommonLeftSection :orderFirst="false" class="reveal">
       <template v-slot:title>
-        <span class="gradient-text-right">Network</span>
+        <span class="gradient-text-right">Curious?</span>
       </template>
       <template v-slot:description>
         Our goal is to cultivate a community where robotics enthusiasts can
         meet, collaborate on projects, and share insights, enhancing
         partnerships and idea exchange.
         <div class="py-6"></div>
-        <UiRoundedButton :buttonLink="`/contact`">
+        <UiBaseButton :buttonLink="`/contact`">
           <template v-slot:button> Reach out to us! </template>
-        </UiRoundedButton>
+        </UiBaseButton>
       </template>
       <template v-slot:icons>
         <CommonIconList></CommonIconList>
@@ -215,12 +247,10 @@ useJsonld(() => ({
   animation: moveGrid 50s linear infinite;
 }
 
-
 @media (max-width: 640px) {
-.bordered-section {
-  animation: moveGrid 20s linear infinite;
+  .bordered-section {
+    animation: moveGrid 20s linear infinite;
+  }
 }
-}
-
 </style>
   

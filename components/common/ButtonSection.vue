@@ -4,16 +4,16 @@
       <div class="max-w-lg px-4 pb-24 mx-auto text-center">
         <div class="flex flex-col items-center gap-5 justify-center h-full">
           <!-- Centered on mobile -->
-          <UiRoundedButton :buttonLink="button1Link">
+          <UiBaseButton :buttonLink="button1Link">
             <template v-slot:button>
               <slot name="button1"> </slot>
             </template>
-          </UiRoundedButton>
-          <UiRoundedButton :buttonLink="button2Link">
+          </UiBaseButton>
+          <UiBaseButton :buttonLink="button2Link">
             <template v-slot:button>
               <slot name="button2"> </slot>
             </template>
-          </UiRoundedButton>
+          </UiBaseButton>
         </div>
       </div>
     </section>

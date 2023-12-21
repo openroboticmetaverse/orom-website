@@ -9,9 +9,9 @@
         perspectives, because great ideas don't fit in a box. Join us in shaping
         the future of technology. All enthusiasts welcome!
                 <div class="py-6"></div>
-        <UiRoundedButton :buttonLink="`/contact`">
+        <UiBaseButton :buttonLink="`/contact`">
           <template v-slot:button> Want to see yourself there? </template>
-        </UiRoundedButton>
+        </UiBaseButton>
       </template>
       <template v-slot:icons> </template>
       <template v-slot:image>
