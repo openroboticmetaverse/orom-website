@@ -40,10 +40,10 @@
           </div>
         </dl>
         <div class="py-10 px-10 lg:px-8">
-          <UiRoundedButton :buttonLink="`/team`"
+          <UiBaseButton :buttonLink="`/team`"
             ><template v-slot:button>
               Meet us!
-            </template></UiRoundedButton
+            </template></UiBaseButton
           >
         </div>
       </div>

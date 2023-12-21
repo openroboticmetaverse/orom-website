@@ -112,7 +112,7 @@
         </UiBaseButton>
       </template>
       <template v-slot:icons>
-        <CommonIconList></CommonIconList>
+        <UiSocialMediaIcons></UiSocialMediaIcons>
       </template>
       <template v-slot:image>
         <nuxt-img
