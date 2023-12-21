@@ -34,6 +34,7 @@ onMounted(() => {
 <style>
 html {
   background-color: black;
+  scroll-behavior: smooth;
 }
 
 
