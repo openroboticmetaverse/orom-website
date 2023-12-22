@@ -59,12 +59,16 @@ import { EnhancedThreeHelper } from "@/helpers/threeHelpers/core/EnhancedThreeHe
 const canvas = ref<HTMLCanvasElement | null>(null);
 
 const scrollDown = () => {
+  let scrollAmount = window.innerHeight;
+  if (window.innerWidth < 1536) {
+    scrollAmount *= 1.2; 
+  }
+
   window.scrollBy({
-    top: 1.2*window.innerHeight,
-    behavior: 'smooth'
+    top: scrollAmount,
+    behavior: 'smooth' 
   });
 };
-
 
 
 onMounted(() => {
