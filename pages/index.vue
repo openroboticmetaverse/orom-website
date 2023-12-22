@@ -84,7 +84,7 @@
         </template>
       </CommonEmptySection>
       <div
-        class="flex flex-col items-center gap-5 justify-center h-full mx-auto pb-24"
+        class=" reveal flex flex-col items-center gap-5 justify-center h-full mx-auto pb-24"
       >
         <UiBaseButton :buttonLink="`/projects`">
           <template v-slot:button> Our projects </template>
