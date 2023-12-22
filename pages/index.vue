@@ -107,7 +107,7 @@
       <template v-slot:image>
         <div class="py-10"></div>
         <nuxt-img
-          class="object-cover rounded-3xl object-center w-full h-4/6 mx-auto bg-gray-300 lg:ml-auto"
+          class="object-cover rounded-3xl object-center w-full h-4/6 object-top mx-auto bg-gray-300 lg:ml-auto"
           alt="hero"
           provider="cloudinary"
           src="/openroboverse/cleaning_vmjvvw.png"
