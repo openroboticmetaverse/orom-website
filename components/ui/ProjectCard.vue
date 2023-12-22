@@ -1,7 +1,7 @@
 <template>
   <div class="p-10 h-full max-w-sm">
     <NuxtLink :to="`/projects/${project.id}`">
-    <div class="flex max-w-sm rounded-xl bg-gradient-to-tr from-teal-600 via-purple-400 to-blue-300 p-0.5 hover:bg-gradient-to-tl hover:shadow-white duration-300 shadow-md">
+    <div class="flex max-w-sm rounded-xl bg-gradient-to-tr from-teal-600 via-purple-400 to-blue-300 p-0.5 hover:bg-gradient-to-tl hover:shadow-purple-500 duration-300 shadow-md">
       <div class="flex rounded-lg h-full bg-gray-800 p-2 border border-gray-800  flex-col">
         <div class="image-container mb-4">
           <!-- New div for the image -->
