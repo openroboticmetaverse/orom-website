@@ -164,7 +164,7 @@ onMounted(() => {
   align-items: center;
   cursor: pointer;
   padding: 20px;
-  z-index: 1000;
+  z-index: 9;
 }
 
 .arrow {
