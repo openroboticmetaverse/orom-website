@@ -110,7 +110,7 @@
           class="object-cover rounded-3xl object-center w-full h-4/6 mx-auto bg-gray-300 lg:ml-auto"
           alt="hero"
           provider="cloudinary"
-          src="/openroboverse/cleaning_u73f7p.png"
+          src="/openroboverse/cleaning_vmjvvw.png"
         />
       </template>
     </CommonRightSection>
