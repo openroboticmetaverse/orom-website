@@ -59,24 +59,11 @@ import { EnhancedThreeHelper } from "@/helpers/threeHelpers/core/EnhancedThreeHe
 const canvas = ref<HTMLCanvasElement | null>(null);
 
 const scrollDown = () => {
-  const start = window.pageYOffset;
-  const end = start + 1.2 * window.innerHeight;
-  const change = end - start;
-  const duration = 200; // 1 second in milliseconds
-  let startTime = null;
-
-  function step(timestamp) {
-    if (!startTime) startTime = timestamp;
-    const progress = timestamp - startTime;
-    const scrollTo = Math.min(start + (change * (progress / duration)), end);
-    window.scrollTo(0, scrollTo);
-
-    if (progress < duration) window.requestAnimationFrame(step);
-  }
-
-  window.requestAnimationFrame(step);
+  window.scrollBy({
+    top: 1.2*window.innerHeight,
+    behavior: 'smooth'
+  });
 };
-
 
 
 
