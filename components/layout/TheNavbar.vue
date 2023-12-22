@@ -20,7 +20,7 @@
               <div class="flex flex-shrink-0">
                 <img
                   class="h-10 w-auto"
-                  src="../../assets/icon-with-text.png"
+                  src="../../assets/icon-with-text.webp"
                   alt="open robotic metaverse logo"
                 />
               </div>
