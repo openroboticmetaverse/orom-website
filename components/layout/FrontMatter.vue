@@ -59,29 +59,25 @@ import { EnhancedThreeHelper } from "@/helpers/threeHelpers/core/EnhancedThreeHe
 const canvas = ref<HTMLCanvasElement | null>(null);
 
 const scrollDown = () => {
-  const targetPosition = window.innerHeight;
-  let startPosition = window.pageYOffset || document.documentElement.scrollTop;
-  let distance = targetPosition - startPosition;
+  const start = window.pageYOffset;
+  const end = start + 1.2 * window.innerHeight;
+  const change = end - start;
+  const duration = 200; // 1 second in milliseconds
   let startTime = null;
 
-  const animation = currentTime => {
-    if (startTime === null) startTime = currentTime;
-    let timeElapsed = currentTime - startTime;
-    let run = ease(timeElapsed, startPosition, distance, 2000); // Duration is 2000ms
-    window.scrollTo(0, run);
-    if (timeElapsed < 2000) requestAnimationFrame(animation); // Keep the animation going
-  };
+  function step(timestamp) {
+    if (!startTime) startTime = timestamp;
+    const progress = timestamp - startTime;
+    const scrollTo = Math.min(start + (change * (progress / duration)), end);
+    window.scrollTo(0, scrollTo);
 
-const ease = (t, b, c, d) => {
-  t /= d / 2;
-  if (t < 1) return c / 2 * Math.pow(2, 10 * (t - 1)) + b;
-  t--;
-  return c / 2 * (-Math.pow(2, -10 * t) + 2) + b;
+    if (progress < duration) window.requestAnimationFrame(step);
+  }
+
+  window.requestAnimationFrame(step);
 };
 
 
-  requestAnimationFrame(animation);
-};
 
 
 onMounted(() => {
@@ -167,8 +163,8 @@ onMounted(() => {
 
 
 .arrow-container {
-  position: absolute;
-  bottom: 20px;
+  position: relative;
+  bottom: 10rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
