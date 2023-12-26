@@ -1,6 +1,6 @@
 <template>
   <div ref="navbarContainer" class="fixed sticky top-0 z-10 bg-black">
-    <nav ref="navbar" class="bg-black navbar-shadow">
+    <nav ref="navbar" class="bg-black">
       <div class="px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-20 items-center justify-between">
           <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -277,15 +277,5 @@ onBeforeUnmount(() => {
 }
 
 
-.navbar-shadow {
-  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1),
-              0 5px 20px -5px rgba(122, 228, 255, 0.5);
-}
-
-
-.navbar-shadow {
-  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1),
-              0 10px 20px -5px linear-gradient(to right, #c353da 0%, #ff7eb3 100%);
-}
 
 </style>
