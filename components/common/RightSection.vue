@@ -1,12 +1,12 @@
 <template>
   <div class="text-left">
-    <div class="sm:px-12">
+    <div class="sm:px-12 sm:pt-5 md:pt-10 lg:pt-20">
       <section class="relative flex items-center w-full">
         <div
           class="relative items-center w-full px-5 mx-auto md:px-9 lg:px-12 max-w-9xl"
         >
           <div class="relative flex-col items-start m-auto align-middle">
-            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
+            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-22">
               <div
                 class="order-first block w-full px-4 aspect-square"
               >
