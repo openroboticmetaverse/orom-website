@@ -20,6 +20,9 @@ const MyTheme = {
 };
 
 module.exports = {
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
   darkMode: 'class',
   content: [
     './components/**/*.{vue,js,ts}',
