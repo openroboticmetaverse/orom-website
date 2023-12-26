@@ -1,5 +1,7 @@
 <template>
-<section class="bordered-section bg-gray-900">
+  <CommonColorSection>
+    <template v-slot:content>
+<section class="bordered-section">
       <section class=" py-12">
         <div class="py-4 mx-auto px-10 max-w-screen-2xl">
           <h2 class="font-bold tracking-tight text-center text-gray-200 text-3xl sm:text-4xl md:text-5xl lg:text-6xl pb-10 z-20"><slot name="title"></slot></h2>
@@ -20,6 +22,8 @@
         </div>
       </section>
       </section>
+          </template>
+  </CommonColorSection>
 </template>
 
 <style scoped>
