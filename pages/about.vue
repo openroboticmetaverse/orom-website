@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="py-6 sm:py-0"></div>
+
     <CommonLeftSection>
       <template v-slot:title>
         About
@@ -29,7 +30,15 @@
         />
       </template>
     </CommonLeftSection>
-    <section class="bordered-section">
+    <CommonPhotoSection>
+      <template v-slot:image>
+        <img
+          src="https://images.unsplash.com/photo-1567789884554-0b844b597180?q=80&w=2070&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+          alt=""
+          class="absolute inset-0 -z-10 h-full object-cover object-right md:object-center"
+        />
+      </template>
+      <template v-slot:content>
       <CommonRightSection class="reveal">
         <template v-slot:title>
           <span class="gradient-text-right">Vision</span>
@@ -55,7 +64,8 @@
           />
         </template>
       </CommonRightSection>
-    </section>
+            </template>
+    </CommonPhotoSection>
     <CommonCardSection>
       <template v-slot:title
         >

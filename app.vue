@@ -48,4 +48,27 @@ html {
   filter: blur(1rem);
 }
 
+.bordered-section::before {
+  content: "";
+  display: block;
+  height: 2px; /* Adjust thickness of your border lines */
+  background: linear-gradient(
+    to right,
+    #aeedcc,
+    #aa37e8
+  ); /* Replace with your gradient colors */
+  margin-bottom: 10px; /* Space between the two lines */
+}
+.bordered-section::after {
+  content: "";
+  display: block;
+  height: 2px; /* Adjust thickness of your border lines */
+  background: linear-gradient(
+    to left,
+    #aeedcc,
+    #aa37e8
+  ); /* Replace with your gradient colors */
+  margin-bottom: 0px; /* Space between the two lines */
+}
+
 </style>

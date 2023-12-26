@@ -1,47 +1,47 @@
 <template>
   <div>
     <LayoutFrontMatter />
-    <CommonCardSection>
-      <template v-slot:title>
-        We aim to accelerate the
-        <span class="gradient-text-right">development in robotics</span> by
-        focusing on our
-        <span class="gradient-text-left">three pillars</span>:</template
-      >
-      <p>
-        We aim to accelerate the development in robotics by focusing on our
-        three pillars:
-      </p>
-      <template v-slot:left>
-        <UiBaseCard class="reveal">
-          <template v-slot:title> Learn </template>
-          <template v-slot:text>
-            We prioritize a hands-on, community-driven approach to learning. We
-            encourage a culture of support where members, regardless of their
-            experience level, learn from and assist each other
-          </template>
-        </UiBaseCard>
-      </template>
-      <template v-slot:center>
-        <UiBaseCard class="reveal">
-          <template v-slot:title> Connect </template>
-          <template v-slot:text>
-            Our goal is to cultivate a community where robotics enthusiasts can
-            meet, collaborate on projects, and share insights, enhancing
-            partnerships and idea exchange
-          </template>
-        </UiBaseCard>
-      </template>
-      <template v-slot:right>
-        <UiBaseCard class="reveal">
-          <template v-slot:title> Innovate </template>
-          <template v-slot:text>
-            We aim to contribute to the rapidly evolving field of robotics by
-            leveraging the potential of AI and simulation.
-          </template>
-        </UiBaseCard>
-      </template>
-    </CommonCardSection>
+      <CommonCardSection>
+        <template v-slot:title>
+          We aim to accelerate the
+          <span class="gradient-text-right">development in robotics</span> by
+          focusing on our
+          <span class="gradient-text-left">three pillars</span>:</template
+        >
+        <p>
+          We aim to accelerate the development in robotics by focusing on our
+          three pillars:
+        </p>
+        <template v-slot:left>
+          <UiBaseCard class="reveal">
+            <template v-slot:title> Learn </template>
+            <template v-slot:text>
+              We prioritize a hands-on, community-driven approach to learning.
+              We encourage a culture of support where members, regardless of
+              their experience level, learn from and assist each other
+            </template>
+          </UiBaseCard>
+        </template>
+        <template v-slot:center>
+          <UiBaseCard class="reveal">
+            <template v-slot:title> Connect </template>
+            <template v-slot:text>
+              Our goal is to cultivate a community where robotics enthusiasts
+              can meet, collaborate on projects, and share insights, enhancing
+              partnerships and idea exchange
+            </template>
+          </UiBaseCard>
+        </template>
+        <template v-slot:right>
+          <UiBaseCard class="reveal">
+            <template v-slot:title> Innovate </template>
+            <template v-slot:text>
+              We aim to contribute to the rapidly evolving field of robotics by
+              leveraging the potential of AI and simulation.
+            </template>
+          </UiBaseCard>
+        </template>
+      </CommonCardSection>
 
     <CommonEmptySection>
       <template v-slot:mainTitle1>
@@ -65,7 +65,7 @@
       </template>
     </CommonEmptySection>
     <div class="py-16"></div>
-    <section class="bordered-section">
+    <section class="bordered-section animated">
       <CommonEmptySection class="reveal">
         <template v-slot:mainTitle1> What we're </template>
         <template v-slot:mainTitle2>
@@ -84,7 +84,7 @@
         </template>
       </CommonEmptySection>
       <div
-        class=" reveal flex flex-col items-center gap-5 justify-center h-full mx-auto pb-24"
+        class="reveal flex flex-col items-center gap-5 justify-center h-full mx-auto pb-24"
       >
         <UiBaseButton :buttonLink="`/projects`">
           <template v-slot:button> Our projects </template>
@@ -114,6 +114,15 @@
         />
       </template>
     </CommonRightSection>
+        <CommonPhotoSection>
+      <template v-slot:image>
+        <img
+          src="https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?q=80&w=2071&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+          alt=""
+          class="absolute inset-0 -z-10 h-full object-cover object-right md:object-center"
+        />
+      </template>
+      <template v-slot:content>
     <CommonLeftSection :orderFirst="false" class="reveal">
       <template v-slot:title>
         <span class="gradient-text-right">Curious?</span>
@@ -140,6 +149,8 @@
         />
       </template>
     </CommonLeftSection>
+    </template>
+    </CommonPhotoSection>
   </div>
 </template>
   
@@ -218,29 +229,6 @@ useJsonld(() => ({
   opacity: 1;
 }
 
-.bordered-section::before {
-  content: "";
-  display: block;
-  height: 2px; /* Adjust thickness of your border lines */
-  background: linear-gradient(
-    to right,
-    #aeedcc,
-    #aa37e8
-  ); /* Replace with your gradient colors */
-  margin-bottom: 10px; /* Space between the two lines */
-}
-.bordered-section::after {
-  content: "";
-  display: block;
-  height: 2px; /* Adjust thickness of your border lines */
-  background: linear-gradient(
-    to left,
-    #aeedcc,
-    #aa37e8
-  ); /* Replace with your gradient colors */
-  margin-bottom: 0px; /* Space between the two lines */
-}
-
 @keyframes moveGrid {
   from {
     background-position: 0;
@@ -250,7 +238,7 @@ useJsonld(() => ({
   }
 }
 
-.bordered-section {
+.bordered-section.animated {
   position: relative;
   overflow: hidden; /* Keeps our moving grid inside the section */
   /* Add other styles for size, etc. as needed */
@@ -269,6 +257,5 @@ useJsonld(() => ({
     animation: moveGrid 20s linear infinite;
   }
 }
-
 </style>
   
