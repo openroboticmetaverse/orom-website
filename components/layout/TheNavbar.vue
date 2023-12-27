@@ -278,8 +278,8 @@ onBeforeUnmount(() => {
 
 
 .navbar-shadow {
-  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1),
-              0 5px 20px -5px rgba(122, 228, 255, 0.5);
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.0),
+              0 5px 20px -5px rgba(122, 228, 255, 0.2);
 }
 
 
