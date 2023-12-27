@@ -1,13 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-
+  
+  
   modules: [
     "@nuxtjs/tailwindcss",
     [
       "@dargmuesli/nuxt-cookie-control",
       {
-        barPosition: "top-full",
+        barPosition: "bottom-full",
         colors: {
           barTextColor: "#fff",
           modalOverlay: "#000",
