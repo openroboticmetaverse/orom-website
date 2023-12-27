@@ -1,5 +1,5 @@
 <template>
-  <div ref="navbarContainer" class="fixed sticky top-0 z-50 bg-black">
+  <div ref="navbarContainer" class="fixed sticky top-0 z-50 bg-black navbar" @scroll="manageNavBarAnimations">
     <nav ref="navbar" class="bg-black navbar-shadow">
       <div class="px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-20 items-center justify-between">
@@ -160,7 +160,25 @@ const handleClickOutside = (event) => {
   }
 };
 
+const navbarContainer = ref(null);
+let previousScrollTop = window.pageYOffset;
+
+const manageNavBarAnimations = () => {
+  const header = navbarContainer.value;
+  const scrollTop = window.pageYOffset;
+
+  if (scrollTop > previousScrollTop || !previousScrollTop) {
+    header.style.top = "-80px";
+  } else {
+    header.style.top = "0";
+  }
+
+  previousScrollTop = scrollTop;
+};
+
+
 onMounted(() => {
+  window.addEventListener("scroll", manageNavBarAnimations);
   window.addEventListener("click", handleClickOutside);
   nextTick(() => {
     if (navbarContainer.value) {
@@ -169,9 +187,9 @@ onMounted(() => {
   });
 });
 
-const navbarContainer = ref(null);
 
 onBeforeUnmount(() => {
+  window.removeEventListener("scroll", manageNavBarAnimations);
   window.removeEventListener("click", handleClickOutside);
 });
 </script>
@@ -285,4 +303,8 @@ onBeforeUnmount(() => {
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1),
     0 10px 20px -5px linear-gradient(to right, #c353da 0%, #ff7eb3 100%);
 }
+.navbar {
+  transition: top 0.3s;
+}
+
 </style>
