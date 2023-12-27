@@ -147,9 +147,9 @@
         />
       </template>
       <template v-slot:content>
-        <CommonLeftSection :orderFirst="true" class="reveal">
+        <CommonLeftSection :orderFirst="true" class="reveal z-50">
           <template v-slot:title>
-            <span class="gradient-text-left-bright">The goal?</span>
+            <span class="gradient-text-left-bright z-50">The goal?</span>
           </template>
           <template v-slot:description>
             Open Robotic Metaverse is forging a new realm at the intersection of

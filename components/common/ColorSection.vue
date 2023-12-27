@@ -104,7 +104,7 @@
   right: 0;
   height: 15%;
   /* Adjust the height as needed */
-  z-index: 1;
+  z-index: -1;
 }
 
 @media (max-width: 640px) {

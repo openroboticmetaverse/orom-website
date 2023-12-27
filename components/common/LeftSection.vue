@@ -1,5 +1,5 @@
 <template>
-  <div class="text-left">
+  <div class="text-left z-50">
     <div class="sm:px-12 sm:pt-5 md:pt-10 lg:pt-20 ">
       <section class="relative flex items-center w-full">
         <div
