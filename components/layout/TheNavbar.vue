@@ -1,5 +1,5 @@
 <template>
-  <div ref="navbarContainer" class="fixed sticky top-0 z-50 bg-black navbar" @scroll="manageNavBarAnimations">
+  <div ref="navbarContainer" class="fixed sticky top-0 z-50 bg-black">
     <nav ref="navbar" class="bg-black navbar-shadow">
       <div class="px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-20 items-center justify-between">
@@ -160,26 +160,7 @@ const handleClickOutside = (event) => {
   }
 };
 
-const navbarContainer = ref(null);
-let previousScrollTop;
-
-const manageNavBarAnimations = () => {
-  const header = navbarContainer.value;
-  const scrollTop = window.pageYOffset;
-
-  if (scrollTop > previousScrollTop || !previousScrollTop) {
-    header.style.top = "-80px";
-  } else {
-    header.style.top = "0";
-  }
-
-  previousScrollTop = scrollTop;
-};
-
-
 onMounted(() => {
-  previousScrollTop = window.pageYOffset;
-  window.addEventListener("scroll", manageNavBarAnimations);
   window.addEventListener("click", handleClickOutside);
   nextTick(() => {
     if (navbarContainer.value) {
@@ -188,12 +169,9 @@ onMounted(() => {
   });
 });
 
+const navbarContainer = ref(null);
 
 onBeforeUnmount(() => {
-  if (typeof window !== 'undefined') {
-    window.removeEventListener('scroll', manageNavBarAnimations);
-    // ... Any other cleanup for client-side only code
-  }
   window.removeEventListener("click", handleClickOutside);
 });
 </script>
@@ -219,7 +197,7 @@ onBeforeUnmount(() => {
   transition: height max-height 0.5s ease-in-out;
 }
 
-.sticky.top-0.z-50 {
+.sticky.top-0.z-10 {
   padding-top: env(safe-area-inset-top);
 }
 
@@ -298,26 +276,16 @@ onBeforeUnmount(() => {
   background-position: 0 100%;
 }
 
-.navbar-shadow {
-  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.0),
-    0 5px 20px -5px rgba(122, 228, 255, 0.1);
-}
 
 .navbar-shadow {
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1),
-    0 10px 20px -5px linear-gradient(to right, #c353da 0%, #ff7eb3 100%);
-}
-.navbar {
-  transition: top 0.3s;
-  top: env(safe-area-inset-top); /* This is the magic! */
+              0 5px 20px -5px rgba(122, 228, 255, 0.5);
 }
 
-/* When hiding the navbar, subtract the safe area */
-@media (max-width: 812px) { /* Adjust this for the specific breakpoint */
-  .navbar-hidden {
-    top: calc(-80px - env(safe-area-inset-top));
-  }
-}
 
+.navbar-shadow {
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1),
+              0 10px 20px -5px linear-gradient(to right, #c353da 0%, #ff7eb3 100%);
+}
 
 </style>
