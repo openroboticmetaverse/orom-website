@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@dargmuesli/nuxt-cookie-control": "^7.2.1",
     "@nuxt/devtools": "latest",
     "@nuxt/image-edge": "^1.1.0-28373407.4ef2978",
     "@nuxt/typescript-build": "^3.0.2",

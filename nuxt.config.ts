@@ -1,8 +1,109 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
+
   modules: [
     "@nuxtjs/tailwindcss",
+    [
+      "@dargmuesli/nuxt-cookie-control",
+      {
+        barPosition: "top-full",
+        colors: {
+          barTextColor: "#fff",
+          modalOverlay: "#000",
+          barBackground: "#000",
+          barButtonColor: "#000",
+          modalTextColor: "#000",
+          modalBackground: "#fff",
+          modalOverlayOpacity: 0.8,
+          modalButtonColor: "#fff",
+          modalUnsavedColor: "#fff",
+          barButtonHoverColor: "#fff",
+          barButtonBackground: "#fff",
+          modalButtonHoverColor: "#fff",
+          modalButtonBackground: "#000",
+          controlButtonIconColor: "#000",
+          controlButtonBackground: "#fff",
+          barButtonHoverBackground: "#333",
+          checkboxActiveBackground: "#000",
+          checkboxInactiveBackground: "#000",
+          modalButtonHoverBackground: "#333",
+          checkboxDisabledBackground: "#ddd",
+          controlButtonIconHoverColor: "#fff",
+          controlButtonHoverBackground: "#000",
+          checkboxActiveCircleBackground: "#fff",
+          checkboxInactiveCircleBackground: "#fff",
+          checkboxDisabledCircleBackground: "#fff",
+        },
+        text: {
+          barTitle: "Cookies",
+          barDescription:
+            "We use our own cookies and third-party cookies so that we can show you this website and better understand how you use it, with a view to improving the services we offer. If you continue browsing, we consider that you have accepted the cookies.",
+          acceptAll: "Accept all",
+          declineAll: "Delete all",
+          manageCookies: "Manage cookies",
+          unsaved: "You have unsaved settings",
+          close: "Close",
+          save: "Save",
+          necessary: "Necessary cookies",
+          optional: "Optional cookies",
+          functional: "Functional cookies",
+          blockedIframe: "To see this, please enable functional cookies",
+          here: "here",
+        },
+        cookies: {
+          necessary: [
+            {
+              //if multilanguage
+              name: {
+                en: "Default Cookies",
+              },
+              //else
+              name: "Default Cookies",
+              //if multilanguage
+              description: {
+                en: "Used for cookie control.",
+              },
+              //else
+              description:
+                "These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.",
+              cookies: [
+                "cookie_control_consent",
+                "cookie_control_enabled_cookies",
+              ],
+            },
+          ],
+          optional: [
+            {
+              name: "Google Analytics",
+              //if you don't set identifier, slugified name will be used
+              identifier: "ga",
+              //if multilanguage
+              description: {
+                en: "Google Analytics cookies are used on our website to collect data about visitor interactions. These cookies enable us to understand and analyze website traffic and usage patterns, assisting us in enhancing our website's functionality and user experience.",
+              },
+              //else
+              description:
+                "Google Analytics cookies are used on our website to collect data about visitor interactions. These cookies enable us to understand and analyze website traffic and usage patterns, assisting us in enhancing our website's functionality and user experience.",
+
+              initialState: true,
+              src: "https://www.googletagmanager.com/gtag/js?id=G-F81S4B8YPP",
+              async: true,
+              cookies: ["_ga", "_gat", "_gid"],
+              accepted: () => {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                  dataLayer.push(arguments);
+                }
+                gtag("js", new Date());
+                gtag("config", "G-F81S4B8YPP");
+              },
+              declined: () => {},
+            },
+          ],
+        },
+      },
+    ],
     "nuxt-jsonld",
     "@nuxt/image-edge",
     "@nuxt/content",
@@ -16,8 +117,8 @@ export default defineNuxtConfig({
   ],
   googleFonts: {
     families: {
-      'Nunito+Sans': [400, 700], // Feel free to change the weights to match your fabulousness
-    }
+      "Nunito+Sans": [400, 700], // Feel free to change the weights to match your fabulousness
+    },
   },
   content: {
     highlight: {

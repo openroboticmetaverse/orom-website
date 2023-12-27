@@ -1,12 +1,35 @@
 <template>
-    <div>
-      <NuxtLayout>
-        <NuxtPage/>
-      </NuxtLayout>
-    </div>
+  <div>
+    <CookieControl> </CookieControl>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </div>
 </template>
 <script setup>
-import { onMounted, ref } from 'vue';
+import { onMounted, ref } from "vue";
+
+const {
+  cookiesEnabled,
+  cookiesEnabledIds,
+  isConsentGiven,
+  isModalActive,
+  moduleOptions,
+} = useCookieControl();
+
+watch(
+  () => cookiesEnabledIds.value,
+  (current, previous) => {
+    if (
+      !previous?.includes("google-analytics") &&
+      current?.includes("google-analytics")
+    ) {
+      // cookie with id `google-analytics` got added
+      window.location.reload(); // placeholder for your custom change handler
+    }
+  },
+  { deep: true }
+);
 
 const scaleFactor = ref(1);
 let initialViewportWidth = null;
@@ -26,7 +49,7 @@ const adjustScale = () => {
 
 onMounted(() => {
   if (!isMobileDevice()) {
-    window.addEventListener('resize', adjustScale);
+    window.addEventListener("resize", adjustScale);
     adjustScale();
   }
 });
@@ -36,7 +59,6 @@ html {
   background-color: black;
   scroll-behavior: smooth;
 }
-
 
 .page-enter-active,
 .page-leave-active {
@@ -70,5 +92,4 @@ html {
   ); /* Replace with your gradient colors */
   margin-bottom: 0px; /* Space between the two lines */
 }
-
 </style>
