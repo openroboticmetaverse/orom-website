@@ -197,7 +197,7 @@ onBeforeUnmount(() => {
   transition: height max-height 0.5s ease-in-out;
 }
 
-.sticky.top-0.z-10 {
+.sticky.top-0.z-50 {
   padding-top: env(safe-area-inset-top);
 }
 
