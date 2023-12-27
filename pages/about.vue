@@ -39,36 +39,36 @@
         />
       </template>
       <template v-slot:content>
-      <CommonRightSection class="reveal">
-        <template v-slot:title>
-          <span class="gradient-text-right">Vision</span>
-        </template>
-        <template v-slot:description>
-          We aim to accelerate the development of robotic applications by making
-          use of the advancements in Simulation technology and Artificial
-          Intelligence. We support individuals in acquiring skills and knowledge
-          in this field and connect them with companies in search of solution
-          implementers, while building a connected passionate community.
-          <div class="py-6"></div>
-          <UiBaseButton :buttonLink="`/contact`">
-            <template v-slot:button> Reach out to us! </template>
-          </UiBaseButton>
-        </template>
-        <template v-slot:image>
-          <div class="py-10"></div>
-          <nuxt-img
-            class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto"
-            alt="hero"
-            provider="cloudinary"
-            src="/openroboverse/group_foto_2_bqdglp.jpg"
-          />
-        </template>
-      </CommonRightSection>
-            </template>
+        <CommonRightSection class="reveal">
+          <template v-slot:title>
+            <span class="gradient-text-right">Vision</span>
+          </template>
+          <template v-slot:description>
+            We aim to accelerate the development of robotic applications by
+            making use of the advancements in Simulation technology and
+            Artificial Intelligence. We support individuals in acquiring skills
+            and knowledge in this field and connect them with companies in
+            search of solution implementers, while building a connected
+            passionate community.
+            <div class="py-6"></div>
+            <UiBaseButton :buttonLink="`/contact`">
+              <template v-slot:button> Reach out to us! </template>
+            </UiBaseButton>
+          </template>
+          <template v-slot:image>
+            <div class="py-10"></div>
+            <nuxt-img
+              class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto"
+              alt="hero"
+              provider="cloudinary"
+              src="/openroboverse/group_foto_2_bqdglp.jpg"
+            />
+          </template>
+        </CommonRightSection>
+      </template>
     </CommonPhotoSection>
     <CommonCardSection>
-      <template v-slot:title
-        >
+      <template v-slot:title>
         <span class="gradient-text-left">Mission</span>
       </template>
       <template v-slot:description>

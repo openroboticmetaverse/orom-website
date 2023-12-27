@@ -2,13 +2,15 @@
   <div>
     <div class="pt-24 sm:pt-0 md:pt-0 lg:pt-0"></div>
     <CommonLeftSection :orderFirst="true">
-      <template v-slot:title> Meet the <span class="gradient-text-left"> team!</span>  </template>
+      <template v-slot:title>
+        Meet the <span class="gradient-text-left"> team!</span>
+      </template>
       <template v-slot:description>
         If you have a passion for robotics and a drive to innovate, you're
         exactly where you need to be. Here, we value diverse talents and
         perspectives, because great ideas don't fit in a box. Join us in shaping
         the future of technology. All enthusiasts welcome!
-                <div class="py-6"></div>
+        <div class="py-6"></div>
         <UiBaseButton :buttonLink="`/contact`">
           <template v-slot:button> Want to see yourself there? </template>
         </UiBaseButton>
@@ -89,7 +91,8 @@ useJsonld(() => ({
       "@type": "Person",
       name: "Amine",
       jobTitle: "Founder",
-      image: "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467097/openroboverse/team/amine_ea0ijk.jpg",
+      image:
+        "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467097/openroboverse/team/amine_ea0ijk.jpg",
       url: "https://www.linkedin.com/in/aminekharrat/",
       sameAs: "https://github.com/AmineKharrat",
     },
@@ -97,7 +100,8 @@ useJsonld(() => ({
       "@type": "Person",
       name: "Karim",
       jobTitle: "Founder",
-      image: "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467105/openroboverse/team/karim_kddxb5.jpg",
+      image:
+        "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467105/openroboverse/team/karim_kddxb5.jpg",
       url: "https://www.linkedin.com/in/karim-siala/",
       sameAs: "https://github.com/karimsiala",
     },
@@ -105,7 +109,8 @@ useJsonld(() => ({
       "@type": "Person",
       name: "Hazar",
       jobTitle: "Founder",
-      image: "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467101/openroboverse/team/hazar_lhll8y.jpg",
+      image:
+        "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467101/openroboverse/team/hazar_lhll8y.jpg",
       url: "https://www.linkedin.com/in/hazar-karadag/",
       sameAs: "https://github.com/parhasard",
     },
@@ -113,7 +118,8 @@ useJsonld(() => ({
       "@type": "Person",
       name: "Luca",
       jobTitle: "Founder",
-      image: "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467107/openroboverse/team/luca_spikki.jpg",
+      image:
+        "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467107/openroboverse/team/luca_spikki.jpg",
       url: "https://www.linkedin.com/in/luca-sophie-lamerichs-131104206/",
       sameAs: "https://github.com/openroboverse",
     },
@@ -121,7 +127,8 @@ useJsonld(() => ({
       "@type": "Person",
       name: "Jan",
       jobTitle: "Founder",
-      image: "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467103/openroboverse/team/jan_v4l9n0.jpg",
+      image:
+        "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467103/openroboverse/team/jan_v4l9n0.jpg",
       url: "https://www.linkedin.com/in/janstrehl/",
       sameAs: "https://github.com/strehljd",
     },
@@ -129,7 +136,8 @@ useJsonld(() => ({
       "@type": "Person",
       name: "Estafania",
       jobTitle: "Founder",
-      image: "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467099/openroboverse/team/estafania_rkthuw.jpg",
+      image:
+        "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467099/openroboverse/team/estafania_rkthuw.jpg",
       url: "https://www.linkedin.com/in/estefania-betancourt-9545531a9/",
       sameAs: "https://github.com/openroboverse",
     },
@@ -137,7 +145,8 @@ useJsonld(() => ({
       "@type": "Person",
       name: "Thu Ha",
       jobTitle: "Founder",
-      image: "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467111/openroboverse/team/thuha_berfop.jpg",
+      image:
+        "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467111/openroboverse/team/thuha_berfop.jpg",
       url: "https://www.linkedin.com/in/thu-ha-dam-b0a7061b5/",
       sameAs: "https://github.com/openroboverse",
     },
@@ -145,7 +154,8 @@ useJsonld(() => ({
       "@type": "Person",
       name: "Marc",
       jobTitle: "Founder",
-      image: "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467109/openroboverse/team/marc_aj6znt.jpg",
+      image:
+        "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467109/openroboverse/team/marc_aj6znt.jpg",
       url: "https://www.linkedin.com/in/marc-andr%C3%A9-weism%C3%BCller/",
       sameAs: "https://github.com/openroboverse",
     },

@@ -1,7 +1,9 @@
 <template>
   <div>
     <CommonRightSection>
-      <template v-slot:title> <span class="gradient-text-left-bright">Reach us!</span>  </template>
+      <template v-slot:title>
+        <span class="gradient-text-left-bright">Reach us!</span>
+      </template>
       <template v-slot:description>
         Ready to Make a Difference? Reach out to us and start your journey
         today!

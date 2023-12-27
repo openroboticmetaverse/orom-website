@@ -1,7 +1,9 @@
 <template>
   <div>
     <CommonEmptySection>
-      <template v-slot:mainTitle2> <span class="gradient-text-right"> Hear from us!</span> </template>
+      <template v-slot:mainTitle2>
+        <span class="gradient-text-right"> Hear from us!</span>
+      </template>
       <template v-slot:description> Nothing to show. (yet) </template>
     </CommonEmptySection>
   </div>

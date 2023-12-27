@@ -1,47 +1,47 @@
 <template>
   <div>
     <LayoutFrontMatter />
-      <CommonCardSection>
-        <template v-slot:title>
-          We aim to accelerate the
-          <span class="gradient-text-right">development in robotics</span> by
-          focusing on our
-          <span class="gradient-text-left">three pillars</span>:</template
-        >
-        <p>
-          We aim to accelerate the development in robotics by focusing on our
-          three pillars:
-        </p>
-        <template v-slot:left>
-          <UiBaseCard class="reveal">
-            <template v-slot:title> Learn </template>
-            <template v-slot:text>
-              We prioritize a hands-on, community-driven approach to learning.
-              We encourage a culture of support where members, regardless of
-              their experience level, learn from and assist each other
-            </template>
-          </UiBaseCard>
-        </template>
-        <template v-slot:center>
-          <UiBaseCard class="reveal">
-            <template v-slot:title> Connect </template>
-            <template v-slot:text>
-              Our goal is to cultivate a community where robotics enthusiasts
-              can meet, collaborate on projects, and share insights, enhancing
-              partnerships and idea exchange
-            </template>
-          </UiBaseCard>
-        </template>
-        <template v-slot:right>
-          <UiBaseCard class="reveal">
-            <template v-slot:title> Innovate </template>
-            <template v-slot:text>
-              We aim to contribute to the rapidly evolving field of robotics by
-              leveraging the potential of AI and simulation.
-            </template>
-          </UiBaseCard>
-        </template>
-      </CommonCardSection>
+    <CommonCardSection>
+      <template v-slot:title>
+        We aim to accelerate the
+        <span class="gradient-text-right">development in robotics</span> by
+        focusing on our
+        <span class="gradient-text-left">three pillars</span>:</template
+      >
+      <p>
+        We aim to accelerate the development in robotics by focusing on our
+        three pillars:
+      </p>
+      <template v-slot:left>
+        <UiBaseCard class="reveal">
+          <template v-slot:title> Learn </template>
+          <template v-slot:text>
+            We prioritize a hands-on, community-driven approach to learning. We
+            encourage a culture of support where members, regardless of their
+            experience level, learn from and assist each other
+          </template>
+        </UiBaseCard>
+      </template>
+      <template v-slot:center>
+        <UiBaseCard class="reveal">
+          <template v-slot:title> Connect </template>
+          <template v-slot:text>
+            Our goal is to cultivate a community where robotics enthusiasts can
+            meet, collaborate on projects, and share insights, enhancing
+            partnerships and idea exchange
+          </template>
+        </UiBaseCard>
+      </template>
+      <template v-slot:right>
+        <UiBaseCard class="reveal">
+          <template v-slot:title> Innovate </template>
+          <template v-slot:text>
+            We aim to contribute to the rapidly evolving field of robotics by
+            leveraging the potential of AI and simulation.
+          </template>
+        </UiBaseCard>
+      </template>
+    </CommonCardSection>
 
     <CommonEmptySection>
       <template v-slot:mainTitle1>
@@ -114,7 +114,7 @@
         />
       </template>
     </CommonRightSection>
-        <CommonPhotoSection>
+    <CommonPhotoSection>
       <template v-slot:image>
         <img
           src="https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?q=80&w=2071&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
@@ -123,33 +123,33 @@
         />
       </template>
       <template v-slot:content>
-    <CommonLeftSection :orderFirst="false" class="reveal">
-      <template v-slot:title>
-        <span class="gradient-text-right">Curious?</span>
+        <CommonLeftSection :orderFirst="false" class="reveal">
+          <template v-slot:title>
+            <span class="gradient-text-right">Curious?</span>
+          </template>
+          <template v-slot:description>
+            Join us in shaping the future of robotics. Don't hesitate to contact
+            us today and be part of this exciting journey. We welcome motivated
+            enthusiasts who want to learn, and experts who wish to share and
+            grow with the community. Your contribution matters!
+            <div class="py-6"></div>
+            <UiBaseButton :buttonLink="`/contact`">
+              <template v-slot:button> Reach out to us! </template>
+            </UiBaseButton>
+          </template>
+          <template v-slot:icons>
+            <UiSocialMediaIcons></UiSocialMediaIcons>
+          </template>
+          <template v-slot:image>
+            <nuxt-img
+              class="object-cover rounded-3xl object-center w-full mx-auto h-4/6 bg-gray-300 lg:ml-auto"
+              alt="hero"
+              provider="cloudinary"
+              src="/openroboverse/meeting-robots_sxxmwg.png"
+            />
+          </template>
+        </CommonLeftSection>
       </template>
-      <template v-slot:description>
-        Join us in shaping the future of robotics. Don't hesitate to contact us
-        today and be part of this exciting journey. We welcome motivated
-        enthusiasts who want to learn, and experts who wish to share and grow
-        with the community. Your contribution matters!
-        <div class="py-6"></div>
-        <UiBaseButton :buttonLink="`/contact`">
-          <template v-slot:button> Reach out to us! </template>
-        </UiBaseButton>
-      </template>
-      <template v-slot:icons>
-        <UiSocialMediaIcons></UiSocialMediaIcons>
-      </template>
-      <template v-slot:image>
-        <nuxt-img
-          class="object-cover rounded-3xl object-center w-full mx-auto h-4/6 bg-gray-300 lg:ml-auto"
-          alt="hero"
-          provider="cloudinary"
-          src="/openroboverse/meeting-robots_sxxmwg.png"
-        />
-      </template>
-    </CommonLeftSection>
-    </template>
     </CommonPhotoSection>
   </div>
 </template>

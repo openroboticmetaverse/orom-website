@@ -12,9 +12,7 @@
             <span class="inline md:block">
               <slot name="mainTitle1"></slot>
             </span>
-            <span
-              class="relative mt-2 bg-clip-text  md:inline-block"
-            >
+            <span class="relative mt-2 bg-clip-text md:inline-block">
               <slot name="mainTitle2"></slot>
             </span>
           </h1>

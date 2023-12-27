@@ -1,6 +1,6 @@
 <template>
   <div class="text-left z-50">
-    <div class="sm:px-12 sm:pt-5 md:pt-10 lg:pt-20 ">
+    <div class="sm:px-12 sm:pt-5 md:pt-10 lg:pt-20">
       <section class="relative flex items-center w-full">
         <div
           class="relative items-center w-full px-5 mx-auto md:px-9 lg:px-12 max-w-9xl"
@@ -13,7 +13,7 @@
                 <div class="max-w-xl text-center lg:text-left">
                   <div>
                     <p
-                      class="font-bold tracking-tight text-left px-5 sm:px-0  text-gray-200 pb-4 text-4xl sm:text-4xl md:text-5xl lg:text-5xl"
+                      class="font-bold tracking-tight text-left px-5 sm:px-0 text-gray-200 pb-4 text-4xl sm:text-4xl md:text-5xl lg:text-5xl"
                     >
                       <slot name="title"></slot>
                     </p>
@@ -30,7 +30,10 @@
               >
                 <slot name="image"></slot>
               </div>
-              <div v-else class="block w-full sm:mt-12 px-5 aspect-square lg:mt-20">
+              <div
+                v-else
+                class="block w-full sm:mt-12 px-5 aspect-square lg:mt-20"
+              >
                 <slot name="image"></slot>
               </div>
             </div>

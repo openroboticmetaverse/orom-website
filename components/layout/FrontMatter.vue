@@ -1,5 +1,7 @@
 <template>
-  <div class="relative isolate overflow-hidden bg-black h-screen sm:h-auto pt-20 sm:py-20">
+  <div
+    class="relative isolate overflow-hidden bg-black h-screen sm:h-auto pt-20 sm:py-20"
+  >
     <canvas id="canvas" ref="canvas"></canvas>
     <div class="mx-auto max-w-7xl px-2 lg:px-8" style="z-index: 10">
       <div class="mx-auto max-w-4xl lg:mx-0">
@@ -21,33 +23,41 @@
           class="mt-8 grid grid-cols-2 gap-8 px-10 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4"
         >
           <div class="flex flex-col-reverse sliding-text-3">
-            <dt class="text-base sm:text-xl leading-7 text-gray-300">Commitment</dt>
-            <dd class="text-xl sm:text-2xl font-bold leading-9 tracking-tight text-white">
-               Open source
+            <dt class="text-base sm:text-xl leading-7 text-gray-300">
+              Commitment
+            </dt>
+            <dd
+              class="text-xl sm:text-2xl font-bold leading-9 tracking-tight text-white"
+            >
+              Open source
             </dd>
           </div>
           <div class="flex flex-col-reverse sliding-text-4">
             <dt class="text-base sm:text-xl leading-7 text-gray-300">Focus</dt>
-            <dd class="text-xl sm:text-2xl font-bold leading-9 tracking-tight text-white">
+            <dd
+              class="text-xl sm:text-2xl font-bold leading-9 tracking-tight text-white"
+            >
               Robotics
             </dd>
           </div>
           <div class="flex flex-col-reverse sliding-text-5">
-            <dt class="text-base sm:text-xl leading-7 text-gray-300">Building</dt>
-            <dd class="text-xl sm:text-2xl font-bold leading-9 tracking-tight text-white">
+            <dt class="text-base sm:text-xl leading-7 text-gray-300">
+              Building
+            </dt>
+            <dd
+              class="text-xl sm:text-2xl font-bold leading-9 tracking-tight text-white"
+            >
               A metaverse
             </dd>
           </div>
         </dl>
-        <div class="py-10 px-10 lg:px-8">
-
-        </div>
+        <div class="py-10 px-10 lg:px-8"></div>
       </div>
     </div>
   </div>
-      <div class="arrow-container" @click="scrollDown">
-      <div class="arrow"></div>
-    </div>
+  <div class="arrow-container" @click="scrollDown">
+    <div class="arrow"></div>
+  </div>
 </template>
 
 <script setup  lang="ts">
@@ -61,15 +71,14 @@ const canvas = ref<HTMLCanvasElement | null>(null);
 const scrollDown = () => {
   let scrollAmount = window.innerHeight;
   if (window.innerWidth < 1536) {
-    scrollAmount *= 1.2; 
+    scrollAmount *= 1.2;
   }
 
   window.scrollBy({
     top: scrollAmount,
-    behavior: 'smooth' 
+    behavior: "smooth",
   });
 };
-
 
 onMounted(() => {
   const isMobile = ref(window.innerWidth <= 768);
@@ -149,9 +158,8 @@ onMounted(() => {
 .sliding-text-5 {
   display: inline-block;
   opacity: 0; /* Start with the text invisible */
-  animation: slideText 1.0s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  animation: slideText 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
-
 
 .arrow-container {
   position: relative;
@@ -179,9 +187,12 @@ onMounted(() => {
   margin: 5px 0; /* Adjust this for spacing */
 }
 
-
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0) rotate(45deg); /* Ensure rotation stays */
   }
   40% {
@@ -191,5 +202,4 @@ onMounted(() => {
     transform: translateY(-15px) rotate(45deg);
   }
 }
-
 </style>
