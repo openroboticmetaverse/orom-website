@@ -1,28 +1,22 @@
 <template>
-        <LayoutTheNavbar/>
-    
-    <div>
-        
-        <slot />
+  <LayoutTheNavbar />
 
-        <LayoutTheFooter/>
-    </div>
+  <div>
+    <slot />
+
+    <LayoutTheFooter />
+  </div>
 </template>
 
 <script setup>
-
-
 </script>
 
 <style scoped>
-
-
 * {
-    color: white
+  color: white;
 }
 body {
-    padding-top: 60px;
-    margin-top: 6vh;
+  padding-top: 60px;
+  margin-top: 6vh;
 }
-
 </style>
