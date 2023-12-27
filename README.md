@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.openroboticmetaverse.org">
-    <img alt="orom" src="./assets/icon-with-text.png" width="300" />
+    <img alt="orom" src="./assets/icon-with-text.webp" width="300" />
   </a>
 </p>
 <h1 align="center">
