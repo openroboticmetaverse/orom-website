@@ -161,7 +161,7 @@ const handleClickOutside = (event) => {
 };
 
 const navbarContainer = ref(null);
-let previousScrollTop = window.pageYOffset;
+let previousScrollTop;
 
 const manageNavBarAnimations = () => {
   const header = navbarContainer.value;
@@ -178,6 +178,7 @@ const manageNavBarAnimations = () => {
 
 
 onMounted(() => {
+  previousScrollTop = window.pageYOffset;
   window.addEventListener("scroll", manageNavBarAnimations);
   window.addEventListener("click", handleClickOutside);
   nextTick(() => {
@@ -189,7 +190,10 @@ onMounted(() => {
 
 
 onBeforeUnmount(() => {
-  window.removeEventListener("scroll", manageNavBarAnimations);
+  if (typeof window !== 'undefined') {
+    window.removeEventListener('scroll', manageNavBarAnimations);
+    // ... Any other cleanup for client-side only code
+  }
   window.removeEventListener("click", handleClickOutside);
 });
 </script>
@@ -305,6 +309,15 @@ onBeforeUnmount(() => {
 }
 .navbar {
   transition: top 0.3s;
+  top: env(safe-area-inset-top); /* This is the magic! */
 }
+
+/* When hiding the navbar, subtract the safe area */
+@media (max-width: 812px) { /* Adjust this for the specific breakpoint */
+  .navbar-hidden {
+    top: calc(-80px - env(safe-area-inset-top));
+  }
+}
+
 
 </style>
