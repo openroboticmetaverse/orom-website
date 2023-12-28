@@ -26,7 +26,7 @@ export default defineNuxtConfig({
           controlButtonIconColor: "#000",
           controlButtonBackground: "#fff",
           barButtonHoverBackground: "#333",
-          checkboxActiveBackground: "#000",
+          checkboxActiveBackground: "#21E259",
           checkboxInactiveBackground: "#000",
           modalButtonHoverBackground: "#333",
           checkboxDisabledBackground: "#ddd",
@@ -76,7 +76,8 @@ export default defineNuxtConfig({
           ],
           optional: [
             {
-              name: "Google Analytics",
+              id: 'google-analytics',
+              name: { en: 'google-analytics' },
               //if you don't set identifier, slugified name will be used
               identifier: "ga",
               //if multilanguage
@@ -116,6 +117,16 @@ export default defineNuxtConfig({
       },
     ],
   ],
+  cookieControl: {
+    localeTexts: {
+      en: {
+        accept: 'Accept',
+        decline: "Accept only necessary",
+        acceptAll: 'Accept all',
+        declineAll: 'Accept only necessary'
+      },
+    },
+  },
   googleFonts: {
     families: {
       "Nunito+Sans": [400, 700], // Feel free to change the weights to match your fabulousness
