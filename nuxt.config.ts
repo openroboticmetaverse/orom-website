@@ -53,27 +53,7 @@ export default defineNuxtConfig({
           here: "here",
         },
         cookies: {
-          necessary: [
-            {
-              //if multilanguage
-              name: {
-                en: "Default Cookies",
-              },
-              //else
-              name: "Default Cookies",
-              //if multilanguage
-              description: {
-                en: "Used for cookie control.",
-              },
-              //else
-              description:
-                "These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.",
-              cookies: [
-                "cookie_control_consent",
-                "cookie_control_enabled_cookies",
-              ],
-            },
-          ],
+          
           optional: [
             {
               id: 'google-analytics',
@@ -123,9 +103,39 @@ export default defineNuxtConfig({
         accept: 'Accept',
         decline: "Accept only necessary",
         acceptAll: 'Accept all',
-        declineAll: 'Accept only necessary'
+        declineAll: 'Accept only necessary',
+        bannerDescription:
+        "We use our own cookies and third-party cookies so that we can show you this website and better understand how you use it, with a view to improving the services we offer. If you continue browsing, we consider that you have accepted the cookies. Read our privacy policy for more information.",
+
       },
+      
     },
+    cookies:{
+      necessary: [
+        {
+          //if multilanguage
+          name: {
+            en: "Default Cookies",
+          },
+          //else
+          name: "Default Cookies",
+          //if multilanguage
+          description: {
+            en: "Used for cookie control.",
+          },
+          //else
+          description:
+            "These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.",
+          cookies: [
+            "cookie_control_consent",
+            "cookie_control_enabled_cookies",
+          ],
+          links: {
+            '/privacy': 'Read our privacy policy for more information',
+          },
+        },
+      ],
+  }
   },
   googleFonts: {
     families: {
