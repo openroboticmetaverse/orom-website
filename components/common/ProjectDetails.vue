@@ -27,6 +27,7 @@
         <nuxt-img
           provider="cloudinary"
           :src="project.fullImage"
+          loading="lazy"
           class="mx-auto my-7 w-full md:max-w-md"
         />
       </div>
