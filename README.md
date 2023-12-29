@@ -41,3 +41,8 @@ npm run dev
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
+
+## Contact
+Contact [Hazar](mailto:parhasard@outlook.de) if you have any questions/suggestions about the website.
+
+
