@@ -54,35 +54,7 @@ export default defineNuxtConfig({
         },
         cookies: {
           
-          optional: [
-            {
-              id: 'google-analytics',
-              name: { en: 'google-analytics' },
-              //if you don't set identifier, slugified name will be used
-              identifier: "ga",
-              //if multilanguage
-              description: {
-                en: "Google Analytics cookies are used on our website to collect data about visitor interactions. These cookies enable us to understand and analyze website traffic and usage patterns, assisting us in enhancing our website's functionality and user experience.",
-              },
-              //else
-              description:
-                "Google Analytics cookies are used on our website to collect data about visitor interactions. These cookies enable us to understand and analyze website traffic and usage patterns, assisting us in enhancing our website's functionality and user experience.",
-
-              initialState: true,
-              src: "https://www.googletagmanager.com/gtag/js?id=G-F81S4B8YPP",
-              async: true,
-              cookies: ["_ga", "_gat", "_gid"],
-              accepted: () => {
-                window.dataLayer = window.dataLayer || [];
-                function gtag() {
-                  dataLayer.push(arguments);
-                }
-                gtag("js", new Date());
-                gtag("config", "G-F81S4B8YPP");
-              },
-              declined: () => {},
-            },
-          ],
+          
         },
       },
     ],
@@ -133,6 +105,31 @@ export default defineNuxtConfig({
           links: {
             '/privacy': 'Read our privacy policy for more information',
           },
+        },
+      ],
+      optional: [
+        {
+          id: 'google-analytics',
+          name: { en: 'google-analytics' },
+          //if you don't set identifier, slugified name will be used
+          //if multilanguage
+          description: {
+            en: "Google Analytics cookies are used on our website to collect data about visitor interactions. These cookies enable us to understand and analyze website traffic and usage patterns, assisting us in enhancing our website's functionality and user experience.",
+          },
+          //else
+          initialState: true,
+          src: "https://www.googletagmanager.com/gtag/js?id=G-F81S4B8YPP",
+          async: true,
+          cookies: ["_ga", "_gat", "_gid"],
+          accepted: () => {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+              dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-F81S4B8YPP");
+          },
+          declined: () => {},
         },
       ],
   }
