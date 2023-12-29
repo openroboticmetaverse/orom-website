@@ -5,9 +5,10 @@
         <div class="flex justify-between">
           <div class="mb-6 md:mb-0">
             <NuxtLink to="/" class="flex items-center">
-              <img
-                src="/icon.svg"
-                class="h-8 sm:h-14 mr-3"
+              <nuxt-img
+                src="w_300,f_auto/openroboverse/logo/icon_voqjko.svg"
+                class="h-8 w-30 sm:h-14 mr-3"
+                provider="cloudinary"
                 alt="open robotic metaverse Logo"
               />
               <span

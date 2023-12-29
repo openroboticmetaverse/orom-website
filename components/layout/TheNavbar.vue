@@ -18,9 +18,10 @@
           <div class="flex flex-1 justify-between sm:items-stretch">
             <NuxtLink to="/">
               <div class="flex flex-shrink-0">
-                <img
+                <nuxt-img
                   class="h-10 w-30"
-                  src="../../assets/icon-with-text.webp"
+                  provider="cloudinary"
+                  src="w_300,f_auto/openroboverse/logo/icon-with-text_uugrfj.webp"
                   alt="open robotic metaverse logo"
                 />
               </div>
