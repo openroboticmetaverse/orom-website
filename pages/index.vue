@@ -110,6 +110,7 @@
           class="object-cover rounded-3xl object-center w-full h-4/6 object-top mx-auto bg-gray-300 lg:ml-auto"
           alt="hero"
           provider="cloudinary"
+          loading="lazy"
           src="/openroboverse/cleaning_vmjvvw.png"
         />
       </template>
@@ -119,6 +120,7 @@
         <img
           src="https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?q=80&w=2071&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
           alt=""
+          loading="lazy"
           class="absolute inset-0 -z-10 h-full object-cover object-right md:object-center"
         />
       </template>
@@ -145,6 +147,7 @@
               class="object-cover rounded-3xl object-center w-full mx-auto h-4/6 bg-gray-300 lg:ml-auto"
               alt="hero"
               provider="cloudinary"
+              loading="lazy"
               src="/openroboverse/meeting-robots_sxxmwg.png"
             />
           </template>

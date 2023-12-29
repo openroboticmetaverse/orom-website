@@ -35,6 +35,7 @@
                     class="member-pic"
                     provider="cloudinary"
                     :src="member.image"
+                    loading="lazy"
                     :alt="`${member.name} Avatar`"
                   />
                 </template>

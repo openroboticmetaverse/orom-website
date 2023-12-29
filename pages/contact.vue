@@ -25,6 +25,7 @@
           class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto"
           provider="cloudinary"
           alt="hero"
+          loading="lazy"
           src="/openroboverse/contact_r3zvl5.png"
         />
       </template>

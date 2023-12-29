@@ -26,6 +26,7 @@
           class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto"
           alt="hero"
           provider="cloudinary"
+          loading="lazy"
           src="/openroboverse/group_foto_ne6ngk.jpg"
         />
       </template>
@@ -35,6 +36,7 @@
         <img
           src="https://images.unsplash.com/photo-1567789884554-0b844b597180?q=80&w=2070&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
           alt=""
+          loading="lazy"
           class="absolute inset-0 -z-10 h-full object-cover object-right md:object-center"
         />
       </template>
@@ -61,6 +63,7 @@
               class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto"
               alt="hero"
               provider="cloudinary"
+              loading="lazy"
               src="/openroboverse/group_foto_2_bqdglp.jpg"
             />
           </template>
@@ -143,6 +146,7 @@
         <img
           src="https://images.unsplash.com/photo-1561634507-b0cd27bf0aa7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
           alt=""
+          loading="lazy"
           class="absolute inset-0 -z-10 h-full object-cover object-right md:object-center"
         />
       </template>
@@ -163,6 +167,7 @@
               class="object-cover rounded-3xl object-center w-full mx-auto h-4/6 bg-gray-300 lg:ml-auto reveal"
               alt="hero"
               provider="cloudinary"
+              loading="lazy"
               src="/openroboverse/roboverse_h1tlhw.png"
             />
           </template>

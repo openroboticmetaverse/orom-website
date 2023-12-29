@@ -13,6 +13,7 @@
               class=" "
               provider="cloudinary"
               :src="`${project.fullImage}`"
+              loading="lazy"
               alt=""
             />
           </div>
