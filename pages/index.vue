@@ -117,7 +117,7 @@
     </CommonRightSection>
     <CommonPhotoSection>
       <template v-slot:image>
-        <img
+        <nuxt-img
           src="https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?q=80&w=2071&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
           alt=""
           loading="lazy"

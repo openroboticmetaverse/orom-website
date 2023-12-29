@@ -33,7 +33,7 @@
     </CommonLeftSection>
     <CommonPhotoSection>
       <template v-slot:image>
-        <img
+        <nuxt-img
           src="https://images.unsplash.com/photo-1567789884554-0b844b597180?q=80&w=2070&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
           alt=""
           loading="lazy"
@@ -143,7 +143,7 @@
     </CommonCardSection>
     <CommonPhotoSection>
       <template v-slot:image>
-        <img
+        <nuxt-img
           src="https://images.unsplash.com/photo-1561634507-b0cd27bf0aa7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
           alt=""
           loading="lazy"
