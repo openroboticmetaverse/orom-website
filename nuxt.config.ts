@@ -68,7 +68,12 @@ export default defineNuxtConfig({
         autoImports: ["defineStore", "acceptHMRUpdate"],
       },
     ],
+    'nuxt-gtag',
   ],
+  gtag: {
+    id: 'G-F81S4B8YPP',
+    initialConsent: false
+  },
   cookieControl: {
     localeTexts: {
       en: {
@@ -113,6 +118,7 @@ export default defineNuxtConfig({
           name: { en: 'google-analytics' },
           //if you don't set identifier, slugified name will be used
           //if multilanguage
+          identifier: 'ga',
           description: {
             en: "Google Analytics cookies are used on our website to collect data about visitor interactions. These cookies enable us to understand and analyze website traffic and usage patterns, assisting us in enhancing our website's functionality and user experience.",
           },
@@ -123,11 +129,10 @@ export default defineNuxtConfig({
           cookies: ["_ga", "_gat", "_gid"],
           accepted: () => {
             window.dataLayer = window.dataLayer || [];
-            function gtag() {
-              dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-            gtag("config", "G-F81S4B8YPP");
+            window.dataLayer.push({
+              'gtm.start': new Date().getTime(),
+              event: 'gtm.js'
+            });
           },
           declined: () => {},
         },

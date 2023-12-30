@@ -18,6 +18,7 @@
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@tailwindcss/typography": "^0.5.10",
     "nuxt": "^3.7.3",
+    "nuxt-gtag": "^1.1.2",
     "tailwindcss-dark-mode": "^1.1.7"
   },
   "dependencies": {
