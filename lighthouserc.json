@@ -2,7 +2,7 @@
     "ci": {
       "collect": {
         "startServerCommand": "npm run build && npm start",
-        "url": ["http://localhost:3000/"],
+        "url": ["https://openroboticmetaverse.org"],
         "numberOfRuns": 3
       },
       "upload": {
