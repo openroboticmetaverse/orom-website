@@ -71,7 +71,7 @@ export default defineNuxtConfig({
     'nuxt-gtag',
   ],
   gtag: {
-    id: 'G-F81S4B8YPP',
+    id: 'G-9W085JKGJT',
     initialConsent: false
   },
   cookieControl: {
@@ -124,7 +124,7 @@ export default defineNuxtConfig({
           },
           //else
           initialState: true,
-          src: "https://www.googletagmanager.com/gtag/js?id=G-F81S4B8YPP",
+          src: "https://www.googletagmanager.com/gtag/js?id=G-9W085JKGJT",
           async: true,
           cookies: ["_ga", "_gat", "_gid"],
           accepted: () => {
