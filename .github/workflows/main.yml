@@ -19,9 +19,9 @@ jobs:
       - name: lighthouse mobile audit
         run: npm run lhci:mobile
         env:
-          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LIGHTHOUSE_BADGE }}
+          LIGHTHOUSE_BADGE: ${{ secrets.LIGHTHOUSE_BADGE }}
 
       - name: lighthouse desktop audit
         run: npm run lhci:desktop
         env:
-          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LIGHTHOUSE_BADGE }}
+          LIGHTHOUSE_BADGE: ${{ secrets.LIGHTHOUSE_BADGE }}
