@@ -25,13 +25,32 @@ watch(
       !previous?.includes("google-analytics") &&
       current?.includes("google-analytics")
     ) {
-      // cookie with id `google-analytics` got added
       grantConsent()
-      window.location.reload(); // placeholder for your custom change handler
+      window.location.reload(); 
+    }
+    if (
+      previous?.includes("google-analytics") &&
+      !current?.includes("google-analytics")
+    ) {
+      revokeConsent(); 
+      deleteGoogleAnalyticsCookies(); 
+      window.location.reload();
     }
   },
   { deep: true }
 );
+
+const deleteGoogleAnalyticsCookies = () => {
+  // List of Google Analytics cookie names
+  const gaCookies = ['_ga', '_gid', '_gat', '_ga_9W085JKGJT', 'AMP_TOKEN', '__utma', '__utmt', '__utmb', '__utmc', '__utmz', '__utmv'];
+
+  // Deleting each cookie
+  gaCookies.forEach(cookie => {
+    document.cookie = `${cookie}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+  });
+
+  console.log("Google Analytics cookies have been escorted out!");
+};
 
 const scaleFactor = ref(1);
 let initialViewportWidth = null;
