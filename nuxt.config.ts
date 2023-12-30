@@ -72,7 +72,7 @@ export default defineNuxtConfig({
   ],
   gtag: {
     id: 'G-9W085JKGJT',
-    initialConsent: false
+    initialConsent: true
   },
   cookieControl: {
     localeTexts: {
