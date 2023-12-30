@@ -40,6 +40,18 @@
         erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.
       </p>
       <br />
+
+      <h3 class="text-xl font-semibold text-white">Google Analytics</h3>
+      <p>
+        Wir verwenden auf unserer Website Google Analytics, um das
+        Nutzerverhalten zu analysieren und so unser Online-Angebot zu
+        verbessern. Bei Ihrer Zustimmung nutzt Google Analytics Ihre IP-Adresse
+        kurzzeitig zur Geolokalisierung, bevor sie sofort gelöscht wird. Sie
+        haben jederzeit die Möglichkeit, Ihre Zustimmung zu erteilen oder zu
+        widerrufen, um Ihre Privatsphäre zu wahren. Diese Datenverarbeitung
+        dient ausschließlich der Optimierung unserer Website.
+      </p>
+      <br />
       <h3 class="text-xl font-semibold text-white">
         Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde
       </h3>
