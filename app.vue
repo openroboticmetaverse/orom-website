@@ -17,6 +17,7 @@ const {
   moduleOptions,
 } = useCookieControl();
 
+const { gtag, grantConsent, revokeConsent } = useGtag()
 watch(
   () => cookiesEnabledIds.value,
   (current, previous) => {
@@ -25,6 +26,7 @@ watch(
       current?.includes("google-analytics")
     ) {
       // cookie with id `google-analytics` got added
+      grantConsent()
       window.location.reload(); // placeholder for your custom change handler
     }
   },
