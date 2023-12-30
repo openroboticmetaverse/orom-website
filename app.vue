@@ -26,7 +26,6 @@ watch(
       current?.includes("google-analytics")
     ) {
       grantConsent()
-      window.location.reload(); 
     }
     if (
       previous?.includes("google-analytics") &&
@@ -34,11 +33,11 @@ watch(
     ) {
       revokeConsent(); 
       deleteGoogleAnalyticsCookies(); 
-      window.location.reload();
+      window.location.reload(); 
     }
   },
-  { deep: true }
 );
+
 
 const deleteGoogleAnalyticsCookies = () => {
   // List of Google Analytics cookie names
@@ -51,6 +50,7 @@ const deleteGoogleAnalyticsCookies = () => {
 
   console.log("Google Analytics cookies have been escorted out!");
 };
+
 
 const scaleFactor = ref(1);
 let initialViewportWidth = null;
@@ -68,7 +68,10 @@ const adjustScale = () => {
   scaleFactor.value = viewportWidth / initialViewportWidth;
 };
 
-onMounted(() => {
+
+
+onMounted(() => {  
+
   if (!isMobileDevice()) {
     window.addEventListener("resize", adjustScale);
     adjustScale();

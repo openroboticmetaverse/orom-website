@@ -72,6 +72,7 @@ export default defineNuxtConfig({
   ],
   gtag: {
     id: 'G-9W085JKGJT',
+    initialConsent:false
   },
   cookieControl: {
     localeTexts: {
@@ -125,7 +126,7 @@ export default defineNuxtConfig({
           initialState: true,
           src: "https://www.googletagmanager.com/gtag/js?id=G-9W085JKGJT",
           async: true,
-          cookies: ["_ga", "_gat", "_gid"],
+          cookies: ["_ga", "_gat", "_gid"],         
           accepted: () => {
             window.dataLayer = window.dataLayer || [];
             window.dataLayer.push({
