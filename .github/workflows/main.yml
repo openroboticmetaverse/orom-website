@@ -24,4 +24,4 @@ jobs:
       - name: lighthouse desktop audit
         run: npm run lhci:desktop
         env:
-          LIGHTHOUSE_BADGE: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
