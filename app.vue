@@ -45,7 +45,7 @@ const deleteGoogleAnalyticsCookies = () => {
 
   // Deleting each cookie
   gaCookies.forEach(cookie => {
-    document.cookie = `${cookie}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+    document.cookie = `${cookie}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.openroboticmetaverse.org`;
   });
 
   console.log("Google Analytics cookies have been escorted out!");
