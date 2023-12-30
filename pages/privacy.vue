@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto px-12">
     <header class="text-center py-4">
-      <h1 class="text-4xl font-bold gradient-text-right">
+      <h1 class="text-2xl sm:text-4xl md:text-6xl py-12 text-left sm:text-center font-bold gradient-text-right">
         Datenschutzerklärung
       </h1>
     </header>
