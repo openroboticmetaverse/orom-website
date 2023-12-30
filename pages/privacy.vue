@@ -146,4 +146,13 @@
 
 
 <script setup>
+useHead({
+  title: "Privacy Policy | open robotic metaverse",
+  meta: [
+    {
+      name: "description",
+      content: "Privacy Policy | Open Robotic Metaverse",
+    },
+  ],
+});
 </script>

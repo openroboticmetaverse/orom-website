@@ -86,4 +86,14 @@
 
 
 <script setup>
+
+useHead({
+  title: "Imprint | open robotic metaverse",
+  meta: [
+    {
+      name: "description",
+      content: "Imprint | Open Robotic Metaverse",
+    },
+  ],
+});
 </script>
