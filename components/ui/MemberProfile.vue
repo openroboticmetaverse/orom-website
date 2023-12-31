@@ -12,6 +12,7 @@
       <slot name="description"></slot>
       <ul class="flex justify-center mt-4 space-x-4">
         <li>
+          <!-- link to their github account if any -->
           <a
             :href="githubLink"
             class="text-gray-500 hover:text-gray-200 duration-500 ease-in-out"
@@ -31,6 +32,7 @@
           </a>
         </li>
         <li>
+          <!-- link to their linkedIn profile if any -->
           <a
             :href="linkedinLink"
             class="text-gray-500 hover:text-gray-200 duration-500 ease-in-out"

@@ -1,5 +1,6 @@
 <template>
   <CommonColorSection>
+    <!-- a section that takes in 6 cards in a grid -->
     <template v-slot:content>
       <section class="bordered-section">
         <section class="py-12">

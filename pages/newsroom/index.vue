@@ -10,6 +10,7 @@
 </template>
 
 <script setup>
+// add head tag
 useHead({
   title: "Newsroom | open robotic metaverse",
   meta: [
@@ -22,6 +23,7 @@ useHead({
 </script>
 
 <style scoped>
+/* wrap text */
 .email-wrap {
   word-break: break-all;
 }

@@ -1,9 +1,7 @@
 <template>
   <LayoutTheNavbar />
-
   <div>
     <slot />
-
     <LayoutTheFooter />
   </div>
 </template>

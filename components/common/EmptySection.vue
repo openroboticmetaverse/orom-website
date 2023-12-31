@@ -1,5 +1,5 @@
 <template>
-  <!-- component -->
+  <!-- a centered empty background section -->
   <div>
     <section>
       <section class="sticky">
@@ -30,25 +30,3 @@
     </section>
   </div>
 </template>
-
-<style scoped>
-.overlay-bottom,
-.overlay-top {
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 15%;
-  /* Adjust the height as needed */
-  z-index: 1;
-}
-
-.overlay-bottom {
-  bottom: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-}
-
-.overlay-top {
-  top: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-}
-</style>

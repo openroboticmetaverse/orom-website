@@ -1,4 +1,5 @@
 <template>
+<!-- a card component that fills a single box in the grid -->
   <div class="relative inline-flex group">
     <div
       class="absolute transitiona-all duration-1000 opacity-40 -inset-px bg-gradient-to-r from-[#00e9ff] via-[#85f7f3] to-[#a13ad8] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"

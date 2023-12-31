@@ -28,7 +28,6 @@
             </NuxtLink>
             <div class="hidden sm:ml-6 sm:block ml-auto">
               <div class="flex space-x-4">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                 <NuxtLink
                   to="/"
                   class="text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-md font-medium"
@@ -58,13 +57,7 @@
                   class="text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-md font-medium"
                 >
                   Newsroom</NuxtLink
-                >
-                <!-- <NuxtLink
-                  to="/blog"
-                  class="text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-md font-medium"
-                >
-                  Blog</NuxtLink
-                > -->
+                >  
                 <NuxtLink
                   to="/contact"
                   class="text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-md font-medium"
@@ -85,7 +78,6 @@
         role="menu"
       >
         <div class="space-y-1 px-2 pb-3 pt-8">
-          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
           <NuxtLink
             to="/"
             @click="toggleMenu"
@@ -121,13 +113,6 @@
           >
             Newsroom</NuxtLink
           >
-          <!-- <NuxtLink
-            to="/blog"
-            @click="toggleMenu"
-            class="text-gray-300 hover:bg-gray-700 hover:text-white duration-200 block rounded-md px-3 py-4 text-center text-xl font-medium"
-          >
-            Blog</NuxtLink
-          > -->
           <NuxtLink
             to="/contact"
             @click="toggleMenu"
@@ -148,6 +133,7 @@ const navbar = ref(null);
 const mobileMenu = ref(null);
 const menuButton = ref(null); // New ref to store the menu button element
 
+// for the mobile menu
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
@@ -185,7 +171,7 @@ onBeforeUnmount(() => {
 /* For the expanded menu */
 .expand {
   max-height: 1000px; /* Large enough to accommodate the content */
-  height: 100vh;
+  height: 100vh; /* go all the way down to the edge */
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
 }
@@ -255,6 +241,7 @@ onBeforeUnmount(() => {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
+
 /* link underline */
 
 .link-underline {

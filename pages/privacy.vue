@@ -146,6 +146,7 @@
 
 
 <script setup>
+// add head tags
 useHead({
   title: "Privacy Policy | open robotic metaverse",
   meta: [

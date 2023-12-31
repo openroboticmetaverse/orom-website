@@ -1,4 +1,5 @@
 <template>
+<!-- a card component that fills the entire width -->
   <div class="full-card">
     <h1
       class="gradient-text-left text-center dark:text-white text-8xl md:text-6xl font-extrabold mb-2"

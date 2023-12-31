@@ -56,10 +56,10 @@
 
 <script setup>
 import { storeToRefs } from "pinia";
-
+// add new members into the pinia store, instead of hardcoding here
 const teamStore = useTeamStore();
 const { members } = storeToRefs(teamStore);
-
+// add head tags
 useHead({
   title: "Team | open robotic metaverse",
   meta: [
@@ -69,7 +69,7 @@ useHead({
     },
   ],
 });
-
+// add schema.org markup
 useJsonld(() => ({
   "@context": "http://schema.org",
   "@type": "EducationalOrganization",

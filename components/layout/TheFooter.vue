@@ -20,7 +20,6 @@
               </span>
             </NuxtLink>
           </div>
-
           <div
             class="mb-6 text-sm font-semibold text-gray-100 uppercase dark:text-white"
           >

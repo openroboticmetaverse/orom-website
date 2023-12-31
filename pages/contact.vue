@@ -34,6 +34,7 @@
 </template>
 
 <script setup>
+// add head tags
 useHead({
   title: "Contact | open robotic metaverse",
   meta: [
@@ -43,7 +44,7 @@ useHead({
     },
   ],
 });
-
+// add schema.org markup
 useJsonld(() => ({
   "@context": "http://schema.org",
   "@type": "EducationalOrganization",
@@ -61,7 +62,6 @@ useJsonld(() => ({
     // Add more contact details if needed
   },
   logo: "https://www.openroboticmetaverse.org/icon.svg",
-
   // Add more relevant details here
 }));
 </script>

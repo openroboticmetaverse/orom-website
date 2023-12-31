@@ -21,10 +21,10 @@
   
 <script setup>
 import { ref } from "vue";
-
+// add the projects to the pinia store at /stores/store.ts rather than hardcoding here!!
 const projectsStore = useProjectsStore();
 const { projects } = storeToRefs(projectsStore);
-
+// add head tags
 useHead({
   title: "Projects | open robotic metaverse",
   meta: [
@@ -34,7 +34,7 @@ useHead({
     },
   ],
 });
-
+// add schema.org markup
 useJsonld(() => ({
   "@context": "http://schema.org",
   "@type": "CollectionPage",

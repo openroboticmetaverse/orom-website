@@ -179,14 +179,14 @@
 
 <script setup>
 import { onMounted, onBeforeUnmount } from "vue";
-
+// revealing scroll event to be triggered upon scrolling on each component
 const reveal = () => {
   const reveals = document.querySelectorAll(".reveal");
 
   for (let i = 0; i < reveals.length; i++) {
     const windowHeight = window.innerHeight;
     const elementTop = reveals[i].getBoundingClientRect().top;
-    const elementVisible = 30;
+    const elementVisible = 30; // reduce this if you prefer to reveal earlier
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
@@ -195,15 +195,14 @@ const reveal = () => {
     }
   }
 };
-
 onMounted(() => {
   window.addEventListener("scroll", reveal);
 });
-
+// make sure to delete event listener on unmount!!! 
 onBeforeUnmount(() => {
   window.removeEventListener("scroll", reveal);
 });
-
+// add head tags
 useHead({
   title: "About | open robotic metaverse",
   meta: [
@@ -213,7 +212,7 @@ useHead({
     },
   ],
 });
-
+// add schema.org markup
 useJsonld(() => ({
   "@context": "http://schema.org",
   "@type": "EducationalOrganization",
@@ -239,6 +238,7 @@ useJsonld(() => ({
 </script>
 
 <style scoped>
+/* reveal style */
 .reveal {
   position: relative;
   transform: translateY(150px);
@@ -249,36 +249,5 @@ useJsonld(() => ({
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
-}
-
-.description-background {
-  background-image: url("/bg.png");
-  background-size: cover; /* This ensures your image covers the entire area */
-  background-position: center; /* This will help center your image */
-  color: #fff; /* Assuming you want white text over your image */
-  padding: 20px; /* Add some space inside your description box */
-}
-
-.bordered-section::before {
-  content: "";
-  display: block;
-  height: 2px; /* Adjust thickness of your border lines */
-  background: linear-gradient(
-    to right,
-    #aeedcc,
-    #aa37e8
-  ); /* Replace with your gradient colors */
-  margin-bottom: 10px; /* Space between the two lines */
-}
-.bordered-section::after {
-  content: "";
-  display: block;
-  height: 2px; /* Adjust thickness of your border lines */
-  background: linear-gradient(
-    to left,
-    #aeedcc,
-    #aa37e8
-  ); /* Replace with your gradient colors */
-  margin-bottom: 0px; /* Space between the two lines */
 }
 </style>

@@ -86,7 +86,7 @@
 
 
 <script setup>
-
+// add head tags
 useHead({
   title: "Imprint | open robotic metaverse",
   meta: [

@@ -1,4 +1,5 @@
 <template>
+<!-- a section with a background of colored polygons -->
   <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-24">
     <slot name="image"></slot>
 
@@ -97,6 +98,7 @@
 </script>
 
 <style scoped>
+/* add smooth transitions via a black to transparent overlay */
 .overlay-bottom,
 .overlay-top {
   position: absolute;
@@ -106,7 +108,7 @@
   /* Adjust the height as needed */
   z-index: -1;
 }
-
+/* on mobile device, overlay size needs reducing */
 @media (max-width: 640px) {
   .overlay-bottom,
   .overlay-top {

@@ -6,12 +6,13 @@
   
 <script setup>
 import { computed } from "vue";
-const route = useRoute();
+// grab the projects from the pinia store
 const projectsStore = useProjectsStore();
 const { projects } = storeToRefs(projectsStore);
 
+// to fill head tag based on the selected project
+const route = useRoute();
 const projectId = route.params.id;
-
 const project = computed(() => {
   return projectsStore.projects.find((p) => p.id === projectId);
 });
@@ -22,6 +23,7 @@ const baseImageUrl = project.value ? `${baseUrl}${project.value.image}` : "";
 const secureImageUrl = project.value
   ? `${secureUrl}${project.value.image}`
   : "";
+// add head tag
 useHead({
   title: `${project.value.title} | open robotic metaverse `,
   meta: [
@@ -74,6 +76,6 @@ useHead({
 });
 
 if (!project.value) {
-  throw createError({ statusCode: 404, statusMessage: "Product not found" });
+  throw createError({ statusCode: 404, statusMessage: "Project not found" });
 }
 </script>

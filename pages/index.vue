@@ -160,6 +160,7 @@
 <script setup>
 import { onMounted, onBeforeUnmount } from "vue";
 
+// reveal each component as they are scrolled on to
 const reveal = () => {
   const reveals = document.querySelectorAll(".reveal");
 
@@ -184,6 +185,7 @@ onBeforeUnmount(() => {
   window.removeEventListener("scroll", reveal);
 });
 
+// add head tags
 useHead({
   title: "Home | open robotic metaverse",
   meta: [
@@ -195,6 +197,7 @@ useHead({
   ],
 });
 
+// add schema.org markup
 useJsonld(() => ({
   "@context": "http://schema.org",
   "@type": "EducationalOrganization",
@@ -241,9 +244,10 @@ useJsonld(() => ({
   }
 }
 
+/* bordered-section class styling are otherwise applied globally on app.vue */
 .bordered-section.animated {
   position: relative;
-  overflow: hidden; /* Keeps our moving grid inside the section */
+  overflow: hidden; /* Keeps the moving grid inside the section */
   /* Add other styles for size, etc. as needed */
   background: linear-gradient(
       90deg,
@@ -255,6 +259,7 @@ useJsonld(() => ({
   animation: moveGrid 50s linear infinite;
 }
 
+/* different speed needed on mobile devices otherwise too overwhelming */
 @media (max-width: 640px) {
   .bordered-section {
     animation: moveGrid 20s linear infinite;

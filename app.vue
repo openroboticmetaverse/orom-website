@@ -1,6 +1,6 @@
 <template>
   <div>
-    <CookieControl> </CookieControl>
+    <CookieControl></CookieControl>
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
@@ -17,7 +17,9 @@ const {
   moduleOptions,
 } = useCookieControl();
 
-const { gtag, grantConsent, revokeConsent } = useGtag()
+const { gtag, grantConsent, revokeConsent } = useGtag();
+
+// watch for the cookie consent/rejection from the user
 watch(
   () => cookiesEnabledIds.value,
   (current, previous) => {
@@ -25,33 +27,44 @@ watch(
       !previous?.includes("google-analytics") &&
       current?.includes("google-analytics")
     ) {
-      grantConsent()
+      grantConsent();
     }
     if (
       previous?.includes("google-analytics") &&
       !current?.includes("google-analytics")
     ) {
-      revokeConsent(); 
-      deleteGoogleAnalyticsCookies(); 
-      window.location.reload(); 
+      revokeConsent();
+      deleteGoogleAnalyticsCookies();
+      window.location.reload();
     }
-  },
+  }
 );
-
 
 const deleteGoogleAnalyticsCookies = () => {
   // List of Google Analytics cookie names
-  const gaCookies = ['_ga', '_gid', '_gat', '_ga_9W085JKGJT', 'AMP_TOKEN', '__utma', '__utmt', '__utmb', '__utmc', '__utmz', '__utmv'];
+  const gaCookies = [
+    "_ga",
+    "_gid",
+    "_gat",
+    "_ga_9W085JKGJT",
+    "AMP_TOKEN",
+    "__utma",
+    "__utmt",
+    "__utmb",
+    "__utmc",
+    "__utmz",
+    "__utmv",
+  ];
 
   // Deleting each cookie
-  gaCookies.forEach(cookie => {
+  gaCookies.forEach((cookie) => {
     document.cookie = `${cookie}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.openroboticmetaverse.org`;
   });
 
   console.log("Google Analytics cookies have been escorted out!");
 };
 
-
+// minor adjustment for different devices
 const scaleFactor = ref(1);
 let initialViewportWidth = null;
 
@@ -68,10 +81,7 @@ const adjustScale = () => {
   scaleFactor.value = viewportWidth / initialViewportWidth;
 };
 
-
-
-onMounted(() => {  
-
+onMounted(() => {
   if (!isMobileDevice()) {
     window.addEventListener("resize", adjustScale);
     adjustScale();
@@ -83,7 +93,7 @@ html {
   background-color: black;
   scroll-behavior: smooth;
 }
-
+/* Basic transition on page leave and enter */
 .page-enter-active,
 .page-leave-active {
   transition: all 0.2s;
@@ -94,6 +104,7 @@ html {
   filter: blur(1rem);
 }
 
+/* border lines without grids or animation in it */
 .bordered-section::before {
   content: "";
   display: block;

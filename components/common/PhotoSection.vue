@@ -1,4 +1,5 @@
 <template>
+<!-- a section with a grayscale photo in the background -->
   <div class="relative isolate overflow-hidden bg-gray-900 py-12 sm:py-12">
     <slot name="image"></slot>
 
@@ -8,6 +9,7 @@
       class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
       aria-hidden="true"
     >
+    <!-- adjust colors of the polygons to add a hue -->
       <div
         class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#000] to-[#000] opacity-20"
         style="
@@ -97,6 +99,7 @@
 </script>
 
 <style scoped>
+/* add smooth transitions via a black to transparent overlay */
 .overlay-bottom,
 .overlay-top {
   position: absolute;
@@ -106,7 +109,7 @@
   /* Adjust the height as needed */
   z-index: 1;
 }
-
+/* on mobile device, overlay size needs reducing */
 @media (max-width: 640px) {
   .overlay-bottom,
   .overlay-top {

@@ -66,8 +66,7 @@ import type { IThreeHelper } from "@/helpers/threeHelpers/interfaces/IThreeHelpe
 import { ThreeHelper } from "@/helpers/threeHelpers/core/ThreeHelper";
 import { EnhancedThreeHelper } from "@/helpers/threeHelpers/core/EnhancedThreeHelper";
 
-const canvas = ref<HTMLCanvasElement | null>(null);
-
+// if arrow is clicked then scroll down
 const scrollDown = () => {
   let scrollAmount = window.innerHeight;
   if (window.innerWidth < 1536) {
@@ -79,6 +78,9 @@ const scrollDown = () => {
     behavior: "smooth",
   });
 };
+
+// initiate three scene
+const canvas = ref<HTMLCanvasElement | null>(null);
 
 onMounted(() => {
   const isMobile = ref(window.innerWidth <= 768);
@@ -98,6 +100,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
+/* canvas styling */
 #canvas {
   z-index: -1;
   position: absolute;
@@ -114,27 +117,8 @@ onMounted(() => {
   }
 }
 
-@keyframes slideText {
-  from {
-    opacity: 0;
-    transform: translateX(-150px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes slideTextReverse {
-  from {
-    opacity: 0;
-    transform: translateX(150px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 
+/* front matter text styling */
 .sliding-text-1 {
   display: inline-block;
   opacity: 0; /* Start with the text invisible */
@@ -161,6 +145,29 @@ onMounted(() => {
   animation: slideText 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 
+/* front matter text slide animation */
+@keyframes slideText {
+  from {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideTextReverse {
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* arrow styling */
 .arrow-container {
   position: relative;
   bottom: 10rem;
@@ -186,7 +193,7 @@ onMounted(() => {
   animation: bounce 2s infinite;
   margin: 5px 0; /* Adjust this for spacing */
 }
-
+/* arrow animation */
 @keyframes bounce {
   0%,
   20%,

@@ -1,4 +1,5 @@
 <template>
+<!-- a section with text on the right -->
   <div class="text-left z-40">
     <div class="sm:px-12 sm:pt-5 md:pt-10 lg:pt-20">
       <section class="relative flex items-center w-full">
