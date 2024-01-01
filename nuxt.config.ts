@@ -1,8 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  
-  
+
   modules: [
     "@nuxtjs/tailwindcss",
     [
@@ -52,10 +51,7 @@ export default defineNuxtConfig({
           blockedIframe: "To see this, please enable functional cookies",
           here: "here",
         },
-        cookies: {
-          
-          
-        },
+        cookies: {},
       },
     ],
     "nuxt-jsonld",
@@ -68,26 +64,24 @@ export default defineNuxtConfig({
         autoImports: ["defineStore", "acceptHMRUpdate"],
       },
     ],
-    'nuxt-gtag',
+    "nuxt-gtag",
   ],
   gtag: {
-    id: 'G-9W085JKGJT',
-    initialConsent:false
+    id: "G-9W085JKGJT",
+    initialConsent: false,
   },
   cookieControl: {
     localeTexts: {
       en: {
-        accept: 'Accept',
+        accept: "Accept",
         decline: "Accept only necessary",
-        acceptAll: 'Accept all',
-        declineAll: 'Accept only necessary',
+        acceptAll: "Accept all",
+        declineAll: "Accept only necessary",
         bannerDescription:
-        "We use our own cookies and third-party cookies so that we can show you this website and better understand how you use it, with a view to improving the services we offer. If you continue browsing, we consider that you have accepted the cookies. Read our privacy policy for more information.",
-
+          "We use our own cookies and third-party cookies so that we can show you this website and better understand how you use it, with a view to improving the services we offer. If you continue browsing, we consider that you have accepted the cookies. Read our privacy policy for more information.",
       },
-      
     },
-    cookies:{
+    cookies: {
       necessary: [
         {
           //if multilanguage
@@ -103,22 +97,19 @@ export default defineNuxtConfig({
           //else
           description:
             "These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.",
-          cookies: [
-            "cookie_control_consent",
-            "cookie_control_enabled_cookies",
-          ],
+          cookies: ["cookie_control_consent", "cookie_control_enabled_cookies"],
           links: {
-            '/privacy': 'Read our privacy policy for more information',
+            "/privacy": "Read our privacy policy for more information",
           },
         },
       ],
       optional: [
         {
-          id: 'google-analytics',
-          name: { en: 'google-analytics' },
+          id: "google-analytics",
+          name: { en: "google-analytics" },
           //if you don't set identifier, slugified name will be used
           //if multilanguage
-          identifier: 'ga',
+          identifier: "ga",
           description: {
             en: "Google Analytics cookies are used on our website to collect data about visitor interactions. These cookies enable us to understand and analyze website traffic and usage patterns, assisting us in enhancing our website's functionality and user experience.",
           },
@@ -126,18 +117,18 @@ export default defineNuxtConfig({
           initialState: true,
           src: "https://www.googletagmanager.com/gtag/js?id=G-9W085JKGJT",
           async: true,
-          cookies: ["_ga", "_gat", "_gid"],         
+          cookies: ["_ga", "_gat", "_gid"],
           accepted: () => {
             window.dataLayer = window.dataLayer || [];
             window.dataLayer.push({
-              'gtm.start': new Date().getTime(),
-              event: 'gtm.js'
+              "gtm.start": new Date().getTime(),
+              event: "gtm.js",
             });
           },
           declined: () => {},
         },
       ],
-  }
+    },
   },
   googleFonts: {
     families: {
@@ -187,6 +178,10 @@ export default defineNuxtConfig({
         {
           name: "apple-mobile-web-app-status-bar-style",
           content: "black-translucent",
+        },
+        {
+          name: "google-site-verification",
+          content: "T8d6-tve_QSvpG3ppCMI1Ow16GigUfrdfGRE_RiKA7c",
         },
       ],
       link: [
