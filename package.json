@@ -21,6 +21,7 @@
     "@tailwindcss/typography": "^0.5.10",
     "nuxt": "^3.7.3",
     "nuxt-gtag": "^1.1.2",
+    "nuxt-simple-sitemap": "^4.2.3",
     "tailwindcss-dark-mode": "^1.1.7"
   },
   "dependencies": {
