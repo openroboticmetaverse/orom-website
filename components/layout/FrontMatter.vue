@@ -42,12 +42,12 @@
           </div>
           <div class="flex flex-col-reverse sliding-text-5">
             <dt class="text-base sm:text-xl leading-7 text-gray-300">
-              Building
+              Supported by
             </dt>
             <dd
               class="text-xl sm:text-2xl font-bold leading-9 tracking-tight text-white"
             >
-              A metaverse
+              the metaverse
             </dd>
           </div>
         </dl>
