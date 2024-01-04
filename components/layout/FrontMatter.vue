@@ -47,7 +47,7 @@
             <dd
               class="text-xl sm:text-2xl font-bold leading-9 tracking-tight text-white"
             >
-              the metaverse
+              The metaverse
             </dd>
           </div>
         </dl>
