@@ -27,7 +27,7 @@
               Commitment
             </dt>
             <dd
-              class="text-xl sm:text-2xl font-bold leading-9 tracking-tight text-white"
+              class="text-lg sm:text-2xl font-bold leading-9 tracking-tight text-white"
             >
               Open source
             </dd>
@@ -35,7 +35,7 @@
           <div class="flex flex-col-reverse sliding-text-4">
             <dt class="text-base sm:text-xl leading-7 text-gray-300">Focus</dt>
             <dd
-              class="text-xl sm:text-2xl font-bold leading-9 tracking-tight text-white"
+              class="text-lg sm:text-2xl font-bold leading-9 tracking-tight text-white"
             >
               Robotics
             </dd>
@@ -45,9 +45,9 @@
               Supported by
             </dt>
             <dd
-              class="text-xl sm:text-2xl font-bold leading-9 tracking-tight text-white"
+              class="text-lg sm:text-2xl font-bold leading-9 tracking-tight text-white"
             >
-              The metaverse
+              Our metaverse
             </dd>
           </div>
         </dl>
