@@ -208,7 +208,7 @@ useJsonld(() => ({
   areaServed: "Germany",
   sameAs: [
     "https://instagram.com/openroboticmetaverse",
-    "https://github.com/openroboverse",
+    "https://github.com/openroboticmetaverse",
   ],
   contactPoint: {
     "@type": "ContactPoint",
