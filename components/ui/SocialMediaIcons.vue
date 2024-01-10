@@ -32,7 +32,7 @@
     ></a>
     <!-- github icon -->
     <a
-      href="https://github.com/openroboverse"
+      href="https://github.com/openroboticmetaverse"
       class="text-gray-300 hover:text-teal-300 duration-500 ease-in-out"
     >
       <svg
