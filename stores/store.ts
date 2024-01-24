@@ -70,6 +70,14 @@ export const useTeamStore = defineStore({
           image: "/openroboverse/team/thuha_berfop.jpg",
           title: "Newbie",
         },
+        {
+          id: 7,
+          name: "Yannick",
+          linkedin: "https://www.linkedin.com/in/yannick-pellenz-78207b1b3/",
+          github: "https://github.com/YannickP99",
+          image: "/openroboverse/team/yannick_sdv3be.jpg",
+          title: "Dev",
+        },
       ],
     };
   },
