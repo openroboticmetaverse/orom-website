@@ -67,11 +67,11 @@ export default defineNuxtConfig({
       },
     ],
     "nuxt-gtag",
-    'nuxt-simple-sitemap'
+    '@nuxtjs/sitemap'
   ],
   sitemap: {
     // exclude these URLs 
-    exclude: ['/blog/**', '/imprint', '/privacy', '/newsroom'],
+    exclude: ['/imprint', '/privacy', '/newsroom'],
   },
   gtag: {
     id: "G-9W085JKGJT",
