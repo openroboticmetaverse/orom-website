@@ -69,6 +69,13 @@ export default defineNuxtConfig({
     "nuxt-gtag",
     '@nuxtjs/sitemap'
   ],
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/', '/about', '/contact', '/projects', '/team'],
+    },
+  },
+
   sitemap: {
     // exclude these URLs 
     exclude: ['/imprint', '/privacy', '/newsroom'],
