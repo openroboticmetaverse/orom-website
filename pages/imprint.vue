@@ -1,7 +1,8 @@
 <template>
   <div class="container mx-auto px-12">
     <header class="text-center py-4">
-      <h1 class="text-2xl sm:text-4xl md:text-6xl py-12 text-left sm:text-center font-bold gradient-text-right">Imprint</h1>
+      <h1 class="text-2xl sm:text-4xl md:text-6xl py-12 text-left sm:text-center font-bold gradient-text-right">Imprint
+      </h1>
     </header>
 
     <section class="py-4">
@@ -14,6 +15,9 @@
         52070 Aachen<br />
         Germany
       </address>
+      <br />
+      <strong>Registergericht: </strong> Amtsgericht Aachen<br />
+      <strong>Registernummer:</strong> VR6426
     </section>
 
     <section class="py-4">
@@ -28,19 +32,13 @@
       <h3 class="text-2xl font-semibold text-white">Contact</h3>
       <p class="mt-2 text-lg">
         E-Mail:
-        <a
-          href="mailto:openroboticmetaverse@gmail.com"
-          class="text-gray-200 hover:text-white"
-          >openroboticmetaverse@gmail.com</a
-        >
+        <a href="mailto:openroboticmetaverse@gmail.com"
+          class="text-gray-200 hover:text-white">openroboticmetaverse@gmail.com</a>
       </p>
       <p class="mt-2 text-lg">
         Internet address:
-        <a
-          href="http://www.openroboticmetaverse.org"
-          class="text-gray-200 hover:text-white"
-          >www.openroboticmetaverse.org</a
-        >
+        <a href="http://www.openroboticmetaverse.org"
+          class="text-gray-200 hover:text-white">www.openroboticmetaverse.org</a>
       </p>
     </section>
 
