@@ -10,6 +10,7 @@
       <h3 class="text-2xl font-semibold text-white">
         Allgemeiner Hinweis und Pflichtinformationen
       </h3>
+      <br />
       <h3 class="text-xl font-semibold text-white">
         Benennung der verantwortlichen Stelle
       </h3>
@@ -62,11 +63,8 @@
         der Landesdatenschutzbeauftragte des Bundeslandes, in dem sich der Sitz
         unseres Unternehmens befindet. Der folgende Link stellt eine Liste der
         Datenschutzbeauftragten sowie deren Kontaktdaten bereit:
-        <a
-          href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html"
-          target="_blank"
-          >https://www.bfdi.bund.de</a
-        >.
+        <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html"
+          target="_blank">https://www.bfdi.bund.de</a>.
       </p>
       <br />
       <h3 class="text-xl font-semibold text-white">
@@ -106,41 +104,32 @@
         und am Schloss-Symbol in der Browserzeile.
       </p>
       <br />
-      <h2 class="text-2xl font-semibold text-white">Kontaktformular</h2>
-      <p class="mt-2 text-lg">
-        Per Kontaktformular übermittelte Daten werden einschließlich Ihrer
-        Kontaktdaten gespeichert, um Ihre Anfrage bearbeiten zu können oder um
-        für Anschlussfragen bereitzustehen. Eine Weitergabe dieser Daten findet
-        ohne Ihre Einwilligung nicht statt.
-      </p>
 
-      <p class="mt-2 text-lg">
-        Die Verarbeitung der in das Kontaktformular eingegebenen Daten erfolgt
-        ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a
-        DSGVO). Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit
-        möglich. Für den Widerruf genügt eine formlose Mitteilung per E-Mail.
-        Die Rechtmäßigkeit der bis zum Widerruf erfolgten
-        Datenverarbeitungsvorgänge bleibt vom Widerruf unberührt.
-      </p>
-
-      <p class="mt-2 text-lg">
-        Über das Kontaktformular übermittelte Daten verbleiben bei uns, bis Sie
-        uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung
-        widerrufen oder keine Notwendigkeit der Datenspeicherung mehr besteht.
-        Zwingende gesetzliche Bestimmungen - insbesondere Aufbewahrungsfristen -
-        bleiben unberührt.
-      </p>
     </section>
-    <!-- <h2>Cloudflare CDN</h2>
-<h3>Art und Umfang der Verarbeitung</h3>
-<p>Wir verwenden zur ordnungsgemäßen Bereitstellung der Inhalte unserer Website Cloudflare CDN. Cloudflare CDN ist ein Dienst der Cloudflare, Inc., welcher auf unserer Website als Content Delivery Network (CDN) fungiert.</p>
-<p>Ein CDN trägt dazu bei, Inhalte unseres Onlineangebotes, insbesondere Dateien wie Grafiken oder Skripte, mit Hilfe regional oder international verteilter Server schneller bereitzustellen. Wenn Sie auf diese Inhalte zugreifen, stellen Sie eine Verbindung zu Servern der Cloudflare, Inc., her, wobei Ihre IP-Adresse und ggf. Browserdaten wie Ihr User-Agent übermittelt werden. Diese Daten werden ausschließlich zu den oben genannten Zwecken und zur Aufrechterhaltung der Sicherheit und Funktionalität von Cloudflare CDN verarbeitet.</p>
-<h3>Zweck und Rechtsgrundlage</h3>
-<p>Die Nutzung des Content Delivery Networks erfolgt auf Grundlage unserer berechtigten Interessen, d.h. Interesse an einer sicheren und effizienten Bereitstellung sowie der Optimierung unseres Onlineangebotes gemäß Art. 6 Abs. 1 lit. f. DSGVO.</p>
-<p>Wir beabsichtigen personenbezogenen Daten an Drittländer außerhalb des Europäischen Wirtschaftsraums, insbesondere die USA, zu übermitteln. In Fällen, in denen kein Angemessenheitsbeschluss der Europäischen Kommission existiert (z.B. in den USA) haben wir mit den Empfängern der Daten anderweitige geeignete Garantien im Sinne der Art. 44 ff. DSGVO vereinbart. Dies sind – sofern nicht anders angegeben – Standardvertragsklauseln der EU-Kommission gemäß Durchführungsbeschluss (EU) 2021/914 vom 4. Juni 2021. Eine Kopie dieser Standardvertragsklauseln können Sie unter <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&from=DE">https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&from=DE</a> einsehen.</p>
-<h3>Speicherdauer</h3>
-<p>Die konkrete Speicherdauer der verarbeiteten Daten ist nicht durch uns beeinflussbar, sondern wird von Cloudflare, Inc. bestimmt. Weitere Hinweise finden Sie in der Datenschutzerklärung für Cloudflare CDN: <a href="https://www.cloudflare.com/privacypolicy/">https://www.cloudflare.com/privacypolicy/</a>.</p>
- -->
+    <h3 class="text-xl font-semibold text-white">Cloudinary</h3>
+    <h3 class="font-semibold text-white">Art und Umfang der Verarbeitung</h3>
+    <p class="mt-2 text-lg">Wir verwenden zur ordnungsgemäßen Bereitstellung der Inhalte unserer Website Cloudinary. Cloudinary ist ein Dienst
+      der Cloudinary, Ltd., welcher auf unserer Website als Content Delivery Network (CDN) fungiert.</p>
+    <p class="mt-2 text-lg">Ein CDN trägt dazu bei, Inhalte unseres Onlineangebotes, insbesondere Dateien wie Grafiken oder Skripte, mit Hilfe
+      regional oder international verteilter Server schneller bereitzustellen. Wenn Sie auf diese Inhalte zugreifen,
+      stellen Sie eine Verbindung zu Servern der Cloudinary, Ltd., her, wobei Ihre IP-Adresse und ggf. Browserdaten wie
+      Ihr User-Agent übermittelt werden. Diese Daten werden ausschließlich zu den oben genannten Zwecken und zur
+      Aufrechterhaltung der Sicherheit und Funktionalität von Cloudinary CDN verarbeitet.</p>
+      <br />
+    <h3 class="font-semibold text-white">Zweck und Rechtsgrundlage</h3>
+    <p class="mt-2 text-lg">Die Nutzung des Content Delivery Networks erfolgt auf Grundlage unserer berechtigten Interessen, d.h. Interesse an
+      einer sicheren und effizienten Bereitstellung sowie der Optimierung unseres Onlineangebotes gemäß Art. 6 Abs. 1 lit.
+      f. DSGVO.</p>
+    <p class="mt-2 text-lg">Wir beabsichtigen personenbezogenen Daten an Drittländer außerhalb des Europäischen Wirtschaftsraums, insbesondere
+      die USA, zu übermitteln. In Fällen, in denen kein Angemessenheitsbeschluss der Europäischen Kommission existiert
+      (z.B. in den USA) haben wir mit den Empfängern der Daten anderweitige geeignete Garantien im Sinne der Art. 44 ff.
+      DSGVO vereinbart.</p>
+      <br />
+    <h3 class="font-semibold text-white">Speicherdauer</h3>
+    <p class="mt-2 text-lg">Die konkrete Speicherdauer der verarbeiteten Daten ist nicht durch uns beeinflussbar, sondern wird von Cloudinary,
+      Ltd. bestimmt. Weitere Hinweise finden Sie in der Datenschutzerklärung für Cloudinary: <a
+        href="https://cloudinary.com/privacy">https://cloudinary.com/privacy</a>.</p>
+
   </div>
 </template>
 
