@@ -16,8 +16,8 @@
         Germany
       </address>
       <br />
-      <strong>Registergericht: </strong> Amtsgericht Aachen<br />
-      <strong>Registernummer:</strong> VR6426
+      <strong>Registergericht </strong> Amtsgericht Aachen<br />
+      <strong>Registernummer</strong> VR6426
     </section>
 
     <section class="py-4">
@@ -31,12 +31,12 @@
     <section class="py-4">
       <h3 class="text-2xl font-semibold text-white">Contact</h3>
       <p class="mt-2 text-lg">
-        E-Mail:
+      <strong>E-Mail </strong>
         <a href="mailto:openroboticmetaverse@gmail.com"
           class="text-gray-200 hover:text-white">openroboticmetaverse@gmail.com</a>
       </p>
       <p class="mt-2 text-lg">
-        Internet address:
+      <strong>Web </strong>
         <a href="http://www.openroboticmetaverse.org"
           class="text-gray-200 hover:text-white">www.openroboticmetaverse.org</a>
       </p>
