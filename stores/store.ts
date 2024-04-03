@@ -68,7 +68,7 @@ export const useTeamStore = defineStore({
           linkedin: "https://www.linkedin.com/in/thu-ha-dam-b0a7061b5/",
           github: "https://github.com/openroboverse",
           image: "/openroboverse/team/thuha_berfop.jpg",
-          title: "Newbie",
+          title: "PM",
         },
         {
           id: 7,
