@@ -89,7 +89,7 @@ export const useProjectsStore = defineStore({
       projects: [
         {
           id: "1",
-          title: "Automated harvesting of fruits",
+          title: "MVP",
           image: "/openroboverse/segmentation_full_uw4for.png",
           fullImage: "/openroboverse/segmentation_full_uw4for.png",
           idea: {
@@ -103,12 +103,7 @@ export const useProjectsStore = defineStore({
             "Programming of evaluation software",
             "Programming of evaluation software",
           ],
-          algorithms: [
-            "MASK-RCNN",
-            "DeepLab",
-            "UNet",
-            "Vision transformer (ViT)",
-          ],
+          algorithms:  ["-"],
           challenges: ["-"],
           materials: {
             datasets: {
