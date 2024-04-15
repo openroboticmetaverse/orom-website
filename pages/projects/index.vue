@@ -5,7 +5,7 @@
         Get <span class="gradient-text-right">Inspired!</span>
       </template>
       <template v-slot:description>
-        Check out some of our projects, contribute your ideas!
+        Check out some of our projects! Our main focus now is to build the MVP of our plateform, on top of which we want to develop different projects. All the projects that will be integrated in our open robotic metaverse will also be available here
       </template>
     </CommonEmptySection>
 
@@ -65,7 +65,7 @@ useJsonld(() => ({
           "@type": "CreativeWork",
           name: "AI based robotic vision",
           image:
-            "https://res.cloudinary.com/dilan3qfq/image/upload/v1702467072/openroboverse/bridging_full_middlf.png",
+            "https://assets.rbl.ms/25585082/origin.jpg",
           description:
             "Developing AI-driven solutions for enhancing robotic vision capabilities.",
           // Add more details if available
