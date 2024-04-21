@@ -55,7 +55,7 @@
           Our objective is to advance the field of embodied AI (AKA intelligent
           robotics) by utilizing recent advancements in
           <span class="gradient-text-right">deep learning</span> and available
-          large datasets. We are focused on developing robotic agents capable of
+          large datasets. The goal is to develop robotic agents capable of
           <span class="gradient-text-left">sensing</span>,
           <span class="gradient-text-right">reasoning</span> and
           <span class="gradient-text-left">acting</span> within their physical
@@ -87,7 +87,7 @@
         class="reveal flex flex-col items-center gap-5 justify-center h-full mx-auto pb-24"
       >
         <UiBaseButton :buttonLink="`/projects`">
-          <template v-slot:button> Our projects </template>
+          <template v-slot:button> Learn more </template>
         </UiBaseButton>
       </div>
     </section>
@@ -136,7 +136,7 @@
             grow with the community. Your contribution matters!
             <div class="py-6"></div>
             <UiBaseButton :buttonLink="`/contact`">
-              <template v-slot:button> Reach out to us! </template>
+              <template v-slot:button> Reach out! </template>
             </UiBaseButton>
           </template>
           <template v-slot:icons>
