@@ -111,7 +111,7 @@
           alt="hero"
           provider="cloudinary"
           loading="lazy"
-          src="/openroboverse/cleaning_vmjvvw.png"
+          src="https://res.cloudinary.com/dilan3qfq/image/upload/v1713722732/robot_jyesn9.webp"
         />
       </template>
     </CommonRightSection>
