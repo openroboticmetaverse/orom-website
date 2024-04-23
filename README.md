@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  Current Website Repo for <a href="https://www.openroboticmetaverse.org">Open Robotic Metaverse</a>
+  Current website repo for <a href="https://www.openroboticmetaverse.org">open robotic metaverse</a>
 </h1>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c2fd10fa-4630-4c4f-8127-8fcfdf3b91b3/deploy-status)](https://app.netlify.com/sites/orom/deploys)
