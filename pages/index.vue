@@ -111,7 +111,7 @@
           alt="hero"
           provider="cloudinary"
           loading="lazy"
-          src="https://res.cloudinary.com/dilan3qfq/image/upload/v1713726925/ezgif.com-crop_j5flvn.png"
+          src="/openroboverse/ezgif.com-crop_j5flvn.png"
         />
       </template>
     </CommonRightSection>
