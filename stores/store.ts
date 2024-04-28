@@ -178,7 +178,7 @@ export const useProjectsStore = defineStore({
             },
             {
               id: "3",
-              title: "Interactive 3D Web Designer",
+              title: "Interactive 3D Web",
               image: "/openroboverse/browser_full_dlo5kv.png",
               fullImage: "/openroboverse/DALL_E_2024-04-28_03.15.51_-_A_realistic_screenshot_of_a_browser_displaying_a_3D_robotic_web_interaction_app._The_robot_shown_is_a_mobile_manipulator_designed_to_look_friendly_an_g3ao7q.webp",
               idea: {
