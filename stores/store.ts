@@ -89,12 +89,12 @@ export const useProjectsStore = defineStore({
       projects: [
         {
           id: "1",
-          title: "MVP",
+          title: "open robotic metaverse (orom)",
           image: "/openroboverse/segmentation_full_uw4for.png",
           fullImage: "/openroboverse/photo-2024-02-29-11-13-40_zwgpv9.jpg",
           idea: {
             1: "We are creating a platform that connects open-source robotic projects. The platform is designed to be collaborative, allowing multiple users to work remotely on the same project, and inclusive, ensuring compatibility across various projects built on different technology stacks. Users can seamlessly navigate between projects in an interactive manner.",
-            2: "You can think of Orom as a place where you can see robots performing various tasks. The video below showcases the work of Pushkal Katara and his team. Instead of just sharing videos of the demos, our vision is to use our platform to directly share a real-time simulation, where users can interact with it and, for example, challenge it by altering the environment.",
+            2: "You can think of orom as a place where you can see robots performing various tasks. The video below showcases the work of Pushkal Katara and his team. Instead of just sharing videos of the demos, our vision is to use our platform to directly share a real-time simulation, where users can interact with it and, for example, challenge it by altering the environment.",
             3: "For simulating robotic applications, researchers and developers tend to use different tools such as MuJoCo, ROS, or Drake. Some researchers develop their own simulations for specific needs. The vision of Orom is to enable the visualization of any simulation from any simulator.",
             4: "Our commitment to a browser-based platform is at the heart of our vision for an open, collaborative robotic metaverse. This approach not only ensures universal accessibility but also leverages the widespread availability of web browsers to foster innovation and learning. Within this framework, the selection of Three.js as our visualization engine is crucial. Its advanced rendering capabilities enable us to present complex visualizations with high fidelity, which is essential for a great user experience and particularly vital for sim-to-real applications that rely on computer vision. The recent integration of WebGPU further enhances these visualizations, offering unparalleled performance and efficiency in a web environment. By focusing on browser-based accessibility and leveraging the visualization strengths of Three.js, we prioritize ease of access and the quality of user experience, ensuring that our platform is a versatile and powerful tool for anyone interested in exploring the future of robotics."
               },

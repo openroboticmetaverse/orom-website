@@ -5,7 +5,7 @@
         <span class="gradient-text-left-bright">Reach out!</span>
       </template>
       <template v-slot:description>
-        Ready to Make a Difference? Reach out to us and start your journey
+        Ready to Make a Difference? Reach out and start your journey
         today!
         <div class="py-10"></div>
       </template>

@@ -55,12 +55,12 @@
           Our objective is to advance the field of embodied AI (AKA intelligent
           robotics) by utilizing recent advancements in
           <span class="gradient-text-right">deep learning</span> and available
-          large datasets. The goal is to develop robotic agents capable of
+          <span class="gradient-text-right"> large datasets </span>. The goal is to develop robotic agents capable of
           <span class="gradient-text-left">sensing</span>,
           <span class="gradient-text-right">reasoning</span> and
           <span class="gradient-text-left">acting</span> within their physical
           environments, supporting projects that includes at least one of these
-          capabilities.
+          capabilities. We believe that <span class="gradient-text-left"> collaboration </span> plays a key role in achieving this.
         </div>
       </template>
     </CommonEmptySection>
@@ -80,7 +80,7 @@
           <span class="gradient-text-right">contribute</span> to a variety of
           innovative solutions in a shared virtual space. The open robotic
           metaverse offers the following three modes: Explore, create a
-          challenge or deploy a solution.
+          challenge or deploy a solution. 
         </template>
       </CommonEmptySection>
       <div

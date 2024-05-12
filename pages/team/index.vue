@@ -11,8 +11,8 @@
         perspectives, because great ideas don't fit in a box. Join us in shaping
         the future of technology. All enthusiasts welcome!
         <div class="py-6"></div>
-        <UiBaseButton :buttonLink="`/contact`">
-          <template v-slot:button> Want to see yourself there? </template>
+        <UiBaseButton :buttonLink="`https://robotics-metaverse-initiative.notion.site/Open-Position-open-robotic-metaverse-376fb2d257c247b1a58dfb7f71144a11?pvs=4`">
+          <template v-slot:button> Check our open positions </template>
         </UiBaseButton>
       </template>
       <template v-slot:icons> </template>

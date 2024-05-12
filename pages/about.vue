@@ -6,7 +6,7 @@
       <template v-slot:title>
         About
         <span class="gradient-text-left"
-          >Open Robotic Metaverse
+          >open robotic metaverse
         </span></template
       >
       <template v-slot:description>
@@ -16,7 +16,7 @@
         Aachen, Germany.
         <div class="py-6"></div>
         <UiBaseButton :buttonLink="`/contact`">
-          <template v-slot:button> Reach out to us! </template>
+          <template v-slot:button> Reach out! </template>
         </UiBaseButton>
       </template>
 
@@ -156,7 +156,7 @@
             <span class="gradient-text-left-bright z-50">The goal?</span>
           </template>
           <template v-slot:description>
-            Open Robotic Metaverse is forging a new realm at the intersection of
+            open robotic metaverse is forging a new realm at the intersection of
             robotics and virtual environments. Our collective vision is to build
             a metaverse where innovative minds can develop, share, and explore
             the future of robotics in a collaborative ecosystem.
@@ -208,7 +208,7 @@ useHead({
   meta: [
     {
       name: "description",
-      content: "About us | Open Robotic Metaverse",
+      content: "About us | open robotic metaverse",
     },
   ],
 });
@@ -216,7 +216,7 @@ useHead({
 useJsonld(() => ({
   "@context": "http://schema.org",
   "@type": "EducationalOrganization",
-  name: "Open Robotic Metaverse",
+  name: "open robotic metaverse",
   url: "https://www.openroboticmetaverse.org/about",
   description: "Charge in robotics innovation and community engagement.",
   sameAs: [
