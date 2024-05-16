@@ -1,13 +1,16 @@
 <template>
   <div>
+    <TheBanner> <template v-slot>
+        Join our upcoming Robotics Community Meetup hosted by open robotic metaverse! Follow us on Instagram for more
+        info! </template>
+    </TheBanner>
     <LayoutFrontMatter />
     <CommonCardSection>
       <template v-slot:title>
         We aim to accelerate the
         <span class="gradient-text-right">development in robotics</span> by
         focusing on our
-        <span class="gradient-text-left">three pillars</span>:</template
-      >
+        <span class="gradient-text-left">three pillars</span>:</template>
       <p>
         We aim to accelerate the development in robotics by focusing on our
         three pillars:
@@ -45,8 +48,8 @@
 
     <CommonEmptySection>
       <template v-slot:mainTitle1>
-        <div class="reveal">One step towards</div></template
-      >
+        <div class="reveal">One step towards</div>
+      </template>
       <template v-slot:mainTitle2>
         <span class="gradient-text-left reveal">intelligent robots</span>
       </template>
@@ -83,9 +86,7 @@
           challenge or deploy a solution.
         </template>
       </CommonEmptySection>
-      <div
-        class="reveal flex flex-col items-center gap-5 justify-center h-full mx-auto pb-24"
-      >
+      <div class="reveal flex flex-col items-center gap-5 justify-center h-full mx-auto pb-24">
         <UiBaseButton :buttonLink="`/projects`">
           <template v-slot:button> Our projects </template>
         </UiBaseButton>
@@ -106,23 +107,15 @@
       </template>
       <template v-slot:image>
         <div class="py-10"></div>
-        <nuxt-img
-          class="object-cover rounded-3xl object-center w-full h-4/6 object-top mx-auto bg-gray-300 lg:ml-auto"
-          alt="hero"
-          provider="cloudinary"
-          loading="lazy"
-          src="/openroboverse/cleaning_vmjvvw.png"
-        />
+        <nuxt-img class="object-cover rounded-3xl object-center w-full h-4/6 object-top mx-auto bg-gray-300 lg:ml-auto"
+          alt="hero" provider="cloudinary" loading="lazy" src="/openroboverse/cleaning_vmjvvw.png" />
       </template>
     </CommonRightSection>
     <CommonPhotoSection>
       <template v-slot:image>
         <nuxt-img
           src="https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?q=80&w=2071&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
-          alt=""
-          loading="lazy"
-          class="absolute inset-0 -z-10 h-full object-cover object-right md:object-center"
-        />
+          alt="" loading="lazy" class="absolute inset-0 -z-10 h-full object-cover object-right md:object-center" />
       </template>
       <template v-slot:content>
         <CommonLeftSection :orderFirst="false" class="reveal">
@@ -143,22 +136,19 @@
             <UiSocialMediaIcons></UiSocialMediaIcons>
           </template>
           <template v-slot:image>
-            <nuxt-img
-              class="object-cover rounded-3xl object-center w-full mx-auto h-4/6 bg-gray-300 lg:ml-auto"
-              alt="hero"
-              provider="cloudinary"
-              loading="lazy"
-              src="/openroboverse/meeting-robots_sxxmwg.png"
-            />
+            <nuxt-img class="object-cover rounded-3xl object-center w-full mx-auto h-4/6 bg-gray-300 lg:ml-auto"
+              alt="hero" provider="cloudinary" loading="lazy" src="/openroboverse/meeting-robots_sxxmwg.png" />
           </template>
         </CommonLeftSection>
       </template>
     </CommonPhotoSection>
   </div>
 </template>
-  
+
 <script setup>
 import { onMounted, onBeforeUnmount } from "vue";
+import TheBanner from '@/components/layout/TheBanner.vue';
+
 
 // reveal each component as they are scrolled on to
 const reveal = () => {
@@ -221,7 +211,7 @@ useJsonld(() => ({
   // Add more relevant details here
 }));
 </script>
-  
+
 <style scoped>
 .reveal {
   position: relative;
@@ -239,6 +229,7 @@ useJsonld(() => ({
   from {
     background-position: 0;
   }
+
   to {
     background-position: 100%;
   }
@@ -247,15 +238,15 @@ useJsonld(() => ({
 /* bordered-section class styling are otherwise applied globally on app.vue */
 .bordered-section.animated {
   position: relative;
-  overflow: hidden; /* Keeps the moving grid inside the section */
+  overflow: hidden;
+  /* Keeps the moving grid inside the section */
   /* Add other styles for size, etc. as needed */
-  background: linear-gradient(
-      90deg,
+  background: linear-gradient(90deg,
       rgba(255, 255, 255, 0.1) 1px,
-      transparent 1px
-    ),
+      transparent 1px),
     linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-  background-size: 50px 50px; /* Adjust the size of the grid squares */
+  background-size: 50px 50px;
+  /* Adjust the size of the grid squares */
   animation: moveGrid 50s linear infinite;
 }
 
@@ -266,4 +257,3 @@ useJsonld(() => ({
   }
 }
 </style>
-  
