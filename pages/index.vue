@@ -72,9 +72,8 @@
           <span class="gradient-text-left">passionately</span> building
         </template>
         <template v-slot:description>
-          To support our vision, we are starting with a project that connects
-          our three pillars: We're building an open metaverse centered around
-          robotics simulation, where we can
+          To support our vision, we are working on a project that connects our three pillars:
+          we're building the open robotic metaverse, centered around 3D robotics solutions visualization, where we can
           <span class="gradient-text-right">explore</span>, get
           <span class="gradient-text-right">inspired</span> by, and
           <span class="gradient-text-right">contribute</span> to a variety of
