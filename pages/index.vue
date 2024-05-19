@@ -1,9 +1,6 @@
 <template>
   <div>
-    <TheBanner> <template v-slot>
-        Join our upcoming Robotics Community Meetup hosted by open robotic metaverse! Follow us on Instagram for more
-        info! </template>
-    </TheBanner>
+
     <LayoutFrontMatter />
     <CommonCardSection>
       <template v-slot:title>
