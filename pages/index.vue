@@ -144,8 +144,6 @@
 
 <script setup>
 import { onMounted, onBeforeUnmount } from "vue";
-import TheBanner from '@/components/layout/TheBanner.vue';
-
 
 // reveal each component as they are scrolled on to
 const reveal = () => {
