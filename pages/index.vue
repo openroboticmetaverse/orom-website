@@ -1,13 +1,13 @@
 <template>
   <div>
-
     <LayoutFrontMatter />
     <CommonCardSection>
       <template v-slot:title>
         We aim to accelerate the
         <span class="gradient-text-right">development in robotics</span> by
         focusing on our
-        <span class="gradient-text-left">three pillars</span>:</template>
+        <span class="gradient-text-left">three pillars</span>:</template
+      >
       <p>
         We aim to accelerate the development in robotics by focusing on our
         three pillars:
@@ -45,8 +45,8 @@
 
     <CommonEmptySection>
       <template v-slot:mainTitle1>
-        <div class="reveal">One step towards</div>
-      </template>
+        <div class="reveal">One step towards</div></template
+      >
       <template v-slot:mainTitle2>
         <span class="gradient-text-left reveal">intelligent robots</span>
       </template>
@@ -55,12 +55,12 @@
           Our objective is to advance the field of embodied AI (AKA intelligent
           robotics) by utilizing recent advancements in
           <span class="gradient-text-right">deep learning</span> and available
-          large datasets. We are focused on developing robotic agents capable of
+          <span class="gradient-text-right"> large datasets </span>. The goal is to develop robotic agents capable of
           <span class="gradient-text-left">sensing</span>,
           <span class="gradient-text-right">reasoning</span> and
           <span class="gradient-text-left">acting</span> within their physical
           environments, supporting projects that includes at least one of these
-          capabilities.
+          capabilities. We believe that <span class="gradient-text-left"> collaboration </span> plays a key role in achieving this.
         </div>
       </template>
     </CommonEmptySection>
@@ -72,20 +72,21 @@
           <span class="gradient-text-left">passionately</span> building
         </template>
         <template v-slot:description>
-          To support our vision, we are starting with a project that connects
-          our three pillars: We're building an open metaverse centered around
-          robotics simulation, where we can
+          To support our vision, we are working on a project that connects our three pillars:
+          we're building the open robotic metaverse, centered around 3D robotics solutions visualization, where we can
           <span class="gradient-text-right">explore</span>, get
           <span class="gradient-text-right">inspired</span> by, and
           <span class="gradient-text-right">contribute</span> to a variety of
           innovative solutions in a shared virtual space. The open robotic
           metaverse offers the following three modes: Explore, create a
-          challenge or deploy a solution.
+          challenge or deploy a solution. 
         </template>
       </CommonEmptySection>
-      <div class="reveal flex flex-col items-center gap-5 justify-center h-full mx-auto pb-24">
+      <div
+        class="reveal flex flex-col items-center gap-5 justify-center h-full mx-auto pb-24"
+      >
         <UiBaseButton :buttonLink="`/projects`">
-          <template v-slot:button> Our projects </template>
+          <template v-slot:button> Learn more </template>
         </UiBaseButton>
       </div>
     </section>
@@ -104,15 +105,23 @@
       </template>
       <template v-slot:image>
         <div class="py-10"></div>
-        <nuxt-img class="object-cover rounded-3xl object-center w-full h-4/6 object-top mx-auto bg-gray-300 lg:ml-auto"
-          alt="hero" provider="cloudinary" loading="lazy" src="/openroboverse/cleaning_vmjvvw.png" />
+        <nuxt-img
+          class="object-cover rounded-3xl object-center w-full h-4/6 object-top mx-auto bg-gray-300 lg:ml-auto"
+          alt="hero"
+          provider="cloudinary"
+          loading="lazy"
+          src="/openroboverse/ezgif.com-crop_j5flvn.png"
+        />
       </template>
     </CommonRightSection>
     <CommonPhotoSection>
       <template v-slot:image>
         <nuxt-img
           src="https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?q=80&w=2071&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
-          alt="" loading="lazy" class="absolute inset-0 -z-10 h-full object-cover object-right md:object-center" />
+          alt=""
+          loading="lazy"
+          class="absolute inset-0 -z-10 h-full object-cover object-right md:object-center"
+        />
       </template>
       <template v-slot:content>
         <CommonLeftSection :orderFirst="false" class="reveal">
@@ -126,22 +135,27 @@
             grow with the community. Your contribution matters!
             <div class="py-6"></div>
             <UiBaseButton :buttonLink="`/contact`">
-              <template v-slot:button> Reach out to us! </template>
+              <template v-slot:button> Reach out! </template>
             </UiBaseButton>
           </template>
           <template v-slot:icons>
             <UiSocialMediaIcons></UiSocialMediaIcons>
           </template>
           <template v-slot:image>
-            <nuxt-img class="object-cover rounded-3xl object-center w-full mx-auto h-4/6 bg-gray-300 lg:ml-auto"
-              alt="hero" provider="cloudinary" loading="lazy" src="/openroboverse/meeting-robots_sxxmwg.png" />
+            <nuxt-img
+              class="object-cover rounded-3xl object-center w-full mx-auto h-4/6 bg-gray-300 lg:ml-auto"
+              alt="hero"
+              provider="cloudinary"
+              loading="lazy"
+              src="/openroboverse/meeting-robots_sxxmwg.png"
+            />
           </template>
         </CommonLeftSection>
       </template>
     </CommonPhotoSection>
   </div>
 </template>
-
+  
 <script setup>
 import { onMounted, onBeforeUnmount } from "vue";
 
@@ -206,7 +220,7 @@ useJsonld(() => ({
   // Add more relevant details here
 }));
 </script>
-
+  
 <style scoped>
 .reveal {
   position: relative;
@@ -224,7 +238,6 @@ useJsonld(() => ({
   from {
     background-position: 0;
   }
-
   to {
     background-position: 100%;
   }
@@ -233,15 +246,15 @@ useJsonld(() => ({
 /* bordered-section class styling are otherwise applied globally on app.vue */
 .bordered-section.animated {
   position: relative;
-  overflow: hidden;
-  /* Keeps the moving grid inside the section */
+  overflow: hidden; /* Keeps the moving grid inside the section */
   /* Add other styles for size, etc. as needed */
-  background: linear-gradient(90deg,
+  background: linear-gradient(
+      90deg,
       rgba(255, 255, 255, 0.1) 1px,
-      transparent 1px),
+      transparent 1px
+    ),
     linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-  background-size: 50px 50px;
-  /* Adjust the size of the grid squares */
+  background-size: 50px 50px; /* Adjust the size of the grid squares */
   animation: moveGrid 50s linear infinite;
 }
 
@@ -252,3 +265,4 @@ useJsonld(() => ({
   }
 }
 </style>
+  
