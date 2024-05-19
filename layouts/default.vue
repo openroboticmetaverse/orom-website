@@ -3,9 +3,14 @@
   <div>
     <TheBanner>
       <template v-slot>
-        Join our upcoming Robotics Community Meetup hosted by open robotic metaverse! Follow us on Instagram for more
+        Join our upcoming <span class="gradient-text-right">Robotics Community Meetup</span> on the 19.06.2024 hosted by
+        open robotic
+        metaverse! Follow <a href="https://instagram.com/openroboticmetaverse"
+          class=" !bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 !text-transparent bg-clip-text">@openroboticmetaverse</a>
+        for more
         info!
-        <a href="https://www.google.com" class="text-blue-400">Register here!</a>
+        <br>
+        <!-- <a href="https://www.google.com" class="!text-[#61B3BF] ">Register here!</a> -->
       </template>
     </TheBanner>
     <slot />
