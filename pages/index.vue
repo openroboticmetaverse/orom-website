@@ -55,12 +55,11 @@
           Our objective is to advance the field of embodied AI (AKA intelligent
           robotics) by utilizing recent advancements in
           <span class="gradient-text-right">deep learning</span> and available
-          <span class="gradient-text-right"> large datasets </span>. The goal is to develop robotic agents capable of
+          <span class="gradient-text-right"> large datasets </span>. The goal in embodied AI is to develop robotic agents capable of
           <span class="gradient-text-left">sensing</span>,
           <span class="gradient-text-right">reasoning</span> and
           <span class="gradient-text-left">acting</span> within their physical
-          environments, supporting projects that includes at least one of these
-          capabilities. We believe that <span class="gradient-text-left"> collaboration </span> plays a key role in achieving this.
+          environments. We believe that <span class="gradient-text-left"> collaboration </span> plays a key role in achieving this.
         </div>
       </template>
     </CommonEmptySection>
@@ -73,7 +72,8 @@
         </template>
         <template v-slot:description>
           To support our vision, we are working on a project that connects our three pillars:
-          we're building the open robotic metaverse, centered around 3D robotics solutions visualization, where we can
+          we're building the open robotic metaverse (orom), a web-based 
+          collaborative platform designed to encourage the exchange between robotic projects in an interactive 3D world. You can
           <span class="gradient-text-right">explore</span>, get
           <span class="gradient-text-right">inspired</span> by, and
           <span class="gradient-text-right">contribute</span> to a variety of
@@ -92,15 +92,15 @@
     </section>
     <CommonRightSection class="reveal">
       <template v-slot:title>
-        Integrating robotics into
-        <span class="gradient-text-left">everyday tasks</span>
+        Robots will revolutionise 
+        <span class="gradient-text-left">our future</span>
       </template>
       <template v-slot:description>
-        We strive to contribute to this evolving domain by exploring
-        applications in computer vision, natural language processing, and
-        reinforcement learning. Our primary focus centers on use-cases many can
-        relate to: household and gardening tasks. Additionally, we encourage the
-        exploration and integration of open-source libraries.
+        Intelligent robots are set to revolutionize the world we live in, a 
+        transformation initiated by breakthroughs in large language models like ChatGPT.
+        Robots promise a more profound impact on society as their influence extends far beyond the digital world,
+        directly interacting with our physical environments. Our mission at orom is to be at the forefront of this exciting evolution, 
+        driving innovation while increasing public awareness of the forthcoming changes.
         <div class="py-6"></div>
       </template>
       <template v-slot:image>
