@@ -47,9 +47,9 @@
           </template>
           <template v-slot:description>
             We aim to accelerate the development of robotic applications by
-            making use of the advancements in Simulation technology and
+            making use of the advancements in Simulation and
             Artificial Intelligence. We support individuals in acquiring skills
-            and knowledge in this field and connect them with companies in
+            and knowledge in this field and connect them with companies and other individuals in
             search of solution implementers, while building a connected
             passionate community.
             <div class="py-6"></div>
