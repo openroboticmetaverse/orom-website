@@ -13,8 +13,8 @@
         <p
           class="mt-6 text-2xl sm:text-2xl lg:text-4xl px-10 leading-8 text-gray-300 sliding-text-2"
         >
-          Creating a collaborative platform for robotics enthusiasts, beginners,
-          and professionals to learn, innovate, and share
+          Creating a collaborative platform for robotics enthusiasts, beginners
+          and professionals to learn, innovate and share
         </p>
       </div>
 
