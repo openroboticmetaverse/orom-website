@@ -12,12 +12,13 @@
       </h3>
       <br />
       <h3 class="text-xl font-semibold text-white">
+         
+      </h3>
+      <p class="mt-2 text-lg">
         Your privacy is critically important to us at open robotic metaverse e.V.
         This privacy policy aims to transparently explain how we collect, use, 
         and protect your personal data in accordance with GDPR and other relevant 
         data protection regulations.
-      </h3>
-      <p class="mt-2 text-lg">
         The responsible entity for data processing on this website is:
       </p>
       <address class="mt-2 text-lg">
@@ -31,7 +32,6 @@
       </p>
       <br />
       <h3 class="text-xl font-semibold text-white">
-        Data Collection and Use
         Community Meetup Data Collection and Use
       </h3>
       <p>
