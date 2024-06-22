@@ -42,7 +42,7 @@ export const useTeamStore = defineStore({
           linkedin: "https://www.linkedin.com/in/janstrehl/",
           github: "https://github.com/strehljd",
           image: "/openroboverse/team/jan_v4l9n0.jpg",
-          title: "Dev",
+          title: "Ops",
         },
         {
           id: 6,
@@ -51,7 +51,7 @@ export const useTeamStore = defineStore({
             "https://www.linkedin.com/in/estefania-betancourt-9545531a9/",
           github: "https://github.com/openroboverse",
           image: "/openroboverse/team/estafania_rkthuw.jpg",
-          title: "PR",
+          title: "Support",
         },
         {
           id: 8,
@@ -60,7 +60,7 @@ export const useTeamStore = defineStore({
             "https://www.linkedin.com/in/marc-andr%C3%A9-weism%C3%BCller/",
           github: "https://github.com/openroboverse",
           image: "/openroboverse/team/marc_aj6znt.jpg",
-          title: "Dev",
+          title: "Support",
         },
         {
           id: 7,
@@ -68,7 +68,7 @@ export const useTeamStore = defineStore({
           linkedin: "https://www.linkedin.com/in/thu-ha-dam-b0a7061b5/",
           github: "https://github.com/openroboverse",
           image: "/openroboverse/team/thuha_berfop.jpg",
-          title: "PM",
+          title: "Support",
         },
         {
           id: 7,
@@ -76,7 +76,7 @@ export const useTeamStore = defineStore({
           linkedin: "https://www.linkedin.com/in/yannick-pellenz-78207b1b3/",
           github: "https://github.com/YannickP99",
           image: "/openroboverse/team/yannick_sdv3be.jpg",
-          title: "Dev",
+          title: "Ops",
         },
       ],
     };
