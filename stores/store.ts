@@ -17,7 +17,7 @@ export const useTeamStore = defineStore({
           linkedin: "https://www.linkedin.com/in/karim-siala/",
           github: "https://github.com/karimsiala",
           image: "/openroboverse/team/karim_kddxb5.jpg",
-          title: "Ops",
+          title: "Dev Lead",
         },
         {
           id: 3,
