@@ -2,21 +2,23 @@
   <div class="container mx-auto px-12">
     <header class="text-center py-4">
       <h1 class="text-2xl sm:text-4xl md:text-6xl py-12 text-left sm:text-center font-bold gradient-text-right">
-        Datenschutzerklärung
+        Datenschutzerklärung (Privacy Policy)
       </h1>
     </header>
 
     <section class="py-4">
       <h3 class="text-2xl font-semibold text-white">
-        Allgemeiner Hinweis und Pflichtinformationen
+        General Notice and Mandatory Information
       </h3>
       <br />
       <h3 class="text-xl font-semibold text-white">
-        Benennung der verantwortlichen Stelle
+        Your privacy is critically important to us at open robotic metaverse e.V.
+        This privacy policy aims to transparently explain how we collect, use, 
+        and protect your personal data in accordance with GDPR and other relevant 
+        data protection regulations.
       </h3>
       <p class="mt-2 text-lg">
-        Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website
-        ist:
+        The responsible entity for data processing on this website is:
       </p>
       <address class="mt-2 text-lg">
         open robotic metaverse e.V.<br />
@@ -25,83 +27,75 @@
         Germany
       </address>
       <p class="mt-2 text-lg">
-        Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen
-        über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten
-        (z.B. Namen, Kontaktdaten ..)
+        The responsible entity decides alone or together with others on the purposes and means of processing personal data (e.g., names, contact details).
       </p>
       <br />
       <h3 class="text-xl font-semibold text-white">
-        Widerruf Ihrer Einwilligung zur Datenverarbeitung
+        Data Collection and Use
+        Community Meetup Data Collection and Use
       </h3>
       <p>
-        Nur mit Ihrer ausdrücklichen Einwilligung sind einige Vorgänge der
-        Datenverarbeitung möglich. Ein Widerruf Ihrer bereits erteilten
-        Einwilligung ist jederzeit möglich. Für den Widerruf genügt eine
-        formlose Mitteilung per E-Mail. Die Rechtmäßigkeit der bis zum Widerruf
-        erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.
+        We collect information via surveys and registration forms to effectively organize 
+        and manage community meetups. This includes understanding participant preferences,
+        planning logistical details, and improving the overall event experience.
+        Types of Data Collected: Personal and organizational information, event-specific
+        details, and feedback.
+        Usage: For event planning, communication, and improvement.
+        Legal Basis for Processing: Consent, contractual necessity, and legitimate interests.
+        Data Sharing and Retention: Data may be shared with third-party service providers
+        under strict data processing agreements and retained only as long as necessary for the purposes collected.
       </p>
       <br />
 
       <h3 class="text-xl font-semibold text-white">Google Analytics</h3>
       <p>
-        Wir verwenden auf unserer Website Google Analytics, um das
-        Nutzerverhalten zu analysieren und so unser Online-Angebot zu
-        verbessern. Bei Ihrer Zustimmung nutzt Google Analytics Ihre IP-Adresse
-        kurzzeitig zur Geolokalisierung, bevor sie sofort gelöscht wird. Sie
-        haben jederzeit die Möglichkeit, Ihre Zustimmung zu erteilen oder zu
-        widerrufen, um Ihre Privatsphäre zu wahren. Diese Datenverarbeitung
-        dient ausschließlich der Optimierung unserer Website.
+        We use Google Analytics to analyze user behavior on our site.
+        Your IP address is used for geolocation purposes then promptly 
+        deleted. You can withdraw consent at any time, impacting only future data processing.
       </p>
       <br />
       <h3 class="text-xl font-semibold text-white">
-        Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde
+        Cloudinary
       </h3>
       <p>
-        Als Betroffener steht Ihnen im Falle eines datenschutzrechtlichen
-        Verstoßes ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
-        Zuständige Aufsichtsbehörde bezüglich datenschutzrechtlicher Fragen ist
-        der Landesdatenschutzbeauftragte des Bundeslandes, in dem sich der Sitz
-        unseres Unternehmens befindet. Der folgende Link stellt eine Liste der
-        Datenschutzbeauftragten sowie deren Kontaktdaten bereit:
-        <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html"
-          target="_blank">https://www.bfdi.bund.de</a>.
+        We use Cloudinary to manage content delivery on our website.
+        Data such as IP addresses and user-agent details are processed 
+        to maintain functionality and enhance security.
       </p>
       <br />
       <h3 class="text-xl font-semibold text-white">
-        Recht auf Datenübertragbarkeit
+        Rights and Withdrawals
+        Withdrawal of Consent
       </h3>
       <p class="mt-2 text-lg">
-        Ihnen steht das Recht zu, Daten, die wir auf Grundlage Ihrer
-        Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten,
-        an sich oder an Dritte aushändigen zu lassen. Die Bereitstellung erfolgt
-        in einem maschinenlesbaren Format. Sofern Sie die direkte Übertragung
-        der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur,
-        soweit es technisch machbar ist.
+        You may withdraw any consent given for data processing activities
+        at any time by sending a formless email, without affecting the 
+        legality of the processing carried out prior to your withdrawal.
       </p>
       <br />
       <h3 class="text-xl font-semibold text-white">
-        Recht auf Auskunft, Berichtigung, Sperrung, Löschung
+        Rights of Data Subjects
       </h3>
       <p>
-        Sie haben jederzeit im Rahmen der geltenden gesetzlichen Bestimmungen
-        das Recht auf unentgeltliche Auskunft über Ihre gespeicherten
-        personenbezogenen Daten, Herkunft der Daten, deren Empfänger und den
-        Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung,
-        Sperrung oder Löschung dieser Daten. Diesbezüglich und auch zu weiteren
-        Fragen zum Thema personenbezogene Daten können Sie sich jederzeit über
-        die im Impressum aufgeführten Kontaktmöglichkeiten an uns wenden.
+        You have the right to access, correct, delete, or restrict the processing 
+        of your personal data. Additional rights include data portability and the 
+        right to object to data processing.
+      </p>
+      <h3 class="text-xl font-semibold text-white">
+        Complaints to Supervisory Authority
+      </h3>
+      <p>
+        You are entitled to lodge a complaint with a competent data protection
+        authority if you believe your data is not being handled in accordance with the law.
       </p>
       <br />
       <h3 class="text-xl font-semibold text-white">
-        SSL- bzw. TLS-Verschlüsselung
+        Data Security
+        SSL/TLS Encryption
       </h3>
       <p class="mt-2 text-lg">
-        Aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher
-        Inhalte, die Sie an uns als Seitenbetreiber senden, nutzt unsere Website
-        eine SSL-bzw. TLS-Verschlüsselung. Damit sind Daten, die Sie über diese
-        Website übermitteln, für Dritte nicht mitlesbar. Sie erkennen eine
-        verschlüsselte Verbindung an der „https://“ Adresszeile Ihres Browsers
-        und am Schloss-Symbol in der Browserzeile.
+        To ensure the security of data transmission, our website uses SSL or 
+        TLS encryption. This makes data you transmit to us via the site unreadable by third parties.
       </p>
       <br />
 
