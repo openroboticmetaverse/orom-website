@@ -28,10 +28,14 @@
     "@lhci/cli": "^0.13.0",
     "@nuxt/content": "^2.9.0",
     "@nuxt/image": "^1.1.0",
+    "@nuxtjs/dotenv": "^1.4.2",
     "@pinia/nuxt": "^0.5.1",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^3.3.2",
     "nuxt-jsonld": "^2.0.8",
     "pinia": "^2.1.7",
-    "three": "^0.158.0"
+    "three": "^0.158.0",
+    "vue-awesome-swiper": "^5.0.1"
   },
   "overrides": {
     "vue": "latest"

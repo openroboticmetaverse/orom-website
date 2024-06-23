@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
   site: {
@@ -56,6 +55,7 @@ export default defineNuxtConfig({
         cookies: {},
       },
     ],
+ 
     "nuxt-jsonld",
     "@nuxt/image-edge",
     "@nuxt/content",
