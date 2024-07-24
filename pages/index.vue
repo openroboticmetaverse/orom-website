@@ -318,6 +318,14 @@ useJsonld(() => ({
   .bordered-section {
     animation: moveGrid 20s linear infinite;
   }
+  .logos {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .logo {
+    width: 200px;
+  }
 }
 </style>
   
