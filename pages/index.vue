@@ -273,6 +273,10 @@ useJsonld(() => ({
   border-radius: 30px;
   cursor: pointer;
 }
+
+.logo img {
+  padding: 15px;
+}
 .logo-scale{
   transform: scale(1.0);
   width: 300px;
