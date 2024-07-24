@@ -114,6 +114,38 @@
         />
       </template>
     </CommonRightSection>
+    <CommonEmptySection class="reveal">
+    <template v-slot:mainTitle1>
+      Our <span class="gradient-text-left">Partners</span> 
+    </template>
+    <div class="logos">
+      <div class="logo">
+      <a href="https://aachen.digital/" target="_blank" rel="noopener noreferer">
+      <nuxt-img src="logo-digitalhub-aachen.png" alt="logo-digitalhub-aachen"
+                class="logo-scale logo-bg-white"/>
+      </a>
+      </div>
+      <div class="logo">
+      <a href="https://www.collective-incubator.de/" target="_blank" rel="noopener noreferer">
+      <nuxt-img src="logo-collective-incubator.png"
+                alt="logo-collective-incubator"
+                class="logo-scale logo-bg-white"/>
+      </a>
+      </div>
+      <div class="logo">
+      <a href="https://www.techlabs.org/location/aachen" target="_blank" rel="noopener noreferer">
+      <nuxt-img src="logo-techlabs-aachen.png" alt="logo-techlabs"
+              class="logo-scale logo-bg-white"/>
+      </a>
+      </div>
+      <div class="logo">
+      <a href="https://vectioneer.com/" target="_blank" rel="noopener noreferer">
+      <nuxt-img src="logo-vectioneer.png" alt="logo-vectioneer"
+                class="logo-scale logo-bg-white"/>
+      </a>
+      </div>
+    </div>
+    </CommonEmptySection>
     <CommonPhotoSection>
       <template v-slot:image>
         <nuxt-img
@@ -222,6 +254,27 @@ useJsonld(() => ({
 </script>
   
 <style scoped>
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.logo {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+  cursor: pointer;
+}
+.logo-scale{
+  transform: scale(1.0);
+  width: 300px;
+  height: auto;
+}
+.logos .logo:hover {
+  background-color: orange;
+}
 .reveal {
   position: relative;
   transform: translateY(150px);
