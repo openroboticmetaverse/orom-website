@@ -160,7 +160,7 @@
     <div class="logos">
       <div class="logo">
       <a href="https://aachen.digital/" target="_blank" rel="noopener noreferer">
-      <nuxt-img src="logo-digitalhub-aachen.png" alt="logo-digitalhub-aachen"
+      <nuxt-img src="logo-digitalhub-aachen1.png" alt="logo-digitalhub-aachen"
                 class="logo-scale logo-bg-white"/>
       </a>
       </div>
@@ -268,8 +268,8 @@ useJsonld(() => ({
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 30px;
   cursor: pointer;
 }
@@ -279,8 +279,6 @@ useJsonld(() => ({
 }
 .logo-scale{
   transform: scale(1.0);
-  width: 300px;
-  height: auto;
 }
 .logos .logo:hover {
   background-color: orange;
