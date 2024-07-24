@@ -173,13 +173,13 @@
       </div>
       <div class="logo">
       <a href="https://www.techlabs.org/location/aachen" target="_blank" rel="noopener noreferer">
-      <nuxt-img src="logo-techlabs-aachen.png" alt="logo-techlabs"
+      <nuxt-img src="logo-techlabs-aachen1.png" alt="logo-techlabs"
               class="logo-scale logo-bg-white"/>
       </a>
       </div>
       <div class="logo">
-      <a href="https://vectioneer.com/" target="_blank" rel="noopener noreferer">
-      <nuxt-img src="logo-vectioneer.png" alt="logo-vectioneer"
+      <a href="https://www.wzl.rwth-aachen.de/cms/WZL/~sinq/Das-WZL/" target="_blank" rel="noopener noreferer">
+      <nuxt-img src="logo-wzl.png" alt="logo-wzl"
                 class="logo-scale logo-bg-white"/>
       </a>
       </div>
@@ -259,14 +259,18 @@ useJsonld(() => ({
 .logos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 .logo {
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 250px;
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
   cursor: pointer;
 }
 .logo-scale{
@@ -321,10 +325,6 @@ useJsonld(() => ({
   .logos {
     flex-direction: column;
     gap: 20px;
-    align-items: center;
-  }
-  .logo {
-    width: 200px;
   }
 }
 </style>
