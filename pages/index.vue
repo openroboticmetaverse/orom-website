@@ -153,6 +153,40 @@
         </CommonLeftSection>
       </template>
     </CommonPhotoSection>
+    <CommonEmptySection class="reveal">
+    <template v-slot:mainTitle2>
+      Our <span class="gradient-text-left">Partners</span> 
+    </template>
+    <div class="logos">
+      <div class="logo">
+      <a href="https://aachen.digital/" target="_blank" rel="noopener noreferer">
+      <nuxt-img src="logo-digitalhub-aachen1.png" alt="logo-digitalhub-aachen"
+                class="logo-scale logo-bg-white"/>
+      </a>
+      </div>
+      <div class="logo">
+      <a href="https://www.collective-incubator.de/" target="_blank" rel="noopener noreferer">
+      <nuxt-img src="logo-collective-incubator.png"
+                alt="logo-collective-incubator"
+                class="logo-scale logo-bg-white"/>
+      </a>
+      </div>
+      <div class="logo">
+      <a href="https://www.techlabs.org/location/aachen" target="_blank" rel="noopener noreferer">
+      <nuxt-img src="logo-techlabs-aachen1.png" alt="logo-techlabs"
+              class="logo-scale logo-bg-white"/>
+      </a>
+      </div>
+      <div class="logo">
+      <a href="https://www.wzl.rwth-aachen.de/cms/WZL/~sinq/Das-WZL/" target="_blank" rel="noopener noreferer">
+      <nuxt-img src="logo-wzl.png" alt="logo-wzl"
+                class="logo-scale logo-bg-white"/>
+      </a>
+      </div>
+    </div>
+    </CommonEmptySection>
+        <div class="py-10"></div>
+        <div class="py-10"></div>
   </div>
 </template>
   
@@ -222,6 +256,33 @@ useJsonld(() => ({
 </script>
   
 <style scoped>
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.logo {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.logo img {
+  padding: 15px;
+}
+.logo-scale{
+  transform: scale(1.0);
+}
+.logos .logo:hover {
+  background-color: orange;
+}
 .reveal {
   position: relative;
   transform: translateY(150px);
@@ -262,6 +323,10 @@ useJsonld(() => ({
 @media (max-width: 640px) {
   .bordered-section {
     animation: moveGrid 20s linear infinite;
+  }
+  .logos {
+    flex-direction: column;
+    gap: 20px;
   }
 }
 </style>

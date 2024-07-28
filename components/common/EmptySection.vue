@@ -27,6 +27,7 @@
           </h2>
         </div>
       </section>
+      <slot></slot>
     </section>
   </div>
 </template>
