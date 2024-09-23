@@ -243,4 +243,13 @@ export default defineNuxtConfig({
       ],
     },
   },
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: 'meetup',
+        path: '/meetup',
+        component: resolve(__dirname, 'pages/meetup/index.vue')
+      })
+    }
+  },
 });

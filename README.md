@@ -42,6 +42,18 @@ npm run dev
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
 
+## Website Structure
+
+### Members Page
+
+The members page is now split into two sections:
+
+1. Current Members
+2. Supporters and Alumni
+
+This structure allows for a clear distinction between active participants and those who have contributed or supported the project in the past.
+
+
 ## Contact
 Contact [Hazar](mailto:parhasard@outlook.de) if you have any questions/suggestions about the website.
 

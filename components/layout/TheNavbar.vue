@@ -53,11 +53,11 @@
                   Projects</NuxtLink
                 >
                 <NuxtLink
-                  to="/newsroom"
+                  to="/meetup"
                   class="text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-md font-medium"
                 >
-                  Newsroom</NuxtLink
-                >  
+                  Meetup
+                </NuxtLink>
                 <NuxtLink
                   to="/contact"
                   class="text-gray-300 duration-300 link link-underline link-underline-black rounded-md px-3 py-2 text-md font-medium"
@@ -107,11 +107,11 @@
             Projects</NuxtLink
           >
           <NuxtLink
-            to="/newsroom"
+            to="/meetups"
             @click="toggleMenu"
             class="text-gray-300 hover:bg-gray-700 hover:text-white duration-200 block rounded-md px-3 py-4 text-center text-xl font-medium"
           >
-            Newsroom</NuxtLink
+            Meetups</NuxtLink
           >
           <NuxtLink
             to="/contact"

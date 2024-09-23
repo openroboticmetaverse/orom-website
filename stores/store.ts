@@ -21,23 +21,6 @@ export const useTeamStore = defineStore({
         },
         {
           id: 3,
-          name: "Hazar",
-          linkedin: "https://www.linkedin.com/in/hazar-karadag/",
-          github: "https://github.com/parhasard",
-          image: "/openroboverse/team/hazar_lhll8y.jpg",
-          title: "Webdev",
-        },
-        {
-          id: 4,
-          name: "Luca",
-          linkedin:
-            "https://www.linkedin.com/in/luca-sophie-lamerichs-131104206/",
-          github: "https://github.com/openroboverse",
-          image: "/openroboverse/team/luca_spikki.jpg",
-          title: "Ops",
-        },
-        {
-          id: 5,
           name: "Jan",
           linkedin: "https://www.linkedin.com/in/janstrehl/",
           github: "https://github.com/strehljd",
@@ -45,16 +28,73 @@ export const useTeamStore = defineStore({
           title: "Ops",
         },
         {
+          id: 4,
+          name: "Yannick",
+          linkedin: "https://www.linkedin.com/in/yannick-pellenz-78207b1b3/",
+          github: "https://github.com/YannickP99",
+          image: "/openroboverse/team/yannick_sdv3be.jpg",
+          title: "Ops",
+        },
+        {
+          id: 5,
+          name: "Edilbert",
+          linkedin: "https://www.linkedin.com/in/echristhuraj/",
+          github: "https://github.com/19ec94",
+          image: "/openroboverse/team/edi_jovhhj.jpg",
+          title: "dev",
+        },
+        {
           id: 6,
-          name: "Estafania",
-          linkedin:
-            "https://www.linkedin.com/in/estefania-betancourt-9545531a9/",
+          name: "Youssef",
+          linkedin: "https://www.linkedin.com/in/youssef-aloulou-7b1443162/",
+          github: "https://github.com/openroboticmetaverse",
+          image: "/openroboverse/team/youssef_myif9n.jpg",
+          title: "PM",
+        },
+        {
+          id: 7,
+          name: "Ala",
+          linkedin: "https://www.linkedin.com/in/alakolsi/",
+          github: "https://www.linkedin.com/in/alakolsi/",
+          image: "/openroboverse/team/ala_nypzgy.jpg",
+          title: "Dev"
+        }
+      ],
+      supportersAndAlumni: [
+        {
+          id: 8,
+          name: "Hazar",
+          linkedin: "https://www.linkedin.com/in/hazar-ak/",
+          github: "https://github.com/openroboverse",
+          image: "/openroboverse/team/hazar_lhll8y.jpg",
+          title: "Webdev",
+        },
+        {
+          id: 9,
+          name: "Estefania",
+          linkedin: "https://www.linkedin.com/in/estefania-cassingena-navone/",
           github: "https://github.com/openroboverse",
           image: "/openroboverse/team/estafania_rkthuw.jpg",
           title: "Support",
         },
         {
-          id: 8,
+          id: 10,
+          name: "Luca",
+          linkedin: "https://www.linkedin.com/in/luca-beiser-482399179/",
+          github: "https://github.com/openroboverse",
+          image: "/openroboverse/team/luca_spikki.jpg",
+          title: "Ops",
+        },
+        {
+          id: 11,
+          name: "Thu Ha",
+          linkedin: "https://www.linkedin.com/in/thu-ha-dam-b0a7061b5/",
+          github: "https://github.com/openroboverse",
+          image: "/openroboverse/team/thuha_berfop.jpg",
+          title: "Support",
+        },
+        {
+          id: 12,
           name: "Marc",
           linkedin:
             "https://www.linkedin.com/in/marc-andr%C3%A9-weism%C3%BCller/",
@@ -63,20 +103,13 @@ export const useTeamStore = defineStore({
           title: "Support",
         },
         {
-          id: 7,
-          name: "Thu Ha",
-          linkedin: "https://www.linkedin.com/in/thu-ha-dam-b0a7061b5/",
+          id: 13,
+          name: "Zeynel",
+          linkedin:
+            "https://www.linkedin.com/in/zeynel-kinay-62b214260/",
           github: "https://github.com/openroboverse",
-          image: "/openroboverse/team/thuha_berfop.jpg",
-          title: "Support",
-        },
-        {
-          id: 7,
-          name: "Yannick",
-          linkedin: "https://www.linkedin.com/in/yannick-pellenz-78207b1b3/",
-          github: "https://github.com/YannickP99",
-          image: "/openroboverse/team/yannick_sdv3be.jpg",
-          title: "Ops",
+          image: "/openroboverse/team/zeynel_ypohai_c_crop_ar_1_1_mv3vrk.jpg",
+          title: "Dev",
         },
       ],
     };

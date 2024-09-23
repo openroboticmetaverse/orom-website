@@ -51,6 +51,50 @@
         </section>
       </template>
     </CommonLeftSection>
+
+    <!-- New section for Supporters & Alumni -->
+    <CommonLeftSection :orderFirst="false">
+      <template v-slot:title>
+        Supporters & <span class="gradient-text-left">Alumni</span>
+      </template>
+      <template v-slot:description>
+        We're grateful for the invaluable contributions of our supporters and alumni.
+      </template>
+      <template v-slot:image>
+        <section class="dark:bg-gray-900">
+          <div
+            class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-0 lg:px-6"
+          >
+            <div
+              class="grid gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3"
+            >
+              <UiMemberProfile
+                v-for="supporter in supportersAndAlumni"
+                :key="supporter.id"
+                :linkedinLink="supporter.linkedin"
+                :githubLink="supporter.github"
+              >
+                <template v-slot:image>
+                  <nuxt-img
+                    class="member-pic"
+                    provider="cloudinary"
+                    :src="supporter.image"
+                    loading="lazy"
+                    :alt="`${supporter.name} Avatar`"
+                  />
+                </template>
+                <template v-slot:name>
+                  <a class="text-gray-50">{{ supporter.name }}</a>
+                </template>
+                <template v-slot:description>
+                  <p>{{ supporter.title }}</p>
+                </template>
+              </UiMemberProfile>
+            </div>
+          </div>
+        </section>
+      </template>
+    </CommonLeftSection>
   </div>
 </template>
 
@@ -58,7 +102,7 @@
 import { storeToRefs } from "pinia";
 // add new members into the pinia store, instead of hardcoding here
 const teamStore = useTeamStore();
-const { members } = storeToRefs(teamStore);
+const { members, supportersAndAlumni } = storeToRefs(teamStore);
 // add head tags
 useHead({
   title: "Team | open robotic metaverse",
