@@ -107,11 +107,11 @@
             Projects</NuxtLink
           >
           <NuxtLink
-            to="/meetups"
+            to="/meetup"
             @click="toggleMenu"
             class="text-gray-300 hover:bg-gray-700 hover:text-white duration-200 block rounded-md px-3 py-4 text-center text-xl font-medium"
           >
-            Meetups</NuxtLink
+            Meetup</NuxtLink
           >
           <NuxtLink
             to="/contact"
