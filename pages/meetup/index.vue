@@ -2,23 +2,24 @@
   <div class="meetup-page">
     <CommonEmptySection class="meetup-header">
       <template v-slot:mainTitle1>
-        <div class="reveal">Robotics Community</div>
+        <div class="font-bold">Robotics Community</div> <!-- Added font-bold class -->
       </template>
       <template v-slot:mainTitle2>
-        <span class="gradient-text-left reveal">Meetup</span>
+        <span class="gradient-text-left">Meetup</span> <!-- Removed reveal class -->
       </template>
       <template v-slot:description>
-        <div class="reveal">
+        <div>
           Our Robotics Community Meetups are designed to foster collaboration, knowledge exchange, and networking 
           within the local robotics community. Join us to connect with like-minded enthusiasts, share ideas, 
           and stay at the forefront of robotics innovation.
-        </div>
+        </div> <!-- Removed reveal class -->
       </template>
     </CommonEmptySection>
 
     <CommonLeftSection :orderFirst="true">
       <template v-slot:title>
-        What to <span class="gradient-text-right">Expect</span>
+        Robotics Community Meetup
+        <span class="gradient-text-left">open robotic metaverse</span>
       </template>
       <template v-slot:description>
         <ul class="list-disc list-inside space-y-2">
@@ -47,8 +48,24 @@
         Join Our <span class="gradient-text-left">Next Meetup</span>
       </template>
       <template v-slot:description>
-        Don't miss this chance to connect with experts, gain insights into the latest advancements, 
-        and grow your professional network. Our meetups are a melting pot of ideas, innovation, and inspiration.
+        <div class="meetup-details">
+          <div class="meetup-date-time">
+            <div class="date">
+              <strong>Wednesday, October 23</strong>
+            </div>
+            <div class="time">
+              6:30 PM - 9:00 PM
+            </div>
+          </div>
+          <div class="meetup-location">
+            <strong>Digital Church</strong>
+            <div>Aachen, Nordrhein-Westfalen</div>
+          </div>
+        </div>
+        <div class="mt-6">
+          Don't miss this chance to connect with experts, gain insights into the latest advancements, 
+          and grow your professional network. Our meetups are a melting pot of ideas, innovation, and inspiration.
+        </div>
         <div class="mt-6">
           <UiBaseButton :buttonLink="`https://lu.ma/b0hq4agb`">
             <template v-slot:button>Register Now</template>
