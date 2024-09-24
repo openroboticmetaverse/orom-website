@@ -58,11 +58,35 @@ export const useTeamStore = defineStore({
           github: "https://www.linkedin.com/in/alakolsi/",
           image: "/openroboverse/team/ala_nypzgy.jpg",
           title: "Dev"
+        },
+        {
+          id: 8,
+          name: "Yassin",
+          linkedin: "https://www.linkedin.com/in/chaaben-yessin-215073221/",
+          github: "https://github.com/openroboverse",
+          image: "/openroboverse/team/yassin_estxb6.jpg",
+          title: "SimDev",
+        },
+        {
+          id: 9,
+          name: "Sandeep",
+          linkedin: "https://www.linkedin.com/in/sandys9995/",
+          github: "https://github.com/openroboverse",
+          image: "/openroboverse/team/sandy_ftgee2.jpg",
+          title: "Dev",
+        },
+        {
+          id: 10,
+          name: "Oussama",
+          linkedin: "https://www.linkedin.com/in/oussama-bekbichi-ba4773206/",
+          github: "https://github.com/openroboverse",
+          image: "/openroboverse/team/oussama_i0vzxw.jpg",
+          title: "Dev",
         }
       ],
       supportersAndAlumni: [
         {
-          id: 8,
+          id: 11,
           name: "Hazar",
           linkedin: "https://www.linkedin.com/in/hazar-ak/",
           github: "https://github.com/openroboverse",
@@ -70,7 +94,7 @@ export const useTeamStore = defineStore({
           title: "Webdev",
         },
         {
-          id: 9,
+          id: 12,
           name: "Estefania",
           linkedin: "https://www.linkedin.com/in/estefania-cassingena-navone/",
           github: "https://github.com/openroboverse",
@@ -78,7 +102,7 @@ export const useTeamStore = defineStore({
           title: "Support",
         },
         {
-          id: 10,
+          id: 13,
           name: "Luca",
           linkedin: "https://www.linkedin.com/in/luca-beiser-482399179/",
           github: "https://github.com/openroboverse",
@@ -86,7 +110,7 @@ export const useTeamStore = defineStore({
           title: "Ops",
         },
         {
-          id: 11,
+          id: 14,
           name: "Thu Ha",
           linkedin: "https://www.linkedin.com/in/thu-ha-dam-b0a7061b5/",
           github: "https://github.com/openroboverse",
@@ -94,7 +118,7 @@ export const useTeamStore = defineStore({
           title: "Support",
         },
         {
-          id: 12,
+          id: 15,
           name: "Marc",
           linkedin:
             "https://www.linkedin.com/in/marc-andr%C3%A9-weism%C3%BCller/",
@@ -103,7 +127,7 @@ export const useTeamStore = defineStore({
           title: "Support",
         },
         {
-          id: 13,
+          id: 16,
           name: "Zeynel",
           linkedin:
             "https://www.linkedin.com/in/zeynel-kinay-62b214260/",
@@ -111,6 +135,14 @@ export const useTeamStore = defineStore({
           image: "/openroboverse/team/zeynel_ypohai_c_crop_ar_1_1_mv3vrk.jpg",
           title: "Dev",
         },
+        {
+          id: 17,
+          name: "Sofien",
+          linkedin: "https://www.linkedin.com/in/sofien-sellami/",
+          github: "https://github.com/Sofien-Sellami",
+          image: "/openroboverse/team/sofien_esg7dx.jpg",
+          title: "Webdev",
+        }
       ],
     };
   },
