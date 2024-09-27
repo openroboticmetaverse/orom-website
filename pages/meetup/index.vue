@@ -1,51 +1,65 @@
 <template>
-  <div class="meetup-page">
-    <CommonEmptySection class="meetup-header">
-      <template v-slot:mainTitle1>
-        <div class="font-bold">Robotics Community</div> <!-- Added font-bold class -->
-      </template>
-      <template v-slot:mainTitle2>
-        <span class="gradient-text-left">Meetup</span> <!-- Removed reveal class -->
-      </template>
-      <template v-slot:description>
-        <div>
-          Our Robotics Community Meetups are designed to foster collaboration, knowledge exchange, and networking 
-          within the local robotics community. Join us to connect with like-minded enthusiasts, share ideas, 
-          and stay at the forefront of robotics innovation.
-        </div> <!-- Removed reveal class -->
-      </template>
-    </CommonEmptySection>
+  <div>
+    <div class="py-6 sm:py-0"></div>
 
-    <CommonLeftSection :orderFirst="true">
+    <CommonLeftSection>
       <template v-slot:title>
-        Robotics Community Meetup
-        <span class="gradient-text-left">open robotic metaverse</span>
+        Robotics Community
+        <span class="gradient-text-left">Meetup</span>
       </template>
       <template v-slot:description>
-        <ul class="list-disc list-inside space-y-2">
-          <li>Networking opportunities with students and professionals</li>
-          <li>Short pitches and interactive sessions showcasing latest robotic projects</li>
-          <li>Engaging discussions on cutting-edge robotics topics</li>
-          <li>Collaborative problem-solving workshops</li>
-          <li>Free drinks in a lively atmosphere</li>
-        </ul>
+        Our Robotics Community Meetups are designed to foster collaboration, knowledge exchange, and networking
+        within the local robotics community.
+        <br />
+        Join us to connect with like-minded enthusiasts, share ideas,
+        and stay at the forefront of robotics innovation.
+        <div class="py-6"></div>
+
       </template>
       <template v-slot:image>
-        <div class="image-gallery">
-          <div v-for="(image, index) in meetupImages" :key="index" class="gallery-item reveal">
-            <nuxt-img
-              :src="image.src"
-              :alt="image.alt"
-              class="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-            />
-          </div>
-        </div>
+        <nuxt-img class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto" alt="Meetup"
+          provider="cloudinary" loading="lazy" src="/openroboverse/Meetup/meetup_logo_xt2pev.jpg" />
       </template>
     </CommonLeftSection>
 
-    <CommonRightSection>
+    <CommonPhotoSection>
+      <template v-slot:image>
+        <nuxt-img
+          src="https://images.unsplash.com/photo-1567789884554-0b844b597180?q=80&w=2070&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+          alt="" loading="lazy" class="absolute inset-0 -z-10 h-full object-cover object-right md:object-center" />
+      </template>
+      <template v-slot:content>
+        <CommonRightSection class="reveal">
+          <template v-slot:title>
+            <span class="gradient-text-right">What to Expect</span>
+          </template>
+          <template v-slot:description>
+            <ul class="list-disc list-inside space-y-2">
+              <li>Networking opportunities with students and professionals</li>
+              <li>Short pitches and interactive sessions showcasing latest robotic projects</li>
+              <li>Engaging discussions on cutting-edge robotics topics</li>
+              <li>Collaborative problem-solving workshops</li>
+              <li>Free drinks in a lively atmosphere</li>
+            </ul>
+            <div class="py-6"></div>
+
+          </template>
+          <template v-slot:image>
+            <div class="image-gallery">
+              <div v-for="(image, index) in meetupImages" :key="index" class="gallery-item reveal">
+                <nuxt-img :src="image.src" :alt="image.alt"
+                  class="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+              </div>
+            </div>
+          </template>
+        </CommonRightSection>
+      </template>
+    </CommonPhotoSection>
+
+    <CommonLeftSection :orderFirst="true">
       <template v-slot:title>
-        Join Our <span class="gradient-text-left">Next Meetup</span>
+        Join Our Next
+        <span class="gradient-text-left">Meetup</span>
       </template>
       <template v-slot:description>
         <div class="meetup-details">
@@ -63,46 +77,47 @@
           </div>
         </div>
         <div class="mt-6">
-          Don't miss this chance to connect with experts, gain insights into the latest advancements, 
+          Don't miss this chance to connect with experts, gain insights into the latest advancements,
           and grow your professional network. Our meetups are a melting pot of ideas, innovation, and inspiration.
         </div>
-        <div class="mt-6">
-          <UiBaseButton :buttonLink="`https://lu.ma/b0hq4agb`">
-            <template v-slot:button>Register Now</template>
-          </UiBaseButton>
-        </div>
+        <div class="py-6"></div>
+        <UiBaseButton :buttonLink="`https://lu.ma/b0hq4agb`">
+          <template v-slot:button>Register Now</template>
+        </UiBaseButton>
       </template>
       <template v-slot:image>
-        <nuxt-img
-          src="https://res.cloudinary.com/dilan3qfq/image/upload/v1727137785/openroboverse/Meetup/meetup_logo_xt2pev.jpg"
-          alt="Next Meetup"
-          class="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 reveal"
-        />
+        <nuxt-img class="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto" alt="Next Meetup"
+          provider="cloudinary" loading="lazy"
+          src="/openroboverse/Meetup/meetup_pre_up1_fohztd_c_crop_ar_4_3_gaqsnr.jpg" />
       </template>
-    </CommonRightSection>
+    </CommonLeftSection>
 
-    <CommonEmptySection>
-      <template v-slot:mainTitle2>
-        About <span class="gradient-text-left">open robotic metaverse</span>
-      </template>
-      <template v-slot:description>
-        <div class="reveal">
-          open robotic metaverse is an initiative aimed at strengthening collaboration and 
-          knowledge exchange within the robotics community. Besides local events, we're working 
-          on an open-source project: a web-based collaborative platform designed to encourage 
+
+
+    <section class="bordered-section animated">
+      <CommonEmptySection class="reveal">
+        <template v-slot:mainTitle1> About </template>
+        <template v-slot:mainTitle2>
+          <span class="gradient-text-left">open robotic metaverse</span>
+        </template>
+        <template v-slot:description>
+          open robotic metaverse is an initiative aimed at strengthening collaboration and
+          knowledge exchange within the robotics community. Besides local events, we're working
+          on an open-source project: a web-based collaborative platform designed to encourage
           exchange between robotic projects in an interactive 3D world.
-        </div>
-        <div class="mt-6 reveal">
-          <UiBaseButton :buttonLink="`/about`">
-            <template v-slot:button>Learn More</template>
-          </UiBaseButton>
-        </div>
-      </template>
-    </CommonEmptySection>
+        </template>
+      </CommonEmptySection>
+      <div class="reveal flex flex-col items-center gap-5 justify-center h-full mx-auto pb-24">
+        <UiBaseButton :buttonLink="`/about`">
+          <template v-slot:button> Learn More </template>
+        </UiBaseButton>
+      </div>
+    </section>
+
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { onMounted, onBeforeUnmount } from "vue";
 
 const reveal = () => {
@@ -131,11 +146,11 @@ onBeforeUnmount(() => {
 });
 
 useHead({
-  title: "Newsroom | open robotic metaverse",
+  title: "Meetup | open robotic metaverse",
   meta: [
     {
       name: "description",
-      content: "Stay updated with our Robotics Community Meetups and latest news from open robotic metaverse.",
+      content: "Join our Robotics Community Meetups and connect with like-minded enthusiasts in the open robotic metaverse.",
     },
   ],
 });
@@ -161,13 +176,16 @@ const meetupImages = [
 </script>
 
 <style scoped>
-.meetup-page {
-  padding-top: 0;
-  margin-top: 0;
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
 }
 
-.meetup-header {
-  padding-top: 60px; /* Adjust this value as needed to account for the navbar height */
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .image-gallery {
@@ -189,44 +207,5 @@ const meetupImages = [
 
 .gallery-item:hover img {
   transform: scale(1.05);
-}
-
-.reveal {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 1s all ease;
-}
-
-.reveal.active {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.sliding-text-1,
-.sliding-text-2,
-.sliding-text-3 {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.sliding-text-1.active,
-.sliding-text-2.active,
-.sliding-text-3.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.sliding-text-1 {
-  transition-delay: 0.1s;
-}
-
-.sliding-text-2 {
-  transition-delay: 0.3s;
-}
-
-.sliding-text-3 {
-  transition-delay: 0.5s;
 }
 </style>
