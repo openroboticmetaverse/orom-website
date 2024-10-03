@@ -23,7 +23,7 @@
         <!-- Tags -->
         <div class="flex flex-wrap gap-2 mb-8">
           <span v-for="tag in position.tags" :key="tag"
-            class="bg-teal-600/30 text-teal-300 px-3 py-1 rounded-full text-sm border border-teal-500/50 transition-all duration-300 hover:bg-teal-600/50">
+            class="bg-teal-600/30 text-teal-300 px-2 py-0.5 rounded-full text-sm border border-teal-500/50 transition-all duration-300 hover:bg-teal-600/50">
             {{ tag }}
           </span>
         </div>

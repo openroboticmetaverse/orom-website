@@ -11,9 +11,9 @@
       </template>
       <template v-slot:email>
         <a
-          href="mailto:openroboticmetaverse@gmail.com"
+          href="mailto:info@openroboticmetaverse.org"
           class="gradient-text-right hover:text-teal-200 duration-500 ease-in-out email-wrap"
-          >openroboticmetaverse@gmail.com</a
+          >info@openroboticmetaverse.org</a
         >
       </template>
       <template v-slot:icons>
@@ -58,7 +58,7 @@ useJsonld(() => ({
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "organisation email",
-    email: "openroboticmetaverse@gmail.com",
+    email: "info@openroboticmetaverse.org",
     // Add more contact details if needed
   },
   logo: "https://www.openroboticmetaverse.org/icon.svg",
