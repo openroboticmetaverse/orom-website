@@ -1,7 +1,7 @@
 <template>
   <div class="position-card bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
     <h3 class="text-xl font-semibold mb-2">{{ position.title }}</h3>
-    <p class="text-gray-300 mb-4">{{ position.description }}</p>
+    <p class="text-gray-300 mb-4">{{ position.shortDescription }}</p>
     <div class="flex flex-wrap gap-2 mb-4">
       <span v-for="tag in position.tags" :key="tag" class="bg-teal-600 text-white px-2 py-1 rounded-full text-sm">
         {{ tag }}
