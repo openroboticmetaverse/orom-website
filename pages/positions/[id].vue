@@ -5,17 +5,52 @@
     </NuxtLink>
     <div v-if="position" class="bg-gray-800 rounded-lg shadow-md p-8">
       <h1 class="text-3xl font-semibold mb-4">{{ position.title }}</h1>
-      <ul class="text-gray-300 mb-6 list-disc pl-5">
-        <li v-for="(item, index) in position.description" :key="index">
-          {{ item }}
-        </li>
-      </ul>
-      <div class="flex flex-wrap gap-2 mb-6">
+      
+      <section class="mb-8">
+        <div class="flex flex-wrap gap-2 mb-4">
         <span v-for="tag in position.tags" :key="tag" class="bg-teal-600 text-white px-2 py-1 rounded-full text-sm">
           {{ tag }}
         </span>
       </div>
-      <!-- Add more detailed information about the position here -->
+        <h2 class="text-2xl font-semibold mb-4 gradient-text">🚀 About Us</h2>
+        
+        <p class="text-gray-300 mb-4">open robotic metaverse e.V. is an initiative aimed at strengthening collaboration and knowledge exchange within the robotics community. Besides local events, we're working on an open-source project: a web-based collaborative platform designed to encourage exchange between robotic projects in an interactive 3D world.</p>
+        
+        <h3 class="text-lg font-semibold mb-2">Why Join Us?</h3>
+        <ul class="text-gray-300 mb-4 list-disc pl-5">
+          <li>Gain real-world experience in a startup-like environment</li>
+          <li>Develop highly sought-after skills</li>
+          <li>Be part of an innovative, passionate community</li>
+          <li>Shape the direction of an exciting, emerging field</li>
+          <li>Network with like-minded people and industry professionals</li>
+        </ul>
+        
+        <h3 class="text-lg font-semibold mb-2">Who We're Looking For</h3>
+        <p class="text-gray-300 mb-4">Motivated people ready to dive into new technologies. No expert-level skills required – just bring your passion and commitment!</p>
+        
+        <h3 class="text-lg font-semibold mb-2">Our Culture</h3>
+        <p class="text-gray-300 mb-4">Fast-paced, innovative, and collaborative. We value initiative, creativity, and teamwork.</p>
+      </section>
+      
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4 gradient-text">📣 Tasks and Skills You'll Develop</h2>
+        <ul class="text-gray-300 mb-4 list-disc pl-5">
+          <li v-for="(item, index) in position.description" :key="index">
+            {{ item }}
+          </li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2 class="text-2xl font-semibold mb-4 gradient-text">🚀 Ready to Innovate?</h2>
+        <p class="text-gray-300 mb-4">If you're excited about robotics and web tech, we want you! Apply now to shape the future of the open robotic metaverse.</p>
+        
+        <p class="text-gray-300 mb-4"><strong>Send us your applicaiton now:</strong><a href="mailto:info@openroboticmetaverse.com"> info@openroboticmetaverse.com</a></p>
+        
+        <p class="text-gray-300 mb-4"><em>Note: We're seeking committed individuals ready to learn and contribute. Show us your passion!</em></p>
+      </section>
+      
+      
     </div>
     <div v-else>
       <p>Position not found.</p>
@@ -229,3 +264,13 @@ const positions = ref([
 
 const position = computed(() => positions.value.find(p => p.id === positionId));
 </script>
+
+<style scoped>
+.gradient-text {
+  background: linear-gradient(45deg, #31d2fa, #b81fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+</style>
