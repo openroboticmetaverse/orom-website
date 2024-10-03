@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="pt-24 sm:pt-0 md:pt-0 lg:pt-0"></div>
+    <div class="-mt-8 sm:-mt-16 md:-mt-24 lg:-mt-32"></div>
     <CommonLeftSection :orderFirst="true">
       <template v-slot:title>
         Meet the <span class="gradient-text-left"> team!</span>
@@ -11,7 +11,7 @@
         perspectives, because great ideas don't fit in a box. Join us in shaping
         the future of technology. All enthusiasts welcome!
         <div class="py-6"></div>
-        <UiBaseButton :buttonLink="`https://robotics-metaverse-initiative.notion.site/Open-Position-open-robotic-metaverse-376fb2d257c247b1a58dfb7f71144a11?pvs=4`">
+        <UiBaseButton :buttonLink="`/open-positions`">
           <template v-slot:button> Check our open positions </template>
         </UiBaseButton>
       </template>
