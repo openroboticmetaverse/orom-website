@@ -11,14 +11,14 @@
               <div
                 class="relative items-center gap-9 m-auto lg:inline-flex md:order-first"
               >
-                <div class="max-w-xl text-center lg:text-left">
+                <div class="max-w-xl text-center lg:text-left lg:-mt-80">
                   <div>
                     <p
                       class="font-bold tracking-tight text-left px-5 sm:px-0 text-gray-200 pb-4 text-4xl sm:text-4xl md:text-5xl lg:text-5xl"
                     >
                       <slot name="title"></slot>
                     </p>
-                    <p class="section-description">
+                    <p class="section-description mt-2">
                       <slot name="description"></slot>
                       <slot name="icons"></slot>
                     </p>
