@@ -155,6 +155,7 @@ export const useProjectsStore = defineStore({
         {
           id: "1",
           title: "open robotic metaverse (orom)",
+          shortDescription: "A collaborative platform connecting open-source robotic projects with real-time simulation and interaction capabilities.",
           image: "/openroboverse/segmentation_full_uw4for.png",
           fullImage: "/openroboverse/photo-2024-02-29-11-13-40_zwgpv9.jpg",
           idea: {
@@ -186,6 +187,7 @@ export const useProjectsStore = defineStore({
             {
               id: "2",
               title: "Home robot",
+              shortDescription: "An AI-powered robotic assistant designed to help with daily tasks, focusing on perception, navigation, and manipulation.",
               image: "/openroboverse/bridging_full_middlf.png",
               fullImage: "/openroboverse/Facebook-AI-Habitat-2.0_kkbpfu.jpg",
               idea: { 
@@ -244,6 +246,7 @@ export const useProjectsStore = defineStore({
             {
               id: "3",
               title: "Interactive 3D Web",
+              shortDescription: "A web application for creating, viewing, and interacting with 3D models, with a focus on robotic cell design and manipulation.",
               image: "/openroboverse/browser_full_dlo5kv.png",
               fullImage: "/openroboverse/DALL_E_2024-04-28_03.15.51_-_A_realistic_screenshot_of_a_browser_displaying_a_3D_robotic_web_interaction_app._The_robot_shown_is_a_mobile_manipulator_designed_to_look_friendly_an_g3ao7q.webp",
               idea: {
@@ -280,6 +283,27 @@ export const useProjectsStore = defineStore({
               },
             },
           },
+        },
+        {
+          id: "4",
+          title: "AI-Powered Robotic Assistant",
+          shortDescription: "Developing an intelligent robotic assistant for everyday tasks.",
+          fullImage: "v1702467075/openroboverse/segmentation_full_uw4for.png",
+          // Add other necessary fields
+        },
+        {
+          id: "5",
+          title: "Autonomous Drone Swarm",
+          shortDescription: "Creating a swarm of coordinated autonomous drones for various applications.",
+          fullImage: "v1702467075/openroboverse/segmentation_full_uw4for.png",
+          // Add other necessary fields
+        },
+        {
+          id: "6",
+          title: "Robotic Exoskeleton for Rehabilitation",
+          shortDescription: "Designing an advanced exoskeleton to assist in physical therapy and rehabilitation.",
+          fullImage: "v1702467075/openroboverse/segmentation_full_uw4for.png",
+          // Add other necessary fields
         },
       ],
     };
