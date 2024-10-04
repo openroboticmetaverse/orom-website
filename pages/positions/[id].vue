@@ -83,8 +83,8 @@
             the future of robotics!</p>
 
           <p class="text-gray-300 mb-4 leading-relaxed"><strong>Send us your application now: </strong>
-            <a href="mailto:info@openroboticmetaverse.com"
-              class="text-teal-300 hover:text-teal-200 underline">info@openroboticmetaverse.com</a>
+            <a href="mailto:info@openroboticmetaverse.org"
+              class="text-teal-300 hover:text-teal-200 underline">info@openroboticmetaverse.org</a>
           </p>
 
           <p class="text-gray-300 mb-4 italic">Note: We're seeking committed individuals willing to learn and
