@@ -18,7 +18,7 @@ Check out their [official website](https://nuxt.com/)
 1. Clone the Repo 
 
 ```bash
-git clone https://github.com/openroboverse/open-rv-website.git
+git clone https://github.com/openroboticmetaverse/orom-website.git
 
 ```
 
@@ -55,6 +55,6 @@ This structure allows for a clear distinction between active participants and th
 
 
 ## Contact
-Contact [Hazar](mailto:parhasard@outlook.de) if you have any questions/suggestions about the website.
+Contact [Hazar](mailto:parhasard@outlook.de) or [Amine](mailto:amine@openroboticmetaverse) if you have any questions/suggestions about the website.
 
 

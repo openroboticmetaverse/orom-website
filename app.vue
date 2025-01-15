@@ -1,14 +1,14 @@
 <template>
   <div>
-    <RecruitmentBanner />
     <CookieControl></CookieControl>
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
   </div>
 </template>
+
 <script setup>
-import RecruitmentBanner from '~/components/RecruitmentBanner.vue';
+import { ref } from 'vue';
 
 const {
   cookiesEnabled,
@@ -89,6 +89,7 @@ onMounted(() => {
   }
 });
 </script>
+
 <style>
 html {
   background-color: black;

@@ -44,7 +44,7 @@
         />
         <div class="sm:flex sm:items-center sm:justify-between">
           <span class="text-sm text-gray-300 sm:text-center dark:text-gray-400"
-            >© 2024 open robotic metaverse e.V. .
+            >© 2025 open robotic metaverse e.V. .
             <a href="https://www.netlify.com/" class="hover:text-white"
               >Powered by Netlify</a
             >
