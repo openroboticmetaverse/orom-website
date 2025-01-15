@@ -1,5 +1,6 @@
 <template>
   <div>
+    <RecruitmentBanner />
     <CookieControl></CookieControl>
     <NuxtLayout>
       <NuxtPage />
@@ -8,7 +9,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import RecruitmentBanner from '~/components/RecruitmentBanner.vue';
 
 const {
   cookiesEnabled,
