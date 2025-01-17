@@ -7,7 +7,6 @@
     </NuxtLayout>
   </div>
 </template>
-
 <script setup>
 import RecruitmentBanner from '~/components/RecruitmentBanner.vue';
 
@@ -90,7 +89,6 @@ onMounted(() => {
   }
 });
 </script>
-
 <style>
 html {
   background-color: black;

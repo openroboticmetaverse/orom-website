@@ -1,5 +1,5 @@
 <template>
-  <div v-if="!dismissed" class="bg-yellow-400 bg-opacity-80 text-black py-1 px-4 overflow-hidden" style="display: none;">
+  <div v-if="!dismissed" class="bg-yellow-400 bg-opacity-80 text-black py-1 px-4 overflow-hidden">
     <div class="container mx-auto flex items-center justify-between">
       <div class="flex-1 overflow-hidden">
         <div class="animate-marquee whitespace-nowrap">
@@ -14,7 +14,7 @@
         >
           Join now!
         </NuxtLink>
-        <button @click="dismissBanner" class="text-black hover:text-gray-700" style="display: none;">
+        <button @click="dismissBanner" class="text-black hover:text-gray-700">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
@@ -31,8 +31,6 @@ const dismissed = ref(false);
 
 const dismissBanner = () => {
   dismissed.value = true;
-  // Optionally, you can also hide the banner visually
-  document.querySelector('.bg-yellow-400').style.display = 'none';
 };
 </script>
 
