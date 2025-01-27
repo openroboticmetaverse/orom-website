@@ -1,6 +1,5 @@
 <template>
   <div>
-    <RecruitmentBanner />
     <CookieControl></CookieControl>
     <NuxtLayout>
       <NuxtPage />

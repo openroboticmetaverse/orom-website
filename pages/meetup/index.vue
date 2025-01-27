@@ -65,7 +65,7 @@
         <div class="meetup-details">
           <div class="meetup-date-time">
             <div class="date">
-              <strong>Wednesday, October 23</strong>
+              <strong>Wednesday, April 23, 2025</strong>
             </div>
             <div class="time">
               6:30 PM - 9:00 PM
@@ -81,8 +81,8 @@
           and grow your professional network. Our meetups are a melting pot of ideas, innovation, and inspiration.
         </div>
         <div class="py-6"></div>
-        <UiBaseButton :buttonLink="`https://lu.ma/b0hq4agb`">
-          <template v-slot:button>Register Now</template>
+        <UiBaseButton :buttonLink="`https://lu.ma/b0hq4agb`" :disabled="true" >
+          <template v-slot:button>Coming Soon</template>
         </UiBaseButton>
       </template>
       <template v-slot:image>
