@@ -43,7 +43,7 @@ export const useTeamStore = defineStore({
           linkedin: "https://www.linkedin.com/in/echristhuraj/",
           github: "https://github.com/19ec94",
           image: "/openroboverse/team/edi_jovhhj.jpg",
-          title: "dev",
+          title: "Dev",
         },
         {
           id: 6,
@@ -69,6 +69,14 @@ export const useTeamStore = defineStore({
           image: "/openroboverse/team/kikbby0numfyxnzghmfe",
           title: "AI",
         },
+        {
+          id: 20,
+          name: "Atef Toumi",
+          linkedin: "https://www.linkedin.com/in/atefyahiatoumi/",
+          github: "https://github.com/AtefToumi",
+          image: "/openroboverse/team/atef_vslbhjc",
+          title: "Dev Co-Lead",
+        }
       ],
       supportersAndAlumni: [
         {
