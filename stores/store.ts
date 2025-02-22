@@ -76,6 +76,7 @@ export const useTeamStore = defineStore({
           github: "https://github.com/AtefToumi",
           image: "/openroboverse/team/atef_vslbhjc",
           title: "Dev Co-Lead",
+        }
       ],
       supportersAndAlumni: [
         {
