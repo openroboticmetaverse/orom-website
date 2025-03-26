@@ -1,6 +1,7 @@
 <template>
   <div>
     <CookieControl></CookieControl>
+    <MeetupBanner />
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
