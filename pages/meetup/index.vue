@@ -81,8 +81,8 @@
           and grow your professional network. Our meetups are a melting pot of ideas, innovation, and inspiration.
         </div>
         <div class="py-6"></div>
-        <UiBaseButton :buttonLink="`https://lu.ma/b0hq4agb`" :disabled="true" >
-          <template v-slot:button>Coming Soon</template>
+        <UiBaseButton :buttonLink="`https://lu.ma/e61lkaj1`"  :disabled="false" >
+          <template v-slot:button >Register Now</template>
         </UiBaseButton>
       </template>
       <template v-slot:image>

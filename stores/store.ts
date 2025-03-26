@@ -71,7 +71,7 @@ export const useTeamStore = defineStore({
         },
         {
           id: 20,
-          name: "Atef Toumi",
+          name: "Atef",
           linkedin: "https://www.linkedin.com/in/atefyahiatoumi/",
           github: "https://github.com/AtefToumi",
           image: "/openroboverse/team/atef_vslbhjc",
